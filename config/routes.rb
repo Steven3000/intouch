@@ -34,18 +34,16 @@ Rails.application.routes.draw do
   get('/delete_artist/:id', { :controller => 'artists', :action => 'destroy' })
   #------------------------------
 
-get("/artistfeed", :controller => 'page', :action => 'artistfeed')
-get("/feed", :controller => 'page', :action => 'feed')
-get("/following", :controller => 'page', :action => 'following')
-get("/home", :controller => 'page', :action => 'home')
-get("/show", :controller => 'page', :action => 'show')
-get("/singnup", :controller => 'page', :action => 'singnup')
+  get("/artistfeed", :controller => 'page', :action => 'artistfeed')
+  get("/feed", :controller => 'page', :action => 'feed')
+  get("/following", :controller => 'page', :action => 'following')
+  get("/home", :controller => 'page', :action => 'home')
+  get("/show", :controller => 'page', :action => 'show')
+  get("/singnup", :controller => 'page', :action => 'singnup')
 
-#ADMIN
-get("/admin_dashboard", :controller => 'admin', :action => 'admin_dashboard')
-get("/account_manager", :controller => 'admin', :action => 'account_manager')
-
-
+  #ADMIN
+  get("/admin_dashboard", :controller => 'admin', :action => 'admin_dashboard')
+  get("/account_manager", :controller => 'admin', :action => 'account_manager')
 
 
   # Routes for the Feed resource:
@@ -65,11 +63,10 @@ get("/account_manager", :controller => 'admin', :action => 'account_manager')
   get('/delete_feed/:id', { :controller => 'feeds', :action => 'destroy' })
   #------------------------------
 
+  root 'page#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,77 +1,43 @@
-<!doctype html>
-<html>
-
-<head>
-  <title>Admin Add Artist</title>
-  <meta charset="UTF-8"/>
-  <link rel="stylesheet" type="text/css" href="./stylesheets/application.css">
-</head>
-
-<body>
-
-  <header class="main-header">
-    <h1 class="logo">
-      <a href="./feed.html">In Touch</a>
-    </h1>
-    <nav>
-      <ul>
-      <li><a href="admin_dashboard.html">admin</a></li>
-           <li><a href="feed.html">My Feed</a></li>
-        <li><a href="following.html">My Artists/Add Artist</a></li>
-        <li><a href="home.html">Sign Out</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-  <section class="wrapper-index">
+<section class="wrapper-index">
+  <div class="page-header">
     <h1>Add Artist</h1>
   </div>
 
-    <% if @artist.errors.any? %>
-      <% @artist.errors.full_messages.each do |message| %>
-        <div class="alert alert-dismissable alert-danger">
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-          <%= message %>
-        </div>
-      <% end %>
-    <% end %>
-
-
-<form action="/create_artist" class="form-horizontal">
-  <!-- Label and input for name -->
-  <fieldset>
-    <!-- <legend>ADD ARTIST</legend> -->
-    <div class="form-group">
-      <label for="name" class="control-label">Name</label>
-      <input type="text" id="name" name="name" placeholder="Name" class="form-control input-lg" value="<%= @artist.name %>">
-    </div>
-    <div class="form-group">
-      <label for="picture" class="control-label" for="inputLarge">Picture</label>
-      <input type="text" id="picture" name="picture" placeholder="Picture" class="form-control input-lg" value="<%= @artist.picture %>">
-    </div>
-    <div class="form-group">
-      <label for="website" class="control-label" for="inputLarge">Website</label>
-      <input type="text" id="website" name="website" placeholder="Website" class="form-control input-lg" value="<%= @artist.website %>">
-    </div>
-    <div class="form-group">
-      <label for="record_label" class="control-label" for="inputLarge">Record Label</label>
-      <input type="text" id="record_label" name="record_label" placeholder="Record label" class="form-control input-lg" value="<%= @artist.record_label %>">
-    </div>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="submit" value="Create Artist" class="btn btn-default">Submit</button>
+  <% if @artist.errors.any? %>
+    <% @artist.errors.full_messages.each do |message| %>
+      <div class="alert alert-dismissable alert-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <%= message %>
       </div>
-    </div>
-  </fieldset>
-</form>
+    <% end %>
+  <% end %>
+
+  <form action="/create_artist" class="form-horizontal">
+    <!-- Label and input for name -->
+    <fieldset>
+      <!-- <legend>ADD ARTIST</legend> -->
+      <div class="form-group">
+        <label for="name" class="control-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" class="form-control input-lg" value="<%= @artist.name %>">
+      </div>
+      <div class="form-group">
+        <label for="picture" class="control-label" for="inputLarge">Picture</label>
+        <input type="text" id="picture" name="picture" placeholder="Picture" class="form-control input-lg" value="<%= @artist.picture %>">
+      </div>
+      <div class="form-group">
+        <label for="website" class="control-label" for="inputLarge">Website</label>
+        <input type="text" id="website" name="website" placeholder="Website" class="form-control input-lg" value="<%= @artist.website %>">
+      </div>
+      <div class="form-group">
+        <label for="record_label" class="control-label" for="inputLarge">Record Label</label>
+        <input type="text" id="record_label" name="record_label" placeholder="Record label" class="form-control input-lg" value="<%= @artist.record_label %>">
+      </div>
+      <div class="form-group">
+        <div class="col-lg-10 col-lg-offset-2">
+          <button type="submit" value="Create Artist" class="btn btn-default">Submit</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 </section>
-
-</body>
-</html>
-
-
-
-
-

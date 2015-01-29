@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Intouch</title>
+  <title>Intouch: <%= yield :title %> </title>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/lumen/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 
@@ -12,18 +12,49 @@
     }
   </style>
 
-
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-
-
 </head>
+
 <body>
+  <header class="main-header">
+    <h1 class="logo">
+      <a href="./feed.html">In Touch</a>
+    </h1>
 
-<%= yield %>
+    <nav>
+      <ul>
+        <li>
+          <%= link_to_if (request.path != "/admin_dashboard.html"),
+                         "admin",
+                         "/admin_dashboard.html" %>
+        </li>
 
+
+          <li>
+            <%= link_to_if (request.path != "/feed.html"),
+                           "My feed",
+                           "/feed.html" %>
+          </li>
+
+        <li>
+          <%= link_to_if (request.path != "/following.html"),
+                         "My Artists/Add Artist",
+                         "/following.html" %>
+        </li>
+        <li>
+          <%= link_to_if (request.path != "/home.html"),
+                         "Sign Out",
+                         "/home.html" %>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <%= yield %>
 </body>
+
 </html>
