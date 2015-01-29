@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Admin Add Song</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/application.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <h1 class="logo">
+      <a href="./feed.html">In Touch</a>
+    </h1>
+
+    <nav>
+      <ul>
+      <li><a href="admin_dashboard.html">admin</a></li>
+           <li><a href="feed.html">My Feed</a></li>
+        <li><a href="following.html">My Artists/Add Artist</a></li>
+        <li><a href="home.html">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<div class="wrapper-index">
+<section class="aa-wrap">
+  <h1>Add Song</h1>
+
+
+<form action="/create_song" class="form-horizontal">
+  <fieldset>
+   <!--  <legend>ADD SONG</legend> -->
+
+<% if @song.errors.any? %>
+  <% @song.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+
+<form action="/create_song" class="form-horizontal">
+
+
+  <!-- Label and input for artist -->
+    <div class="form-group">
+      <label for="artist" class="control-label">Artist</label>
+      <input type="text" id="artist"  placeholder="Artist" class="form-control" >
+    </div>
+
+
+
+   <!-- <div class="form-group"> -->
+      <!-- <label for="artist" class="col-lg-2 control-label">Artist</label> -->
+      <!-- <div class="col-lg-10"> -->
+        <!-- <select class="form-control" name="artist" id="artist" value="<%= @song.artist %>"> -->
+          <!-- <option>Mulatto Patriot</option> -->
+          <!-- <option>Kanye West</option> -->
+          <!-- <option>Chance The Rapper</option> -->
+          <!-- <option>Kendric Lamar</option> -->
+          <!-- <option>The Roots</option> -->
+          <!-- <option>Vic Mensa</option> -->
+          <!-- <option>Kendrick Lamar</option> -->
+          <!-- <option>Saba</option> -->
+          <!-- <option>Big Kritt</option> -->
+          <!-- <option>Vic Spencer</option> -->
+          <!-- <option>Drake</option> -->
+        <!-- </select> -->
+          <!-- <br> -->
+
+
+  <!-- Label and input for title -->
+
+
+  <div class="form-group">
+    <label for="title" class="control-label">Song Title</label>
+    <input type="text" id="title" name="title" placeholder="Title" class="form-control input-lg" value="<%= @song.title %>">
+  </div>
+
+  <!-- Label and input for artwork -->
+  <div class="form-group">
+    <label for="artwork" class="control-label">Artwork</label>
+    <input type="text" id="artwork" name="artwork" placeholder="Artwork" class="form-control input-lg" value="<%= @song.artwork %>">
+  </div>
+
+  <!-- Label and input for features -->
+  <div class="form-group">
+    <label for="features" class="control-label">Features</label>
+    <input type="text" id="features" name="features" placeholder="Features" class="form-control input-lg" value="<%= @song.features %>">
+  </div>
+
+  <!-- Label and input for producer -->
+  <div class="form-group">
+    <label for="producer" class="control-label">Producer</label>
+    <input type="text" id="producer" name="producer" placeholder="Producer" class="form-control input-lg" value="<%= @song.producer %>">
+  </div>
+
+  <!-- Label and input for album -->
+  <div class="form-group">
+    <label for="album" class="control-label">Album</label>
+    <input type="text" id="album" name="album" placeholder="Album" class="form-control input-lg" value="<%= @song.album %>">
+  </div>
+
+  <!-- Label and input for release_date -->
+  <div class="form-group">
+    <label for="release_date" class="control-label">Release date</label>
+    <input type="text" id="release_date" name="release_date" placeholder="Release date" class="form-control input-lg" value="<%= @song.release_date %>">
+  </div>
+
+  <!-- Label and input for download_link -->
+  <div class="form-group">
+    <label for="download_link" class="control-label">Download link</label>
+    <input type="text" id="download_link" name="download_link" placeholder="Download link" class="form-control input-lg" value="<%= @song.download_link %>">
+  </div>
+
+  <!-- Label and input for embedded_code -->
+  <div class="form-group">
+    <label for="embedded_code" class="control-label">Embedded code</label>
+    <textarea id="embedded_code" name="embedded_code" placeholder="Embedded code" class="form-control input-lg" rows="3"><%= @song.embedded_code %></textarea>
+  </div>
+
+  <!-- Label and input for itunes -->
+  <div class="form-group">
+    <label for="itunes" class="control-label">Itunes</label>
+    <textarea id="itunes" name="itunes" placeholder="Itunes" class="form-control input-lg" rows="3"><%= @song.itunes %></textarea>
+  </div>
+
+  <!-- Label and input for google -->
+  <div class="form-group">
+    <label for="google" class="control-label">Google</label>
+    <textarea id="google" name="google" placeholder="Google" class="form-control input-lg" rows="3"><%= @song.google %></textarea>
+  </div>
+
+  <!-- Label and input for amazon -->
+  <div class="form-group">
+    <label for="amazon" class="control-label">Amazon</label>
+    <textarea id="amazon" name="amazon" placeholder="Amazon" class="form-control input-lg" rows="3"><%= @song.amazon %></textarea>
+  </div>
+
+  <!-- Label and input for spotify -->
+  <div class="form-group">
+    <label for="spotify" class="control-label">Spotify</label>
+    <textarea id="spotify" name="spotify" placeholder="Spotify" class="form-control input-lg" rows="3"><%= @song.spotify %></textarea>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-10 col-lg-offset-2">
+      <button type="submit" value="Create Song" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+  </div>
+</fieldset>
+</form>
+

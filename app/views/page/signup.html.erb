@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Ntouch LogIn</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="./stylesheets/application.css">
+</head>
+
+<body>
+  <header class="home-header main-header">
+    <h1 class="logo">
+      <a href="./feed.html">In Touch</a>
+    </h1>
+
+  </header>
+
+  <div class="form-group">
+    <label for="name" class="col-lg-2 control-label">Name</label>
+    <div class="col-lg-10">
+      <input name="name" type="name" class="form-control" id="name" placeholder="name">
+    </div>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="input-email" class="col-lg-2 control-label">Email</label>
+    <div class="col-lg-10">
+      <input name="email" type="text" class="form-control" id="input-email" placeholder="Email">
+    </div>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="input-email" class="col-lg-2 control-label">Re-type Email</label>
+    <div class="col-lg-10">
+      <input name="email" type="text" class="form-control" id="input-email" placeholder="Email">
+    </div>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="input-password" class="col-lg-2 control-label">Password</label>
+    <div class="col-lg-10">
+      <input name="password" type="password" class="form-control" id="input-password" placeholder="Password">
+    </div>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="input-password" class="col-lg-2 control-label">Re-type Password</label>
+    <div class="col-lg-10">
+      <input name="password" type="password" class="form-control" id="input-password" placeholder="Password">
+    </div>
+  </div>
+  </br>
+
+  <div class="form-group">
+    <label for="zipcode" class="col-lg-2 control-label">zipcode</label>
+    <div class="col-lg-10">
+      <input name="zipcode" type="zipcode" class="form-control" id="zipcode" placeholder="zipcode">
+    </div>
+  </div>
+  </br>
+
+  <p class="centerp create-an-a">
+    <a class="btn" href="feed.html">Create an Account</a>
+  </p>
+
+    <div class="wrapper-cc">
+      <h1>Change Payment Method</h1>
+    <div class="box-cc">
+      <header>
+        <h2>Credit Card</h2>
+        <ul>
+            <li>Visa</li>
+            <li>Master Card</li>
+            <li>American Express</li>
+            <li>Discover</li>s
+        </ul>
+      </header>
+      <form>
+        <div class="marge">
+          <h3>Name on Card</h3>
+          <input type="text" name="full_name" placeholder="Name on Card" size=80/>
+          <div class="card-cc">
+            <h3>Card Number</h3>
+            <input type="text" name="Card_Number" placeholder="0000 0000 0000 0000" size=60/>
+          </div>
+          <div class="cvv-cc">
+            <h3>Code (CVV)</h3>
+            <input type="text" name="cvv_code" size=20/>
+          </div>
+          <div class="date-cc">
+            <h3>Expiration Date</h3>
+            <input type="month" name="bdaymonth"/><br/>
+          </div>
+          <div class="zip-cc">
+            <h3>Postal Code</h3>
+            <input type="text" name="zipcode" placeholder="60640" size=20/>
+          </div>
+        </div>
+    </div>
+
+      <input type="submit" id="button-cc" value="SAVE CREDIT CARD" />
+
+      </form>
+
+  </div>
+
+</body>
+</html>

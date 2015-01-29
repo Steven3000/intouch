@@ -1,0 +1,115 @@
+/* BASE.CSS */
+/* THINGS SHARED WITH ALL OR MOST OF THE PAGES */
+/* -------- */
+
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 16px;
+  padding: 0 0 40px 0;
+  margin: 0;
+}
+
+h1 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+span { font-size: 15px; }
+
+a {
+  color: #008DDC;
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #DDDEDF;
+  margin: 20px 0;
+}
+
+/* MISC REUSABLE SELECTORS */
+
+.txt-center {
+  text-align: center;
+}
+
+.btn {
+  border: 1px solid #CCCCCC;
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: transparent;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-success {
+  color: #FFF;
+  border: 1px solid #58B957;
+  background-color: #58B957;
+}
+
+.btn-signup {
+  color: white;
+  background-color: #008DDC;
+}
+
+/* HEADER */
+
+header.main-header {
+  border-bottom: 1px solid #DDDEDF;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+h1.logo {
+  font-family: 'Hammersmith One', sans-serif;
+  letter-spacing: -1px;
+  font-size: 25px;
+  line-height: 50px;
+  float: left;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1.logo a {
+  text-decoration: none;
+  color: #008FD9;
+}
+
+header nav {
+  float: right;
+}
+
+header nav li {
+  display: inline;
+  list-style: none;
+}
+
+header nav li:before {
+  content: "|";
+  color: #CCC;
+  margin: 0 10px;
+  font-weight: 200;
+}
+
+
+header nav li:first-child:before {
+  content: "";
+}
+
+/* Main wrapper to set the default size for the content */
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 900px;
+}

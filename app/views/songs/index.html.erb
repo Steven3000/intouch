@@ -1,0 +1,80 @@
+  <header class="main-header">
+    <h1 class="logo">
+      <a href="./feed.html">In Touch</a>
+    </h1>
+    <nav>
+      <ul>
+      <li><a href="admin_dashboard.html">admin</a></li>
+           <li><a href="feed.html">My Feed</a></li>
+        <li><a href="following.html">My Artists/Add Artist</a></li>
+        <li><a href="home.html">Sign Out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="wrapper-index">
+<div class="page-header">
+  <h1>Songs</h1>
+</div>
+
+<p><a href="/songs/new" class="btn btn-default" >Add a New Song</a></p>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Title</th>
+      <th>Artwork</th>
+      <th>Features</th>
+      <th>Producer</th>
+      <th>Album</th>
+      <th>Release date</th>
+      <th>Download link</th>
+      <th>Embedded code</th>
+      <th>Itunes</th>
+      <th>Google</th>
+      <th>Amazon</th>
+      <th>Spotify</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @songs.each do |song| %>
+      <tr>
+        <td><%= song.artist %></td>
+        <td><%= song.title %></td>
+        <td><%= song.artwork %></td>
+        <td><%= song.features %></td>
+        <td><%= song.producer %></td>
+        <td><%= song.album %></td>
+        <td><%= song.release_date %></td>
+        <td><%= song.download_link %></td>
+        <td><%= song.embedded_code %></td>
+        <td><%= song.itunes %></td>
+        <td><%= song.google %></td>
+        <td><%= song.amazon %></td>
+        <td><%= song.spotify %></td>
+        <td>
+          <a href="/songs/<%= song.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/songs/<%= song.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/delete_song/<%= song.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i>
+          </a>
+        </td>
+      </tr>
+    <% end %>
+    </div>
+  </tbody>
+</table>
+
