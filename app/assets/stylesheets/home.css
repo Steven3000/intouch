@@ -14,7 +14,8 @@
 }
 
 .form-group {
-  width: 300px;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .col-lg-2, .col-lg-10 {
@@ -44,7 +45,5 @@
   font-weight: bold;
 }
 
-.row {
-  float: right;
-}
+
 
