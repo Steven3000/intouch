@@ -1,12 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-
 images = [
           "http://i40.tinypic.com/2q1ge9g.jpg",
           "http://i39.tinypic.com/29pqaf7.jpg",
@@ -143,7 +134,7 @@ Song.create ({
                 :producer => "Mulatto Patriot",
                 :album => "Single",
                 :download_link => "https://soundcloud.com/mulatto-patriot/stop-on-by-primeridian-neak",
-                # :embedded_code => "<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/141553411&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/141553411&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
                 :itunes => "",
                 :google => "",
                 :amazon => "",
@@ -191,7 +182,7 @@ Song.create ({
                 :producer => "Nate Fox",
                 :album => "Acid Rap",
                 :download_link => "https://soundcloud.com/chancetherapper/juice",
-                # :embedded_code => "<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90243754&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90243754&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
                 :itunes => "",
                 :google => "",
                 :amazon => "",
@@ -313,7 +304,7 @@ Song.create ({
                 :producer => "Boi-1da & Syk Sense",
                 :album => "6 God EP",
                 :download_link => "http://www.djbooth.net/index/tracks/review/drake-6-god",
-                # :embedded_code => "<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173752179&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173752179&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
                 :itunes => "",
                 :google => "",
                 :amazon => "",
@@ -358,7 +349,7 @@ Song.create ({
                 :producer => "40 & Omen",
                 :album => "Mr. Wonderful",
                 :download_link => "https://soundcloud.com/actionbronson/action-bronson-actin-crazy",
-                # :embedded_code => "<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/184964202&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/184964202&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
                 :itunes => "https://itunes.apple.com/us/album/actin-crazy-single/id956323924",
                 :google => "https://play.google.com/store/music/album?id=B3j5khyzx6vxjcxhgfemc4smbwi&tid=song-Truqnbckmybtnpziogvtu2b3hqi&hl=en",
                 :amazon => "http://www.amazon.com/Actin-Crazy-Explicit-Action-Bronson/dp/B00RYGX0B4",
@@ -388,7 +379,7 @@ Song.create ({
                 :producer => "Mulatto Patriot",
                 :album => "Single",
                 :download_link => "http://mulattopatriot.bandcamp.com/track/soundcatcher-feat-pugs-atomz-neak",
-                # :embedded_code => "<iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=1973410984/size=small/bgcol=ffffff/linkcol=0687f5/track=4116145876/transparent=true/" seamless><a href="http://mulattopatriot.bandcamp.com/album/the-promise-the-new-deal">The Promise &quot;The New Deal&quot; by The Promise (Squair Blaq &amp; Mulatto Patriot)</a></iframe>",
+                :embedded_code => '<iframe style="border: 0; width: 100%; height: 42px;" src="http://bandcamp.com/EmbeddedPlayer/album=1973410984/size=small/bgcol=ffffff/linkcol=0687f5/track=4116145876/transparent=true/" seamless><a href="http://mulattopatriot.bandcamp.com/album/the-promise-the-new-deal">The Promise &quot;The New Deal&quot; by The Promise (Squair Blaq &amp; Mulatto Patriot)</a></iframe>',
                 :itunes => "",
                 :google => "",
                 :amazon => "",
@@ -448,7 +439,7 @@ Song.create ({
                 :producer => "Mulatto Patriot",
                 :album => "Single",
                 :download_link => "https://soundcloud.com/mulatto-patriot/mulatto-patriot-primeridians",
-                # :embedded_code => "<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129683095&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129683095&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
                 :itunes => "",
                 :google => "",
                 :amazon => "",
@@ -478,7 +469,7 @@ Song.create ({
                 :producer => "Peter Cottontale",
                 :album => "Acid Rap",
                 :download_link => "https://soundcloud.com/chancetherapper/cocoa-butter-kisses-ft-vic",
-                # :embedded_code => "<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90243752&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>",
+                :embedded_code => %^<iframe width="100%" height="450" scrolling='no' frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/90243752&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>^,
                 :itunes => "",
                 :google => "",
                 :amazon => "",

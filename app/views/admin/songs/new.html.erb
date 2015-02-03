@@ -23,10 +23,8 @@
     <!-- Label and input for artist -->
       <div class="form-group">
         <label for="artist" class="control-label">Artist</label>
-        <input type="text" id="artist"  placeholder="Artist" class="form-control" >
+        <%= select_tag "artist_id", options_from_collection_for_select(@artists, "id", "name") %>
       </div>
-
-
 
      <!-- <div class="form-group"> -->
         <!-- <label for="artist" class="col-lg-2 control-label">Artist</label> -->

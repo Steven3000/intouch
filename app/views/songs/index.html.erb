@@ -1,66 +1,21 @@
-<div class="wrapper-index">
-<div class="page-header">
-  <h1>Songs</h1>
-</div>
+<div class="wrapper">
+  <h3 class="txt-center">
+    Latest songs released by your favorite artists
+  </h3>
 
-<p><a href="/songs/new" class="btn btn-default" >Add a New Song</a></p>
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>Artist</th>
-      <th>Title</th>
-      <th>Artwork</th>
-      <th>Features</th>
-      <th>Producer</th>
-      <th>Album</th>
-      <th>Release date</th>
-      <th>Download link</th>
-      <th>Embedded code</th>
-      <th>Itunes</th>
-      <th>Google</th>
-      <th>Amazon</th>
-      <th>Spotify</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <ul class="feed">
     <% @songs.each do |song| %>
-      <tr>
-        <td><%= song.artist %></td>
-        <td><%= song.title %></td>
-        <td><%= song.artwork %></td>
-        <td><%= song.features %></td>
-        <td><%= song.producer %></td>
-        <td><%= song.album %></td>
-        <td><%= song.release_date %></td>
-        <td><%= song.download_link %></td>
-        <td><%= song.embedded_code %></td>
-        <td><%= song.itunes %></td>
-        <td><%= song.google %></td>
-        <td><%= song.amazon %></td>
-        <td><%= song.spotify %></td>
-        <td>
-          <a href="/songs/<%= song.id %>" class="btn btn-primary">
-            <i class="fa fa-search-plus"></i>
-          </a>
-        </td>
-        <td>
-          <a href="/songs/<%= song.id %>/edit" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-          </a>
-        </td>
-        <td>
-          <a href="/delete_song/<%= song.id %>" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i>
-          </a>
-        </td>
-      </tr>
+      <li>
+        <a href="/songs/<%= song.id %>">
+          <p class="artist">
+            <%= song.artist %>
+            <% if song.release_date.present? %>
+              <span><%= time_ago_in_words(song.release_date) %></span>
+            <% end %>
+          </p>
+          <p class="song"><%= song.title %> </p>
+        </a>
+      </li>
     <% end %>
-
-  </tbody>
-</table>
+  </ul>
 </div>

@@ -1,4 +1,5 @@
 class FeedsController < ApplicationController
+
   def index
     @feeds = Feed.all
   end
@@ -47,4 +48,5 @@ class FeedsController < ApplicationController
 
     redirect_to "/feeds", :notice => "Feed deleted."
   end
+
 end

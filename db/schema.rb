@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150127222413) do
+ActiveRecord::Schema.define(version: 20150203220221) do
 
   create_table "artists", force: :cascade do |t|
     t.string   "name"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20150127222413) do
     t.string   "features"
     t.string   "producer"
     t.string   "album"
-    t.string   "release_date"
+    t.date     "release_date"
     t.string   "download_link"
     t.text     "embedded_code"
     t.text     "itunes"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20150127222413) do
     t.text     "spotify"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "artist_id"
   end
 
 end
