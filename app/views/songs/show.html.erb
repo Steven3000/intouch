@@ -5,12 +5,32 @@
     <h4>
       by <a href="artistfeed.html"><strong><%= @song.artist.name %></strong></a>
       <% if @song.release_date.present? %>
-        (<%= time_ago_in_words(song.release_date) %>)
+        (<%= time_ago_in_words(@song.release_date) %>)
+      </br>
+      </br>
       <% end %>
-      . Producers: <%= @song.producer %>
+      <% if @song.producer.present? %>
+        Producer: <%= @song.producer %>
+      </br>
+      </br>
+      <% end %>
+      <% if @song.features.present? %>
+        Features: <%= @song.features %>
+      </br>
+      </br>
+      <% end %>
+      <% if @song.album.present? %>
+        Album: <%= @song.album %>
+      <% end %>
+
+
+
+
+
     </h4>
   </div>
 
+  </br>
 
 <%= image_tag "artists/#{@song.artist.picture_url}" %>
 
@@ -22,40 +42,44 @@
 
   <hr/>
 
-  <h4>Links to Stream and Buy "Hollywood"</h4>
+  <h4>Links to Stream and Buy "<%= @song.title %>"</h4>
 
   <ul class="song-additional-link">
-
+      <% if @song.download_link.present? %>
     <li>
-      <a href="https://itunes.apple.com/us/album/i-single/id921042833" target="_blank">
-        iTunes
-      </a>
+      <a href="<%= @song.download_link %>" target="_blank">Stream/Download</a>
     </li>
-
+    <% end %>
+        <% if @song.itunes.present? %>
     <li>
-      <a href="https://play.google.com/store/music/album/Kendrick_Lamar_i?id=B3glpvj3sqtx6ka55m4bsmjfkly&PAffiliateID=10lwu4" target="_blank">
-      GOOGLE PLAY
-      </a>
+      <a href="<%= @song.itunes %>" target="_blank">iTunes</a>
     </li>
+    <% end %>
 
+    <% if @song.google.present? %>
     <li>
-      <a href="https://play.google.com/store/music/album/Kendrick_Lamar_i?id=B3glpvj3sqtx6ka55m4bsmjfkly&PAffiliateID=10lwu4" target="_blank">
-      Amazon
-      </a>
+      <a href="<%= @song.google %>" target="_blank">Google Play</a>
     </li>
+    <% end %>
 
-      <li>
-      <a href="https://play.spotify.com/album/51C65YqHrDODM1hD5FEL5x" target="_blank">
-        Spotify
-      </a>
+    <% if @song.amazon.present? %>
+    <li>
+      <a href="<%= @song.amazon %>" target="_blank">Amazon</a>
     </li>
+    <% end %>
+
+    <% if @song.spotify.present? %>
+    <li>
+      <a href="<%= @song.spotify %>" target="_blank">Spotify</a>
+    </li>
+    <% end %>
   </ul>
 
   <hr/>
 
-  <div class="song-video">
+<!--   <div class="song-video">
     <iframe width="100%" height="500" src="http://www.youtube.com/embed/8aShfolR6w8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  </div>
+  </div> -->
 
   <hr/>
 </div>

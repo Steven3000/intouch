@@ -9,8 +9,6 @@ class PageController < ApplicationController
   end
   def show
   end
-  def show
-  end
   def signup
   end
 end

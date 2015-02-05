@@ -8,7 +8,7 @@
       <li>
         <a href="/songs/<%= song.id %>">
           <p class="artist">
-            <%= song.artist %>
+            <%= song.artist.name %>
             <% if song.release_date.present? %>
               <span><%= time_ago_in_words(song.release_date) %></span>
             <% end %>
