@@ -11,6 +11,22 @@ Rails.application.routes.draw do
     get('/songs/:id/edit', { :controller => 'songs', :action => 'edit' })
     get('/update_song/:id', { :controller => 'songs', :action => 'update' })
     get('/delete_song/:id', { :controller => 'songs', :action => 'destroy' })
+
+      # Routes for the Artist resource:
+    # CREATE
+    get('/artists/new', { :controller => 'artists', :action => 'new' })
+    get('/create_artist', { :controller => 'artists', :action => 'create' })
+
+    # READ
+    get('/artists', { :controller => 'artists', :action => 'index' })
+    get('/artists/:id', { :controller => 'artists', :action => 'show' })
+
+    # UPDATE
+    get('/artists/:id/edit', { :controller => 'artists', :action => 'edit' })
+    get('/update_artist/:id', { :controller => 'artists', :action => 'update' })
+
+    # DELETE
+    get('/delete_artist/:id', { :controller => 'artists', :action => 'destroy' })
   end
 
   # Songs Public
@@ -19,21 +35,7 @@ Rails.application.routes.draw do
 
   #------------------------------
 
-  # Routes for the Artist resource:
-  # CREATE
-  get('/artists/new', { :controller => 'artists', :action => 'new' })
-  get('/create_artist', { :controller => 'artists', :action => 'create' })
 
-  # READ
-  get('/artists', { :controller => 'artists', :action => 'index' })
-  get('/artists/:id', { :controller => 'artists', :action => 'show' })
-
-  # UPDATE
-  get('/artists/:id/edit', { :controller => 'artists', :action => 'edit' })
-  get('/update_artist/:id', { :controller => 'artists', :action => 'update' })
-
-  # DELETE
-  get('/delete_artist/:id', { :controller => 'artists', :action => 'destroy' })
   #------------------------------
 
   get("/artistfeed", :controller => 'page', :action => 'artistfeed')
