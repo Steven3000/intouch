@@ -1,5 +1,5 @@
 <div class="main-wrapper">
-  <h1>Kanye West <span>[Def Jam]</span></h1>
+  <h1><%= Song.artist.name %><span>[Def Jam]</span></h1>
 
   <aside>
     <img src="assets/kanyewest_af.jpg" alt"kanyewest" width="100%"/>
@@ -55,9 +55,6 @@
 ---------------------------------------------------------------
 
 <div class="wrapper">
-  <h3 class="txt-center">
-    Latest songs released by your favorite artists
-  </h3>
 
   <ul class="feed">
     <% @songs.each do |song| %>

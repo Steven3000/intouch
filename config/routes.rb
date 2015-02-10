@@ -32,13 +32,14 @@ Rails.application.routes.draw do
   # Songs Public
   get('/songs', { :controller => 'songs', :action => 'index' })
   get('/songs/:id', { :controller => 'songs', :action => 'show' })
+  get("/artistfeed", :controller => 'songs', :action => 'artistfeed')
 
   #------------------------------
 
 
   #------------------------------
 
-  get("/artistfeed", :controller => 'page', :action => 'artistfeed')
+
   get("/feed", :controller => 'page', :action => 'feed')
   get("/following", :controller => 'page', :action => 'following')
   get("/home", :controller => 'page', :action => 'home')

@@ -4,7 +4,7 @@
   </div>
 
   <p>
-    <a href="/artists/new" class="btn btn-default">Add a New Artist</a>
+    <a href="/admin/artists/new" class="btn btn-default">Add a New Artist</a>
   </p>
 
   <table class="table table-hover">
@@ -26,17 +26,17 @@
           <td><%= artist.website %></td>
           <td><%= artist.record_label %></td>
           <td>
-            <a href="/artists/<%= artist.id %>" class="btn btn-primary">
+            <a href="/admin/artists/<%= artist.id %>" class="btn btn-primary">
               <i class="fa fa-search-plus"></i>
             </a>
           </td>
           <td>
-            <a href="/artists/<%= artist.id %>/edit" class="btn btn-warning">
+            <a href="/admin/artists/<%= artist.id %>/edit" class="btn btn-warning">
               <i class="fa fa-edit"></i>
             </a>
           </td>
           <td>
-            <a href="/delete_artist/<%= artist.id %>" class="btn btn-danger">
+            <a href="/admin/delete_artist/<%= artist.id %>" class="btn btn-danger">
               <i class="fa fa-trash-o"></i>
             </a>
           </td>

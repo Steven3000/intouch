@@ -1,6 +1,5 @@
 class PageController < ApplicationController
-  def artistfeed
-  end
+
   def feed
   end
   def following

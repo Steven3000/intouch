@@ -19,9 +19,9 @@ class Admin::ArtistsController < ApplicationController
     @artist.record_label = params[:record_label]
 
     if @artist.save
-      redirect_to "/artists", :notice => "Artist created successfully."
+      redirect_to "/admin/artists", :notice => "Artist created successfully."
     else
-      render 'new'
+      render '/admin/new'
     end
   end
 
@@ -38,9 +38,9 @@ class Admin::ArtistsController < ApplicationController
     @artist.record_label = params[:record_label]
 
     if @artist.save
-      redirect_to "/artists", :notice => "Artist updated successfully."
+      redirect_to "/admin/artists", :notice => "Artist updated successfully."
     else
-      render 'edit'
+      render '/admin/edit'
     end
   end
 
@@ -49,6 +49,6 @@ class Admin::ArtistsController < ApplicationController
 
     @artist.destroy
 
-    redirect_to "/artists", :notice => "Artist deleted."
+    redirect_to "/admin/artists", :notice => "Artist deleted."
   end
 end

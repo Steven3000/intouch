@@ -33,7 +33,7 @@ class Admin::SongsController < ApplicationController
     if @song.save
       redirect_to "/admin/songs", :notice => "Song created successfully."
     else
-      render 'new'
+      render '/admin/new'
     end
   end
 
@@ -63,7 +63,7 @@ class Admin::SongsController < ApplicationController
     if @song.save
       redirect_to "/admin/songs", :notice => "Song updated successfully."
     else
-      render 'edit'
+      render '/admin/edit'
     end
   end
 
