@@ -2,7 +2,7 @@
 Artist.destroy_all
 a1 = Artist.create ({
                 :name => "Mulatto Patriot",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.mptracks.com",
                 :record_label => "independent",
               })
@@ -10,7 +10,7 @@ a1 = Artist.create ({
 
 a2 = Artist.create ({
                 :name => "Kendrick Lamar",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.kendricklamar.com",
                 :record_label => "tde",
               })
@@ -18,7 +18,7 @@ a2 = Artist.create ({
 
 a3 = Artist.create ({
                 :name => "Kanye West",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.kanyewest.com",
                 :record_label => "Def Jam",
               })
@@ -26,7 +26,7 @@ a3 = Artist.create ({
 
 a4 = Artist.create ({
                 :name => "Chance The Rapper",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.chanceraps.com",
                 :record_label => "independent",
               })
@@ -34,7 +34,7 @@ a4 = Artist.create ({
 
 a5 = Artist.create ({
                 :name => "Madlib",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.stonesthrow.com/madlib",
                 :record_label => "Stones Throw",
               })
@@ -42,7 +42,7 @@ a5 = Artist.create ({
 
 a6 = Artist.create ({
                 :name => "J Cole",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.jcolemusic.com",
                 :record_label => "Columbia",
               })
@@ -50,7 +50,7 @@ a6 = Artist.create ({
 
 a7 = Artist.create ({
                 :name => "The Roots",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.theroots.com",
                 :record_label => "MCA",
               })
@@ -58,7 +58,7 @@ a7 = Artist.create ({
 
 a8 = Artist.create ({
                 :name => "Drake",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.drizzydrake.org/",
                 :record_label => "Universal Motown",
               })
@@ -66,7 +66,7 @@ a8 = Artist.create ({
 
 a9 = Artist.create ({
                 :name => "Jay-z",
-                :picture => ,
+                :picture =>"",
                 :website => "http://lifeandtimes.com/",
                 :record_label => "Def Jam",
               })
@@ -74,14 +74,14 @@ a9 = Artist.create ({
 
 a10 = Artist.create ({
                 :name => "Nas",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.nasirjones.com",
                 :record_label => "Columbia",
               })
 
 a11 = Artist.create ({
                 :name => "Prince",
-                :picture => ,
+                :picture =>"",
                 :website => "http://store.artofficialage.com",
                 :record_label => "Warner Bros",
               })
@@ -89,7 +89,7 @@ a11 = Artist.create ({
 
 a12 = Artist.create ({
                 :name => "Action Bronson",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.actionbronson.com",
                 :record_label => "Vice Records",
               })
@@ -97,7 +97,7 @@ a12 = Artist.create ({
 
 a13 = Artist.create ({
                 :name => "Add-2",
-                :picture => ,
+                :picture =>"",
                 :website => "http://add2music.com/",
                 :record_label => "Jamala",
               })
@@ -105,21 +105,21 @@ a13 = Artist.create ({
 
 a14 = Artist.create ({
                 :name => "Erykah Badu",
-                :picture => ,
+                :picture =>"",
                 :website => "http://erykah-badu.com/",
                 :record_label => "Motown",
               })
 
 a15 = Artist.create ({
                 :name => "Adele",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.adele.tv",
                 :record_label => "Columbia",
               })
 
 a16 = Artist.create ({
                 :name => "Common",
-                :picture => ,
+                :picture =>"",
                 :website => "http://www.thinkcommon.com/",
                 :record_label => "Columbia",
               })
@@ -128,7 +128,7 @@ Song.destroy_all
 Song.create ({
                 :artist => a1,
                 :title => "stop on by",
-                :artwork => ,
+                :artwork => "",
                 :features => "Neak, Primeridian",
                 :producer => "Mulatto Patriot",
                 :album => "Single",
@@ -145,7 +145,7 @@ Song.create ({
 Song.create ({
                 :artist => a3,
                 :title => "Homecoming",
-                :artwork => ,
+                :artwork => "",
                 :features => "Chris Martin",
                 :producer => "Kanye West",
                 :album => "Gradution",
@@ -162,7 +162,7 @@ Song.create ({
 Song.create ({
                 :artist => a2,
                 :title => "I",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Rahki",
                 :album => "",
@@ -179,7 +179,7 @@ Song.create ({
 Song.create ({
                 :artist => a4,
                 :title => "Juice",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Nate Fox",
                 :album => "Acid Rap",
@@ -196,7 +196,7 @@ Song.create ({
 Song.create ({
                 :artist => a16,
                 :title => "the light",
-                :artwork => ,
+                :artwork => "",
                 :features => "Erykah Badu",
                 :producer => "J dilla",
                 :album => "Like water for chocolate",
@@ -213,7 +213,7 @@ Song.create ({
 Song.create ({
                 :artist => a14,
                 :title => "On and On",
-                :artwork => ,
+                :artwork => "",
                 :features => " ",
                 :producer => "Bob Power, JaBorn Jamal",
                 :album => "Baduizm",
@@ -229,7 +229,7 @@ Song.create ({
 Song.create ({
                 :artist => a5,
                 :title => "Thuggin",
-                :artwork => ,
+                :artwork => "",
                 :features => "Freddie Gibbs",
                 :producer => "Madlib",
                 :album => "Thuggin EP",
@@ -245,7 +245,7 @@ Song.create ({
 Song.create ({
                 :artist => a15,
                 :title => "Sky Fall",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Paul Epworth",
                 :album => "Single",
@@ -261,7 +261,7 @@ Song.create ({
 Song.create ({
                 :artist => a9,
                 :title => "Tom Ford",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Timbaland",
                 :album => "Magna Carta Holy Grail",
@@ -277,7 +277,7 @@ Song.create ({
 Song.create ({
                 :artist => a6,
                 :title => "Wet Dreamz",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "J Cole",
                 :album => "2014 Forest Hills Drive",
@@ -293,7 +293,7 @@ Song.create ({
 Song.create ({
                 :artist => a7,
                 :title => "Doin it Again",
-                :artwork => ,
+                :artwork => "",
                 :features => "John Legend",
                 :producer => "Questlove",
                 :album => "How I Got Over",
@@ -309,7 +309,7 @@ Song.create ({
 Song.create ({
                 :artist => a8,
                 :title => "6 God",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Boi-1da & Syk Sense",
                 :album => "6 God EP",
@@ -325,7 +325,7 @@ Song.create ({
 Song.create ({
                 :artist => a10,
                 :title => "Hip Hop is Dead",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "will.i.am",
                 :album => "Hip Hop Is Dead",
@@ -341,7 +341,7 @@ Song.create ({
 Song.create ({
                 :artist => a11,
                 :title => "Breakfast Can Wait",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Prince",
                 :album => "ART OFFICIAL AGE",
@@ -357,7 +357,7 @@ Song.create ({
 Song.create ({
                 :artist => a12,
                 :title => "Actin Crazy",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "40 & Omen",
                 :album => "Mr. Wonderful",
@@ -373,7 +373,7 @@ Song.create ({
 Song.create ({
                 :artist => a13,
                 :title => "Iron Mic",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "9th Wonder",
                 :album => "9th Wonder Presents: Jamla Is the Squad",
@@ -389,7 +389,7 @@ Song.create ({
 Song.create ({
                 :artist => a1,
                 :title => "SoundCatcher",
-                :artwork => ,
+                :artwork => "",
                 :features => "Pugs Atomz, Neak",
                 :producer => "Mulatto Patriot",
                 :album => "Single",
@@ -405,7 +405,7 @@ Song.create ({
 Song.create ({
                 :artist => a3,
                 :title => "Bound 2",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Kanye West",
                 :album => "Yeezus",
@@ -421,7 +421,7 @@ Song.create ({
 Song.create ({
                 :artist => a7,
                 :title => "Kool On",
-                :artwork => ,
+                :artwork => "",
                 :features => "Greg Porn, Truck North",
                 :producer => "Questlove",
                 :album => "Undun",
@@ -437,7 +437,7 @@ Song.create ({
 Song.create ({
                 :artist => a9,
                 :title => "99 Problems",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Rick Rubin",
                 :album => "The Black Album",
@@ -453,7 +453,7 @@ Song.create ({
 Song.create ({
                 :artist => a1,
                 :title => "Funky Junkie",
-                :artwork => ,
+                :artwork => "",
                 :features => "Psalm One",
                 :producer => "Mulatto Patriot",
                 :album => "Single",
@@ -469,7 +469,7 @@ Song.create ({
 Song.create ({
                 :artist => a16,
                 :title => "Kingdom",
-                :artwork => ,
+                :artwork => "",
                 :features => "Vince Staples",
                 :producer => "J dilla",
                 :album => "Nobody Smiling",
@@ -485,7 +485,7 @@ Song.create ({
 Song.create ({
                 :artist => a4,
                 :title => "Coco Butter Kisses",
-                :artwork => ,
+                :artwork => "",
                 :features => "Vic Mensa, Twista",
                 :producer => "Peter Cottontale",
                 :album => "Acid Rap",
@@ -501,7 +501,7 @@ Song.create ({
 Song.create ({
                 :artist => a13,
                 :title => "Club Church Club Hell",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "Khrysis",
                 :album => "Between Heaven & Hell",
@@ -517,7 +517,7 @@ Song.create ({
 Song.create ({
                 :artist => a2,
                 :title => "Swimming Pools",
-                :artwork => ,
+                :artwork => "",
                 :features => "",
                 :producer => "T-Minus",
                 :album => "Good Kid, M.A.A.D City",
