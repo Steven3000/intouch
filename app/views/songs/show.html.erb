@@ -23,16 +23,12 @@
         Album: <%= @song.album %>
       <% end %>
 
-
-
-
-
     </h4>
   </div>
 
   </br>
 
-<%= image_tag "artists/#{@song.artist.picture_url}" %>
+ <%= image_tag "artwork/#{@song.artwork_url}" %>
 
   <% if @song.embedded_code.present? %>
     <div class="song-player">

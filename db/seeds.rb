@@ -1,13 +1,4 @@
 
-
-images = [
-          "http://i40.tinypic.com/2q1ge9g.jpg",
-          "http://i39.tinypic.com/29pqaf7.jpg",
-          "http://i39.tinypic.com/fzclxd.jpg",
-          "http://i44.tinypic.com/14cw3t2.jpg",
-          "http://i53.tinypic.com/hwx4b7.jpg",
-          ]
-
 Artist.destroy_all
 a1 = Artist.create ({
                 :name => "Mulatto Patriot",

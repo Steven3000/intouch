@@ -1,67 +1,23 @@
 <div class="main-wrapper">
-  <h1><%= Song.artist.name %><span>[Def Jam]</span></h1>
+  <h1><%= @song.artist.name %><span>@song.artist.record_label</span></h1>
 
   <aside>
-    <img src="assets/kanyewest_af.jpg" alt"kanyewest" width="100%"/>
+    <%= image_tag "artists/#{@song.artist.picture_url}" %>
     <ul class="add-top-margin">
       <li>
-        <a href="http://www.kanyewest.com" target="_blank">
-          kanyewest.com
+        <a href="<% @song.artist.website %>" target="_blank">
+         <%= @song.artist.website %>
         </a>
       </li>
     </ul>
   </aside>
 
-	<ul class="feed artist-feed">
-    <li class="new_select">
-      <a href="show.html">
-        <p class="artist">Kanye West<span>1 day ago</span></p>
-        <p class="song">Yeezus</p>
-      </a>
-    </li>
-<!--     <li class="new_select">
-      <a href="show.html">
-        <p class="artist">Kanye West<span>30 days ago</span></p>
-        <p class="song">My Beautiful Dark Twisted Fantasy</p>
-      </a>
-    </li>
-     <li class="new_select">
-      <a href="show.html">
-        <p class="artist">Kanye West<span>60 days ago</span></p>
-        <p class="song">808s & Heartbreak</p>
-      </a>
-    </li>
-     <li class="new_select">
-      <a href="show.html">
-        <p class="artist">Kanye West<span>90 days ago</span></p>
-        <p class="song">Graduation</p>
-      </a>
-    </li>
-     <li class="new_select">
-      <a href="show.html">
-        <p class="artist">Kanye West<span>120 days ago</span></p>
-        <p class="song">Late Registration</p>
-      </a>
-    </li>
-    <li class="new_select">
-      <a href="show.html">
-        <p class="artist">Kanye West<span>150 days ago</span></p>
-        <p class="song">The College Dropout</p>
-      </a>
-    </li> -->
-  </ul>
-</div>
-
----------------------------------------------------------------
-
-<div class="wrapper">
-
-  <ul class="feed">
+<ul class="feed">
     <% @songs.each do |song| %>
       <li>
         <a href="/songs/<%= song.id %>">
           <p class="artist">
-            <%= song.artist %>
+            <%= song.artist.name %>
             <% if song.release_date.present? %>
               <span><%= time_ago_in_words(song.release_date) %></span>
             <% end %>
@@ -71,5 +27,9 @@
       </li>
     <% end %>
   </ul>
+
 </div>
+
+
+
 
