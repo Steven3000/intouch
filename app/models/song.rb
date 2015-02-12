@@ -2,8 +2,10 @@ class Song < ActiveRecord::Base
   belongs_to :artist
 
    def artwork_url
-    "#{title.parameterize}.jpg"
+    "artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
   end
 
 
 end
+
+# any_song.artwork_url

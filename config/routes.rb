@@ -30,13 +30,13 @@ Rails.application.routes.draw do
   end
 
   # Songs Public
-   get("/artistfeed", :controller => 'songs', :action => 'artistfeed')
+
   get('/songs', { :controller => 'songs', :action => 'index' })
   get('/songs/:id', { :controller => 'songs', :action => 'show' })
 
 
-  #------------------------------
-
+  #--public artist feed----------------------------
+  get("/artistfeed", :controller => 'artistfeed', :action => 'show')
 
   #------------------------------
 

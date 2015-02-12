@@ -1,12 +1,13 @@
 <div class="main-wrapper">
-  <h1><%= @song.artist.name %><span>@song.artist.record_label</span></h1>
+  <h1><%= @songs.count %>
+   # artist.name %>  <span>@song.artist.record_label</span></h1> -->
 
   <aside>
     <%= image_tag "artists/#{@song.artist.picture_url}" %>
     <ul class="add-top-margin">
       <li>
-        <a href="<% @song.artist.website %>" target="_blank">
-         <%= @song.artist.website %>
+        <a href="<% @artist.website %>" target="_blank">
+         <%= @songs.artist.website %>
         </a>
       </li>
     </ul>

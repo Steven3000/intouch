@@ -3,7 +3,7 @@
   <div class="song-page-title">
     <h2><%= @song.title %></h2>
     <h4>
-      by <a href="artistfeed.html"><strong><%= @song.artist.name %></strong></a>
+      by <a href="/artistfeed.html"><strong><%= @song.artist.name %></strong></a>
       <% if @song.release_date.present? %>
         (<%= time_ago_in_words(@song.release_date) %>)
       </br>
@@ -28,7 +28,7 @@
 
   </br>
 
- <%= image_tag "artwork/#{@song.artwork_url}" %>
+ <%= image_tag "#{@song.artwork_url}" %>
 
   <% if @song.embedded_code.present? %>
     <div class="song-player">
