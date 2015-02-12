@@ -1,20 +1,20 @@
 <div class="main-wrapper">
-  <h1><%= @songs.count %>
-   # artist.name %>  <span>@song.artist.record_label</span></h1> -->
+  <h1>
+   <%= @artist.name %>  <span> <%= @artist.record_label %></span></h1> -->
 
   <aside>
-    <%= image_tag "artists/#{@song.artist.picture_url}" %>
+    <%= image_tag "#{@artist.picture_url}" %>
     <ul class="add-top-margin">
       <li>
         <a href="<% @artist.website %>" target="_blank">
-         <%= @songs.artist.website %>
+         <%= @artist.website %>
         </a>
       </li>
     </ul>
   </aside>
 
 <ul class="feed">
-    <% @songs.each do |song| %>
+    <% @artist.songs.each do |song| %>
       <li>
         <a href="/songs/<%= song.id %>">
           <p class="artist">

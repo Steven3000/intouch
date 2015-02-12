@@ -36,7 +36,7 @@ Rails.application.routes.draw do
 
 
   #--public artist feed----------------------------
-  get("/artistfeed", :controller => 'artistfeed', :action => 'show')
+  get("/artists/:id", :controller => 'artists', :action => 'show')
 
   #------------------------------
 
