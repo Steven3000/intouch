@@ -1,9 +1,11 @@
 <div class="main-wrapper">
   <h1>
-   <%= @artist.name %>  <span> <%= @artist.record_label %></span></h1> -->
+   <%= @artist.name %>  <span> <%= @artist.record_label %></span></h1>
 
   <aside>
     <%= image_tag "#{@artist.picture_url}" %>
+    <br>
+     <br>
     <ul class="add-top-margin">
       <li>
         <a href="<% @artist.website %>" target="_blank">
@@ -13,22 +15,23 @@
     </ul>
   </aside>
 
-<ul class="feed">
-    <% @artist.songs.each do |song| %>
-      <li>
-        <a href="/songs/<%= song.id %>">
-          <p class="artist">
-            <%= song.artist.name %>
-            <% if song.release_date.present? %>
-              <span><%= time_ago_in_words(song.release_date) %></span>
-            <% end %>
-          </p>
-          <p class="song"><%= song.title %> </p>
-        </a>
-      </li>
-    <% end %>
-  </ul>
-
+  <div class="artists-show-feed-wrapper">
+    <ul class="feed">
+        <% @artist.songs.each do |song| %>
+          <li>
+            <a href="/songs/<%= song.id %>">
+              <p class="artist">
+                <%= song.artist.name %>
+                <% if song.release_date.present? %>
+                  <span><%= time_ago_in_words(song.release_date) %></span>
+                <% end %>
+              </p>
+              <p class="song"><%= song.title %> </p>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+  </div>
 </div>
 
 

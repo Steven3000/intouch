@@ -5,14 +5,17 @@
   </div>
 
   <dl class="dl-horizontal">
+      <dt>Artwork</dt>
+    <%= image_tag "#{@song.artwork_url}" %>
+
+    <br>
+    <br>
+
     <dt>Artist</dt>
     <dd><%= @song.artist.name %></dd>
 
     <dt>Title</dt>
     <dd><%= @song.title %></dd>
-
-    <dt>Artwork</dt>
-    <dd><%= @song.artwork %></dd>
 
     <dt>Features</dt>
     <dd><%= @song.features %></dd>

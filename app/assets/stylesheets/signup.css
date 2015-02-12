@@ -1,32 +1,25 @@
 
-
 .wrapper-cc {
   height: 600px;
   width: 80%;
   margin: 0 auto;
 }
 
-
 .box-cc {
   height: 500px;
   background-color: white;
   border-top: 10px solid white;
   box-shadow: 0 1px 1px #888888;
-
 }
-
-
 
 .cvv-cc {
     display: inline-block;
     margin-left: 40px;
 }
 
-
 .card-cc {
   display: inline-block;
 }
-
 
 .date-cc {
     display: inline-block;
@@ -35,7 +28,6 @@
 .zip-cc {
     display: inline-block;
     margin-left: 320px;
-
 }
 
 .marge {
@@ -50,4 +42,3 @@
   background-color: rgb(0, 139, 155);
   border-radius: 50px;
 }
-

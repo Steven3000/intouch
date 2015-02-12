@@ -111,5 +111,10 @@ header nav li:first-child:before {
 
 .main-wrapper {
   margin: 0 auto;
-  width: 900px;
+  width: 1000px;
+}
+
+.artists-show-feed-wrapper {
+  width: 500px;
+  float: right;
 }

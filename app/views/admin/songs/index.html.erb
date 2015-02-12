@@ -37,12 +37,54 @@
         <td><%= song.producer %></td>
         <td><%= song.album %></td>
         <td><%= song.release_date %></td>
-        <td><%= song.download_link %></td>
-        <td><%= song.embedded_code %></td>
-        <td><%= song.itunes %></td>
-        <td><%= song.google %></td>
-        <td><%= song.amazon %></td>
-        <td><%= song.spotify %></td>
+        <td>
+          <% song.download_link %>
+          <% if song.download_link.present? %>
+              WORD
+          <% else %>
+              0
+          <% end %>
+        </td>
+        <td>
+          <% song.embedded_code %>
+          <% if song.embedded_code.present? %>
+              4SHO
+          <% else %>
+              0
+          <% end %>
+        </td>
+        <td>
+          <% song.itunes %>
+          <% if song.itunes.present? %>
+              DOPE
+          <% else %>
+              0
+          <% end %>
+        </td>
+        <td>
+          <% song.google %>
+          <% if song.google.present? %>
+              WORD
+          <% else %>
+              0
+          <% end %>
+          </td>
+        <td>
+          <% song.amazon %>
+          <% if song.amazon.present? %>
+              4SHO
+          <% else %>
+              0
+          <% end %>
+        </td>
+        <td>
+          <% song.spotify %>
+          <% if song.spotify.present? %>
+              DOPE
+          <% else %>
+              0
+          <% end %>
+        </td>
         <td>
           <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
             <i class="fa fa-search-plus"></i>
