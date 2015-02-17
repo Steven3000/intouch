@@ -1,9 +1,10 @@
 class Admin::ArtistsController < ApplicationController
-  authorize_user!
 
   def index
-    @artists = Artist.all
+    #@artists = Artist.all
+    @artists = Artist.order(:created_at).page(params[:page]).per(10)
   end
+
 
   def show
     @artist = Artist.find(params[:id])

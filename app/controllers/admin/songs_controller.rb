@@ -1,7 +1,9 @@
 class Admin::SongsController < ApplicationController
 
   def index
-    @songs = Song.all
+    #@songs = Song.all
+    @songs = Song.order(:created_at).page(params[:page]).per(10)
+
   end
 
   def show
