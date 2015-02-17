@@ -27,6 +27,11 @@
 
     <nav>
       <ul>
+       <li>
+          <%= link_to_if (request.path != "/home.html"),
+                          "Home",
+                          "/home.html" %>
+        </li>
         <li>
           <%= link_to_if (request.path != "/admin_dashboard.html"),
                          "admin",
@@ -45,13 +50,18 @@
                          "My Artists/Add Artist",
                          "/following.html" %>
         </li>
-        <li>
-          <%= link_to_if (request.path != "/home.html"),
-                         "Sign Out",
-                         "/home.html" %>
-        </li>
+
+          <% if user_signed_in? %>
+            <li><%= link_to current_user.email, edit_user_registration_path %></li>
+            <li><%= link_to "Sign Out", destroy_user_session_path, :method =>"delete" %></li>
+          <% else %>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li><%= link_to "Sign In", new_user_session_path %></li>
+          <% end %>
       </ul>
     </nav>
+
+
   </header>
 
   <%= yield %>

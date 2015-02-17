@@ -1,4 +1,6 @@
 class Admin::ArtistsController < ApplicationController
+  authorize_user!
+
   def index
     @artists = Artist.all
   end

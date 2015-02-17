@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'kaminari'
+
+gem 'quiet_assets', group: :development
+
+gem 'devise'
+
 gem 'starter_generators', :git => 'https://github.com/rbetina/starter_generators', :branch => 'kiei925'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
