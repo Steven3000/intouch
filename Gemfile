@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# gem 'carrierwave'
+
 gem 'kaminari'
 
 gem 'quiet_assets', group: :development
