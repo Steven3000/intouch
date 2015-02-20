@@ -6,4 +6,3 @@ class Artist < ActiveRecord::Base
   end
 end
 
-# any_artist.artist_url

@@ -1,5 +1,13 @@
 class Admin::ArtistsController < ApplicationController
 
+  # before_action :authorize_user
+
+  # def authorize_user
+  #   unless current_user.admin
+  #   redirect_to root_url :alert => "Not Authorized for this section"
+  #   end
+  # end
+
   def index
     #@artists = Artist.all
     @artists = Artist.order(:created_at).page(params[:page]).per(10)
