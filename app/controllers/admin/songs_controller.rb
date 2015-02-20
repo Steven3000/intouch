@@ -1,17 +1,8 @@
-class Admin::SongsController < ApplicationController
-
-  #   before_action :authorize_user
-
-  # def authorize_user
-  #   unless current_user.admin
-  #   redirect_to root_url
-  #   end
-  # end
+class Admin::SongsController < Admin::BaseController
 
   def index
     #@songs = Song.all
     @songs = Song.order(:created_at).page(params[:page]).per(10)
-
   end
 
   def show

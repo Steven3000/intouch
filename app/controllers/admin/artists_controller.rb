@@ -1,12 +1,4 @@
-class Admin::ArtistsController < ApplicationController
-
-  # before_action :authorize_user
-
-  # def authorize_user
-  #   unless current_user.admin
-  #   redirect_to root_url :alert => "Not Authorized for this section"
-  #   end
-  # end
+class Admin::ArtistsController < Admin::BaseController
 
   def index
     #@artists = Artist.all
