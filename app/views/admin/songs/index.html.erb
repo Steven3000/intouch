@@ -8,8 +8,7 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th>Artist ID</th>
-      <th>Artist Name</th>
+      <th>Artist</th>
       <th>Title</th>
       <th>Artwork</th>
       <th>Features</th>
@@ -23,6 +22,8 @@
       <th>Amazon</th>
       <th>Spotify</th>
       <th>Youtube</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -30,7 +31,6 @@
     <% @songs.each do |song| %>
       <tr>
         <td><%= song.artist_id %></td>
-        <td><%= song.artist.name %></td>
         <td><%= song.title %></td>
         <td><%= song.artwork %></td>
         <td><%= song.features %></td>
@@ -81,14 +81,6 @@
           <% song.spotify %>
           <% if song.spotify.present? %>
               DOPE
-          <% else %>
-              0
-          <% end %>
-        </td>
-        <td>
-          <% song.youtube %>
-          <% if song.youtube.present? %>
-              fresh
           <% else %>
               0
           <% end %>

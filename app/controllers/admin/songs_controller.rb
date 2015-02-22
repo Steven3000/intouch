@@ -30,7 +30,6 @@ class Admin::SongsController < Admin::BaseController
     @song.google = params[:google]
     @song.amazon = params[:amazon]
     @song.spotify = params[:spotify]
-    @song.youtube = params[:youtube]
 
     if @song.save
       redirect_to "/admin/songs", :notice => "Song created successfully."
@@ -61,7 +60,6 @@ class Admin::SongsController < Admin::BaseController
     @song.google = params[:google]
     @song.amazon = params[:amazon]
     @song.spotify = params[:spotify]
-    @song.youtube = params[:youtube]
 
     if @song.save
       redirect_to "/admin/songs", :notice => "Song updated successfully."
