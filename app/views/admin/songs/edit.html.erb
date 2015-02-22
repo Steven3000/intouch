@@ -19,6 +19,11 @@
       <%= select_tag "artist_id", options_from_collection_for_select(@artists, "id", "name") %>
     </div>
 
+      <div class="form-group">
+      <label for="artist" class="control-label">Artist</label>
+      <input type="text" id="artist" name="artist" placeholder="Artist" class="form-control input-lg" value="<%= @song.artist %>">
+    </div>
+
     <!-- Label and input for title -->
     <div class="form-group">
       <label for="title" class="col-sm-2 control-label">
