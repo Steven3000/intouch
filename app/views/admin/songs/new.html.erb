@@ -17,39 +17,15 @@
   <% end %>
 
 
-
-
-
     <!-- Label and input for artist -->
       <div class="form-group">
         <label for="artist" class="control-label">Artist</label>
         <%= select_tag "artist_id", options_from_collection_for_select(@artists, "id", "name") %>
       </div>
 
-     <!-- <div class="form-group"> -->
-        <!-- <label for="artist" class="col-lg-2 control-label">Artist</label> -->
-        <!-- <div class="col-lg-10"> -->
-          <!-- <select class="form-control" name="artist" id="artist" value="<%= @song.artist %>"> -->
-            <!-- <option>Mulatto Patriot</option> -->
-            <!-- <option>Kanye West</option> -->
-            <!-- <option>Chance The Rapper</option> -->
-            <!-- <option>Kendric Lamar</option> -->
-            <!-- <option>The Roots</option> -->
-            <!-- <option>Vic Mensa</option> -->
-            <!-- <option>Kendrick Lamar</option> -->
-            <!-- <option>Saba</option> -->
-            <!-- <option>Big Kritt</option> -->
-            <!-- <option>Vic Spencer</option> -->
-            <!-- <option>Drake</option> -->
-          <!-- </select> -->
-            <!-- <br> -->
 
 
-    <!-- Label and input for title -->
-     <div class="form-group">
-      <label for="artist" class="control-label">Artist</label>
-      <input type="text" id="artist" name="artist" placeholder="Artist" class="form-control input-lg" value="<%= @song.artist %>">
-    </div>
+  <!-- Label and input for title -->
     <div class="form-group">
       <label for="title" class="control-label">Song Title</label>
       <input type="text" id="title" name="title" placeholder="Title" class="form-control input-lg" value="<%= @song.title %>">

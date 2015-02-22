@@ -17,6 +17,7 @@ class Admin::SongsController < Admin::BaseController
   def create
     @artists = Artist.all
     @song = Song.new
+    @song.artist_id = params[:artist_id]
     @song.artist = params[:artist]
     @song.title = params[:title]
     @song.artwork = params[:artwork]
