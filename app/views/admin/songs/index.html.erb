@@ -8,7 +8,8 @@
 <table class="table table-hover">
   <thead>
     <tr>
-      <th>Artist</th>
+      <th>Artist ID</th>
+      <th>Artist Name</th>
       <th>Title</th>
       <th>Artwork</th>
       <th>Features</th>
@@ -21,7 +22,6 @@
       <th>Google</th>
       <th>Amazon</th>
       <th>Spotify</th>
-      <th>Youtube</th>
       <th></th>
       <th></th>
     </tr>
@@ -31,6 +31,7 @@
     <% @songs.each do |song| %>
       <tr>
         <td><%= song.artist_id %></td>
+        <td><%= song.artist.name %></td>
         <td><%= song.title %></td>
         <td><%= song.artwork %></td>
         <td><%= song.features %></td>
