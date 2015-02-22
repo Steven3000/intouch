@@ -18,3 +18,9 @@ VEIWS ADMIN SONGS EDIT (FOR DROPDOWN)
       <label for="artist" class="control-label">Artist</label>
       <%= select_tag "artist_id", options_from_collection_for_select(@artists, "id", "name") %>
     </div>
+
+ADMIN ARTIST NEW   (ARTIST WEBSIE INPUT)
+      <div class="form-group">
+        <label for="website" class="control-label" for="inputLarge">Website</label>
+        <input type="text" id="website" name="website" placeholder="Website" class="form-control input-lg" value="<%= @artist.website %>">
+      </div>

@@ -18,7 +18,6 @@ class Admin::ArtistsController < Admin::BaseController
     @artist = Artist.new
     @artist.name = params[:name]
     @artist.picture = params[:picture]
-    @artist.website = params[:website]
     @artist.record_label = params[:record_label]
 
     if @artist.save
@@ -37,7 +36,6 @@ class Admin::ArtistsController < Admin::BaseController
 
     @artist.name = params[:name]
     @artist.picture = params[:picture]
-    @artist.website = params[:website]
     @artist.record_label = params[:record_label]
 
     if @artist.save

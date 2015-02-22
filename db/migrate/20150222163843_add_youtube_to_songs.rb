@@ -1,5 +1,5 @@
 class AddYoutubeToSongs < ActiveRecord::Migration
   def change
-    add_column :songs, :type, :text
+    add_column :songs, :youtube, :text
   end
 end
