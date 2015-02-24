@@ -2,7 +2,7 @@ class Admin::SongsController < Admin::BaseController
 
   def index
     #@songs = Song.all
-    @songs = Song.order(:created_at).page(params[:page]).per(10)
+    @songs = Song.order(created_at: :desc).page(params[:page]).per(15)
   end
 
   def show
