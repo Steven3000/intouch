@@ -529,3 +529,38 @@ Song.create ({
                 :spotify => "https://play.spotify.com/album/3DGQ1iZ9XKUQxAUWjfC34w",
                 :release_date => "{2012/7/31}"
               })
+
+Song.create ({
+                :artist => a2,
+                :title => "The Blacker The Berry",
+                :artwork => "",
+                :features => "",
+                :producer => "Boi-1da",
+                :album => "",
+                :download_link => "https://www.youtube.com/watch?v=6AhXSoKa8xw",
+                :embedded_code => "",
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2015/2/9}"
+              })
+
+Song.create ({
+                :artist => a12,
+                :title => "Terry",
+                :artwork => "",
+                :features => "",
+                :producer => "Alchemist",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191489281&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "",
+                :amazon => "",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/2/16}"
+              })
+
+
+
