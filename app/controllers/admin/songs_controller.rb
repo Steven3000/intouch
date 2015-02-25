@@ -18,7 +18,6 @@ class Admin::SongsController < Admin::BaseController
     @artists = Artist.all
     @song = Song.new
     @song.artist_id = params[:artist_id]
-    @song.artist = params[:artist]
     @song.title = params[:title]
     @song.artwork = params[:artwork]
     @song.features = params[:features]
@@ -48,7 +47,7 @@ class Admin::SongsController < Admin::BaseController
     @artists = Artist.all
 
     @song = Song.find(params[:id])
-    @song.artist_id = params[:artist_id]
+    @song.artist = Artist.find(params[:artist_id])
     @song.title = params[:title]
     @song.artwork = params[:artwork]
     @song.features = params[:features]
