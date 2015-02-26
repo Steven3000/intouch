@@ -1,34 +1,43 @@
+<% # TODO: Indentation is messed up here too. At the bottom where you link to amazon, itunes and etc you could also use rails' link_to methods %>
+
 <div class="main-wrapper">
 
   <div class="song-page-title">
     <h2><%= @song.title %></h2>
+
     <h4>
-      by <a href="/artists/<%= @song.artist.id %>"><strong><%= @song.artist.name %></strong></a>
+      by
+      <a href="/artists/<%= @song.artist.id %>">
+        <strong><%= @song.artist.name %></strong>
+      </a>
+
       <% if @song.release_date.present? %>
         (<%= time_ago_in_words(@song.release_date) %>)
-      </br>
-      </br>
+        </br>
+        </br>
       <% end %>
+
       <% if @song.producer.present? %>
         Producer: <%= @song.producer %>
-      </br>
-      </br>
+        </br>
+        </br>
       <% end %>
+
       <% if @song.features.present? %>
         Features: <%= @song.features %>
-      </br>
-      </br>
+        </br>
+        </br>
       <% end %>
+
       <% if @song.album.present? %>
         Album: <%= @song.album %>
       <% end %>
-
     </h4>
   </div>
 
   </br>
 
- <%= image_tag "#{@song.artwork_url}" %>
+  <%= image_tag "#{@song.artwork_url}" %>
 
   <% if @song.embedded_code.present? %>
     <div class="song-player">
@@ -41,39 +50,40 @@
   <h4>Links to Stream and Buy "<%= @song.title %>"</h4>
 
   <ul class="song-additional-link">
-      <% if @song.download_link.present? %>
-    <li>
-      <a href="<%= @song.download_link %>" target="_blank">Stream/Download</a>
-    </li>
+    <% if @song.download_link.present? %>
+      <li>
+        <a href="<%= @song.download_link %>" target="_blank">Stream/Download</a>
+      </li>
     <% end %>
-        <% if @song.itunes.present? %>
-    <li>
-      <a href="<%= @song.itunes %>" target="_blank">iTunes</a>
-    </li>
+
+    <% if @song.itunes.present? %>
+      <li>
+        <a href="<%= @song.itunes %>" target="_blank">iTunes</a>
+      </li>
     <% end %>
 
     <% if @song.google.present? %>
-    <li>
-      <a href="<%= @song.google %>" target="_blank">Google Play</a>
-    </li>
+      <li>
+        <a href="<%= @song.google %>" target="_blank">Google Play</a>
+      </li>
     <% end %>
 
     <% if @song.amazon.present? %>
-    <li>
-      <a href="<%= @song.amazon %>" target="_blank">Amazon</a>
-    </li>
+      <li>
+        <a href="<%= @song.amazon %>" target="_blank">Amazon</a>
+      </li>
     <% end %>
 
     <% if @song.spotify.present? %>
-    <li>
-      <a href="<%= @song.spotify %>" target="_blank">Spotify</a>
-    </li>
+      <li>
+        <a href="<%= @song.spotify %>" target="_blank">Spotify</a>
+      </li>
     <% end %>
   </ul>
 
   <hr/>
 
-<!--   <div class="song-video">
+<!-- <div class="song-video">
     <iframe width="100%" height="500" src="http://www.youtube.com/embed/8aShfolR6w8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
   </div> -->
 

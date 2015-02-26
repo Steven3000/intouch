@@ -1,3 +1,11 @@
+# TODO: You should study about resources and restful routes.
+# You could easily reduce your routes files in half.
+# Everything is using get instead of patch/post/delete which is a
+# clear message that you should improve your knowledge of the HTTP verbs
+#
+# My suggestion is for you to read this guide a couple times:
+# http://guides.rubyonrails.org/routing.html
+
 Rails.application.routes.draw do
 
   devise_for :users

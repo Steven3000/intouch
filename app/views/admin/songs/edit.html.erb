@@ -1,3 +1,5 @@
+<% # TODO: Here indentation is pretty bad again. Another guideline I try to follow is to not make the lines to wide, I try to keep it around 70 columns max to make sure it's not completely horizontal. If your code is horizontal when you read it again there's a big chance that you will miss some important things. I changed everything until line 59, so you can compare mine against you. Also there's no need for comments like 'label and input for artists' %>
+
 <div class="wrapper-index">
   <div class="page-header">
     <h1>Edit Song #<%= @song.id %></h1>
@@ -13,33 +15,45 @@
   <% end %>
 
   <form action="/admin/update_song/<%= @song.id %>" class="form-horizontal">
-    <!-- Label and input for artist -->
     <div class="form-group">
       <label for="artist" class="col-sm-2 control-label">
-           Artist
-        </label>
-        <div class="col-sm-10">
-          <input type="text" id="artist" name="artist" placeholder="Artist" class="form-control" value="<%= @song.artist.name %>">
-        </div>
+        Artist
+      </label>
+      <div class="col-sm-10">
+        <input type="text"
+          id="artist"
+          name="artist"
+          placeholder="Artist"
+          class="form-control"
+          value="<%= @song.artist.name %>">
+      </div>
     </div>
 
-    <!-- Label and input for title -->
     <div class="form-group">
       <label for="title" class="col-sm-2 control-label">
         Title
       </label>
       <div class="col-sm-10">
-        <input type="text" id="title" name="title" placeholder="Title" class="form-control" value="<%= @song.title %>">
+        <input type="text"
+          id="title"
+          name="title"
+          placeholder="Title"
+          class="form-control"
+          value="<%= @song.title %>">
       </div>
     </div>
 
-    <!-- Label and input for artwork -->
     <div class="form-group">
       <label for="artwork" class="col-sm-2 control-label">
         Artwork
       </label>
       <div class="col-sm-10">
-        <input type="text" id="artwork" name="artwork" placeholder="Artwork" class="form-control" value="<%= @song.artwork %>">
+        <input type="text"
+          id="artwork"
+          name="artwork"
+          placeholder="Artwork"
+          class="form-control"
+          value="<%= @song.artwork %>">
       </div>
     </div>
 
