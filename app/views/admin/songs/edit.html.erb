@@ -16,80 +16,113 @@
     <!-- Label and input for artist -->
     <div class="form-group">
       <label for="artist" class="col-sm-2 control-label">
-           Artist
-        </label>
-        <div class="col-sm-10">
-          <input type="text" id="artist" name="artist" placeholder="Artist" class="form-control" value="<%= @song.artist.name %>">
-        </div>
+        Artist
+      </label>
+      <div class="col-sm-10">
+        <input type="text"
+          id="artist"
+          name="artist"
+          placeholder="Artist"
+          class="form-control"
+          value="<%= @song.artist.name %>">
+      </div>
     </div>
-
     <!-- Label and input for title -->
     <div class="form-group">
       <label for="title" class="col-sm-2 control-label">
         Title
       </label>
       <div class="col-sm-10">
-        <input type="text" id="title" name="title" placeholder="Title" class="form-control" value="<%= @song.title %>">
+        <input type="text"
+          id="title"
+          name="title"
+          placeholder="Title"
+          class="form-control"
+          value="<%= @song.title %>">
       </div>
     </div>
-
     <!-- Label and input for artwork -->
     <div class="form-group">
       <label for="artwork" class="col-sm-2 control-label">
         Artwork
       </label>
       <div class="col-sm-10">
-        <input type="text" id="artwork" name="artwork" placeholder="Artwork" class="form-control" value="<%= @song.artwork %>">
+        <input type="text"
+          id="artwork"
+          name="artwork"
+          placeholder="Artwork"
+          class="form-control"
+          value="<%= @song.artwork %>">
       </div>
     </div>
-
     <!-- Label and input for features -->
     <div class="form-group">
       <label for="features" class="col-sm-2 control-label">
         Features
       </label>
       <div class="col-sm-10">
-        <input type="text" id="features" name="features" placeholder="Features" class="form-control" value="<%= @song.features %>">
+        <input type="text"
+          id="features"
+          name="features"
+          placeholder="Features"
+          class="form-control"
+          value="<%= @song.features %>">
       </div>
     </div>
-
     <!-- Label and input for producer -->
     <div class="form-group">
       <label for="producer" class="col-sm-2 control-label">
         Producer
       </label>
       <div class="col-sm-10">
-        <input type="text" id="producer" name="producer" placeholder="Producer" class="form-control" value="<%= @song.producer %>">
+        <input type="text"
+          id="producer"
+          name="producer"
+          placeholder="Producer"
+          class="form-control"
+          value="<%= @song.producer %>">
       </div>
     </div>
-
     <!-- Label and input for album -->
     <div class="form-group">
       <label for="album" class="col-sm-2 control-label">
         Album
       </label>
       <div class="col-sm-10">
-        <input type="text" id="album" name="album" placeholder="Album" class="form-control" value="<%= @song.album %>">
+        <input type="text"
+          id="album"
+          name="album"
+          placeholder="Album"
+          class="form-control"
+          value="<%= @song.album %>">
       </div>
     </div>
-
     <!-- Label and input for release_date -->
     <div class="form-group">
       <label for="release_date" class="col-sm-2 control-label">
         Release date
       </label>
       <div class="col-sm-10">
-        <input type="text" id="release_date" name="release_date" placeholder="Release date" class="form-control" value="<%= @song.release_date %>">
+        <input type="text"
+          id="release_date"
+          name="release_date"
+          placeholder="Release date"
+          class="form-control"
+          value="<%= @song.release_date %>">
       </div>
     </div>
-
     <!-- Label and input for download_link -->
     <div class="form-group">
       <label for="download_link" class="col-sm-2 control-label">
         Download link
       </label>
       <div class="col-sm-10">
-        <input type="text" id="download_link" name="download_link" placeholder="Download link" class="form-control" value="<%= @song.download_link %>">
+        <input type="text"
+          id="download_link"
+          name="download_link"
+          placeholder="Download link"
+          class="form-control"
+          value="<%= @song.download_link %>">
       </div>
     </div>
 
@@ -99,7 +132,12 @@
         Embedded code
       </label>
       <div class="col-sm-10">
-        <textarea id="embedded_code" name="embedded_code" placeholder="Embedded code" class="form-control" rows="3"><%= @song.embedded_code %></textarea>
+        <textarea
+          id="embedded_code"
+          name="embedded_code"
+          placeholder="Embedded code"
+          class="form-control" rows="3">
+          <%= @song.embedded_code %></textarea>
       </div>
     </div>
 
@@ -109,7 +147,12 @@
         Itunes
       </label>
       <div class="col-sm-10">
-        <textarea id="itunes" name="itunes" placeholder="Itunes" class="form-control" rows="3"><%= @song.itunes %></textarea>
+        <textarea id="itunes"
+          name="itunes"
+          placeholder="Itunes"
+          class="form-control"
+          rows="3">
+          <%= @song.itunes %></textarea>
       </div>
     </div>
 
@@ -119,7 +162,13 @@
         Google
       </label>
       <div class="col-sm-10">
-        <textarea id="google" name="google" placeholder="Google" class="form-control" rows="3"><%= @song.google %></textarea>
+        <textarea id="google"
+          name="google"
+          placeholder="Google"
+          class="form-control"
+          rows="3">
+          <%= @song.google %>
+        </textarea>
       </div>
     </div>
 
@@ -129,7 +178,13 @@
         Amazon
       </label>
       <div class="col-sm-10">
-        <textarea id="amazon" name="amazon" placeholder="Amazon" class="form-control" rows="3"><%= @song.amazon %></textarea>
+        <textarea id="amazon"
+          name="amazon"
+          placeholder="Amazon"
+          class="form-control"
+          rows="3">
+          <%= @song.amazon %>
+        </textarea>
       </div>
     </div>
 
@@ -139,10 +194,15 @@
         Spotify
       </label>
       <div class="col-sm-10">
-        <textarea id="spotify" name="spotify" placeholder="Spotify" class="form-control" rows="3"><%= @song.spotify %></textarea>
+        <textarea id="spotify"
+          name="spotify"
+          placeholder="Spotify"
+          class="form-control"
+          rows="3">
+          <%= @song.spotify %>
+        </textarea>
       </div>
     </div>
-
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-10">
         <input type="submit" value="Update Song" class="btn btn-default">
