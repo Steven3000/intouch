@@ -44,7 +44,9 @@ class Admin::SongsController < Admin::BaseController
   end
 
   def update
-    @song = Song.update(songs_params)
+
+    @song = Song.find(params[:id])
+    @song.update(songs_params)
 
     # @song = Song.find(params[:id])
     # @song.artist = Artist.find(params[:artist_id])
@@ -70,7 +72,8 @@ class Admin::SongsController < Admin::BaseController
   end
 
   def destroy
-    @song = Song.destroy(songs_params)
+       @song = Song.find(params[:id])
+       @song.destroy
 
     redirect_to "/admin/songs", :notice => "Song deleted."
   end

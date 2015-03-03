@@ -25,21 +25,25 @@
         <tr>
           <td><%= artist.name %></td>
           <td><%= artist.record_label %></td>
-          <td>
-            <a href="/admin/artists/<%= artist.id %>" class="btn btn-primary">
-              <i class="fa fa-search-plus"></i>
-            </a>
-          </td>
-          <td>
-            <a href="/admin/artists/<%= artist.id %>/edit" class="btn btn-warning">
-              <i class="fa fa-edit"></i>
-            </a>
-          </td>
-          <td>
-            <a href="/admin/delete_artist/<%= artist.id %>" class="btn btn-danger">
-              <i class="fa fa-trash-o"></i>
-            </a>
-          </td>
+         <td>
+         <%= link_to 'Show', admin_artist_path(artist.id) %>
+       <!--    <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
+            <i class="fa fa-search-plus"></i>
+          </a> -->
+        </td>
+        <td>
+        <%= link_to 'Edit', edit_admin_artist_path(artist.id) %>
+
+      <!--     <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
+            <i class="fa fa-edit"></i>
+          </a> -->
+        </td>
+        <td>
+          <%= link_to 'Destroy', admin_artist_path(artist.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+         <!--  <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
+            <i class="fa fa-trash-o"></i> -->
+        <!--   </a> -->
+        </td>
         </tr>
       <% end %>
     </tbody>

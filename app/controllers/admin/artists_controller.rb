@@ -35,7 +35,8 @@ class Admin::ArtistsController < Admin::BaseController
   end
 
   def update
-    @artist = Artist.update(artists_params)
+    @artist = Artist.find(params[:id])
+    @artist.update(artists_params)
 
 
     # @artist = Artist.find(params[:id])
@@ -52,9 +53,8 @@ class Admin::ArtistsController < Admin::BaseController
   end
 
   def destroy
-    @artist = Artist.find(params[:id])
-
-    @artist.destroy
+        @artist = Artist.find(params[:id])
+       @artist.destroy
 
     redirect_to "/admin/artists", :notice => "Artist deleted."
   end

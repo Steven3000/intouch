@@ -3,7 +3,7 @@
     <h1>Edit Song #<%= @song.id %></h1>
   </div>
 
-  <%= form_for(@song, url: admin_path) do |s| %>
+  <%= form_for(@song, url: admin_song_path) do |s| %>
 
     <%= s.label :artist_id, class: "control-label"  %>
     <%= s.collection_select(:artist_id, Artist.all, :id, :name) %>

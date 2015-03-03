@@ -76,11 +76,16 @@
         </li>
       <% end %>
     </ul>
-  <hr/>
+      <hr/>
 
-<!--   <div class="song-video">
-    <iframe width="100%" height="500" src="http://www.youtube.com/embed/8aShfolR6w8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-  </div> -->
+     <% if @song.youtube.present? %>
+          <div class="video-player">
+            <%= @song.youtube.html_safe %>
+        <% end %>
+      </div>
+
+
+
 
   <hr/>
 </div>
