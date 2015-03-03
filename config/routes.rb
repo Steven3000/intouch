@@ -5,18 +5,18 @@ Rails.application.routes.draw do
 
   namespace :admin do
     # Songs Admin
-    get('/songs/new', { :controller => 'songs', :action => 'new' })
-    get('/create_song', { :controller => 'songs', :action => 'create' })
     get('/songs', { :controller => 'songs', :action => 'index' })
+    get('/songs/new', { :controller => 'songs', :action => 'new' })
+    post('/songs', { :controller => 'songs', :action => 'create' })
     get('/songs/:id', { :controller => 'songs', :action => 'show' })
     get('/songs/:id/edit', { :controller => 'songs', :action => 'edit' })
-    get('/update_song/:id', { :controller => 'songs', :action => 'update' })
-    get('/delete_song/:id', { :controller => 'songs', :action => 'destroy' })
+    patch('/songs/:id', { :controller => 'songs', :action => 'update' })
+    delete('/songs/:id', { :controller => 'songs', :action => 'destroy' })
 
       # Routes for the Artist resource:
     # CREATE
     get('/artists/new', { :controller => 'artists', :action => 'new' })
-    get('/create_artist', { :controller => 'artists', :action => 'create' })
+    post('/artists', { :controller => 'artists', :action => 'create' })
 
     # READ
     get('/artists', { :controller => 'artists', :action => 'index' })
@@ -24,10 +24,10 @@ Rails.application.routes.draw do
 
     # UPDATE
     get('/artists/:id/edit', { :controller => 'artists', :action => 'edit' })
-    get('/update_artist/:id', { :controller => 'artists', :action => 'update' })
+    patch('/artists/:id', { :controller => 'artists', :action => 'update' })
 
     # DELETE
-    get('/delete_artist/:id', { :controller => 'artists', :action => 'destroy' })
+    delete('/artists/:id', { :controller => 'artists', :action => 'destroy' })
   end
 
   # Songs Public

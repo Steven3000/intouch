@@ -17,35 +17,60 @@
     <dt>Title</dt>
     <dd><%= @song.title %></dd>
 
-    <dt>Features</dt>
-    <dd><%= @song.features %></dd>
+    <% if @song.features.present? %>
+        <dt>Features</dt>
+        <dd><%= @song.features %></dd>
+    <% end %>
 
-    <dt>Producer</dt>
-    <dd><%= @song.producer %></dd>
+    <% if @song.producer.present? %>
+        <dt>Producer</dt>
+        <dd><%= @song.producer %></dd>
+    <% end %>
 
-    <dt>Album</dt>
-    <dd><%= @song.album %></dd>
+    <% if @song.album.present? %>
+        <dt>Album</dt>
+        <dd><%= @song.album %></dd>
+    <% end %>
 
-    <dt>Release date</dt>
-    <dd><%= @song.release_date %></dd>
+    <% if @song.release_date.present? %>
+        <dt>Release date</dt>
+        <dd><%= @song.release_date %></dd>
+    <% end %>
 
-    <dt>Download link</dt>
-    <dd><%= @song.download_link %></dd>
+    <% if @song.download_link.present? %>
+        <dt>Download link</dt>
+        <dd><%= @song.download_link %></dd>
+    <% end %>
 
-    <dt>Embedded code</dt>
-    <dd><%= @song.embedded_code %></dd>
+    <% if @song.embedded_code.present? %>
+        <dt>Embedded code</dt>
+        <dd><%= @song.embedded_code %></dd>
+    <% end %>
 
-    <dt>Itunes</dt>
-    <dd><%= @song.itunes %></dd>
+    <% if @song.itunes.present? %>
+        <dt>Itunes</dt>
+        <dd><%= @song.itunes %></dd>
+    <% end %>
 
-    <dt>Google</dt>
-    <dd><%= @song.google %></dd>
+    <% if @song.google.present? %>
+        <dt>Google</dt>
+        <dd><%= @song.google %></dd>
+    <% end %>
 
-    <dt>Amazon</dt>
-    <dd><%= @song.amazon %></dd>
+    <% if @song.amazon.present? %>
+        <dt>Amazon</dt>
+        <dd><%= @song.amazon %></dd>
+    <% end %>
 
-    <dt>Spotify</dt>
-    <dd><%= @song.spotify %></dd>
+    <% if @song.spotify.present? %>
+        <dt>Spotify</dt>
+        <dd><%= @song.spotify %></dd>
+    <% end %>
+
+    <% if @song.youtube.present? %>
+        <dt>Youtube</dt>
+        <dd><%= @song.youtube %></dd>
+    <% end %>
 
   </dl>
 

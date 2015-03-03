@@ -1,8 +1,8 @@
 class Admin::ArtistsController < Admin::BaseController
 
   def index
-    #@artists = Artist.all
     @artists = Artist.order(created_at: :desc).page(params[:page]).per(15)
+   # @artists = Artist.search(params[:search])
   end
 
 
@@ -15,11 +15,13 @@ class Admin::ArtistsController < Admin::BaseController
   end
 
   def create
-    @artist = Artist.new
-    @artist.name = params[:name]
-    @artist.picture = params[:picture]
-    @artist.website = params[:website]
-    @artist.record_label = params[:record_label]
+    @artist = Artist.new(artists_params)
+
+    # @artist = Artist.new
+    # @artist.name = params[:name]
+    # @artist.picture = params[:picture]
+    # @artist.website = params[:website]
+    # @artist.record_label = params[:record_label]
 
     if @artist.save
       redirect_to "/admin/artists", :notice => "Artist created successfully."
@@ -33,12 +35,14 @@ class Admin::ArtistsController < Admin::BaseController
   end
 
   def update
-    @artist = Artist.find(params[:id])
+    @artist = Artist.update(artists_params)
 
-    @artist.name = params[:name]
-    @artist.picture = params[:picture]
-    @artist.website = params[:website]
-    @artist.record_label = params[:record_label]
+
+    # @artist = Artist.find(params[:id])
+    # @artist.name = params[:name]
+    # @artist.picture = params[:picture]
+    # @artist.website = params[:website]
+    # @artist.record_label = params[:record_label]
 
     if @artist.save
       redirect_to "/admin/artists", :notice => "Artist updated successfully."
@@ -54,4 +58,15 @@ class Admin::ArtistsController < Admin::BaseController
 
     redirect_to "/admin/artists", :notice => "Artist deleted."
   end
+
+    private
+
+    def set_artist
+      @artist = Artist.find(params[:id])
+    end
+
+    def artists_params
+      params.require(:artist).permit(:name, :website, :record_label)
+    end
+
 end

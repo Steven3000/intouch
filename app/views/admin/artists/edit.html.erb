@@ -3,47 +3,14 @@
     <h1>Edit Artist #<%= @artist.id %></h1>
   </div>
 
-  <% if @artist.errors.any? %>
-    <% @artist.errors.full_messages.each do |message| %>
-      <div class="alert alert-dismissable alert-danger">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <%= message %>
-      </div>
-    <% end %>
-  <% end %>
+  <%= form_for(@artist, url: admin_artists_new_path) do |a| %>
 
-  <form action="/update_artist/<%= @artist.id %>" class="form-horizontal">
-    <!-- Input for name -->
-    <div class="form-group">
-      <label for="name" class="col-sm-2 control-label">
-        Name
-      </label>
-      <div class="col-sm-10">
-        <input type="text" id="name" name="name" placeholder="Name" class="form-control" value="<%= @artist.name %>">
-      </div>
-    </div>
-    <!-- Input for picture -->
-    <div class="form-group">
-      <label for="picture" class="col-sm-2 control-label">
-        Picture
-      </label>
-      <div class="col-sm-10">
-        <input type="text" id="picture" name="picture" placeholder="Picture" class="form-control" value="<%= @artist.picture %>">
-      </div>
-    </div>
-    <!-- Input for record_label -->
-    <div class="form-group">
-      <label for="record_label" class="col-sm-2 control-label">
-        Record label
-      </label>
-      <div class="col-sm-10">
-        <input type="text" id="record_label" name="record_label" placeholder="Record label" class="form-control" value="<%= @artist.record_label %>">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-10">
-        <input type="submit" value="Update Artist" class="btn btn-default">
-      </div>
-    </div>
-  </form>
+    <%= a.label :name, class: "control-label"  %>
+    <%= a.text_field :name, placeholder: "Name", class: "form-control input-lg"  %>
+
+    <%= a.label :record_label, class: "control-label"  %>
+    <%= a.text_field :record_label, placeholder: "record_label", class: "form-control input-lg"  %>
+
+    <%= a.submit class: "btn btn-default"  %>
+ <% end %>
 </div>

@@ -11,17 +11,19 @@
     <thead>
       <tr>
         <th>Name</th>
-        <th>Picture</th>
         <th>Record label</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Trash</th>
 
       </tr>
     </thead>
 
     <tbody>
+
       <% @artists.each do |artist| %>
         <tr>
           <td><%= artist.name %></td>
-          <td><%= artist.picture %></td>
           <td><%= artist.record_label %></td>
           <td>
             <a href="/admin/artists/<%= artist.id %>" class="btn btn-primary">

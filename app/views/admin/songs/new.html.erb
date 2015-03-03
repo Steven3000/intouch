@@ -1,104 +1,51 @@
 <div class="wrapper-index">
-  <section class="aa-wrap">
+
     <h1>Add Song</h1>
 
 
-  <form action="/admin/create_song" class="form-horizontal">
-    <fieldset>
-     <!--  <legend>ADD SONG</legend> -->
+    <%= form_for(@song, url: admin_songs_path) do |s| %>
 
-  <% if @song.errors.any? %>
-    <% @song.errors.full_messages.each do |message| %>
-      <div class="alert alert-dismissable alert-danger">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <%= message %>
-      </div>
+      <%= s.label :artist_id, class: "control-label"  %>
+      <%= s.collection_select(:artist_id, Artist.all, :id, :name) %>
+
+      <br>
+
+      <%= s.label :title, "Song Title", class: "control-label"  %>
+      <%= s.text_field :title, placeholder: "Title", class: "form-control input-lg"  %>
+
+      <%= s.label :features, class: "control-label"  %>
+      <%= s.text_field :features, placeholder: "Features", class: "form-control input-lg"  %>
+
+      <%= s.label :producer, class: "control-label"  %>
+      <%= s.text_field :producer, placeholder: "Producer", class: "form-control input-lg"  %>
+
+      <%= s.label :album, class: "control-label"  %>
+      <%= s.text_field :album, placeholder: "Album", class: "form-control input-lg"  %>
+
+      <%= s.label :release_date, class: "control-label"  %>
+      <%= s.text_field :release_date, placeholder: "Release Date", class: "form-control input-lg"  %>
+
+      <%= s.label :download_link, class: "control-label"  %>
+      <%= s.text_field :download_link, placeholder: "Download_link", class: "form-control input-lg"  %>
+
+      <%= s.label :embedded_code, class: "control-label"  %>
+      <%= s.text_field :embedded_code, placeholder: "Embedded_code", class: "form-control input-lg"  %>
+
+      <%= s.label :itunes, class: "control-label"  %>
+      <%= s.text_field :itunes, placeholder: "itunes", class: "form-control input-lg"  %>
+
+      <%= s.label :google, class: "control-label"  %>
+      <%= s.text_field :google, placeholder: "google", class: "form-control input-lg"  %>
+
+      <%= s.label :amazon, class: "control-label"  %>
+      <%= s.text_field :amazon, placeholder: "amazon", class: "form-control input-lg"  %>
+
+      <%= s.label :spotify, class: "control-label"  %>
+      <%= s.text_field :spotify, placeholder: "spotify", class: "form-control input-lg"  %>
+      <%= s.label :youtube, class: "control-label"  %>
+      <%= s.text_field :youtube, placeholder: "Youtube", class: "form-control input-lg"  %>
+
+      <%= s.submit class: "btn btn-default"  %>
     <% end %>
-  <% end %>
 
-
-    <!-- Label and input for artist -->
-      <div class="form-group">
-        <label for="artist" class="control-label">Artist</label>
-        <%= select_tag "artist_id", options_from_collection_for_select(@artists, "id", "name") %>
-      </div>
-
-  <!-- Label and input for title -->
-    <div class="form-group">
-      <label for="title" class="control-label">Song Title</label>
-      <input type="text" id="title" name="title" placeholder="Title" class="form-control input-lg" value="<%= @song.title %>">
-    </div>
-
-    <!-- Label and input for artwork -->
-    <div class="form-group">
-      <label for="artwork" class="control-label">Artwork</label>
-      <input type="text" id="artwork" name="artwork" placeholder="Artwork" class="form-control input-lg" value="<%= @song.artwork %>">
-    </div>
-
-    <!-- Label and input for features -->
-    <div class="form-group">
-      <label for="features" class="control-label">Features</label>
-      <input type="text" id="features" name="features" placeholder="Features" class="form-control input-lg" value="<%= @song.features %>">
-    </div>
-
-    <!-- Label and input for producer -->
-    <div class="form-group">
-      <label for="producer" class="control-label">Producer</label>
-      <input type="text" id="producer" name="producer" placeholder="Producer" class="form-control input-lg" value="<%= @song.producer %>">
-    </div>
-
-    <!-- Label and input for album -->
-    <div class="form-group">
-      <label for="album" class="control-label">Album</label>
-      <input type="text" id="album" name="album" placeholder="Album" class="form-control input-lg" value="<%= @song.album %>">
-    </div>
-
-    <!-- Label and input for release_date -->
-    <div class="form-group">
-      <label for="release_date" class="control-label">Release date</label>
-      <input type="text" id="release_date" name="release_date" placeholder="Release date" class="form-control input-lg" value="<%= @song.release_date %>">
-    </div>
-
-    <!-- Label and input for download_link -->
-    <div class="form-group">
-      <label for="download_link" class="control-label">Download link</label>
-      <input type="text" id="download_link" name="download_link" placeholder="Download link" class="form-control input-lg" value="<%= @song.download_link %>">
-    </div>
-
-    <!-- Label and input for embedded_code -->
-    <div class="form-group">
-      <label for="embedded_code" class="control-label">Embedded code</label>
-      <textarea id="embedded_code" name="embedded_code" placeholder="Embedded code" class="form-control input-lg" rows="3"><%= @song.embedded_code %></textarea>
-    </div>
-
-    <!-- Label and input for itunes -->
-    <div class="form-group">
-      <label for="itunes" class="control-label">Itunes</label>
-      <textarea id="itunes" name="itunes" placeholder="Itunes" class="form-control input-lg" rows="3"><%= @song.itunes %></textarea>
-    </div>
-
-    <!-- Label and input for google -->
-    <div class="form-group">
-      <label for="google" class="control-label">Google</label>
-      <textarea id="google" name="google" placeholder="Google" class="form-control input-lg" rows="3"><%= @song.google %></textarea>
-    </div>
-
-    <!-- Label and input for amazon -->
-    <div class="form-group">
-      <label for="amazon" class="control-label">Amazon</label>
-      <textarea id="amazon" name="amazon" placeholder="Amazon" class="form-control input-lg" rows="3"><%= @song.amazon %></textarea>
-    </div>
-
-    <!-- Label and input for spotify -->
-    <div class="form-group">
-      <label for="spotify" class="control-label">Spotify</label>
-      <textarea id="spotify" name="spotify" placeholder="Spotify" class="form-control input-lg" rows="3"><%= @song.spotify %></textarea>
-    </div>
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="submit" value="Create Song" class="btn btn-default">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-  </form>
 </div>
