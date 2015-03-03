@@ -54,8 +54,8 @@ class Admin::ArtistsController < Admin::BaseController
   end
 
   def destroy
+    # You have to tell the delete action which particular Artist object you want to delete
     @artist = Artist.find(params[:id])
-
     @artist.destroy
 
     redirect_to "/admin/artists", :notice => "Artist deleted."
