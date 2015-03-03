@@ -5,7 +5,8 @@ Rails.application.routes.draw do
 
   namespace :admin do
     # Routes for the Admin Song resource
-    resource :songs
+    resources :songs
+
     # get('/songs', { :controller => 'songs', :action => 'index' })
     # get('/songs/new', { :controller => 'songs', :action => 'new' })
     # post('/songs', { :controller => 'songs', :action => 'create' })
@@ -15,7 +16,8 @@ Rails.application.routes.draw do
     # delete('/songs/:id', { :controller => 'songs', :action => 'destroy' })
 
     # Routes for the Admin Artist resource
-    resource :artists
+    resources :artists
+
     # get('/artists', { :controller => 'artists', :action => 'index' })
     # get('/artists/new', { :controller => 'artists', :action => 'new' })
     # post('/artists', { :controller => 'artists', :action => 'create' })
