@@ -11,11 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150225194720) do
+ActiveRecord::Schema.define(version: 20150303042620) do
 
   create_table "artists", force: :cascade do |t|
     t.string   "name"
-    t.string   "picture"
     t.string   "website"
     t.string   "record_label"
     t.datetime "created_at"
@@ -24,7 +23,6 @@ ActiveRecord::Schema.define(version: 20150225194720) do
 
   create_table "songs", force: :cascade do |t|
     t.string   "title"
-    t.string   "artwork"
     t.string   "features"
     t.string   "producer"
     t.string   "album"
@@ -38,6 +36,7 @@ ActiveRecord::Schema.define(version: 20150225194720) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "artist_id"
+    t.text     "youtube"
   end
 
   create_table "users", force: :cascade do |t|
