@@ -37,7 +37,7 @@
       <tr>
          <td>
           <!-- Commenting out your <a> tags and replacing them with link_to rails helpers. -->
-          <%= link_to 'Show', "songs/#{song.id}"%>
+          <%= link_to 'Show', admin_song_path(song.id)%>
 
           <!-- <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
             <i class="fa fa-search-plus"></i>
@@ -45,7 +45,7 @@
         </td>
         <td>
           <!-- Commenting out your <a> tags and replacing them with link_to rails helpers. -->
-          <%= link_to 'Edit', "songs/#{song.id}/edit"%>
+          <%= link_to 'Edit', edit_admin_song_path(song.id)%>
 
           <!-- <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
             <i class="fa fa-edit"></i>
@@ -59,7 +59,7 @@
           <!-- the second parameter we pass is the route we want the link to go to -->
           <!-- the thirs parameter we pass is the HTTP method type, in this case it's delete -->
           <!-- just like a form_for -->
-          <%= link_to 'Destroy', "/admin/songs/#{song.id}", method: :delete, data: { confirm: 'Are you sure?' } %>
+          <%= link_to 'Destroy', admin_song_path(song.id), method: :delete, data: { confirm: 'Are you sure?' } %>
 
           <!-- <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
             <i class="fa fa-trash-o"></i>
