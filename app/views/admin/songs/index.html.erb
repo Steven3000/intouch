@@ -127,7 +127,8 @@
               0
           <% end %>
         </td>
-        <td>
+       <!-- Remove these duplicate buttons, why do you have them in two places? -->
+       <!--  <td>
           <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
             <i class="fa fa-search-plus"></i>
           </a>
@@ -141,7 +142,7 @@
           <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
             <i class="fa fa-trash-o"></i>
           </a>
-        </td>
+        </td> -->
       </tr>
     <% end %>
   </tbody>
