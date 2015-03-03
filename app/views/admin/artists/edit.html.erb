@@ -3,7 +3,7 @@
     <h1>Edit Artist #<%= @artist.id %></h1>
   </div>
 
-  <%= form_for(@artist, url: admin_artists_path) do |a| %>
+  <%= form_for(@artist, url: admin_artist_path) do |a| %>
 
     <%= a.label :name, class: "control-label"  %>
     <%= a.text_field :name, placeholder: "Name", class: "form-control input-lg"  %>
