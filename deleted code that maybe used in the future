@@ -81,5 +81,73 @@ VEWIS ADMIN SONG NEW
 
 --------------------------------------------------------------------------
 
+SEEDS FILE
+
+a14 = Artist.create ({
+                :name => "Erykah Badu",
+                :website => "http://erykah-badu.com/",
+                :record_label => "Motown",
+              })
+
+Song.create ({
+                :artist => a14,
+                :title => "On and On",
+                :features => " ",
+                :producer => "Bob Power, JaBorn Jamal",
+                :album => "Baduizm",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/baduizm/id5242612",
+                :google => "https://play.google.com/store/music/album?id=Bu42a7fvootwrndhgoqcswlukii&tid=song-To2px2hqledlur5g5vtu5xcdpni&hl=en",
+                :amazon => "http://www.amazon.com/dp/B001NTI9JG/ref=dm_ws_tlw_trk2",
+                :spotify => "https://play.spotify.com/album/3qr4pTBWEU1SVf01j6RAx3",
+                :release_date => "{1996/12/1}",
+                :youtube => ''
+              })
+
+a5 = Artist.create ({
+                :name => "Madlib",
+                :website => "http://www.stonesthrow.com/madlib",
+                :record_label => "Stones Throw",
+              })
+
+Song.create ({
+                :artist => a5,
+                :title => "Thuggin",
+                :features => "Freddie Gibbs",
+                :producer => "Madlib",
+                :album => "Thuggin EP",
+                :download_link => "http://www.stonesthrow.com/store/ep/freddiegibbsmadlib/thuggin-ep",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/thuggin-ep/id488926783",
+                :google => "https://play.google.com/store/music/album/Freddie_Gibbs_Madlib_Thuggin_EP?id=Bbiwfp5fmdho2ra7bbphwrxw24q&hl=en",
+                :amazon => "http://www.amazon.com/dp/B006ONXKUY/ref=dm_ws_tlw_trk1",
+                :spotify => "https://play.spotify.com/album/4xtxrhVKVsRmFvK12UGT5T",
+                :release_date => "{2011/11/21}",
+                :youtube => ''
+              })
+
+a15 = Artist.create ({
+                :name => "Adele",
+                :website => "http://www.adele.tv",
+                :record_label => "Columbia",
+              })
+
+Song.create ({
+                :artist => a15,
+                :title => "Sky Fall",
+                :features => "",
+                :producer => "Paul Epworth",
+                :album => "Single",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/skyfall-single/id566322358",
+                :google => "https://play.google.com/store/music/album/Adele_Skyfall?id=B6uznq2qt7fnmkjrnhfvncou54e&hl=en",
+                :amazon => "http://www.amazon.com/Skyfall-Adele/dp/B009KUANWG/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
+                :spotify => "https://play.spotify.com/album/6TwN6Lq9glwnG8kNp6chHY",
+                :release_date => "{2012/10/5}",
+                :youtube => ''
+              })
+
 
 

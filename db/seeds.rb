@@ -27,14 +27,6 @@ a4 = Artist.create ({
                 :record_label => "independent",
               })
 
-
-a5 = Artist.create ({
-                :name => "Madlib",
-                :website => "http://www.stonesthrow.com/madlib",
-                :record_label => "Stones Throw",
-              })
-
-
 a6 = Artist.create ({
                 :name => "J Cole",
                 :website => "http://www.jcolemusic.com",
@@ -89,19 +81,6 @@ a13 = Artist.create ({
                 :record_label => "Jamala",
               })
 
-
-a14 = Artist.create ({
-                :name => "Erykah Badu",
-                :website => "http://erykah-badu.com/",
-                :record_label => "Motown",
-              })
-
-a15 = Artist.create ({
-                :name => "Adele",
-                :website => "http://www.adele.tv",
-                :record_label => "Columbia",
-              })
-
 a16 = Artist.create ({
                 :name => "Common",
                 :website => "http://www.thinkcommon.com/",
@@ -139,7 +118,7 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Homecoming-Edited-Version-Kanye-West/dp/B001GEJFI2",
                 :spotify => "https://play.spotify.com/album/3SZr5Pco2oqKFORCP3WNj9",
                 :release_date => "{2008/2/18}",
-                :youtube => ''
+                :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/LQ488QrqGE4?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 
@@ -156,7 +135,7 @@ Song.create ({
                 :amazon => "http://www.amazon.com/gp/product/B00NT9TTN8/ref=dm_ws_ap_tlw_trk2",
                 :spotify => "https://play.spotify.com/album/51C65YqHrDODM1hD5FEL5x",
                 :release_date => "{2014/9/23}",
-                :youtube => ''
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/8aShfolR6w8?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 
@@ -172,8 +151,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2014/12/20}",
-                :youtube => ''
+                :release_date => "{2013/12/20}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/h8nIHZ-0kS4?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 
@@ -190,55 +169,6 @@ Song.create ({
                 :amazon => "http://www.amazon.com/The-Light/dp/B000WLH9RO",
                 :spotify => "https://play.spotify.com/album/0ZSwTSaR9VUe3uYsXNQgub",
                 :release_date => "{2013/4/30}",
-                :youtube => ''
-              })
-
-
-Song.create ({
-                :artist => a14,
-                :title => "On and On",
-                :features => " ",
-                :producer => "Bob Power, JaBorn Jamal",
-                :album => "Baduizm",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/baduizm/id5242612",
-                :google => "https://play.google.com/store/music/album?id=Bu42a7fvootwrndhgoqcswlukii&tid=song-To2px2hqledlur5g5vtu5xcdpni&hl=en",
-                :amazon => "http://www.amazon.com/dp/B001NTI9JG/ref=dm_ws_tlw_trk2",
-                :spotify => "https://play.spotify.com/album/3qr4pTBWEU1SVf01j6RAx3",
-                :release_date => "{1996/12/1}",
-                :youtube => ''
-              })
-
-Song.create ({
-                :artist => a5,
-                :title => "Thuggin",
-                :features => "Freddie Gibbs",
-                :producer => "Madlib",
-                :album => "Thuggin EP",
-                :download_link => "http://www.stonesthrow.com/store/ep/freddiegibbsmadlib/thuggin-ep",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/thuggin-ep/id488926783",
-                :google => "https://play.google.com/store/music/album/Freddie_Gibbs_Madlib_Thuggin_EP?id=Bbiwfp5fmdho2ra7bbphwrxw24q&hl=en",
-                :amazon => "http://www.amazon.com/dp/B006ONXKUY/ref=dm_ws_tlw_trk1",
-                :spotify => "https://play.spotify.com/album/4xtxrhVKVsRmFvK12UGT5T",
-                :release_date => "{2011/11/21}",
-                :youtube => ''
-              })
-
-Song.create ({
-                :artist => a15,
-                :title => "Sky Fall",
-                :features => "",
-                :producer => "Paul Epworth",
-                :album => "Single",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/skyfall-single/id566322358",
-                :google => "https://play.google.com/store/music/album/Adele_Skyfall?id=B6uznq2qt7fnmkjrnhfvncou54e&hl=en",
-                :amazon => "http://www.amazon.com/Skyfall-Adele/dp/B009KUANWG/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
-                :spotify => "https://play.spotify.com/album/6TwN6Lq9glwnG8kNp6chHY",
-                :release_date => "{2012/10/5}",
                 :youtube => ''
               })
 
@@ -319,7 +249,7 @@ Song.create ({
                 :amazon => "http://www.amazon.com/dp/B001NZ10UU/ref=dm_ws_tlw_trk5",
                 :spotify => "https://play.spotify.com/album/2ogVzdMcoa1P38YIUCCyIW",
                 :release_date => "{2006/12/15}",
-                :youtube => ''
+                :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/kAKxjTRV6ms?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -367,7 +297,7 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Iron-Mic-Explicit/dp/B00I5605IS",
                 :spotify => "https://play.spotify.com/album/7xlgY7Ffb6XHfRhzRoevCr",
                 :release_date => "{2014/1/28}",
-                :youtube => ''
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/-lVmDB7Ny1Q?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -383,7 +313,7 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2012/2/13}",
-                :youtube => ''
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/li_IsOlb8VY?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -399,7 +329,7 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Bound-2-Explicit/dp/B00DF0PS9K",
                 :spotify => "https://play.spotify.com/album/0XTAmejG8F97wF5MWoVbaY",
                 :release_date => "{2013/8/28}",
-                :youtube => ''
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/BBAtAM7vtgc?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -479,7 +409,7 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2013/4/30}",
-                :youtube => ''
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/TErySTMbFlk?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -495,7 +425,7 @@ Song.create ({
                 :amazon => "http://www.amazon.com/dp/B00JHBFJT0/ref=dm_ws_tlw_trk3",
                 :spotify => "https://play.spotify.com/album/10UQAPZ57CumKSdRA2Bvka",
                 :release_date => "{2013/11/18}",
-                :youtube => ''
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/InqbhIT7B-k?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -562,4 +492,67 @@ Song.create ({
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/9rQ_VVlR7Do?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
+Song.create ({
+                :artist => a3,
+                :title => "All Day",
+                :features => "Allan Kingdom & Theophilus London",
+                :producer => "",
+                :album => "",
+                :download_link => "http://www43.zippyshare.com/v/bF50K5g1/file.html",
+                :embedded_code => '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.adobe.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" name="bF50K5g1_144012540" width="100%" height="80" id="bF50K5g1_144012540"><param name="movie" value="http://www43.zippyshare.com/swf/player_local.swf?file=bF50K5g1&server=43&baseurl=http://www.zippyshare.com/api/&flashid=null&autostart=false&availablequality=both&bordercolor=#CCCCCC&forecolor=#000000&backcolor=#F2F2F2&darkcolor=#000000&lightcolor=#FF6600" /><param name="quality" value="high" /><param name="scriptAccess" value="always" /><embed src="http://www43.zippyshare.com/swf/player_local.swf?file=bF50K5g1&server=43&baseurl=http://www.zippyshare.com/api/&flashid=null&autostart=false&availablequality=both&bordercolor=#CCCCCC&forecolor=#000000&backcolor=#F2F2F2&darkcolor=#000000&lightcolor=#FF6600" width="100%" height="80" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer" type="application/x-shockwave-flash" scriptaccess="always" name="bF50K5g1_144012540"></embed></object>',
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2015/3/2}",
+                :youtube => ''
+              })
+
+Song.create ({
+                :artist => a3,
+                :title => "Only One",
+                :features => "Paul McCartney",
+                :producer => "",
+                :album => "",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/only-one-feat.-paul-mccartney/id955053780",
+                :google => "",
+                :amazon => "http://www.amazon.com/Only-One-feat-Paul-McCartney/dp/B00RW7UZO0",
+                :spotify => "",
+                :release_date => "{2014/12/31}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/WibQR0tQ0P8?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a4,
+                :title => "Lady Friend",
+                :features => "The Social Experiment",
+                :producer => "Chance The Rapper, Peter Cottontale, Nate Fox, Donnie Trumpet",
+                :album => "",
+                :download_link => "https://soundcloud.com/chancetherapper/chance-the-rapper-the-social-experiment-lady-friend",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191163281&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2015/2/14}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/h8nIHZ-0kS4?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a4,
+                :title => "No Better Blues",
+                :features => "The Social Experiment",
+                :producer => "Chance The Rapper, Nate Fox, Donnie Trumpet & Peter Cottontale",
+                :album => "",
+                :download_link => "https://soundcloud.com/chancetherapper/chance-the-rapper-the-social-experiment-know-betta-blues",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/172307425&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2014/10/16}",
+                :youtube => ''
+              })
 
