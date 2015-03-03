@@ -35,7 +35,9 @@ class Admin::ArtistsController < Admin::BaseController
   end
 
   def update
-    @artist = Artist.update(artists_params)
+    # You have to tell the update action which particular Artist object you want to update
+    @artist = Artist.find(params[:id])
+    @artist.update(artists_params)
 
 
     # @artist = Artist.find(params[:id])
