@@ -121,7 +121,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2014/12/20}"
+                :release_date => "{2014/12/20}",
+                :youtube => ''
               })
 
 
@@ -137,7 +138,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Kanye_West_Homecoming?id=Bghfkk3rx6itki67pdepenqlqc4&hl=en",
                 :amazon => "http://www.amazon.com/Homecoming-Edited-Version-Kanye-West/dp/B001GEJFI2",
                 :spotify => "https://play.spotify.com/album/3SZr5Pco2oqKFORCP3WNj9",
-                :release_date => "{2008/2/18}"
+                :release_date => "{2008/2/18}",
+                :youtube => ''
               })
 
 
@@ -153,7 +155,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/artist/Kendrick_Lamar?id=Ag6icjgrnuaumrdrubtg5nr2xki&hl=en",
                 :amazon => "http://www.amazon.com/gp/product/B00NT9TTN8/ref=dm_ws_ap_tlw_trk2",
                 :spotify => "https://play.spotify.com/album/51C65YqHrDODM1hD5FEL5x",
-                :release_date => "{2014/9/23}"
+                :release_date => "{2014/9/23}",
+                :youtube => ''
               })
 
 
@@ -169,7 +172,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2014/12/20}"
+                :release_date => "{2014/12/20}",
+                :youtube => ''
               })
 
 
@@ -185,7 +189,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album?id=Bwi7wwz2zincubrfpwnge3kvy6q&tid=song-T2yy3ijyz6fiy6aaqnjkks5ynai",
                 :amazon => "http://www.amazon.com/The-Light/dp/B000WLH9RO",
                 :spotify => "https://play.spotify.com/album/0ZSwTSaR9VUe3uYsXNQgub",
-                :release_date => "{2013/4/30}"
+                :release_date => "{2013/4/30}",
+                :youtube => ''
               })
 
 
@@ -201,7 +206,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album?id=Bu42a7fvootwrndhgoqcswlukii&tid=song-To2px2hqledlur5g5vtu5xcdpni&hl=en",
                 :amazon => "http://www.amazon.com/dp/B001NTI9JG/ref=dm_ws_tlw_trk2",
                 :spotify => "https://play.spotify.com/album/3qr4pTBWEU1SVf01j6RAx3",
-                :release_date => "{1996/12/1}"
+                :release_date => "{1996/12/1}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -216,7 +222,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Freddie_Gibbs_Madlib_Thuggin_EP?id=Bbiwfp5fmdho2ra7bbphwrxw24q&hl=en",
                 :amazon => "http://www.amazon.com/dp/B006ONXKUY/ref=dm_ws_tlw_trk1",
                 :spotify => "https://play.spotify.com/album/4xtxrhVKVsRmFvK12UGT5T",
-                :release_date => "{2011/11/21}"
+                :release_date => "{2011/11/21}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -231,7 +238,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Adele_Skyfall?id=B6uznq2qt7fnmkjrnhfvncou54e&hl=en",
                 :amazon => "http://www.amazon.com/Skyfall-Adele/dp/B009KUANWG/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
                 :spotify => "https://play.spotify.com/album/6TwN6Lq9glwnG8kNp6chHY",
-                :release_date => "{2012/10/5}"
+                :release_date => "{2012/10/5}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -246,7 +254,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/JAY_Z_Magna_Carta_Holy_Grail?id=Bjztr4ew7syyawhstnba6txiej4&hl=en",
                 :amazon => "http://www.amazon.com/Tom-Ford-Explicit/dp/B00DU1WV6W",
                 :spotify => "https://play.spotify.com/album/0OTjYdGtP7AbwOwbYsGhyi",
-                :release_date => "{2013/9/26}"
+                :release_date => "{2013/9/26}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -261,7 +270,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/J_Cole_2014_Forest_Hills_Drive?id=Brnkpxufjkjwf6dqao6wxppl3mi&hl=en",
                 :amazon => "http://www.amazon.com/Wet-Dreamz-Explicit/dp/B00PJHY898",
                 :spotify => "https://play.spotify.com/track/6Ius4TC0L3cN74HT7ENE6e",
-                :release_date => "{2014/12/9}"
+                :release_date => "{2014/12/9}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -276,7 +286,8 @@ Song.create ({
                 :google => "",
                 :amazon => "http://www.amazon.com/Doin-Again-Album-Version-Explicit/dp/B003RNVP42",
                 :spotify => "https://play.spotify.com/album/2VOq1Tnj9Hf968Fdx8xpox",
-                :release_date => "{2014/12/9}"
+                :release_date => "{2014/12/9}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -291,7 +302,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2010/6/22}"
+                :release_date => "{2010/6/22}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -306,7 +318,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Nas_Hip_Hop_Is_Dead?id=Bmhils5m2gjgtmfmo6ov2tfqxky&hl=en",
                 :amazon => "http://www.amazon.com/dp/B001NZ10UU/ref=dm_ws_tlw_trk5",
                 :spotify => "https://play.spotify.com/album/2ogVzdMcoa1P38YIUCCyIW",
-                :release_date => "{2006/12/15}"
+                :release_date => "{2006/12/15}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -321,8 +334,9 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Prince_ART_OFFICIAL_AGE?id=Bjprj7i5o2cdnsw3czo2txvjcvu&hl=en",
                 :amazon => "http://www.amazon.com/dp/B00N1LAIWA/ref=dm_ws_tlw_trk6",
                 :spotify => "https://play.spotify.com/album/1xRg9g9QCGjFp9poxLnU5M",
-                :release_date => "{2013/2/5}"
-              })
+                :release_date => "{2013/2/5}",
+                :youtube => ''
+                })
 
 Song.create ({
                 :artist => a12,
@@ -336,8 +350,9 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album?id=B3j5khyzx6vxjcxhgfemc4smbwi&tid=song-Truqnbckmybtnpziogvtu2b3hqi&hl=en",
                 :amazon => "http://www.amazon.com/Actin-Crazy-Explicit-Action-Bronson/dp/B00RYGX0B4",
                 :spotify => "https://play.spotify.com/album/5bxjy0F0a8yCONYvEOuWg0",
-                :release_date => "{2015/1/7}"
-              })
+                :release_date => "{2015/1/7}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/debIyWS6Byc?rel=0" frameborder="0" allowfullscreen></iframe>'
+            })
 
 Song.create ({
                 :artist => a13,
@@ -351,7 +366,8 @@ Song.create ({
                 :google => "",
                 :amazon => "http://www.amazon.com/Iron-Mic-Explicit/dp/B00I5605IS",
                 :spotify => "https://play.spotify.com/album/7xlgY7Ffb6XHfRhzRoevCr",
-                :release_date => "{2014/1/28}"
+                :release_date => "{2014/1/28}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -366,7 +382,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2012/2/13}"
+                :release_date => "{2012/2/13}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -381,7 +398,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Kanye_West_Yeezus?id=By5ojxdslc5zdiuflz25kgytgoi&hl=en",
                 :amazon => "http://www.amazon.com/Bound-2-Explicit/dp/B00DF0PS9K",
                 :spotify => "https://play.spotify.com/album/0XTAmejG8F97wF5MWoVbaY",
-                :release_date => "{2013/8/28}"
+                :release_date => "{2013/8/28}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -396,7 +414,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/The_Roots_Undun?id=B3hl6yrowtxwbuzwwo56izsqjtm&hl=en",
                 :amazon => "http://www.amazon.com/dp/B006B398M6/ref=dm_ws_tlw_trk5",
                 :spotify => "https://play.spotify.com/album/0cwlEeMEkvdoiPNJxlzHtI",
-                :release_date => "{2012/12/2}"
+                :release_date => "{2012/12/2}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -411,7 +430,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Jay_Z_The_Black_Album?id=Beuxsnb2og5vxeypi25l4cz2g34&hl=en",
                 :amazon => "http://www.amazon.com/99-Problems-Album-Version-Explicit/dp/B0039W6BQS",
                 :spotify => "https://play.spotify.com/album/0QjF5LdDi4HEf47VoCz8rU",
-                :release_date => "{2004/4/27}"
+                :release_date => "{2004/4/27}",
+                :youtube => ''
              })
 
 Song.create ({
@@ -426,7 +446,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2014/1/15}"
+                :release_date => "{2014/1/15}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -441,7 +462,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Common_Nobody_s_Smiling_Deluxe?id=Bsrww6emsbtg3u2on43ftpvczz4&hl=en",
                 :amazon => "hhttp://www.amazon.com/Kingdom-feat-Vince-Staples-Explicit/dp/B00LPGRWWM",
                 :spotify => "https://play.spotify.com/album/3EjvgmNXVLX2WBdNw4uBar",
-                :release_date => "{2014/12/20}"
+                :release_date => "{2014/12/20}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -456,7 +478,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2013/4/30}"
+                :release_date => "{2013/4/30}",
+                :youtube => ''
               })
 
 Song.create ({
@@ -471,13 +494,13 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Add_2_Khrysis_Between_Heaven_Hell_Deluxe_Edition?id=Bamqotnmv65526erulfqdyjmp2y",
                 :amazon => "http://www.amazon.com/dp/B00JHBFJT0/ref=dm_ws_tlw_trk3",
                 :spotify => "https://play.spotify.com/album/10UQAPZ57CumKSdRA2Bvka",
-                :release_date => "{2013/11/18}"
+                :release_date => "{2013/11/18}",
+                :youtube => ''
               })
 
 Song.create ({
                 :artist => a2,
                 :title => "Swimming Pools",
-
                 :features => "",
                 :producer => "T-Minus",
                 :album => "Good Kid, M.A.A.D City",
@@ -487,13 +510,13 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Kendrick_Lamar_good_kid_m_A_A_d_city?id=Bsmwzhrnfdriq72isfh7ajz4m2y&hl=en",
                 :amazon => "http://www.amazon.com/dp/B00BY2DMIU/ref=dm_ws_tlw_trk9",
                 :spotify => "https://play.spotify.com/album/3DGQ1iZ9XKUQxAUWjfC34w",
-                :release_date => "{2012/7/31}"
+                :release_date => "{2012/7/31}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/8-ejyHzz3XE?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
                 :artist => a2,
                 :title => "The Blacker The Berry",
-
                 :features => "",
                 :producer => "Boi-1da",
                 :album => "",
@@ -503,13 +526,13 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2015/2/9}"
-              })
+                :release_date => "{2015/2/9}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6AhXSoKa8xw?rel=0" frameborder="0" allowfullscreen></iframe>'
+            })
 
 Song.create ({
                 :artist => a12,
                 :title => "Terry",
-
                 :features => "",
                 :producer => "Alchemist",
                 :album => "Mr Wonderful",
@@ -519,8 +542,24 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
-                :release_date => "{2015/2/16}"
+                :release_date => "{2015/2/16}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6PGSOe2Iok0?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
+Song.create ({
+                :artist => a12,
+                :title => "Baby Blue",
+                :features => "Chance the Rapper",
+                :producer => "Mark Ronson",
+                :album => "Mr Wonderful",
+                :download_link => "https://soundcloud.com/actionbronson/baby-blue-ft-chance-the-rapper",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193829854&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "",
+                :amazon => "",
+                :spotify => "https://play.spotify.com/album/7Mh9OsANvltL7YJ438LejB",
+                :release_date => "{2015/3/2}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/9rQ_VVlR7Do?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
 
 
