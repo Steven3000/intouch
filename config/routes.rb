@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'page#home'
 
   namespace :admin do
-    # Songs Admin
+    # Routes for the Admin Song resource
     get('/songs', { :controller => 'songs', :action => 'index' })
     get('/songs/new', { :controller => 'songs', :action => 'new' })
     post('/songs', { :controller => 'songs', :action => 'create' })
@@ -13,20 +13,13 @@ Rails.application.routes.draw do
     patch('/songs/:id', { :controller => 'songs', :action => 'update' })
     delete('/songs/:id', { :controller => 'songs', :action => 'destroy' })
 
-      # Routes for the Artist resource:
-    # CREATE
+    # Routes for the Admin Artist resource
+    get('/artists', { :controller => 'artists', :action => 'index' })
     get('/artists/new', { :controller => 'artists', :action => 'new' })
     post('/artists', { :controller => 'artists', :action => 'create' })
-
-    # READ
-    get('/artists', { :controller => 'artists', :action => 'index' })
     get('/artists/:id', { :controller => 'artists', :action => 'show' })
-
-    # UPDATE
     get('/artists/:id/edit', { :controller => 'artists', :action => 'edit' })
     patch('/artists/:id', { :controller => 'artists', :action => 'update' })
-
-    # DELETE
     delete('/artists/:id', { :controller => 'artists', :action => 'destroy' })
   end
 
