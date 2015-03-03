@@ -35,14 +35,20 @@
     <% @songs.each do |song| %>
       <tr>
          <td>
-          <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
+          <!-- Commenting out your <a> tags and replacing them with link_to rails helpers. -->
+          <%= link_to 'Show', "songs/#{song.id}"%>
+
+          <!-- <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
             <i class="fa fa-search-plus"></i>
-          </a>
+          </a> -->
         </td>
         <td>
-          <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
+          <!-- Commenting out your <a> tags and replacing them with link_to rails helpers. -->
+          <%= link_to 'Edit', "songs/#{song.id}/edit"%>
+
+          <!-- <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
             <i class="fa fa-edit"></i>
-          </a>
+          </a> -->
         </td>
         <td>
           <!-- Commenting out your <a> tags and replacing them with link_to rails helpers. -->
