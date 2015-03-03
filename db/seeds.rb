@@ -498,7 +498,7 @@ Song.create ({
                 :features => "Allan Kingdom & Theophilus London",
                 :producer => "",
                 :album => "",
-                :download_link => "http://www43.zippyshare.com/v/bF50K5g1/file.html",
+                :download_link => "",
                 :embedded_code => '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.adobe.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" name="bF50K5g1_144012540" width="100%" height="80" id="bF50K5g1_144012540"><param name="movie" value="http://www43.zippyshare.com/swf/player_local.swf?file=bF50K5g1&server=43&baseurl=http://www.zippyshare.com/api/&flashid=null&autostart=false&availablequality=both&bordercolor=#CCCCCC&forecolor=#000000&backcolor=#F2F2F2&darkcolor=#000000&lightcolor=#FF6600" /><param name="quality" value="high" /><param name="scriptAccess" value="always" /><embed src="http://www43.zippyshare.com/swf/player_local.swf?file=bF50K5g1&server=43&baseurl=http://www.zippyshare.com/api/&flashid=null&autostart=false&availablequality=both&bordercolor=#CCCCCC&forecolor=#000000&backcolor=#F2F2F2&darkcolor=#000000&lightcolor=#FF6600" width="100%" height="80" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer" type="application/x-shockwave-flash" scriptaccess="always" name="bF50K5g1_144012540"></embed></object>',
                 :itunes => "",
                 :google => "",
