@@ -44,7 +44,10 @@ class Admin::SongsController < Admin::BaseController
   end
 
   def update
-    @song = Song.update(songs_params)
+    # You were not telling the update action which song it had to update.
+    @song = Song.find(params[:id])
+
+    @song.update(songs_params)
 
     # @song = Song.find(params[:id])
     # @song.artist = Artist.find(params[:artist_id])
