@@ -44,9 +44,8 @@ class Admin::SongsController < Admin::BaseController
   end
 
   def update
-    # You were not telling the update action which song it had to update.
+    # You have to tell the update action which particular Song object you want to update
     @song = Song.find(params[:id])
-
     @song.update(songs_params)
 
     # @song = Song.find(params[:id])
@@ -73,7 +72,9 @@ class Admin::SongsController < Admin::BaseController
   end
 
   def destroy
-    @song = Song.destroy(songs_params)
+    # You have to tell the delete action which particular Song object you want to delete
+    @song = Song.find(params[:id])
+    @song.destroy
 
     redirect_to "/admin/songs", :notice => "Song deleted."
   end

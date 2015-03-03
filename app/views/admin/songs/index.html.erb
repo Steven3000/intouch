@@ -45,9 +45,18 @@
           </a>
         </td>
         <td>
-          <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
+          <!-- Commenting out your <a> tags and replacing them with link_to rails helpers. -->
+          <!-- The path you had for the delete action is wrong. It's no longer /admin/delete_song -->
+          <!-- It's /songs going to the Delete action becuase the HTTP method was changed to delete -->
+          <!-- In the link_to the first parameter we pass is what we want to show up as the link -->
+          <!-- the second parameter we pass is the route we want the link to go to -->
+          <!-- the thirs parameter we pass is the HTTP method type, in this case it's delete -->
+          <!-- just like a form_for -->
+          <%= link_to 'Destroy', "/admin/songs/#{song.id}", method: :delete, data: { confirm: 'Are you sure?' } %>
+
+          <!-- <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
             <i class="fa fa-trash-o"></i>
-          </a>
+          </a> -->
         </td>
         <td><%= song.artist_id %></td>
         <td><%= song.artist.name %></td>
