@@ -3,7 +3,8 @@
     <h1>Edit Artist #<%= @artist.id %></h1>
   </div>
 
-  <%= form_for(@artist, url: admin_artists_new_path) do |a| %>
+  <!-- You were linking to the new artist path instead of the update artist path -->
+  <%= form_for(@artist, url: admin_artist_path) do |a| %>
 
     <%= a.label :name, class: "control-label"  %>
     <%= a.text_field :name, placeholder: "Name", class: "form-control input-lg"  %>
