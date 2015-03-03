@@ -107,6 +107,8 @@ a16 = Artist.create ({
                 :website => "http://www.thinkcommon.com/",
                 :record_label => "Columbia",
               })
+# Output the number of artists added to the database when you run [rake db:seed] in the console.
+puts "Added #{Artist.count} artists."
 
 Song.destroy_all
 Song.create ({
@@ -521,6 +523,5 @@ Song.create ({
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/2/16}"
               })
-
-
-
+# Output the number of songs added to the database when you run [rake db:seed] in the console.
+puts "Added #{Song.count} songs."
