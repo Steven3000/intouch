@@ -47,20 +47,6 @@ a8 = Artist.create ({
                 :record_label => "Universal Motown",
               })
 
-
-a9 = Artist.create ({
-                :name => "Jay-z",
-                :website => "http://lifeandtimes.com/",
-                :record_label => "Def Jam",
-              })
-
-
-a10 = Artist.create ({
-                :name => "Nas",
-                :website => "http://www.nasirjones.com",
-                :record_label => "Columbia",
-              })
-
 a11 = Artist.create ({
                 :name => "Prince",
                 :website => "http://store.artofficialage.com",
@@ -104,24 +90,6 @@ Song.create ({
                 :youtube => ''
               })
 
-
-Song.create ({
-                :artist => a3,
-                :title => "Homecoming",
-                :features => "Chris Martin",
-                :producer => "Kanye West",
-                :album => "Gradution",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/homecoming-feat.-chris-martin/id291405869",
-                :google => "https://play.google.com/store/music/album/Kanye_West_Homecoming?id=Bghfkk3rx6itki67pdepenqlqc4&hl=en",
-                :amazon => "http://www.amazon.com/Homecoming-Edited-Version-Kanye-West/dp/B001GEJFI2",
-                :spotify => "https://play.spotify.com/album/3SZr5Pco2oqKFORCP3WNj9",
-                :release_date => "{2008/2/18}",
-                :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/LQ488QrqGE4?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-
 Song.create ({
                 :artist => a2,
                 :title => "I",
@@ -138,7 +106,6 @@ Song.create ({
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/8aShfolR6w8?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
-
 Song.create ({
                 :artist => a4,
                 :title => "Juice",
@@ -151,41 +118,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2013/12/20}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/h8nIHZ-0kS4?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-
-Song.create ({
-                :artist => a16,
-                :title => "the light",
-                :features => "Erykah Badu",
-                :producer => "J dilla",
-                :album => "Like water for chocolate",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/like-water-for-chocolate/id64513",
-                :google => "https://play.google.com/store/music/album?id=Bwi7wwz2zincubrfpwnge3kvy6q&tid=song-T2yy3ijyz6fiy6aaqnjkks5ynai",
-                :amazon => "http://www.amazon.com/The-Light/dp/B000WLH9RO",
-                :spotify => "https://play.spotify.com/album/0ZSwTSaR9VUe3uYsXNQgub",
                 :release_date => "{2013/4/30}",
-                :youtube => ''
-              })
-
-Song.create ({
-                :artist => a9,
-                :title => "Tom Ford",
-                :features => "",
-                :producer => "Timbaland",
-                :album => "Magna Carta Holy Grail",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/sonic-visuals/id292062424",
-                :google => "https://play.google.com/store/music/album/JAY_Z_Magna_Carta_Holy_Grail?id=Bjztr4ew7syyawhstnba6txiej4&hl=en",
-                :amazon => "http://www.amazon.com/Tom-Ford-Explicit/dp/B00DU1WV6W",
-                :spotify => "https://play.spotify.com/album/0OTjYdGtP7AbwOwbYsGhyi",
-                :release_date => "{2013/9/26}",
-                :youtube => ''
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/h8nIHZ-0kS4?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -204,21 +138,6 @@ Song.create ({
                 :youtube => ''
               })
 
-Song.create ({
-                :artist => a7,
-                :title => "Doin it Again",
-                :features => "John Legend",
-                :producer => "Questlove",
-                :album => "How I Got Over",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/how-i-got-over/id377445282",
-                :google => "",
-                :amazon => "http://www.amazon.com/Doin-Again-Album-Version-Explicit/dp/B003RNVP42",
-                :spotify => "https://play.spotify.com/album/2VOq1Tnj9Hf968Fdx8xpox",
-                :release_date => "{2014/12/9}",
-                :youtube => ''
-              })
 
 Song.create ({
                 :artist => a8,
@@ -232,24 +151,8 @@ Song.create ({
                 :google => "",
                 :amazon => "",
                 :spotify => "",
-                :release_date => "{2010/6/22}",
+                :release_date => "{2014/10/24}",
                 :youtube => ''
-              })
-
-Song.create ({
-                :artist => a10,
-                :title => "Hip Hop is Dead",
-                :features => "",
-                :producer => "will.i.am",
-                :album => "Hip Hop Is Dead",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/hip-hop-is-dead/id209359519",
-                :google => "https://play.google.com/store/music/album/Nas_Hip_Hop_Is_Dead?id=Bmhils5m2gjgtmfmo6ov2tfqxky&hl=en",
-                :amazon => "http://www.amazon.com/dp/B001NZ10UU/ref=dm_ws_tlw_trk5",
-                :spotify => "https://play.spotify.com/album/2ogVzdMcoa1P38YIUCCyIW",
-                :release_date => "{2006/12/15}",
-                :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/kAKxjTRV6ms?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -333,38 +236,6 @@ Song.create ({
               })
 
 Song.create ({
-                :artist => a7,
-                :title => "Kool On",
-                :features => "Greg Porn, Truck North",
-                :producer => "Questlove",
-                :album => "Undun",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/how-i-got-over/id377445282",
-                :google => "https://play.google.com/store/music/album/The_Roots_Undun?id=B3hl6yrowtxwbuzwwo56izsqjtm&hl=en",
-                :amazon => "http://www.amazon.com/dp/B006B398M6/ref=dm_ws_tlw_trk5",
-                :spotify => "https://play.spotify.com/album/0cwlEeMEkvdoiPNJxlzHtI",
-                :release_date => "{2012/12/2}",
-                :youtube => ''
-              })
-
-Song.create ({
-                :artist => a9,
-                :title => "99 Problems",
-                :features => "",
-                :producer => "Rick Rubin",
-                :album => "The Black Album",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/the-black-album/id358057502",
-                :google => "https://play.google.com/store/music/album/Jay_Z_The_Black_Album?id=Beuxsnb2og5vxeypi25l4cz2g34&hl=en",
-                :amazon => "http://www.amazon.com/99-Problems-Album-Version-Explicit/dp/B0039W6BQS",
-                :spotify => "https://play.spotify.com/album/0QjF5LdDi4HEf47VoCz8rU",
-                :release_date => "{2004/4/27}",
-                :youtube => ''
-             })
-
-Song.create ({
                 :artist => a1,
                 :title => "Funky Junkie",
                 :features => "Psalm One",
@@ -384,7 +255,7 @@ Song.create ({
                 :artist => a16,
                 :title => "Kingdom",
                 :features => "Vince Staples",
-                :producer => "J dilla",
+                :producer => "",
                 :album => "Nobody Smiling",
                 :download_link => "",
                 :embedded_code => "",
@@ -392,8 +263,8 @@ Song.create ({
                 :google => "https://play.google.com/store/music/album/Common_Nobody_s_Smiling_Deluxe?id=Bsrww6emsbtg3u2on43ftpvczz4&hl=en",
                 :amazon => "hhttp://www.amazon.com/Kingdom-feat-Vince-Staples-Explicit/dp/B00LPGRWWM",
                 :spotify => "https://play.spotify.com/album/3EjvgmNXVLX2WBdNw4uBar",
-                :release_date => "{2014/12/20}",
-                :youtube => ''
+                :release_date => "{2014/6/18}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/dO7sdc6MQVQ?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -426,22 +297,6 @@ Song.create ({
                 :spotify => "https://play.spotify.com/album/10UQAPZ57CumKSdRA2Bvka",
                 :release_date => "{2013/11/18}",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/InqbhIT7B-k?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a2,
-                :title => "Swimming Pools",
-                :features => "",
-                :producer => "T-Minus",
-                :album => "Good Kid, M.A.A.D City",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/good-kid-m.a.a.d-city-deluxe/id622710488",
-                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_good_kid_m_A_A_d_city?id=Bsmwzhrnfdriq72isfh7ajz4m2y&hl=en",
-                :amazon => "http://www.amazon.com/dp/B00BY2DMIU/ref=dm_ws_tlw_trk9",
-                :spotify => "https://play.spotify.com/album/3DGQ1iZ9XKUQxAUWjfC34w",
-                :release_date => "{2012/7/31}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/8-ejyHzz3XE?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -556,3 +411,98 @@ Song.create ({
                 :youtube => ''
               })
 
+Song.create ({
+                :artist => a16,
+                :title => "Glory",
+                :features => "John Legend",
+                :producer => "John Legend",
+                :album => "Selma (Motion Picture Soundtrack)",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/glory-from-motion-picture/id951104551",
+                :google => "https://play.google.com/store/music/album/Common_John_Legend_Glory_From_the_Motion_Picture_S?id=B546oeplwajygmiwmfc5us6tjuq&hl=en",
+                :amazon => "http://www.amazon.com/Glory-From-Motion-Picture-Selma/dp/B00R9D2LZ8",
+                :spotify => "https://play.spotify.com/user/125360247/playlist/4NIkb8y711Y2XXTd20B8jd",
+                :release_date => "{2014/12/11}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/HUZOKvYcx_o?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a16,
+                :title => "Kingdom (remix)",
+                :features => "Jay Electronica, Vince Staples",
+                :producer => "",
+                :album => "",
+                :download_link => "https://soundcloud.com/thinkcommon/kingdom-remix-featuring-common-vince-staples-and-jay-electronica",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169207831&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2014/9/24}",
+                :youtube => ''
+              })
+
+Song.create ({
+                :artist => a16,
+                :title => "Trouble In The Water",
+                :features => "Malik Yusef, Kumasi, Aaron Fresh, Choklate & Laci Kay",
+                :producer => "",
+                :album => "Home",
+                :download_link => "https://soundcloud.com/hiphopcaucus/troubleinthewater/s-rgbs7",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/176809781&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "https://itunes.apple.com/us/album/trouble-in-water-feat.-aaron/id919832825?i=919832854",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2014/11/15}",
+                :youtube => ''
+              })
+
+Song.create ({
+                :artist => a7,
+                :title => "Understand",
+                :features => "Dice Raw, Greg Porn",
+                :producer => "Questlove",
+                :album => "And then shoot your cousin",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/understand-feat.-dice-raw/id868937931?i=868937997",
+                :google => "https://play.google.com/store/music/album/The_Roots_and_then_you_shoot_your_cousin?id=Be37wi6vmuci65g6q45b3a6m4wu&hl=en",
+                :amazon => "http://www.amazon.com/then-shoot-your-cousin-Explicit/dp/B00K8K5TTY/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
+                :spotify => "https://play.spotify.com/album/6tiTINtHg4EqefpUt2SRRF",
+                :release_date => "{2014/5/22}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/Ys3HCHJ_8r0?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a7,
+                :title => "When The People Cheer",
+                :features => "Modesty Lycan, Greg Porn",
+                :producer => "Questlove",
+                :album => "And then shoot your cousin",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/when-people-cheer-feat.-modesty/id868937931?i=868937980",
+                :google => "https://play.google.com/store/music/album/The_Roots_and_then_you_shoot_your_cousin?id=Be37wi6vmuci65g6q45b3a6m4wu&hl=en",
+                :amazon => "http://www.amazon.com/then-shoot-your-cousin-Explicit/dp/B00K8K5TTY/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
+                :spotify => "https://play.spotify.com/album/6tiTINtHg4EqefpUt2SRRF",
+                :release_date => "{2014/5/28}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/51K4gqmgoPU?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a7,
+                :title => "Never",
+                :features => "Patty Crash",
+                :producer => "Questlove",
+                :album => "And then shoot your cousin",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/never-feat.-patty-crash/id868937931?i=868937975",
+                :google => "https://play.google.com/store/music/album/The_Roots_and_then_you_shoot_your_cousin?id=Be37wi6vmuci65g6q45b3a6m4wu&hl=en",
+                :amazon => "http://www.amazon.com/then-shoot-your-cousin-Explicit/dp/B00K8K5TTY/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
+                :spotify => "https://play.spotify.com/album/6tiTINtHg4EqefpUt2SRRF",
+                :release_date => "{2014/6/11}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/pmeqT7YJQJg?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
