@@ -6,20 +6,17 @@ a1 = Artist.create ({
                 :record_label => "independent",
               })
 
-
 a2 = Artist.create ({
                 :name => "Kendrick Lamar",
                 :website => "http://www.kendricklamar.com",
                 :record_label => "TDE",
               })
 
-
 a3 = Artist.create ({
                 :name => "Kanye West",
                 :website => "http://www.kanyewest.com",
                 :record_label => "Def Jam",
               })
-
 
 a4 = Artist.create ({
                 :name => "Chance The Rapper",
@@ -33,14 +30,6 @@ a6 = Artist.create ({
                 :record_label => "Columbia",
               })
 
-
-a7 = Artist.create ({
-                :name => "The Roots",
-                :website => "http://www.theroots.com",
-                :record_label => "MCA",
-              })
-
-
 a8 = Artist.create ({
                 :name => "Drake",
                 :website => "http://www.drizzydrake.org/",
@@ -51,19 +40,6 @@ a12 = Artist.create ({
                 :name => "Action Bronson",
                 :website => "http://www.actionbronson.com",
                 :record_label => "Vice Records",
-              })
-
-
-a13 = Artist.create ({
-                :name => "Add-2",
-                :website => "http://add2music.com/",
-                :record_label => "Jamala (9th Wonder)",
-              })
-
-a16 = Artist.create ({
-                :name => "Common",
-                :website => "http://www.thinkcommon.com/",
-                :record_label => "Columbia",
               })
 
 a17 = Artist.create ({
@@ -82,6 +58,18 @@ a19 = Artist.create ({
                 :name => "Andre 3000",
                 :website => "",
                 :record_label => "Epic",
+              })
+
+a20 = Artist.create ({
+                :name => "Frank Ocean",
+                :website => "",
+                :record_label => "Odd Future Records, Def Jam, Island",
+              })
+
+a21 = Artist.create ({
+                :name => "Lauren Hill",
+                :website => "",
+                :record_label => "Columbia Ruffhouse",
               })
 
 Song.destroy_all
@@ -182,21 +170,6 @@ Song.create ({
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/debIyWS6Byc?rel=0" frameborder="0" allowfullscreen></iframe>'
             })
 
-Song.create ({
-                :artist => a13,
-                :title => "Iron Mic",
-                :features => "",
-                :producer => "9th Wonder",
-                :album => "9th Wonder Presents: Jamla Is the Squad",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/9th-wonder-presents-jamla/id807321719",
-                :google => "",
-                :amazon => "http://www.amazon.com/Iron-Mic-Explicit/dp/B00I5605IS",
-                :spotify => "https://play.spotify.com/album/7xlgY7Ffb6XHfRhzRoevCr",
-                :release_date => "{2014/1/28}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/-lVmDB7Ny1Q?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
 
 Song.create ({
                 :artist => a1,
@@ -247,22 +220,6 @@ Song.create ({
               })
 
 Song.create ({
-                :artist => a16,
-                :title => "Kingdom",
-                :features => "Vince Staples",
-                :producer => "",
-                :album => "Nobody Smiling",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/nobodys-smiling-deluxe-version/id891974297",
-                :google => "https://play.google.com/store/music/album/Common_Nobody_s_Smiling_Deluxe?id=Bsrww6emsbtg3u2on43ftpvczz4&hl=en",
-                :amazon => "hhttp://www.amazon.com/Kingdom-feat-Vince-Staples-Explicit/dp/B00LPGRWWM",
-                :spotify => "https://play.spotify.com/album/3EjvgmNXVLX2WBdNw4uBar",
-                :release_date => "{2014/6/18}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/dO7sdc6MQVQ?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
                 :artist => a4,
                 :title => "Coco Butter Kisses",
                 :features => "Vic Mensa, Twista",
@@ -276,22 +233,6 @@ Song.create ({
                 :spotify => "",
                 :release_date => "{2013/4/30}",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/TErySTMbFlk?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a13,
-                :title => "Club Church Club Hell",
-                :features => "",
-                :producer => "Khrysis",
-                :album => "Between Heaven & Hell",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/between-heaven-hell-deluxe/id849322477",
-                :google => "https://play.google.com/store/music/album/Add_2_Khrysis_Between_Heaven_Hell_Deluxe_Edition?id=Bamqotnmv65526erulfqdyjmp2y",
-                :amazon => "http://www.amazon.com/dp/B00JHBFJT0/ref=dm_ws_tlw_trk3",
-                :spotify => "https://play.spotify.com/album/10UQAPZ57CumKSdRA2Bvka",
-                :release_date => "{2013/11/18}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/InqbhIT7B-k?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
@@ -407,102 +348,6 @@ Song.create ({
               })
 
 Song.create ({
-                :artist => a16,
-                :title => "Glory",
-                :features => "John Legend",
-                :producer => "John Legend",
-                :album => "Selma (Motion Picture Soundtrack)",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/glory-from-motion-picture/id951104551",
-                :google => "https://play.google.com/store/music/album/Common_John_Legend_Glory_From_the_Motion_Picture_S?id=B546oeplwajygmiwmfc5us6tjuq&hl=en",
-                :amazon => "http://www.amazon.com/Glory-From-Motion-Picture-Selma/dp/B00R9D2LZ8",
-                :spotify => "https://play.spotify.com/user/125360247/playlist/4NIkb8y711Y2XXTd20B8jd",
-                :release_date => "{2014/12/11}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/HUZOKvYcx_o?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a16,
-                :title => "Kingdom (remix)",
-                :features => "Jay Electronica, Vince Staples",
-                :producer => "",
-                :album => "",
-                :download_link => "https://soundcloud.com/thinkcommon/kingdom-remix-featuring-common-vince-staples-and-jay-electronica",
-                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169207831&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
-                :itunes => "",
-                :google => "",
-                :amazon => "",
-                :spotify => "",
-                :release_date => "{2014/9/24}",
-                :youtube => ''
-              })
-
-Song.create ({
-                :artist => a16,
-                :title => "Trouble In The Water",
-                :features => "Malik Yusef, Kumasi, Aaron Fresh, Choklate & Laci Kay",
-                :producer => "",
-                :album => "Home",
-                :download_link => "https://soundcloud.com/hiphopcaucus/troubleinthewater/s-rgbs7",
-                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/176809781&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
-                :itunes => "https://itunes.apple.com/us/album/trouble-in-water-feat.-aaron/id919832825?i=919832854",
-                :google => "",
-                :amazon => "",
-                :spotify => "",
-                :release_date => "{2014/11/15}",
-                :youtube => ''
-              })
-
-Song.create ({
-                :artist => a7,
-                :title => "Understand",
-                :features => "Dice Raw, Greg Porn",
-                :producer => "Questlove",
-                :album => "And then shoot your cousin",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/understand-feat.-dice-raw/id868937931?i=868937997",
-                :google => "https://play.google.com/store/music/album/The_Roots_and_then_you_shoot_your_cousin?id=Be37wi6vmuci65g6q45b3a6m4wu&hl=en",
-                :amazon => "http://www.amazon.com/then-shoot-your-cousin-Explicit/dp/B00K8K5TTY/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
-                :spotify => "https://play.spotify.com/album/6tiTINtHg4EqefpUt2SRRF",
-                :release_date => "{2014/5/22}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/Ys3HCHJ_8r0?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a7,
-                :title => "When The People Cheer",
-                :features => "Modesty Lycan, Greg Porn",
-                :producer => "Questlove",
-                :album => "And then shoot your cousin",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/when-people-cheer-feat.-modesty/id868937931?i=868937980",
-                :google => "https://play.google.com/store/music/album/The_Roots_and_then_you_shoot_your_cousin?id=Be37wi6vmuci65g6q45b3a6m4wu&hl=en",
-                :amazon => "http://www.amazon.com/then-shoot-your-cousin-Explicit/dp/B00K8K5TTY/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
-                :spotify => "https://play.spotify.com/album/6tiTINtHg4EqefpUt2SRRF",
-                :release_date => "{2014/5/28}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/51K4gqmgoPU?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a7,
-                :title => "Never",
-                :features => "Patty Crash",
-                :producer => "Questlove",
-                :album => "And then shoot your cousin",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/never-feat.-patty-crash/id868937931?i=868937975",
-                :google => "https://play.google.com/store/music/album/The_Roots_and_then_you_shoot_your_cousin?id=Be37wi6vmuci65g6q45b3a6m4wu&hl=en",
-                :amazon => "http://www.amazon.com/then-shoot-your-cousin-Explicit/dp/B00K8K5TTY/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
-                :spotify => "https://play.spotify.com/album/6tiTINtHg4EqefpUt2SRRF",
-                :release_date => "{2014/6/11}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/pmeqT7YJQJg?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
                 :artist => a19,
                 :title => "Hey Ya!",
                 :features => "OutKast",
@@ -517,5 +362,78 @@ Song.create ({
                 :release_date => "{2003/9/23}",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/pmeqT7YJQJg?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
+
+Song.create ({
+                :artist => a20,
+                :title => "Lost",
+                :features => "",
+                :producer => "Malay",
+                :album => "Channel Orange",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/channel-orange/id541953504",
+                :google => "https://play.google.com/store/music/album/Frank_Ocean_channel_ORANGE_Explicit_Version?id=Bw23texekzoug3kqxdektrrdyj4&hl=en",
+                :amazon => "http://www.amazon.com/Speakerboxxx-Love-Below-Explicit-OutKast/dp/B001414XS4/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
+                :spotify => "https://play.spotify.com/album/623Ef2ZEB3Njklix4PC0Rs",
+                :release_date => "{2012/12/17}",
+                :youtube => '<iframe src="https://player.vimeo.com/video/63896903?title=0&byline=0&portrait=0" width="500" height="198" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/63896903">frank ocean [lost]</a> from <a href="https://vimeo.com/frankocean">christopher francis ocean</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
+              })
+
+Song.create ({
+                :artist => a21,
+                :title => "Consumerism",
+                :features => "",
+                :producer => "",
+                :album => "",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/consumerism-single/id719012403",
+                :google => "",
+                :amazon => "",
+                :spotify => "https://play.spotify.com/album/4RwFZ9Gm5HB8sKi2GY54Gp",
+                :release_date => "{2013/10/4}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/mFPhKf_dg7g?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
