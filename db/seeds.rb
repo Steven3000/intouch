@@ -10,7 +10,7 @@ a1 = Artist.create ({
 a2 = Artist.create ({
                 :name => "Kendrick Lamar",
                 :website => "http://www.kendricklamar.com",
-                :record_label => "tde",
+                :record_label => "TDE",
               })
 
 
@@ -24,7 +24,7 @@ a3 = Artist.create ({
 a4 = Artist.create ({
                 :name => "Chance The Rapper",
                 :website => "http://www.chanceraps.com",
-                :record_label => "independent",
+                :record_label => "Independent",
               })
 
 a6 = Artist.create ({
@@ -47,13 +47,6 @@ a8 = Artist.create ({
                 :record_label => "Universal Motown",
               })
 
-a11 = Artist.create ({
-                :name => "Prince",
-                :website => "http://store.artofficialage.com",
-                :record_label => "Warner Bros",
-              })
-
-
 a12 = Artist.create ({
                 :name => "Action Bronson",
                 :website => "http://www.actionbronson.com",
@@ -64,13 +57,37 @@ a12 = Artist.create ({
 a13 = Artist.create ({
                 :name => "Add-2",
                 :website => "http://add2music.com/",
-                :record_label => "Jamala",
+                :record_label => "Jamala (9th Wonder)",
               })
 
 a16 = Artist.create ({
                 :name => "Common",
                 :website => "http://www.thinkcommon.com/",
                 :record_label => "Columbia",
+              })
+
+a17 = Artist.create ({
+                :name => "D\'Angelo",
+                :website => "",
+                :record_label => "EMI, Virgin, J, RCA",
+              })
+
+a18 = Artist.create ({
+                :name => "Vic Mensa",
+                :website => "",
+                :record_label => "Virgin EMI Records",
+              })
+
+a19 = Artist.create ({
+                :name => "Pharrell",
+                :website => "",
+                :record_label => "Star Trak, Interscope, i am OTHER, Columbia",
+              })
+
+a20 = Artist.create ({
+                :name => "Andre 3000",
+                :website => "",
+                :record_label => "Epic",
               })
 
 Song.destroy_all
@@ -154,22 +171,6 @@ Song.create ({
                 :release_date => "{2014/10/24}",
                 :youtube => ''
               })
-
-Song.create ({
-                :artist => a11,
-                :title => "Breakfast Can Wait",
-                :features => "",
-                :producer => "Prince",
-                :album => "ART OFFICIAL AGE",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/art-official-age/id911631220",
-                :google => "https://play.google.com/store/music/album/Prince_ART_OFFICIAL_AGE?id=Bjprj7i5o2cdnsw3czo2txvjcvu&hl=en",
-                :amazon => "http://www.amazon.com/dp/B00N1LAIWA/ref=dm_ws_tlw_trk6",
-                :spotify => "https://play.spotify.com/album/1xRg9g9QCGjFp9poxLnU5M",
-                :release_date => "{2013/2/5}",
-                :youtube => ''
-                })
 
 Song.create ({
                 :artist => a12,

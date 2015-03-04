@@ -274,7 +274,27 @@ Song.create ({
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/8-ejyHzz3XE?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
+a11 = Artist.create ({
+                :name => "Prince",
+                :website => "http://store.artofficialage.com",
+                :record_label => "Warner Bros",
+              })
 
+Song.create ({
+                :artist => a11,
+                :title => "Breakfast Can Wait",
+                :features => "",
+                :producer => "Prince",
+                :album => "ART OFFICIAL AGE",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/art-official-age/id911631220",
+                :google => "https://play.google.com/store/music/album/Prince_ART_OFFICIAL_AGE?id=Bjprj7i5o2cdnsw3czo2txvjcvu&hl=en",
+                :amazon => "http://www.amazon.com/dp/B00N1LAIWA/ref=dm_ws_tlw_trk6",
+                :spotify => "https://play.spotify.com/album/1xRg9g9QCGjFp9poxLnU5M",
+                :release_date => "{2013/2/5}",
+                :youtube => ''
+                })
 
 
 
