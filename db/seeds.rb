@@ -79,12 +79,6 @@ a18 = Artist.create ({
               })
 
 a19 = Artist.create ({
-                :name => "Pharrell",
-                :website => "",
-                :record_label => "Star Trak, Interscope, i am OTHER, Columbia",
-              })
-
-a20 = Artist.create ({
                 :name => "Andre 3000",
                 :website => "",
                 :record_label => "Epic",
@@ -507,3 +501,21 @@ Song.create ({
                 :release_date => "{2014/6/11}",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/pmeqT7YJQJg?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
+
+Song.create ({
+                :artist => a19,
+                :title => "Hey Ya!",
+                :features => "OutKast",
+                :producer => "",
+                :album => "The Love Below",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/speakerboxxx-the-love-below/id281430653",
+                :google => "",
+                :amazon => "http://www.amazon.com/Speakerboxxx-Love-Below-Explicit-OutKast/dp/B001414XS4/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
+                :spotify => "https://play.spotify.com/album/00XMrHZoOsYLmiyx890axX",
+                :release_date => "{2003/9/23}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/pmeqT7YJQJg?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+
