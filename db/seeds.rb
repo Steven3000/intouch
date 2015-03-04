@@ -43,7 +43,7 @@ a12 = Artist.create ({
               })
 
 a17 = Artist.create ({
-                :name => "D\'Angelo",
+                :name => "DAngelo",
                 :website => "",
                 :record_label => "EMI, Virgin, J, RCA",
               })
@@ -67,7 +67,7 @@ a20 = Artist.create ({
               })
 
 a21 = Artist.create ({
-                :name => "Lauren Hill",
+                :name => "Lauryn Hill",
                 :website => "",
                 :record_label => "Columbia Ruffhouse",
               })
@@ -349,7 +349,7 @@ Song.create ({
 
 Song.create ({
                 :artist => a19,
-                :title => "Hey Ya!",
+                :title => "Hey Ya",
                 :features => "OutKast",
                 :producer => "",
                 :album => "The Love Below",
@@ -360,7 +360,7 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Speakerboxxx-Love-Below-Explicit-OutKast/dp/B001414XS4/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
                 :spotify => "https://play.spotify.com/album/00XMrHZoOsYLmiyx890axX",
                 :release_date => "{2003/9/23}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/pmeqT7YJQJg?rel=0" frameborder="0" allowfullscreen></iframe>'
+                :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/PWgvGjAhvIw?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
