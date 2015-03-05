@@ -24,18 +24,6 @@ a4 = Artist.create ({
                 :record_label => "Independent",
               })
 
-a6 = Artist.create ({
-                :name => "J Cole",
-                :website => "http://www.jcolemusic.com",
-                :record_label => "Columbia",
-              })
-
-a8 = Artist.create ({
-                :name => "Drake",
-                :website => "http://www.drizzydrake.org/",
-                :record_label => "Universal Motown",
-              })
-
 a12 = Artist.create ({
                 :name => "Action Bronson",
                 :website => "http://www.actionbronson.com",
@@ -46,12 +34,6 @@ a17 = Artist.create ({
                 :name => "DAngelo",
                 :website => "",
                 :record_label => "EMI, Virgin, J, RCA",
-              })
-
-a18 = Artist.create ({
-                :name => "Vic Mensa",
-                :website => "",
-                :record_label => "Virgin EMI Records",
               })
 
 a19 = Artist.create ({
@@ -70,6 +52,12 @@ a21 = Artist.create ({
                 :name => "Lauryn Hill",
                 :website => "",
                 :record_label => "Columbia Ruffhouse",
+              })
+
+a22 = Artist.create ({
+                :name => "Daft Punk",
+                :website => "",
+                :record_label => "Soma, Virgin, Walt Disney, Columbia",
               })
 
 Song.destroy_all
@@ -119,39 +107,6 @@ Song.create ({
                 :spotify => "",
                 :release_date => "{2013/4/30}",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/h8nIHZ-0kS4?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a6,
-                :title => "Wet Dreamz",
-                :features => "",
-                :producer => "J Cole",
-                :album => "2014 Forest Hills Drive",
-                :download_link => "",
-                :embedded_code => "",
-                :itunes => "https://itunes.apple.com/us/album/2014-forest-hills-drive/id940845223",
-                :google => "https://play.google.com/store/music/album/J_Cole_2014_Forest_Hills_Drive?id=Brnkpxufjkjwf6dqao6wxppl3mi&hl=en",
-                :amazon => "http://www.amazon.com/Wet-Dreamz-Explicit/dp/B00PJHY898",
-                :spotify => "https://play.spotify.com/track/6Ius4TC0L3cN74HT7ENE6e",
-                :release_date => "{2014/12/9}",
-                :youtube => ''
-              })
-
-
-Song.create ({
-                :artist => a8,
-                :title => "6 God",
-                :features => "",
-                :producer => "Boi-1da & Syk Sense",
-                :album => "6 God EP",
-                :download_link => "http://www.djbooth.net/index/tracks/review/drake-6-god",
-                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173752179&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
-                :itunes => "",
-                :google => "",
-                :amazon => "",
-                :spotify => "",
-                :release_date => "{2014/10/24}",
-                :youtube => ''
               })
 
 Song.create ({
@@ -395,9 +350,37 @@ Song.create ({
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/mFPhKf_dg7g?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
+Song.create ({
+                :artist => a17,
+                :title => "Sugah Daddy",
+                :features => "",
+                :producer => "",
+                :album => "",
+                :download_link => "",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/181260617&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "https://itunes.apple.com/us/album/black-messiah/id950764300",
+                :google => "",
+                :amazon => "",
+                :spotify => "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",
+                :release_date => "{2014/12/15}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/vo3RAH0zLlU?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
 
-
-
+Song.create ({
+                :artist => a22,
+                :title => "Computerized",
+                :features => "Jay-Z",
+                :producer => "",
+                :album => "",
+                :download_link => "http://www.mediafire.com/download/ll2r4gmqlyacljg/Daft+Punk+%26+Jay-z+-+Computerized.mp3",
+                :embedded_code => '',
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2014/3/10}",
+                :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/EBYITSFsjvU?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
 
 
 

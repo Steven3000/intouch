@@ -374,6 +374,57 @@ a7 = Artist.create ({
                 :record_label => "MCA",
               })
 
+a6 = Artist.create ({
+                :name => "J Cole",
+                :website => "http://www.jcolemusic.com",
+                :record_label => "Columbia",
+              })
+
+a8 = Artist.create ({
+                :name => "Drake",
+                :website => "http://www.drizzydrake.org/",
+                :record_label => "Universal Motown",
+              })
+
+Song.create ({
+                :artist => a6,
+                :title => "Wet Dreamz",
+                :features => "",
+                :producer => "J Cole",
+                :album => "2014 Forest Hills Drive",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/2014-forest-hills-drive/id940845223",
+                :google => "https://play.google.com/store/music/album/J_Cole_2014_Forest_Hills_Drive?id=Brnkpxufjkjwf6dqao6wxppl3mi&hl=en",
+                :amazon => "http://www.amazon.com/Wet-Dreamz-Explicit/dp/B00PJHY898",
+                :spotify => "https://play.spotify.com/track/6Ius4TC0L3cN74HT7ENE6e",
+                :release_date => "{2014/12/9}",
+                :youtube => ''
+              })
+
+
+Song.create ({
+                :artist => a8,
+                :title => "6 God",
+                :features => "",
+                :producer => "Boi-1da & Syk Sense",
+                :album => "6 God EP",
+                :download_link => "http://www.djbooth.net/index/tracks/review/drake-6-god",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173752179&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2014/10/24}",
+                :youtube => ''
+              })
+
+a18 = Artist.create ({
+                :name => "Vic Mensa",
+                :website => "",
+                :record_label => "Virgin EMI Records",
+              })
+
 
 
 
