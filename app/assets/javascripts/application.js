@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require Unify/loader
+//= require Unify/bootswatch
 //= require turbolinks
-//= require_tree .
+

@@ -1,5 +1,21 @@
 source 'https://rubygems.org'
 
+gem 'twitter-bootswatch-rails', '~> 3.3'
+
+gem 'twitter-bootswatch-rails-fontawesome', '~> 4.3'
+
+gem 'twitter-bootswatch-rails-helpers'
+
+gem 'therubyracer'
+
+gem 'less-rails'
+
+gem 'less-rails-bootstrap'
+
+
+
+
+
 # gem 'carrierwave'
 
 gem 'kaminari'

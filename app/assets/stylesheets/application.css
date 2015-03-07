@@ -10,13 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *
  *= require_self
+ *= require Unify/loader
+ *= require Unify/bootswatch
  */
 
 
 @import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
-@import "./base.css";
+@import "./unify/base.css";
 @import "./home.css";
 @import "./feed.css";
 @import "./song_show.css";
