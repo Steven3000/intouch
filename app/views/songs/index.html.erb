@@ -1,9 +1,9 @@
-<div class="wrapper">
+<div class="container">
   <h3 class="txt-center">
-    Latest songs released by your favorite artists
+    Here are the latest songs released by your favorite artists.
   </h3>
 
-  <ul class="container">
+  <ul class="">
     <% @songs.each do |song| %>
       <li>
         <a href="/songs/<%= song.id %>">
