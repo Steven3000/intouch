@@ -41,13 +41,20 @@
 
     <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
 
+
+
 </head>
 
-<body>
+<body class="header-fixed">
+    <style type="text/css">
+        body {
+        background-color: lightgrey;
+        }
+    </style>
 
     <div class="wrapper">
     <!--=== Header ===-->
-    <div class="header">
+    <div class="header-v6 header-dark-transparent header-sticky">
         <div class="container">
             <!-- Logo -->
             <li class="btn">
@@ -84,7 +91,7 @@
                         <li class="btn"><%= link_to current_user.email, edit_user_registration_path %></li>
                         <li class="btn"><%= link_to "Sign Out", destroy_user_session_path, :method =>"delete" %></li>
                     <% else %>
-                        <li class="btn"><%= link_to "Sign Up", new_user_registration_path %></li>
+                        <li class="btn btn-success"><%= link_to "Sign Up", new_user_registration_path %></li>
                         <li class="btn"><%= link_to "Sign In", new_user_session_path %></li>
                     <% end %>
 
@@ -109,7 +116,9 @@
 
     <%= yield %>
 
-
+    </br>
+    </br>
+    </br>
 
     <!--=== Footer v6 ===-->
     <div id="footer-v6" class="footer-v6">
@@ -119,7 +128,7 @@
                     <!-- About Us -->
                     <div class="col-md-3 sm-margin-bottom-40">
                         <div class="heading-footer"><h2>About Us</h2></div>
-                        <p>NtouchMusic.com - A Notifacation Service dedicated to informing our users when their favorite artists release a new song.</p>
+                        <p>NtouchMusic.com - A notifacation service dedicated to informing users of the moment when a new song is released by one of their favorite artists.</p>
                     </div>
                     <!-- End About Us -->
 
@@ -181,7 +190,7 @@
                 </div>
             </div><!--/container -->
         </div>
-
+        </br>
         <div class="copyright">
             <div class="container">
                 <div class="row">
@@ -250,54 +259,7 @@
     <!--=== End Footer v6 ===-->
     </div><!--/wrapper-->
 </div>
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "unify" %>
-    <%= yield(:page_javascript) if content_for?(:page_javascript) %>
-    <!-- JS Global Compulsory -->
-    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- JS Implementing Plugins -->
-    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-    <script type="text/javascript" src="assets/plugins/smoothScroll.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery.mixitup.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-    <script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-    <!-- JS Customization -->
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-    <!-- JS Page Level -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
-    <script type="text/javascript" src="assets/js/pages/page_portfolio.js"></script>
-    <script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            App.init();
-            PortfolioPage.init();
-            ParallaxSlider.initParallaxSlider();
-        });
-    </script>
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-            App.init();
-            });
-    </script>
-      <% if Rails.env == "production"  %>
-    <script type="text/javascript">
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-00000000-1']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-    <% end %>
 </body>
 
 
