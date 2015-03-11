@@ -14,9 +14,6 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico">
 
-    <!-- Web Fonts -->
-    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -37,6 +34,8 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="assets/css/custom.css">
+
+
 </head>
 
 <body>
@@ -46,8 +45,11 @@
     <div class="header">
         <div class="container">
             <!-- Logo -->
-            <a href="index.html">NtouchMusic.com
-            </a>
+            <li class="btn">
+                <%= link_to_if (request.path != "/home.html"),
+                          "NtouchMusic.com",
+                          "/home.html" %>
+            </li>
             <!-- End Logo -->
 
             <!-- Topbar -->
@@ -64,6 +66,7 @@
                             <li><a href="#">German</a></li>
                         </ul>
                     </li> -->
+
                     <li class="btn">
                          <%= link_to_if (request.path != "/home.html"),
                           "Home",
@@ -111,291 +114,149 @@
     </div>
     <!--=== End Header ===-->
 
-    <!--=== Slider ===-->
-    <div class="container">
-        <div class="slider-inner">
-            <div id="da-slider" class="da-slider">
-                <div class="da-slide">
-                    <h2><i>CLEAN &amp; FRESH</i> <br /> <i>FULLY RESPONSIVE</i> <br /> <i>DESIGN</i></h2>
-                    <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i> <br /> <i>veniam omnis </i></p>
-                    <div class="da-img"><img class="img-responsive" src="assets/plugins/parallax-slider/img/1.png" alt=""></div>
-                </div>
-                <div class="da-slide">
-                    <h2><i>RESPONSIVE VIDEO</i> <br /> <i>SUPPORT AND</i> <br /> <i>MANY MORE</i></h2>
-                    <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i></p>
-                    <div class="da-img">
-                        <iframe src="http://player.vimeo.com/video/47911018" width="530" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-                    </div>
-                </div>
-                <div class="da-slide">
-                    <h2><i>USING BEST WEB</i> <br /> <i>SOLUTIONS WITH</i> <br /> <i>HTML5/CSS3</i></h2>
-                    <p><i>Lorem ipsum dolor amet</i> <br /> <i>tempor incididunt ut</i> <br /> <i>veniam omnis </i></p>
-                    <div class="da-img"><img src="assets/plugins/parallax-slider/img/html5andcss3.png" alt="image01" /></div>
-                </div>
-                <div class="da-arrows">
-                    <span class="da-arrows-prev"></span>
-                    <span class="da-arrows-next"></span>
-                </div>
-            </div>
-        </div><!--/slider-->
-    </div>
-    <!--=== End Slider ===-->
 
-    <!--=== Purchase Block ===-->
-    <div class="purchase">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9 animated fadeInLeft">
-                    <span>Unify is a clean and fully responsive incredible Template.</span>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.</p>
-                </div>
-                <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="#" class="btn-u btn-u-lg"><i class="fa fa-cloud-download"></i> Download Now</a>
-                </div>
-            </div>
-        </div>
-    </div><!--/row-->
-    <!-- End Purchase Block -->
 
-    <!--=== Content Part ===-->
-    <div class="container content">
-        <div class="title-box">
-            <div class="title-box-text">We <span class="color-green">Do</span> Awesome Design</div>
-            <p>Creative freedom matters user experience, we minimize the gap between technology and its audience.</p>
-        </div>
 
-        <div class="margin-bottom-40"></div>
 
-        <!-- Info Blocks -->
-        <div class="row">
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-bell-o"></i>
-                <div class="info-blocks-in">
-                    <h3>FREE Updates</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-hdd-o"></i>
-                <div class="info-blocks-in">
-                    <h3>1000+ Icons</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-lightbulb-o"></i>
-                <div class="info-blocks-in">
-                    <h3>Creative Ideas</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="row margin-bottom-60">
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-code"></i>
-                <div class="info-blocks-in">
-                    <h3>SEO Ready</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-compress"></i>
-                <div class="info-blocks-in">
-                    <h3>Fully Responsive</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                </div>
-            </div>
-            <div class="col-sm-4 info-blocks">
-                <i class="icon-info-blocks fa fa-html5"></i>
-                <div class="info-blocks-in">
-                    <h3>CSS3 + HTML5</h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                </div>
-            </div>
-        </div>
-        <!-- End Info Blocks -->
 
-        <!-- Portfolio Sorting Blocks -->
-        <div class="sorting-block">
-            <ul class="sorting-nav sorting-nav-v1 text-center">
-                <li class="filter" data-filter="all">All</li>
-                <li class="filter" data-filter="category_1">UI Design</li>
-                <li class="filter" data-filter="category_2">Wordpress</li>
-                <li class="filter" data-filter="category_3">HTML5/CSS3</li>
-                <li class="filter" data-filter="category_3 category_1">Bootstrap 3</li>
-            </ul>
-
-            <ul class="row sorting-grid">
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_1" data-cat="1">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img11.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_3" data-cat="3">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img12.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_2" data-cat="2">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img13.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_3" data-cat="3">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img3.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_2" data-cat="2">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img2.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_1" data-cat="1">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img6.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_2" data-cat="2">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img8.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="col-md-3 col-sm-6 col-xs-12 mix category_1" data-cat="1">
-                    <a href="#">
-                        <img class="img-responsive" src="assets/img/main/img1.jpg" alt="">
-                        <div class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="clearfix"></div>
-        </div>
-        <!-- End Portfolio Sorting Blocks -->
-    </div><!--/container-->
-    <!-- End Content Part -->
-
-    <!--=== Footer Version 1 ===-->
-    <div class="footer-v1">
+    <!--=== Footer v6 ===-->
+    <div id="footer-v6" class="footer-v6">
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <!-- About -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
-                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
-                    </div><!--/col-md-3-->
-                    <!-- End About -->
+                    <!-- About Us -->
+                    <div class="col-md-3 sm-margin-bottom-40">
+                        <div class="heading-footer"><h2>About Us</h2></div>
+                        <p>NtouchMusic.com - A Notifacation Service dedicated to informing our users when their favorite artists release a new song.</p>
+                    </div>
+                    <!-- End About Us -->
 
-                    <!-- Latest -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="posts">
-                            <div class="headline"><h2>Latest Posts</h2></div>
-                            <ul class="list-unstyled latest-list">
-                                <li>
-                                    <a href="#">Incredible content</a>
-                                    <small>May 8, 2014</small>
-                                </li>
-                                <li>
-                                    <a href="#">Best shoots</a>
-                                    <small>June 23, 2014</small>
-                                </li>
-                                <li>
-                                    <a href="#">New Terms and Conditions</a>
-                                    <small>September 15, 2014</small>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!--/col-md-3-->
-                    <!-- End Latest -->
-
-                    <!-- Link List -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="headline"><h2>Useful Links</h2></div>
-                        <ul class="list-unstyled link-list">
-                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    <!-- Recent News -->
+                    <div class="col-md-3 sm-margin-bottom-40">
+                        <div class="heading-footer"><h2>Recent News</h2></div>
+                        <ul class="list-unstyled link-news">
+                            <li>
+                                <a href="#">Hollywood killed Hip-Hop</a>
+                                <small>January 03, 2015</small>
+                            </li>
+                            <li>
+                                <a href="#">EDM is where the party is at.</a>
+                                <small>Febuary 02, 2014</small>
+                            </li>
+                            <li>
+                                <a href="#">Mulatto Patriot X Pugs Atomz EP Coming Soon.</a>
+                                <small>March 01, 2015</small>
+                            </li>
                         </ul>
-                    </div><!--/col-md-3-->
-                    <!-- End Link List -->
+                    </div>
+                    <!-- End Recent News -->
 
-                    <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40">
-                        <div class="headline"><h2>Contact Us</h2></div>
-                        <address class="md-margin-bottom-40">
-                            25, Lorem Lis Street, Orange <br />
-                            California, US <br />
-                            Phone: 800 123 3456 <br />
-                            Fax: 800 123 3456 <br />
-                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
-                        </address>
-                    </div><!--/col-md-3-->
-                    <!-- End Address -->
+                    <!-- Useful Links -->
+                    <div class="col-md-3 sm-margin-bottom-40">
+                        <div class="heading-footer"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled footer-link-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="http://www.mptracks.com">MPtracks.com</a></li>
+                            <li><a href="http://www.starterleague.com/">starterleague.com</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Useful Links -->
+
+                    <!-- Contacts -->
+                    <div class="col-md-3">
+                        <div class="heading-footer"><h2>Contacts</h2></div>
+                        <ul class="list-unstyled contacts">
+                            <li>
+                                <i class="radius-3x fa fa-map-marker"></i>
+                                P.O. Box 1906
+                            </li>
+                            <li>
+                                <i class="radius-3x fa fa-map-marker"></i>
+                                Oak Park, IL 60304
+                            </li>
+                            <li>
+                                <i class="radius-3x fa fa-phone"></i>
+                                (312)-xxx-xxxx<br>
+                            </li>
+                            <li>
+                                <i class="radius-3x fa fa-globe"></i>
+                                <a href="#">contact@ntouchmusic.com</a><br>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Contacts -->
                 </div>
-            </div>
-        </div><!--/footer-->
+            </div><!--/container -->
+        </div>
 
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <p>
-                            2015 &copy; All Rights Reserved. Unify Theme by
-                            <a target="_blank" href="https://twitter.com/htmlstream">Htmlstream</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-                        </p>
-                    </div>
-                    <!-- Social Links -->
-                    <div class="col-md-6">
-                        <ul class="social-icons pull-right">
-                            <li><a href="#" data-original-title="Facebook" class="rounded-x social_facebook"></a></li>
-                            <li><a href="#" data-original-title="Twitter" class="rounded-x social_twitter"></a></li>
-                            <li><a href="#" data-original-title="Goole Plus" class="rounded-x social_googleplus"></a></li>
-                            <li><a href="#" data-original-title="Linkedin" class="rounded-x social_linkedin"></a></li>
-                            <li><a href="#" data-original-title="Pinterest" class="rounded-x social_pintrest"></a></li>
+                    <div class="col-md-8 sm-margon-bottom-10">
+                        <ul class="list-inline terms-menu">
+                            <li class="silver">Copyright © 2015 - All Rights Reserved</li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy and Policy</a></li>
+                            <li><a href="#">License</a></li>
+                            <li><a href="#">Support</a></li>
                         </ul>
                     </div>
-                    <!-- End Social Links -->
+                    <div class="col-md-4">
+                        <ul class="list-inline dark-social pull-right space-bottom-0">
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Facebook" href="http://www.facebook.com/mulattopatriot">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Twitter" href="http://www.twitter.com/mulattopatriot">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Vine" href="#">
+                                    <i class="fa fa-vine"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Google plus" href="#">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Pinterest" href="#">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Instagram" href="http://www.instagram.com/mulattopatriot">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Tumblr" href="#">
+                                    <i class="fa fa-tumblr"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Youtube" href="http://www.youtube.com/mulattopatriot">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Soundcloud" href="#">
+                                    <i class="fa fa-soundcloud"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div><!--/copyright-->
+        </div>
     </div>
-    <!--=== End Footer Version 1 ===-->
+    <!--=== End Footer v6 ===-->
 </div><!--/wrapper-->
 
 <!-- JS Global Compulsory -->
@@ -421,6 +282,16 @@
         ParallaxSlider.initParallaxSlider();
     });
 </script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        });
+</script>
+<!--[if lt IE 9]>
+    <script src="assets/plugins/respond.js"></script>
+    <script src="assets/plugins/html5shiv.js"></script>
+    <script src="assets/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
 <!--[if lt IE 9]>
     <script src="assets/plugins/respond.js"></script>
     <script src="assets/plugins/html5shiv.js"></script>

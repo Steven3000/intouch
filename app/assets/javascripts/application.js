@@ -16,3 +16,11 @@
 //= require Unify/bootswatch
 //= require turbolinks
 
+@import "back-to-top";
+@import "index";
+@import "bootstrap";
+@import "comment";
+@import "custom";
+@import "form-sliders";
+@import "unify"
+@import "smoothScroll"

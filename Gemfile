@@ -12,7 +12,7 @@ gem 'less-rails'
 
 gem 'less-rails-bootstrap'
 
-
+gem 'font-awesome-sass'
 
 
 
