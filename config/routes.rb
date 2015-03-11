@@ -45,6 +45,7 @@ Rails.application.routes.draw do
   get("/show", :controller => 'page', :action => 'show')
   get("/singnup", :controller => 'page', :action => 'singnup')
 
+
   #ADMIN
   get("/admin_dashboard", :controller => 'admin', :action => 'admin_dashboard')
   get("/account_manager", :controller => 'admin', :action => 'account_manager')
