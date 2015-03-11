@@ -1,3 +1,8 @@
+.wrapper {
+  width: 700px;
+  margin: 40px auto;
+}
+
 .wrapper span {
   font-size: 23px;
   margin-left: 6px;

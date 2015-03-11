@@ -1,4 +1,4 @@
-<div class="main-wrapper">
+<div class="container">
   <div class="song-page-title">
     <h2><%= @song.title %>
     </h2>
@@ -47,33 +47,33 @@
 
   <ul class="song-additional-link">
       <% if @song.download_link.present? %>
-        <li>
-          <a href="<%= @song.download_link %>" target="_blank">Stream/Download</a>
-        </li>
+        <td>
+          <a href="<%= @song.download_link %>" target="_blank" class="btn btn-primary">Stream/Download</a>
+        </td>
        <% end %>
 
       <% if @song.itunes.present? %>
-        <li>
-          <a href="<%= @song.itunes %>" target="_blank">iTunes</a>
-        </li>
+        <td>
+          <a href="<%= @song.itunes %>" target="_blank" class="btn btn-primary">iTunes</a>
+        </td>
       <% end %>
 
       <% if @song.google.present? %>
-        <li>
-          <a href="<%= @song.google %>" target="_blank">Google Play</a>
-        </li>
+        <td>
+          <a href="<%= @song.google %>" target="_blank" class="btn btn-primary">Google Play</a>
+        </td>
       <% end %>
 
       <% if @song.amazon.present? %>
-        <li>
-          <a href="<%= @song.amazon %>" target="_blank">Amazon</a>
-        </li>
+        <td>
+          <a href="<%= @song.amazon %>" target="_blank" class="btn btn-primary">Amazon</a>
+        </td>
       <% end %>
 
       <% if @song.spotify.present? %>
-        <li>
-          <a href="<%= @song.spotify %>" target="_blank">Spotify</a>
-        </li>
+        <td>
+          <a href="<%= @song.spotify %>" target="_blank" class="btn btn-primary">Spotify</a>
+        </td>
       <% end %>
     </ul>
       <hr/>

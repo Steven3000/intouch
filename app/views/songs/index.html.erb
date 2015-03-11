@@ -3,7 +3,7 @@
     Latest songs released by your favorite artists
   </h3>
 
-  <ul class="feed">
+  <ul class="container">
     <% @songs.each do |song| %>
       <li>
         <a href="/songs/<%= song.id %>">
