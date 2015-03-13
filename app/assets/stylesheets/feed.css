@@ -1,41 +1,41 @@
-.wrapper {
+.wrapper-feed {
   width: 700px;
   margin: 40px auto;
 }
 
-.wrapper span {
+.wrapper-feed span {
   font-size: 23px;
   margin-left: 6px;
 }
 
-.feed {
+.feedxxx {
   list-style: none;
   padding: 0;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
 }
 
-.feed li {
+.feedxxx li {
   list-style: none;
   border-bottom: 1px solid black;
   padding: 10px;
 }
 
-.feed li:last-child {
+.feedxxx li:last-child {
   border-bottom: none;
 }
 
-.feed li:hover, .feed li.new_select:hover {
+.feedxxx li:hover, .feed li.new_select:hover {
   background-color:  #f5f8fa;
   cursor: pointer;
 }
 
-.feed a {
+.feedxxx a {
   color: black;
   text-decoration: none;
 }
 
-.artist {
+.artist-feed {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0;
@@ -43,7 +43,7 @@
   margin: 0;
 }
 
-.artist span {
+.artist-feed span {
   font-weight: normal;
   position: absolute;
   right: 0;
@@ -52,8 +52,18 @@
   font-size: 12px;
 }
 
-.song {
+.song-feed {
   font-size: 14px;
   margin: 0;
   margin-top: 3px;
+}
+
+.artist-show-feed-left {
+  width: 300px;
+  float: left;
+}
+
+.artist-show-feed-right {
+  width: 500px;
+  float: right;
 }

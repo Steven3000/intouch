@@ -1,19 +1,19 @@
-<div class="container">
-  <h3 class="txt-center">
+<div class="wrapper-feed">
+  <h3 class="txtt-center">
     Here are the latest songs released by your favorite artists.
   </h3>
 
-  <ul class="btn btn-large">
+  <ul class="feedxxx">
     <% @songs.each do |song| %>
       <li>
         <a href="/songs/<%= song.id %>">
-          <p class="artist">
+          <p class="artist-feed">
             <%= song.artist.name %>
             <% if song.release_date.present? %>
               <span><%= time_ago_in_words(song.release_date) %></span>
             <% end %>
           </p>
-          <p class="song"><%= song.title %></p>
+          <p class="song-feed"><%= song.title %></p>
         </a>
       </li>
     <% end %>
