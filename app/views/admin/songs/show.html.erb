@@ -1,4 +1,4 @@
-<div class="wrapper-index">
+<div class="container">
 
   <div class="page-header">
     <h1>Song #<%= @song.id %> "<%= @song.title %>"</h1>
@@ -6,7 +6,7 @@
 
   <dl class="dl-horizontal">
       <dt>Artwork</dt>
-    <%= image_tag "#{@song.artwork_url}" %>
+     <dd><%= image_tag "#{@song.artwork_url}" %></dd>
 
     <br>
     <br>
@@ -44,7 +44,7 @@
 
     <% if @song.embedded_code.present? %>
         <dt>Embedded code</dt>
-        <dd><%= @song.embedded_code %></dd>
+        <dd><%= @song.embedded_code.html_safe %></dd>
     <% end %>
 
     <% if @song.itunes.present? %>
@@ -69,7 +69,7 @@
 
     <% if @song.youtube.present? %>
         <dt>Youtube</dt>
-        <dd><%= @song.youtube %></dd>
+        <dd><%= @song.youtube.html_safe %></dd>
     <% end %>
 
   </dl>

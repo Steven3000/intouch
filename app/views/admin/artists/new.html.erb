@@ -1,19 +1,17 @@
+<div class="container">
 
-<div class="wrapper-index">
+  <h1>Add Artist</h1>
 
-     <h1>Add Artist</h1>
+  <%= form_for(@artist, url: admin_artists_path) do |a| %>
 
+  <%= a.label :name, class: "control-label"  %>
+  <%= a.text_field :name, placeholder: "Name", class: "form-control input-lg"  %>
 
-    <%= form_for(@artist, url: admin_artists_path) do |a| %>
-
-      <%= a.label :name, class: "control-label"  %>
-      <%= a.text_field :name, placeholder: "Name", class: "form-control input-lg"  %>
-
-      <%= a.label :record_label, class: "control-label"  %>
-      <%= a.text_field :record_label, placeholder: "record_label", class: "form-control input-lg"  %>
+  <%= a.label :record_label, class: "control-label"  %>
+  <%= a.text_field :record_label, placeholder: "record_label", class: "form-control input-lg"  %>
 
 
-      <%= a.submit class: "btn btn-default"  %>
-    <% end %>
+  <%= a.submit class: "btn btn-default"  %>
+  <% end %>
 
 </div>
