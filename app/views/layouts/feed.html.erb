@@ -77,7 +77,7 @@
 
                     <% if user_signed_in? %>
                         <li class="btn"><%= link_to current_user.email, edit_user_registration_path %></li>
-                        <li class="btn"><%= link_to "Sign Out", destroy_user_session_path, :method =>"delete" %></li>
+                        <li class="btn"><%= link_to "Sign Out", destroy_user_session_path, :method => "delete" %></li>
                     <% else %>
                         <li class="btn btn-success"><%= link_to "Sign Up", new_user_registration_path %></li>
                         <li class="btn"><%= link_to "Sign In", new_user_session_path %></li>
