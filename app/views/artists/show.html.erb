@@ -1,32 +1,28 @@
 <div class="container">
-  <div class="artists-show-feed-left">
-  <h1>
-    <%= @artist.name %>  <span style="font-size:10px"> <%= @artist.record_label %></span>
-  </h1>
 
-  <aside>
-    <%= image_tag "#{@artist.picture_url}" %>
-    <br>
-    <br>
-  </div>
+    <div>
+        <%= image_tag "#{@artist.picture_url}" %>
+    </br>
 
-  <div class="artists-show-feed-right">
-    <ul class="feedxxx">
-        <% @artist.songs.each do |song| %>
-          <li>
-            <a href="/songs/<%= song.id %>">
-              <p class="artist-feed">
-                <%= song.artist.name %>
-                <% if song.release_date.present? %>
-                  <span><%= time_ago_in_words(song.release_date) %></span>
-                <% end %>
-              </p>
-              <p class="song-feed"><%= song.title %> </p>
-            </a>
-          </li>
-        <% end %>
-      </ul>
-  </div>
+    </div>
+        <div>
+      <ul class="feedxxx">
+          <% @artist.songs.each do |song| %>
+            <li>
+              <a href="/songs/<%= song.id %>">
+                <p class="artist-feed">
+                  <%= song.artist.name %>
+                  <% if song.release_date.present? %>
+                    <span><%= time_ago_in_words(song.release_date) %></span>
+                  <% end %>
+                </p>
+                <p class="song-feed"><%= song.title %> </p>
+              </a>
+            </li>
+          <% end %>
+        </ul>
+    </div>
+
 </div>
 
 

@@ -106,8 +106,13 @@ assets/stylesheets/application.scss
 
 --------------------------------------------------------------------------
 
+Public Artist Show
 
+  <h1>
+    <%= @artist.name %>  <span style="font-size:10px"> <%= @artist.record_label %></span>
+  </h1>
 
+--------------------------------------------------------------------------
 
 
 
