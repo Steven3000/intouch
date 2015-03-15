@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :subscription
-  has_many :artist, :through => :subscription
-  has_many :announcement, :through => :artist
+  has_many :subscriptions
+  has_many :artists, :through => :subscriptions
+  has_many :announcements, :through => :artist
 end

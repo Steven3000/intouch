@@ -1,8 +1,8 @@
 class Artist < ActiveRecord::Base
-  has_many :song
-  has_many :subscription
-  has_many :user, :through => :subscription
-  has_many :announcement, :through => :song
+  has_many :songs
+  has_many :subscriptions
+  has_many :users, :through => :subscriptions
+  has_many :announcements, :through => :songs
 
   def picture_url
     "artists/#{name.parameterize}.jpg"
