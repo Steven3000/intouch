@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150303042620) do
+ActiveRecord::Schema.define(version: 20150315004340) do
+
+  create_table "announcements", force: :cascade do |t|
+    t.integer  "song_id"
+    t.datetime "post_creation_date"
+    t.text     "url"
+    t.string   "artwork"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "artists", force: :cascade do |t|
     t.string   "name"
@@ -19,6 +28,13 @@ ActiveRecord::Schema.define(version: 20150303042620) do
     t.string   "record_label"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "follows", force: :cascade do |t|
+    t.integer  "artist_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "songs", force: :cascade do |t|
@@ -37,6 +53,13 @@ ActiveRecord::Schema.define(version: 20150303042620) do
     t.datetime "updated_at"
     t.integer  "artist_id"
     t.text     "youtube"
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer  "artist_id"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
