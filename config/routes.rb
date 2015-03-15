@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  devise_for :users
   root 'page#home'
+  devise_for :users
+
 
   namespace :admin do
     # Songs Admin
