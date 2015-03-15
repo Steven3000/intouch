@@ -1,0 +1,16 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Artist:</strong>
+    <%= @subscription.artist_id %>
+  </p>
+
+  <p>
+    <strong>User:</strong>
+    <%= @subscription.user_id %>
+  </p>
+
+  <%= link_to 'Edit', edit_subscription_path(@subscription) %> |
+  <%= link_to 'Back', subscriptions_path %>
+</div>

@@ -1,0 +1,31 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Listing Subscriptions</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Artist</th>
+        <th>User</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @subscriptions.each do |subscription| %>
+        <tr>
+          <td><%= subscription.artist_id %></td>
+
+          <td><%= link_to 'Destroy', subscription_path(current_user), html: {class: 'btn btn-danger btn-block' }, method: :delete, data: { confirm: 'Are you sure?' }  %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Subscription', new_subscription_path %>
+</div>
+
+

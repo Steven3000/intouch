@@ -1,0 +1,33 @@
+<%= form_for(@announcement) do |f| %>
+  <% if @announcement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@announcement.errors.count, "error") %> prohibited this announcement from being saved:</h2>
+
+      <ul>
+      <% @announcement.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :song_id %><br>
+    <%= f.number_field :song_id %>
+  </div>
+  <div class="field">
+    <%= f.label :post_creation_date %><br>
+    <%= f.datetime_select :post_creation_date %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_area :url %>
+  </div>
+  <div class="field">
+    <%= f.label :artwork %><br>
+    <%= f.text_field :artwork %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

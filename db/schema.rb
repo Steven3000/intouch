@@ -30,13 +30,6 @@ ActiveRecord::Schema.define(version: 20150315004340) do
     t.datetime "updated_at"
   end
 
-  create_table "follows", force: :cascade do |t|
-    t.integer  "artist_id"
-    t.integer  "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "songs", force: :cascade do |t|
     t.string   "title"
     t.string   "features"

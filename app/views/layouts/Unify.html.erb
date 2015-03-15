@@ -83,9 +83,9 @@
                            "/songs" %>
                     </li>
                     <li class="btn">
-                    <%= link_to_if (request.path != "/following.html"),
-                         "My Artists/Add Artist",
-                         "/following.html" %>
+                    <%= link_to_if (request.path != subscriptions_path),
+                         "My Subscriptions",
+                         subscriptions_path %>
                     </li>
 
                     <% if user_signed_in? %>
