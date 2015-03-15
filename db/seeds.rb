@@ -1,4 +1,3 @@
-
 Artist.destroy_all
 a1 = Artist.create ({
                 :name => "Mulatto Patriot",

@@ -17,7 +17,7 @@
         <tr>
           <td><%= subscription.artist_id %></td>
 
-          <td><%= link_to 'Destroy', subscription_path(current_user), html: {class: 'btn btn-danger btn-block' }, method: :delete, data: { confirm: 'Are you sure?' }  %></td>
+          <td><%= link_to 'Destroy', @subscription, html: {class: 'btn btn-danger btn-block' }, method: :delete, data: { confirm: 'Are you sure?' }  %></td>
         </tr>
       <% end %>
     </tbody>
@@ -27,5 +27,3 @@
 
   <%= link_to 'New Subscription', new_subscription_path %>
 </div>
-
-
