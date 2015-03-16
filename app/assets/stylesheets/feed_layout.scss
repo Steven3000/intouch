@@ -11,26 +11,29 @@
  * file per style scope.
  *
  *
+ *= require Unify/loader
+ *= require Unify/bootswatch
  */
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
 
+@import "unify/base";
 @import "feed";
 @import "base";
 
-@import "unify/header-default";
-@import "unify/header-v2";
-@import "unify/footer-default";
-@import "unify/footer-v7";
+@import "header-default";
+@import "header-v2";
+@import "footer-default";
+@import "footer-v7";
 
 @import "app.css";
 @import "custom.css";
 
 
-@import "unify/plugins/bootstrap/css/bootstrap.min";
-@import "unify/plugins/animate";
-@import "line-icons/line-icons";
-@import "unify/plugins/font-awesome/css/font-awesome.min";
-@import "unify/plugins/flexslider";
+@import plugins/bootstrap/css/bootstrap.min"
+@import plugins/animate"
+@import plugins/line-icons/line-icons"
+@import plugins/font-awesome/css/font-awesome.min"
+@import plugins/flexslider.css"

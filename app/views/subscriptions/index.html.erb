@@ -15,7 +15,7 @@
     <tbody>
       <% @subscriptions.each do |subscription| %>
         <tr>
-          <td><%= subscription.artist_id %></td>
+          <td><%= subscription.artist.name %></td>
 
           <td><%= link_to 'Destroy', @subscription, html: {class: 'btn btn-danger btn-block' }, method: :delete, data: { confirm: 'Are you sure?' }  %></td>
         </tr>

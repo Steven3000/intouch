@@ -16,7 +16,11 @@
                     <span><%= time_ago_in_words(song.release_date) %></span>
                   <% end %>
                 </p>
-                <p class="song-feed"><%= song.title %> </p>
+                <p class="song-feed"><%= song.title %>
+            <% if song.features.present? %>
+            Feat.
+          <%= song.features %></p>
+          <% end %>
               </a>
             </li>
           <% end %>

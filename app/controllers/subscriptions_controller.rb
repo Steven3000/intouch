@@ -5,6 +5,7 @@ class SubscriptionsController < ApplicationController
   # GET /subscriptions.json
   def index
     @subscriptions = Subscription.all
+    #@subscription = Subscription.find(params[:id])
   end
 
   # GET /subscriptions/1
