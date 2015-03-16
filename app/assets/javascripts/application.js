@@ -24,3 +24,4 @@
 //= require form-sliders
 //= require unify
 //= require smoothScroll
+//= require unify/plugins/bootstrap/js/bootstrap.min.js
