@@ -20,6 +20,7 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "application", :media => "all" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
     <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
 
