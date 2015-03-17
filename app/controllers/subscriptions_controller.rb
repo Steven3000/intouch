@@ -1,6 +1,14 @@
 class SubscriptionsController < ApplicationController
   before_action :set_subscription, only: [:show, :edit, :update, :destroy]
 
+  before_action :authorize_user
+
+  def authorize_user
+    unless current_user == @subscription.user_id || current_user.admin?
+      redirect_to root_url, :alert => "Not authorized for that."
+    end
+  end
+
   # GET /subscriptions
   # GET /subscriptions.json
   def index
