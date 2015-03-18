@@ -17,7 +17,6 @@ user_info.each do |user|
   u = User.new
   u.email = user[:email]
   u.password = user[:password]
-  u.user_id = user[:user_id]
   u.save
 end
 
