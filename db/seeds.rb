@@ -1,3 +1,27 @@
+user_info = [
+{
+  :email => "a@a.com",
+  :password => "12121212"
+},
+{
+  :email => "b@b.com",
+  :password => "12121212"
+},
+{
+  :email => "c@c.com",
+  :password => "12121212"
+}
+]
+
+user_info.each do |user|
+  u = User.new
+  u.email = user[:email]
+  u.password = user[:password]
+  u.user_id = user[:user_id]
+  u.save
+end
+
+
 Artist.destroy_all
 a1 = Artist.create ({
                 :name => "Mulatto Patriot",

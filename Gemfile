@@ -14,10 +14,6 @@ gem 'less-rails-bootstrap'
 
 gem 'font-awesome-sass'
 
-
-
-# gem 'carrierwave'
-
 gem 'kaminari'
 
 gem 'quiet_assets', group: :development

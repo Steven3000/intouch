@@ -1,143 +1,145 @@
-<div class="wrapper">
-<div class="page-header">
-  <h1>Songs</h1>
-</div>
+<div style="margin-left:100px">
+  <div class="wrapper">
+  <div class="page-header">
+    <h1>Songs</h1>
+  </div>
 
-<p><a href="/admin/songs/new" class="btn btn-default" >Add a New Song</a></p>
+  <p><a href="/admin/songs/new" class="btn btn-default" >Add a New Song</a></p>
 
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>View</th>
-      <th>Edit</th>
-      <th>Trash</th>
-      <th>Artist ID</th>
-      <th>Artist Name</th>
-      <th>Title</th>
-      <th>Features</th>
-      <th>Producer</th>
-      <th>Album</th>
-      <th>Release date</th>
-      <th>Download link</th>
-      <th>Embedded code</th>
-      <th>Itunes</th>
-      <th>Google</th>
-      <th>Amazon</th>
-      <th>Spotify</th>
-      <th>Youtube</th>
-      <th>View</th>
-      <th>Edit</th>
-      <th>Trash</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @songs.each do |song| %>
+  <table class="table table-hover">
+    <thead>
       <tr>
-         <td>
-         <%= link_to 'Show', admin_song_path(song.id) %>
-       <!--    <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
-            <i class="fa fa-search-plus"></i>
-          </a> -->
-        </td>
-        <td>
-        <%= link_to 'Edit', edit_admin_song_path(song.id) %>
-
-      <!--     <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-          </a> -->
-        </td>
-        <td>
-          <%= link_to 'Destroy', admin_song_path(song.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-         <!--  <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i> -->
-        <!--   </a> -->
-        </td>
-        <td><%= song.artist_id %></td>
-        <td><%= song.artist.name %></td>
-        <td><%= song.title %></td>
-        <td><%= song.features %></td>
-        <td><%= song.producer %></td>
-        <td><%= song.album %></td>
-        <td><%= song.release_date %></td>
-        <td>
-          <% song.download_link %>
-          <% if song.download_link.present? %>
-              YES
-          <% else %>
-              NO
-          <% end %>
-        </td>
-        <td>
-          <% song.embedded_code %>
-          <% if song.embedded_code.present? %>
-              YES
-          <% else %>
-              NO
-          <% end %>
-        </td>
-        <td>
-          <% song.itunes %>
-          <% if song.itunes.present? %>
-              YES
-          <% else %>
-              NO
-          <% end %>
-        </td>
-        <td>
-          <% song.google %>
-          <% if song.google.present? %>
-              YES
-          <% else %>
-              NO
-          <% end %>
-          </td>
-        <td>
-          <% song.amazon %>
-          <% if song.amazon.present? %>
-              YES
-          <% else %>
-              NO
-          <% end %>
-        </td>
-        <td>
-          <% song.spotify %>
-          <% if song.spotify.present? %>
-             YES
-          <% else %>
-              NO
-          <% end %>
-        </td>
-        <td>
-          <% song.youtube %>
-          <% if song.youtube.present? %>
-            YES
-          <% else %>
-              NO
-          <% end %>
-        </td>
-         <td>
-         <%= link_to 'Show', admin_song_path(song.id) %>
-       <!--    <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
-            <i class="fa fa-search-plus"></i>
-          </a> -->
-        </td>
-        <td>
-        <%= link_to 'Edit', edit_admin_song_path(song.id) %>
-
-      <!--     <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
-            <i class="fa fa-edit"></i>
-          </a> -->
-        </td>
-        <td>
-          <%= link_to 'Destroy', admin_song_path(song.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-         <!--  <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
-            <i class="fa fa-trash-o"></i> -->
-        <!--   </a> -->
-        </td>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Trash</th>
+        <th>Artist ID</th>
+        <th>Artist Name</th>
+        <th>Title</th>
+        <th>Features</th>
+        <th>Producer</th>
+        <th>Album</th>
+        <th>Release date</th>
+        <th>Download link</th>
+        <th>Embedded code</th>
+        <th>Itunes</th>
+        <th>Google</th>
+        <th>Amazon</th>
+        <th>Spotify</th>
+        <th>Youtube</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Trash</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-<%= paginate(@songs) %>
+    </thead>
+
+    <tbody>
+      <% @songs.each do |song| %>
+        <tr>
+           <td>
+           <%= link_to 'Show', admin_song_path(song.id) %>
+         <!--    <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
+              <i class="fa fa-search-plus"></i>
+            </a> -->
+          </td>
+          <td>
+          <%= link_to 'Edit', edit_admin_song_path(song.id) %>
+
+        <!--     <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
+              <i class="fa fa-edit"></i>
+            </a> -->
+          </td>
+          <td>
+            <%= link_to 'Destroy', admin_song_path(song.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+           <!--  <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
+              <i class="fa fa-trash-o"></i> -->
+          <!--   </a> -->
+          </td>
+          <td><%= song.artist_id %></td>
+          <td><%= song.artist.name %></td>
+          <td><%= song.title %></td>
+          <td><%= song.features %></td>
+          <td><%= song.producer %></td>
+          <td><%= song.album %></td>
+          <td><%= song.release_date %></td>
+          <td>
+            <% song.download_link %>
+            <% if song.download_link.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% song.embedded_code %>
+            <% if song.embedded_code.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% song.itunes %>
+            <% if song.itunes.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% song.google %>
+            <% if song.google.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+            </td>
+          <td>
+            <% song.amazon %>
+            <% if song.amazon.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% song.spotify %>
+            <% if song.spotify.present? %>
+               YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% song.youtube %>
+            <% if song.youtube.present? %>
+              YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+           <td>
+           <%= link_to 'Show', admin_song_path(song.id) %>
+         <!--    <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
+              <i class="fa fa-search-plus"></i>
+            </a> -->
+          </td>
+          <td>
+          <%= link_to 'Edit', edit_admin_song_path(song.id) %>
+
+        <!--     <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
+              <i class="fa fa-edit"></i>
+            </a> -->
+          </td>
+          <td>
+            <%= link_to 'Destroy', admin_song_path(song.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+           <!--  <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
+              <i class="fa fa-trash-o"></i> -->
+          <!--   </a> -->
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate(@songs) %>
+  </div>
 </div>
