@@ -1,0 +1,3 @@
+    <div class="col-sm-6">
+      <%= f.collection_select(:artist_id, Artist.all, :id, :name) %>
+    </div>

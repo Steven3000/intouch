@@ -11,9 +11,14 @@ class SubscriptionsController < ApplicationController
 
   # GET /subscriptions
   # GET /subscriptions.json
+
+  def artists
+  end
+
   def index
     @subscriptions = Subscription.all
-    #@subscription = Subscription.find(params[:id])
+    # @subscription = Subscription.where({ :user_id => current_user.id, :artist_id => artist.id })
+    # @subscription = Subscription.find(params[:id])
   end
 
   # GET /subscriptions/1
@@ -24,6 +29,7 @@ class SubscriptionsController < ApplicationController
   # GET /subscriptions/new
   def new
     @subscription = Subscription.new
+
   end
 
   # GET /subscriptions/1/edit
