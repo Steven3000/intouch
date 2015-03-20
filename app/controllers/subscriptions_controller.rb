@@ -16,7 +16,8 @@ class SubscriptionsController < ApplicationController
 
   def index
     @subscriptions = current_user.subscriptions
-
+    artist_ids = @subscriptions.pluck(:artist_id)
+    @available_artists = Artist.where.not(id: artist_ids)
   end
 
   # GET /subscriptions/1
