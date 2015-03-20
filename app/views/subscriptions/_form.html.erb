@@ -1,12 +1,17 @@
 <div>
   <%= form_for(@subscription, html: {class: 'form-horizontal'}) do |f| %>
 
-    <%= render "shared/error_messages", resource: @subscription  %>
+    <% if @subscription.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@subscription.errors.count, "error") %> prohibited this subscription from being saved:</h2>
 
-    <div>
-      <%= f.hidden_field :user_id %>
-      <%= hidden_field_tag 'selected', 'none'  %>
-    </div>
+        <ul>
+        <% @subscription.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
 
     <div class="form-group">
       <%= f.label :artist_id, class: "control-label" %>

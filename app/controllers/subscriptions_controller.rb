@@ -1,7 +1,7 @@
 class SubscriptionsController < ApplicationController
   before_action :set_subscription, only: [:show, :edit, :update, :destroy]
 
-  # before_action :authorize_user
+  #  before_action :authorize_user
 
   # def authorize_user
   #   unless current_user == @subscription.user_id || current_user.admin?
@@ -15,7 +15,8 @@ class SubscriptionsController < ApplicationController
 
 
   def index
-    @subscriptions = Subscription.all(current_user)
+    @subscriptions = current_user.subscriptions
+
   end
 
   # GET /subscriptions/1
@@ -25,7 +26,7 @@ class SubscriptionsController < ApplicationController
 
   # GET /subscriptions/new
   def new
-    @subscription = Subscription.new
+    @subscription = Subscription.new(:user_id => current_user.id)
   end
 
   # GET /subscriptions/1/edit
@@ -35,7 +36,7 @@ class SubscriptionsController < ApplicationController
   # POST /subscriptions
   # POST /subscriptions.json
   def create
-    @subscription = Subscription.new(subscription_params)
+    @subscription = current_user.subscriptions.build(subscription_params)
 
     respond_to do |format|
       if @subscription.save
@@ -80,6 +81,6 @@ class SubscriptionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def subscription_params
-      params.require(:subscription).permit(:artist_id, :user_id)
+      params.require(:subscription).permit(:artist_id)
     end
 end

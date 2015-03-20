@@ -113,12 +113,16 @@ Public Artist Show
   </h1>
 
 --------------------------------------------------------------------------
+subscription new
+
+          <div>
+          <%= image_tag "#{@artist.picture_url}" %>
+          </div>
 
 
-
-
-
-
+     <div class="panel-heading">
+          <h3 class="panel-title"><%= @artist.name %></h3>
+         </div>
 
 
 

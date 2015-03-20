@@ -1,0 +1,22 @@
+<% @subscriptions.each do |subscription| %>
+
+
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+    <div class="panel panel-default">
+
+      <div class="panel-body">
+        <%#= link_to image_tag(movie.image_url), movie, :class => "thumbnail" %>
+        <%= image_tag "#{subscription.artist.picture_url}" %>
+        <dl>
+          <dt>Title</dt>
+          <dd><%= subscription.artist.name %></dd>
+          <dd><%= link_to 'Unsubscribe', subscription_path(subscription), :method => :delete, :class => "btn btn-warning" %></dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+<% end %>
+
+
+

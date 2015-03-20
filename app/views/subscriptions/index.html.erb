@@ -1,26 +1,15 @@
 <div class="container">
+
+
+
+
+
+
+
+
   <p id="notice"><%= notice %></p>
 
-  <h1>Listing Subscriptions</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th colspan="8">Artist</th>
-        <th colspan="4"></th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <% @subscriptions.each do |subscription| %>
-        <tr>
-          <td><%= subscription.artist.name %></td>
-          <td>___________________</td>
-          <td><%= link_to 'Destroy', @subscription, :class => 'btn btn-danger btn-block', method: :delete, data: { confirm: 'Are you sure?' }  %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+  <%= render 'my_subs' %>
 
   <br>
 
