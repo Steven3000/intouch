@@ -1,0 +1,21 @@
+        <div class="btn-group btn-group-justified">
+          <%= link_to movie_url(movie), :class => "btn btn-primary" do %>
+            <i class="fa fa-search-plus"></i>
+          <% end %>
+          <%= link_to edit_movie_url(movie), :class => "btn btn-warning" do %>
+            <i class="fa fa-edit"></i>
+          <% end %>
+          <%= link_to movie_url(movie), :method => "delete", :data => { :confirm => "Do you really want to delete this movie?" }, :class => "btn btn-danger" do %>
+            <i class="fa fa-trash-o"></i>
+          <% end %>
+        </div>
+
+            <%= link_to 'Unsubscribe', like_url(like.id), :method => :delete, :class => "btn btn-warning" %>
+          <% else %>
+            <%= form_for Subscription.new :user => current_user, :artist_id => Artist do |f| %>
+              <%= f.hidden_field :artist_id %>
+
+              <%= f.submit :class => "btn btn-success" %>
+            <% end %>
+          <% end %>
+        <% end %>
