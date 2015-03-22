@@ -124,10 +124,12 @@ subscription new
           <h3 class="panel-title"><%= @artist.name %></h3>
          </div>
 
+--------------------------------------------------------------------------
 
+link to new subscription button
+    <%= link_to 'New Subscription', new_subscription_path, :class => "btn btn-primary" %>
 
-
-
+--------------------------------------------------------------------------
 
 
 
