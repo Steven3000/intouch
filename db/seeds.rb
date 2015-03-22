@@ -132,23 +132,6 @@ Song.create ({
               })
 
 Song.create ({
-                :artist => a12,
-                :title => "Actin Crazy",
-                :features => "",
-                :producer => "40 & Omen",
-                :album => "Mr. Wonderful",
-                :download_link => "https://soundcloud.com/actionbronson/action-bronson-actin-crazy",
-                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/184964202&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
-                :itunes => "https://itunes.apple.com/us/album/actin-crazy-single/id956323924",
-                :google => "https://play.google.com/store/music/album?id=B3j5khyzx6vxjcxhgfemc4smbwi&tid=song-Truqnbckmybtnpziogvtu2b3hqi&hl=en",
-                :amazon => "http://www.amazon.com/Actin-Crazy-Explicit-Action-Bronson/dp/B00RYGX0B4",
-                :spotify => "https://play.spotify.com/album/5bxjy0F0a8yCONYvEOuWg0",
-                :release_date => "{2015/1/7}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/debIyWS6Byc?rel=0" frameborder="0" allowfullscreen></iframe>'
-            })
-
-
-Song.create ({
                 :artist => a1,
                 :title => "SoundCatcher",
                 :features => "Pugs Atomz, Neak",
@@ -229,54 +212,6 @@ Song.create ({
             })
 
 Song.create ({
-                :artist => a12,
-                :title => "Terry",
-                :features => "",
-                :producer => "Alchemist",
-                :album => "Mr Wonderful",
-                :download_link => "",
-                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191489281&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
-                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
-                :google => "",
-                :amazon => "",
-                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
-                :release_date => "{2015/2/16}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6PGSOe2Iok0?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a12,
-                :title => "Baby Blue",
-                :features => "Chance the Rapper",
-                :producer => "Mark Ronson",
-                :album => "Mr Wonderful",
-                :download_link => "https://soundcloud.com/actionbronson/baby-blue-ft-chance-the-rapper",
-                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193829854&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
-                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
-                :google => "",
-                :amazon => "",
-                :spotify => "https://play.spotify.com/album/7Mh9OsANvltL7YJ438LejB",
-                :release_date => "{2015/3/2}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/9rQ_VVlR7Do?rel=0" frameborder="0" allowfullscreen></iframe>'
-              })
-
-Song.create ({
-                :artist => a3,
-                :title => "All Day",
-                :features => "Allan Kingdom & Theophilus London",
-                :producer => "",
-                :album => "",
-                :download_link => "",
-                :embedded_code => '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.adobe.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,0,0" name="bF50K5g1_144012540" width="100%" height="80" id="bF50K5g1_144012540"><param name="movie" value="http://www43.zippyshare.com/swf/player_local.swf?file=bF50K5g1&server=43&baseurl=http://www.zippyshare.com/api/&flashid=null&autostart=false&availablequality=both&bordercolor=#CCCCCC&forecolor=#000000&backcolor=#F2F2F2&darkcolor=#000000&lightcolor=#FF6600" /><param name="quality" value="high" /><param name="scriptAccess" value="always" /><embed src="http://www43.zippyshare.com/swf/player_local.swf?file=bF50K5g1&server=43&baseurl=http://www.zippyshare.com/api/&flashid=null&autostart=false&availablequality=both&bordercolor=#CCCCCC&forecolor=#000000&backcolor=#F2F2F2&darkcolor=#000000&lightcolor=#FF6600" width="100%" height="80" quality="high" pluginspage="http://www.adobe.com/go/getflashplayer" type="application/x-shockwave-flash" scriptaccess="always" name="bF50K5g1_144012540"></embed></object>',
-                :itunes => "",
-                :google => "",
-                :amazon => "",
-                :spotify => "",
-                :release_date => "{2015/3/2}",
-                :youtube => ''
-              })
-
-Song.create ({
                 :artist => a3,
                 :title => "Only One",
                 :features => "Paul McCartney",
@@ -296,7 +231,7 @@ Song.create ({
                 :artist => a4,
                 :title => "Lady Friend",
                 :features => "The Social Experiment",
-                :producer => "Chance The Rapper, Peter Cottontale, Nate Fox, Donnie Trumpet",
+                :producer => "The Social Experiment",
                 :album => "",
                 :download_link => "https://soundcloud.com/chancetherapper/chance-the-rapper-the-social-experiment-lady-friend",
                 :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191163281&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
@@ -312,7 +247,7 @@ Song.create ({
                 :artist => a4,
                 :title => "No Better Blues",
                 :features => "The Social Experiment",
-                :producer => "Chance The Rapper, Nate Fox, Donnie Trumpet & Peter Cottontale",
+                :producer => "The Social Experiment",
                 :album => "",
                 :download_link => "https://soundcloud.com/chancetherapper/chance-the-rapper-the-social-experiment-know-betta-blues",
                 :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/172307425&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
@@ -404,41 +339,500 @@ Song.create ({
                 :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/EBYITSFsjvU?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
+Song.create ({
+                :artist => a3,
+                :title => "All Day",
+                :features => "Allan Kingdom & Theophilus London",
+                :producer => "",
+                :album => "So Help Me God",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/all-day-feat.-theophilus-london/id972815455",
+                :google => "https://play.google.com/store/music/album/Kanye_West_All_Day?id=Bok2mgdce7hjbvpmlzfoanjnb7i&hl=en",
+                :amazon => "http://www.amazon.com/All-Day-Explicit-Kanye-West/dp/B00U6P6CW4",
+                :spotify => "https://play.spotify.com/user/cmount/playlist/0uFxjmYfjEXObrgiKmoavw",
+                :release_date => "{2015/3/2}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/_ABk7TmjnVk?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a3,
+                :title => "Awsome",
+                :features => "",
+                :producer => "",
+                :album => "So Help Me God",
+                :download_link => "",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/195458522&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "",
+                :google => "",
+                :amazon => "",
+                :spotify => "",
+                :release_date => "{2015/3/2}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/xz-QrOo1UBE?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a2,
+                :title => "Wesley's Theory",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
 
 
+Song.create ({
+                :artist => a2,
+                :title => "For Free? (Interlude)",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "King Kunta",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "Institutionalized",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "These Walls",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "u",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "Alright",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "For Sale? (Interlude)",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "Momma",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "Hood Politics",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "How Much A Dollar Cost",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "Complexion (A Zulu Love)",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "The Blacker The Berry",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/2/9}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6AhXSoKa8xw?rel=0" frameborder="0" allowfullscreen></iframe>'
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "You Ain't Gotta Lie (Momma Said)",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "I",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a2,
+                :title => "Mortal Man",
+                :features => "",
+                :producer => "Dr. Dre",
+                :album => "To Pimp a Butterfly",
+                :download_link => "",
+                :embedded_code => "",
+                :itunes => "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289",
+                :google => "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en",
+                :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
+                :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+                :release_date => "{2015/3/16}",
+                :youtube => ''
+            })
+
+Song.create ({
+                :artist => a12,
+                :title => "Terry",
+                :features => "",
+                :producer => "Alchemist",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191489281&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "",
+                :amazon => "",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/2/16}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6PGSOe2Iok0?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a12,
+                :title => "Baby Blue",
+                :features => "Chance the Rapper",
+                :producer => "Mark Ronson",
+                :album => "Mr Wonderful",
+                :download_link => "https://soundcloud.com/actionbronson/baby-blue-ft-chance-the-rapper",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/193829854&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "",
+                :amazon => "",
+                :spotify => "https://play.spotify.com/album/7Mh9OsANvltL7YJ438LejB",
+                :release_date => "{2015/3/2}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/9rQ_VVlR7Do?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a12,
+                :title => "Actin Crazy",
+                :features => "",
+                :producer => "40 & Omen",
+                :album => "Mr. Wonderful",
+                :download_link => "https://soundcloud.com/actionbronson/action-bronson-actin-crazy",
+                :embedded_code => '<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/184964202&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>',
+                :itunes => "https://itunes.apple.com/us/album/actin-crazy-single/id956323924",
+                :google => "https://play.google.com/store/music/album?id=B3j5khyzx6vxjcxhgfemc4smbwi&tid=song-Truqnbckmybtnpziogvtu2b3hqi&hl=en",
+                :amazon => "http://www.amazon.com/Actin-Crazy-Explicit-Action-Bronson/dp/B00RYGX0B4",
+                :spotify => "https://play.spotify.com/album/5bxjy0F0a8yCONYvEOuWg0",
+                :release_date => "{2015/1/7}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/debIyWS6Byc?rel=0" frameborder="0" allowfullscreen></iframe>'
+            })
+
+Song.create ({
+                :artist => a12,
+                :title => "The Rising",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
 
+Song.create ({
+                :artist => a12,
+                :title => "Falconry",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
+Song.create ({
+                :artist => a12,
+                :title => "THUG LOVE STORY 2017 THE MUSICAL (interlude)",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
+Song.create ({
+                :artist => a12,
+                :title => "City Boy Blues",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
+Song.create ({
+                :artist => a12,
+                :title => "A Light In The Addict ",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
+Song.create ({
+                :artist => a12,
+                :title => "Baby Blue",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
+Song.create ({
+                :artist => a12,
+                :title => "Only In America",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
+Song.create ({
+                :artist => a12,
+                :title => "Galactic Love",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
+Song.create ({
+                :artist => a12,
+                :title => "The Passage (Live From Prague)",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => ''
+              })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Song.create ({
+                :artist => a12,
+                :title => "Easy Rider",
+                :features => "",
+                :producer => "",
+                :album => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/58RSC7HO9aU?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
