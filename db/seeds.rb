@@ -1,3 +1,4 @@
+User.destroy_all
 user_info = [
 {
   :email => "a@a.com",
@@ -373,7 +374,7 @@ Song.create ({
 
 Song.create ({
                 :artist => a2,
-                :title => "Wesley's Theory",
+                :title => "Wesley\'s Theory",
                 :features => "",
                 :producer => "Dr. Dre",
                 :album => "To Pimp a Butterfly",
@@ -390,7 +391,7 @@ Song.create ({
 
 Song.create ({
                 :artist => a2,
-                :title => "For Free? (Interlude)",
+                :title => "For Free\? (Interlude)",
                 :features => "",
                 :producer => "Dr. Dre",
                 :album => "To Pimp a Butterfly",
@@ -486,7 +487,7 @@ Song.create ({
 
 Song.create ({
                 :artist => a2,
-                :title => "For Sale? (Interlude)",
+                :title => "For Sale\? (Interlude)",
                 :features => "",
                 :producer => "Dr. Dre",
                 :album => "To Pimp a Butterfly",
@@ -582,7 +583,7 @@ Song.create ({
 
 Song.create ({
                 :artist => a2,
-                :title => "You Ain't Gotta Lie (Momma Said)",
+                :title => "You Ain\'t Gotta Lie (Momma Said)",
                 :features => "",
                 :producer => "Dr. Dre",
                 :album => "To Pimp a Butterfly",
