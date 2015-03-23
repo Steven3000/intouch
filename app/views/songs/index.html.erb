@@ -13,13 +13,25 @@
               <span><%= time_ago_in_words(song.release_date) %></span>
             <% end %>
           </p>
-          <p class="song-feed"><%= song.title %>
-            <% if song.features.present? %>
-            Feat.
-          <%= song.features %></p>
-          <% end %>
+          <table>
+            <td style="padding-right:25px">
+              <%= song.title %>
+            <td style="padding-right:25px">
+              <% if song.features.present? %>
+                Feat.
+              <%= song.features %>
+            </td>
+            </td>
+            <td style="padding-right:25px">
+                <% if song.album.present? %>
+                Album: <%= song.album %>
+              <% end %>
+              <% end %>
+            </td>
+          </table>
         </a>
       </li>
     <% end %>
   </ul>
 </div>
+
