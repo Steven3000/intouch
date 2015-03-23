@@ -7,8 +7,9 @@
       <div class="panel-body">
         <%= image_tag "#{subscription.artist.picture_url}", :class => "img-responsive" %>
         <dl>
-          <dt>Title</dt>
+          <br>
           <dd><%= subscription.artist.name %></dd>
+
           <dd><%= link_to 'Unsubscribe', subscription_path(subscription), :method => :delete, :class => "btn btn-warning" %></dd>
         </dl>
       </div>

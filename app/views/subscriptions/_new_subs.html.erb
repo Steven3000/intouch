@@ -5,14 +5,18 @@
       <div class="panel-body">
         <%= image_tag "#{artist.picture_url}", :class => "img-responsive" %>
         <dl>
-          <dt>Title</dt>
+
+          <br>
+
           <dd><%= artist.name %></dd>
 
       <%= form_for Subscription.new :user => current_user, :artist => artist do |f| %>
             <%= f.hidden_field :artist_id %>
 
             <%= f.submit :class => "btn btn-success" %>
+
           <% end %>
+
         </dl>
       </div>
     </div>
