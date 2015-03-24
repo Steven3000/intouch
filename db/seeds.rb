@@ -54,7 +54,7 @@ a12 = Artist.create ({
               })
 
 a17 = Artist.create ({
-                :name => "DAngelo",
+                :name => "D\'Angelo",
                 :website => "",
                 :record_label => "EMI, Virgin, J, RCA",
               })
@@ -601,7 +601,7 @@ Song.create ({
                 :artist => a2,
                 :title => "I",
                 :features => "",
-                :producer => "Dr. Dre",
+                :producer => "Dr\. Dre",
                 :album => "To Pimp a Butterfly",
                 :download_link => "",
                 :embedded_code => "",
