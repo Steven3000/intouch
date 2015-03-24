@@ -658,7 +658,7 @@ Song.create ({
                 :amazon => "",
                 :spotify => "https://play.spotify.com/album/7Mh9OsANvltL7YJ438LejB",
                 :release_date => "{2015/3/2}",
-                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/9rQ_VVlR7Do?rel=0" frameborder="0" allowfullscreen></iframe>'
+                :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/bVP_w1rQweE?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
 Song.create ({
