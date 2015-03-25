@@ -32,7 +32,12 @@ class Admin::SongsController < Admin::BaseController
   #   @song.youtube = params[:youtube]
 
     if @song.save
+      #@announcement = @song.announce
+      #@announcement.notify_users.deliver
+      AnnouncementMailer.announce_song(@song).deliver
+
       redirect_to "/admin/songs", :notice => "Song created successfully."
+      #announcement for new song to notify user
     else
       render '/admin/new'
     end

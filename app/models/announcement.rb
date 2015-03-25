@@ -1,7 +1,10 @@
 class Announcement < ActiveRecord::Base
 
   belongs_to :song
-  belongs_to :announcement
+  belongs_to :user
+
+
+
 end
 
 

@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
   has_many :subscriptions
   has_many :artists, :through => :subscriptions
   has_many :songs, :through => :artists
-  has_many :announcements, :through => :artist
+  has_many :announcements, :through => :songs
 end
