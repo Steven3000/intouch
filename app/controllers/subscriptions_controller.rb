@@ -18,6 +18,10 @@ class SubscriptionsController < ApplicationController
     @subscriptions = current_user.subscriptions
     artist_ids = @subscriptions.pluck(:artist_id)
     @available_artists = Artist.where.not(id: artist_ids)
+
+    if params[:search].present?
+      @available_artists = @available_artists.where("name ilike ?", "%#{params[:search]}%")
+    end
   end
 
   # GET /subscriptions/1

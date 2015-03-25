@@ -10,6 +10,11 @@
 
       <br>
 
+      <p>
+        LIST OF ALBUM IN THE FUTURE
+        <a href="#" id="addNewAlbum">Try it</a>
+      </p>
+
       <%= s.label :title, "Song Title", class: "control-label"  %>
       <%= s.text_field :title, placeholder: "Title", class: "form-control input-lg"  %>
 
@@ -48,4 +53,31 @@
       <%= s.submit class: "btn btn-default"  %>
     <% end %>
 
+    <%= form_for [:admin, Album.new], remote: true do |f| %>
+      <%= f.hidden_field :artist_id %>
+      <%= f.hidden_field :name %>
+    <% end %>
+
 </div>
+
+
+<script>
+  $(document).ready(function(){
+   $("#addNewAlbum").on("click", function(event){
+      event.preventDefault();
+
+      var albumName = prompt("Enter the album name", "");
+      var artistId = $("#song_artist_id").val();
+      var form = $("#new_album");
+
+      if (artistId === undefined) {
+        alert("Choose an artist first");
+      } else {
+        $("album_artist_id").val(artistId);
+        $("album_name").val(albumName);
+        form.submit();
+      }
+
+   });
+  });
+</script>
