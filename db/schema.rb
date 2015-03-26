@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325201306) do
+ActiveRecord::Schema.define(version: 20150326192551) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,7 +46,6 @@ ActiveRecord::Schema.define(version: 20150325201306) do
     t.string   "title"
     t.string   "features"
     t.string   "producer"
-    t.string   "album"
     t.date     "release_date"
     t.string   "download_link"
     t.text     "embedded_code"
@@ -58,6 +57,9 @@ ActiveRecord::Schema.define(version: 20150325201306) do
     t.datetime "updated_at"
     t.integer  "artist_id"
     t.text     "youtube"
+    t.integer  "track"
+    t.integer  "album_id"
+    t.string   "album_title"
   end
 
   create_table "subscriptions", force: :cascade do |t|
