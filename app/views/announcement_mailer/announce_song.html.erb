@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <div class="container">
+      <h1><%= @user.email %>, <%= @song.artist.name %> has just released <%= @song.title %></h1>
+      <% if @song.features.present? %>
+        Features: <%= @song.features %>
+        </br>
+        </br>
+      <% end %>
+
+      <% if @song.album.present? %>
+        Album: <%= @song.album %>
+      <% end %>
+
+      <% if @song.producer.present? %>
+        Producer: <%= @song.producer %>
+        </br>
+      <% end %>
+    </div>
+    <div style="float:right">
+      <%= image_tag "#{@song.artwork_url}" %>
+    </div>
+    </div>
+    <br>
+
+    <div class="container">
+       <ul class="song-additional-link">
+          <% if @song.download_link.present? %>
+            <td>
+              <a href="<%= @song.download_link %>" target="_blank" class="btn btn-primary">Stream/Download</a>
+            </td>
+           <% end %>
+
+          <% if @song.itunes.present? %>
+            <td>
+              <a href="<%= @song.itunes %>" target="_blank" class="btn btn-primary">iTunes</a>
+            </td>
+          <% end %>
+
+          <% if @song.google.present? %>
+            <td>
+              <a href="<%= @song.google %>" target="_blank" class="btn btn-primary">Google Play</a>
+            </td>
+          <% end %>
+
+          <% if @song.amazon.present? %>
+            <td>
+              <a href="<%= @song.amazon %>" target="_blank" class="btn btn-primary">Amazon</a>
+            </td>
+          <% end %>
+
+          <% if @song.spotify.present? %>
+            <td>
+              <a href="<%= @song.spotify %>" target="_blank" class="btn btn-primary">Spotify</a>
+            </td>
+          <% end %>
+        </ul>
+      </div>
+      <div class="container">
+        <p>
+          To login click ---> <%= link_to "NTouchMusic", "http://www.nouchmusic.com" %>
+        </p>
+        <p>Much Love</p>
+        <p>NTouchMusic.com</p>
+      </div>
+  </body>
+
+</html>
+
+
+
+

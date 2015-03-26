@@ -27,6 +27,7 @@ Rails.application.routes.draw do
     # patch('/artists/:id', { :controller => 'artists', :action => 'update' })
     # delete('/artists/:id', { :controller => 'artists', :action => 'destroy' })
     resources :artists
+    resources :albums
   end
 
     resources :artists do

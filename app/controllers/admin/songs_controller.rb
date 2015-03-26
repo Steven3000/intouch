@@ -32,12 +32,11 @@ class Admin::SongsController < Admin::BaseController
   #   @song.youtube = params[:youtube]
 
     if @song.save
-      #@announcement = @song.announce
-      #@announcement.notify_users.deliver
-      AnnouncementMailer.announce_song(@song).deliver
+
+      notify_subscribers(@song)
 
       redirect_to "/admin/songs", :notice => "Song created successfully."
-      #announcement for new song to notify user
+
     else
       render '/admin/new'
     end
@@ -84,6 +83,15 @@ class Admin::SongsController < Admin::BaseController
   end
 
   private
+
+    def notify_subscribers(song)
+      puts 'test'
+      subscriptions = Subscription.where(artist_id: song.artist.id)
+      subscriptions.each do |sub|
+        AnnouncementMailer.announce_song(sub.user, song).deliver
+        puts 'test'
+      end
+    end
 
     def set_song
       @song = Song.find(params[:id])
