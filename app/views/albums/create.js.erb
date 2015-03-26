@@ -1,0 +1,10 @@
+<% if @album.valid? %>
+
+  var newAlbumOptions = "<%=j options_from_collection_for_select(@albums, 'id', 'name') %>";
+  $("#song_album_id").html(newAlbumOptions);
+
+<% else %>
+
+  alert("Invalid album!");
+
+<% end %>

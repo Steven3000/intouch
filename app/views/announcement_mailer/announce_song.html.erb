@@ -5,7 +5,7 @@
   </head>
   <body>
     <div class="container">
-      <h1><%= @user.name %>, <%= @artist.name %> has just released <%= @song.title %></h1>
+      <h1><%= @user.email %>, <%= @song.artist.name %> has just released <%= @song.title %></h1>
       <% if @song.features.present? %>
         Features: <%= @song.features %>
         </br>
@@ -62,7 +62,7 @@
       </div>
       <div class="container">
         <p>
-          To login click ---> <%= new_session_path %>
+          To login click ---> <%= link_to "NTouchMusic", "http://www.nouchmusic.com" %>
         </p>
         <p>Much Love</p>
         <p>NTouchMusic.com</p>
