@@ -27,9 +27,9 @@
         <dd><%= @song.producer %></dd>
     <% end %>
 
-    <% if @song.album.present? %>
+    <% if @song.album_title.present? %>
         <dt>Album</dt>
-        <dd><%= @song.album %></dd>
+        <dd><%= @song.album_title %></dd>
     <% end %>
 
     <% if @song.release_date.present? %>
