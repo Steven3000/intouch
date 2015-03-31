@@ -28,6 +28,11 @@ gem 'pg'
 
 gem 'owlcarousel-rails'
 
+gem 'rmagick', '2.13.2'
+
+gem 'paperclip', '~> 3.0'
+
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
