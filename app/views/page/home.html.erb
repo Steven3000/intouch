@@ -1,7 +1,14 @@
   <div class="container">
-    <div>
-      <img src="assets/homepage1.jpg" alt"homePIC" height="350" width="1150">
+    <div id="owl-demo">
+      <div class="item"><img src="/assets/artists/kanye-west.jpg" alt="artist"></div>
+      <div class="item"><img src="/assets/artists/kendrick-lamar.jpg" alt="artist"></div>
+      <div class="item"><img src="/assets/artists/action-bronson.jpg" alt="artist"></div>
+      <div class="item"><img src="/assets/artists/d-angelo.jpg" alt="artist"></div>
+      <div class="item"><img src="/assets/artists/prince.jpg" alt="artist"></div>
+      <div class="item"><img src="/assets/artists/lauryn-hill.jpg" alt="artist"></div>
     </div>
+
+
     </br>
     <h1 style="text-align:center">Stay "In Touch" with Your Favorite Artist!</h1>
     </br>
@@ -17,4 +24,21 @@
     </p>
     </br>
   </div>
+
+<script>
+$(document).ready(function() {
+
+  $("#owl-demo").owlCarousel({
+
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+      items : 6,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3]
+
+  });
+
+});
+
+</script>
 

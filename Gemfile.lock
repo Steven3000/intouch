@@ -106,6 +106,8 @@ GEM
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    owlcarousel-rails (1.1.3.3)
+      jquery-rails
     pg (0.18.1)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
@@ -209,6 +211,7 @@ DEPENDENCIES
   less-rails-bootstrap
   mini_magick
   nokogiri
+  owlcarousel-rails
   pg
   quiet_assets
   rails (= 4.2.0)

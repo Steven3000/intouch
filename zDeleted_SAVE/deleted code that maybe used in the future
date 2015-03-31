@@ -144,7 +144,10 @@ Artist.where("name LIKE '%?%'", params[:search])
 
 --------------------------------------------------------------------------
 
+Public home (home pic)
 
-
+    <div>
+      <img src="assets/homepage1.jpg" alt"homePIC" height="350" width="1150">
+    </div>
 
 
