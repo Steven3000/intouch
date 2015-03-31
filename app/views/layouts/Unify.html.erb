@@ -53,21 +53,15 @@
                           "/home.html" %>
                     </li>
                     <li class="btn">
-                        <%= link_to_if (request.path != "/admin_dashboard.html"),
-                         "admin",
-                         "/admin_dashboard.html" %>
+                    <%= link_to_if (request.path != subscriptions_path),
+                         "My Subscriptions",
+                         subscriptions_path %>
                     </li>
                     <li class="btn">
                         <%= link_to_if (request.path != "/feed.html"),
                            "My feed",
                            "/songs" %>
                     </li>
-                    <li class="btn">
-                    <%= link_to_if (request.path != subscriptions_path),
-                         "My Subscriptions",
-                         subscriptions_path %>
-                    </li>
-
                     <% if user_signed_in? %>
                         <li class="btn"><%= link_to current_user.email, edit_user_registration_path %></li>
                         <li class="btn"><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
@@ -75,6 +69,11 @@
                         <li class="btn btn-success"><%= link_to "Sign Up", new_user_registration_path %></li>
                         <li class="btn"><%= link_to "Sign In", new_user_session_path %></li>
                     <% end %>
+                    <li class="btn">
+                        <%= link_to_if (request.path != "/admin_dashboard.html"),
+                         "admin",
+                         "/admin_dashboard.html" %>
+                    </li>
 
                     </li>
                 </ul>

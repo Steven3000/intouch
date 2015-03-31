@@ -49,6 +49,7 @@ Rails.application.routes.draw do
   get("/feed", :controller => 'page', :action => 'feed')
   get("/following", :controller => 'page', :action => 'following')
   get("/home", :controller => 'page', :action => 'home')
+  get("/breakdown", :controller => 'page', :action => 'breakdown')
   get("/show", :controller => 'page', :action => 'show')
   get("/singnup", :controller => 'page', :action => 'singnup')
 
