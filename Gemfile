@@ -28,9 +28,6 @@ gem 'pg'
 
 gem 'owlcarousel-rails'
 
-gem 'rmagick', '2.13.2'
-
-gem 'paperclip', '~> 3.0'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
