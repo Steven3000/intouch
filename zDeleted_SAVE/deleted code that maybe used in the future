@@ -150,4 +150,13 @@ Public home (home pic)
       <img src="assets/homepage1.jpg" alt"homePIC" height="350" width="1150">
     </div>
 
+--------------------------------------------------------------------------
+
+  gem file
+
+  # Use sqlite3 as the database for Active Record
+  # gem 'sqlite3'
+
+  --------------------------------------------------------------------------
+
 

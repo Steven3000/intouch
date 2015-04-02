@@ -1,6 +1,7 @@
 /* Unify
  * Bootswatch
- *= require_self
- *= require unify/loader
  *= require unify/bootswatch
+ *= require unify/loader
+ *= require_self
+
 */
