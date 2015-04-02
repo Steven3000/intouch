@@ -24,11 +24,22 @@ gem 'starter_generators', :git => 'https://github.com/rbetina/starter_generators
 
 gem 'mini_magick'
 
-gem 'pg'
+
 
 gem 'owlcarousel-rails'
 
 gem 'nokogiri'
+
+group :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'sqlite3'
+end
+# Use sqlite3 as the database for Active Record
+#
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
