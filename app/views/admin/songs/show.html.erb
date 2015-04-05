@@ -32,6 +32,11 @@
         <dd><%= @song.album_title %></dd>
     <% end %>
 
+    <% if @song.track.present? %>
+        <dt>Album</dt>
+        <dd><%= @song.track %></dd>
+    <% end %>
+
     <% if @song.release_date.present? %>
         <dt>Release date</dt>
         <dd><%= @song.release_date %></dd>

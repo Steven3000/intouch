@@ -97,6 +97,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2014/12/20}",
+                :track => "",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -113,6 +115,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/gp/product/B00NT9TTN8/ref=dm_ws_ap_tlw_trk2",
                 :spotify => "https://play.spotify.com/album/51C65YqHrDODM1hD5FEL5x",
                 :release_date => "{2014/9/23}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/8aShfolR6w8?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -129,6 +133,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2013/4/30}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/h8nIHZ-0kS4?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -145,6 +151,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2012/2/13}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/li_IsOlb8VY?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -161,6 +169,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Bound-2-Explicit/dp/B00DF0PS9K",
                 :spotify => "https://play.spotify.com/album/0XTAmejG8F97wF5MWoVbaY",
                 :release_date => "{2013/8/28}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/BBAtAM7vtgc?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -177,6 +187,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2014/1/15}",
+                :track => "",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -193,6 +205,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2013/4/30}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/TErySTMbFlk?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -209,6 +223,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2015/2/9}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6AhXSoKa8xw?rel=0" frameborder="0" allowfullscreen></iframe>'
             })
 
@@ -225,6 +241,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Only-One-feat-Paul-McCartney/dp/B00RW7UZO0",
                 :spotify => "",
                 :release_date => "{2014/12/31}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/WibQR0tQ0P8?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -241,6 +259,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2015/2/14}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/h8nIHZ-0kS4?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -257,6 +277,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2014/10/16}",
+                :track => "",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -273,6 +295,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Speakerboxxx-Love-Below-Explicit-OutKast/dp/B001414XS4/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
                 :spotify => "https://play.spotify.com/album/00XMrHZoOsYLmiyx890axX",
                 :release_date => "{2003/9/23}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/PWgvGjAhvIw?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -289,6 +313,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Speakerboxxx-Love-Below-Explicit-OutKast/dp/B001414XS4/ref=tmm_msc_swatch_0?_encoding=UTF8&sr=&qid=",
                 :spotify => "https://play.spotify.com/album/623Ef2ZEB3Njklix4PC0Rs",
                 :release_date => "{2012/12/17}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe src="https://player.vimeo.com/video/63896903?title=0&byline=0&portrait=0" width="500" height="198" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/63896903">frank ocean [lost]</a> from <a href="https://vimeo.com/frankocean">christopher francis ocean</a> on <a href="https://vimeo.com">Vimeo</a>.</p>'
               })
 
@@ -305,6 +331,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "https://play.spotify.com/album/4RwFZ9Gm5HB8sKi2GY54Gp",
                 :release_date => "{2013/10/4}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/mFPhKf_dg7g?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -321,6 +349,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",
                 :release_date => "{2014/12/15}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/vo3RAH0zLlU?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -337,6 +367,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2014/3/10}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="640" height="480" src="https://www.youtube.com/embed/EBYITSFsjvU?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -353,6 +385,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/All-Day-Explicit-Kanye-West/dp/B00U6P6CW4",
                 :spotify => "https://play.spotify.com/user/cmount/playlist/0uFxjmYfjEXObrgiKmoavw",
                 :release_date => "{2015/3/2}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/_ABk7TmjnVk?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -369,6 +403,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "",
                 :release_date => "{2015/3/2}",
+                :track => "",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/xz-QrOo1UBE?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -385,6 +421,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "1",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -402,6 +440,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "2",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -418,6 +458,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "3",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -434,6 +476,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "4",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -450,6 +494,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "5",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -466,6 +512,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "6",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -482,6 +530,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "7",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -498,6 +548,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "8",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -514,6 +566,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "9",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -530,6 +584,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "10",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -546,6 +602,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "11",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -562,6 +620,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "12",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -578,6 +638,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/2/9}",
+                :track => "13",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6AhXSoKa8xw?rel=0" frameborder="0" allowfullscreen></iframe>'
             })
 
@@ -594,6 +656,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "14",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -610,6 +674,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "15",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -626,6 +692,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0",
                 :spotify => "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
                 :release_date => "{2015/3/16}",
+                :track => "16",
+                :album_id => "",
                 :youtube => ''
             })
 
@@ -642,6 +710,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/2/16}",
+                :track => "3",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/6PGSOe2Iok0?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -658,6 +728,8 @@ Song.create ({
                 :amazon => "",
                 :spotify => "https://play.spotify.com/album/7Mh9OsANvltL7YJ438LejB",
                 :release_date => "{2015/3/2}",
+                :track => "9",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/bVP_w1rQweE?rel=0" frameborder="0" allowfullscreen></iframe>'
               })
 
@@ -674,6 +746,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Actin-Crazy-Explicit-Action-Bronson/dp/B00RYGX0B4",
                 :spotify => "https://play.spotify.com/album/5bxjy0F0a8yCONYvEOuWg0",
                 :release_date => "{2015/1/7}",
+                :track => "4",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/debIyWS6Byc?rel=0" frameborder="0" allowfullscreen></iframe>'
             })
 
@@ -690,6 +764,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "2",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -707,6 +783,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "5",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -723,6 +801,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "6",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -739,6 +819,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "7",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -755,22 +837,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
-                :youtube => ''
-              })
-
-Song.create ({
-                :artist => a12,
-                :title => "Baby Blue",
-                :features => "",
-                :producer => "",
-                :album_title => "Mr Wonderful",
-                :download_link => "",
-                :embedded_code => '',
-                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
-                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
-                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
-                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
-                :release_date => "{2015/3/23}",
+                :track => "8",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -787,6 +855,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "10",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -803,6 +873,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "11",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -819,6 +891,8 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "12",
+                :album_id => "",
                 :youtube => ''
               })
 
@@ -835,5 +909,25 @@ Song.create ({
                 :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
                 :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
                 :release_date => "{2015/3/23}",
+                :track => "13",
+                :album_id => "",
                 :youtube => '<iframe width="853" height="480" src="https://www.youtube.com/embed/58RSC7HO9aU?rel=0" frameborder="0" allowfullscreen></iframe>'
+              })
+
+Song.create ({
+                :artist => a12,
+                :title => "Brand New Car",
+                :features => "",
+                :producer => "",
+                :album_title => "Mr Wonderful",
+                :download_link => "",
+                :embedded_code => '',
+                :itunes => "https://itunes.apple.com/us/album/mr.-wonderful/id965629356",
+                :google => "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en",
+                :amazon => "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4",
+                :spotify => "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd",
+                :release_date => "{2015/3/23}",
+                :track => "1",
+                :album_id => "",
+                :youtube => ''
               })
