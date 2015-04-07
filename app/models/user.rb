@@ -9,4 +9,7 @@ class User < ActiveRecord::Base
   has_many :artists, :through => :subscriptions
   has_many :songs, :through => :artists
   has_many :announcements, :through => :songs
+
+  has_many :albums, :through => :artists
+
 end

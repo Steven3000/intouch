@@ -1,21 +1,22 @@
 class Admin::AlbumsController < Admin::BaseController
 
-  def create
-    @album  = Album.new(params[:album])
-
-    if @album.save
-      @artist = @album.artist
-      @albums = @artist.albums
-    end
+  def index
+    @albums = Album.order(created_at: :desc).page(params[:page]).per(15)
   end
 
   def new
     @album = Album.new
   end
 
-  def index
-    @albums = Album.order(created_at: :desc).page(params[:page]).per(15)
+  def create
+    @album  = Album.new(params[:name])
+
+    if @album.save
+      @artist = @album.artist
+      @album = @artist.album
+    end
   end
+
 
   def edit
     @Album = Album.find(params[:id])
@@ -45,7 +46,7 @@ class Admin::AlbumsController < Admin::BaseController
   end
 
   def albums_params
-    params.require(:album).permit(:artist_id, :name, :release_date)
+    params.require(:album).permit(:name, :artist_id, :release_date, :download_link, :embedded_code, :itunes, :google, :amazon, :spotify, :youtube)
   end
 
 end

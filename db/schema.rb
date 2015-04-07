@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150407160721) do
+ActiveRecord::Schema.define(version: 20150407170910) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,29 +19,19 @@ ActiveRecord::Schema.define(version: 20150407160721) do
   create_table "albums", force: :cascade do |t|
     t.integer  "artist_id"
     t.string   "name"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.date     "release_date"
+    t.string   "download_link"
+    t.text     "embedded_code"
+    t.string   "itunes"
+    t.string   "google"
+    t.string   "amazon"
+    t.string   "spotify"
+    t.text     "youtube"
   end
 
   add_index "albums", ["artist_id"], name: "index_albums_on_artist_id", using: :btree
-
-  create_table "announcements", force: :cascade do |t|
-    t.integer  "song_id"
-    t.datetime "post_creation_date"
-    t.text     "url"
-    t.string   "artwork"
-    t.datetime "created_at",         null: false
-    t.datetime "updated_at",         null: false
-  end
-
-  create_table "artists", force: :cascade do |t|
-    t.string   "name"
-    t.string   "website"
-    t.string   "record_label"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "songs", force: :cascade do |t|
     t.string   "title"
@@ -61,6 +51,23 @@ ActiveRecord::Schema.define(version: 20150407160721) do
     t.integer  "track"
     t.integer  "album_id"
     t.string   "album_title"
+  end
+
+  create_table "artists", force: :cascade do |t|
+    t.string   "name"
+    t.string   "website"
+    t.string   "record_label"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "announcements", force: :cascade do |t|
+    t.integer  "song_id"
+    t.datetime "post_creation_date"
+    t.text     "url"
+    t.string   "artwork"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "subscriptions", force: :cascade do |t|
