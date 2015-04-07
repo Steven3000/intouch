@@ -1,21 +1,18 @@
 @import "owl.carousel";
 @import "owl.theme";
-
-@import "feed";
-
+@import "font-awesome";
 
 
+@import "unify/app.css";
 @import "unify/header-default";
 @import "unify/header-v2";
 @import "unify/footer-default";
 @import "unify/footer-v7";
-
-@import "unify/app.css";
-@import "custom.css";
-
 @import "unify/plugins/bootstrap/css/bootstrap.min";
 @import "unify/plugins/animate";
 @import "unify/plugins/line-icons/line-icons";
 @import "unify/plugins/flexslider";
-@import "home";
 
+@import "home";
+@import "feed";
+@import "custom.css";
