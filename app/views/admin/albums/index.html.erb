@@ -1,0 +1,117 @@
+<div class="container">
+  <div class="page-header">
+    <h1>Albums</h1>
+  </div>
+
+  <p><a href="/admin/albums/new" class="btn btn-default">Add a New Album</a></p>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Trash</th>
+        <th>Artist ID</th>
+        <th>Artist Name</th>
+        <th>Album Title</th>
+        <th>Release date</th>
+        <th>Download link</th>
+        <th>Embedded code</th>
+        <th>Itunes</th>
+        <th>Google</th>
+        <th>Amazon</th>
+        <th>Spotify</th>
+        <th>Youtube</th>
+        <th>View</th>
+        <th>Edit</th>
+        <th>Trash</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @albums.each do |album| %>
+        <tr>
+           <td>
+           <%= link_to 'Show', admin_album_path(album.id) %>
+          </td>
+          <td>
+          <%= link_to 'Edit', edit_admin_album_path(album.id) %>
+          </td>
+          <td>
+            <%= link_to 'Destroy', admin_album_path(album.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+          <td><%= album.artist_id %></td>
+          <td><%= album.artist.name %></td>
+          <td><%= album.name %></td>
+          <td><%= album.release_date %></td>
+          <td>
+            <% album.download_link %>
+            <% if album.download_link.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.embedded_code %>
+            <% if album.embedded_code.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.itunes %>
+            <% if album.itunes.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.google %>
+            <% if album.google.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+            </td>
+          <td>
+            <% album.amazon %>
+            <% if album.amazon.present? %>
+                YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.spotify %>
+            <% if album.spotify.present? %>
+               YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.youtube %>
+            <% if album.youtube.present? %>
+              YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+           <td>
+           <%= link_to 'Show', admin_album_path(album.id) %>
+          </td>
+          <td>
+          <%= link_to 'Edit', edit_admin_album_path(album.id) %>
+          </td>
+          <td>
+            <%= link_to 'Destroy', admin_album_path(album.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate(@albums) %>
+</div>
