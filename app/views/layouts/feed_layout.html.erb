@@ -15,6 +15,7 @@
 
 
     <%= stylesheet_link_tag "feed_layout", media: "all" %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
     <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
 
@@ -23,7 +24,6 @@
 <body class="header-fixed">
     <style type="text/css">
         body {
- /*       background-color: rgb(153, 224, 88);*/
  background-color: rgb(255, 255, 255);
         }
     </style>

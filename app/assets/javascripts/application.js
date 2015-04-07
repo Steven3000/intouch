@@ -17,7 +17,7 @@
 //= require turbolinks
 //= require jquery.min.js
 //= require owl.carousel.min.js
-
+//= require owl.carousel
 
 //= require unify/back-to-top
 //= require unify/index

@@ -67,3 +67,20 @@
   width: 500px;
   float: right;
 }
+
+/* MISC REUSABLE SELECTORS */
+.txtt-center {
+  text-align: center;
+}
+
+/* Main wrapper to set the default size for the content */
+.main-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.artists-show-feed-wrapper {
+  width: 500px;
+  float: right;
+}
+
