@@ -152,7 +152,41 @@ Public home (home pic)
 
 --------------------------------------------------------------------------
 
+unify layout  footer icons
 
-  --------------------------------------------------------------------------
+  <li>
+      <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Facebook" href="http://www.facebook.com/">
+          <i class="fa fa-facebook"></i>
+      </a>
+  </li>
+
+  <li>
+      <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Vine" href="#">
+          <i class="fa fa-vine"></i>
+      </a>
+  </li>
+
+  <li>
+      <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Google plus" href="#">
+          <i class="fa fa-google-plus"></i>
+      </a>
+  </li>
+  <li>
+      <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Instagram" href="http://www.instagram.com/mulattopatriot">
+          <i class="fa fa-instagram"></i>
+      </a>
+  </li>
+  <li>
+      <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Tumblr" href="#">
+          <i class="fa fa-tumblr"></i>
+      </a>
+  </li>
+  <li>
+      <a data-placement="top" data-toggle="tooltip" class="tooltips" data-original-title="Soundcloud" href="#">
+          <i class="fa fa-soundcloud"></i>
+      </a>
+  </li>
+
+--------------------------------------------------------------------------
 
 
