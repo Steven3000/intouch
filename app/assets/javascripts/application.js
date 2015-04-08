@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require unify/loader
 //= require unify/bootswatch
-//= require turbolinks
 //= require jquery.min.js
 //= require owl.carousel.min.js
 //= require owl.carousel

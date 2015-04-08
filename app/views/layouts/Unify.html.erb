@@ -50,7 +50,7 @@
                     <li class="btn btn-lg headnav_mp">
                          <%= link_to_if (request.path != "/home.html"),
                           "Home",
-                          "/home.html" %>
+                          root_path %>
                     </li>
                     <li class="btn btn-lg headnav_mp">
                     <%= link_to_if (request.path != subscriptions_path),
@@ -182,17 +182,18 @@
                         <ul class="list-inline dark-social pull-right space-bottom-0">
                             <li>
                                 <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Twitter" href="http://www.twitter.com/ntuchmusicapp">
-                                    <i class="fa fa-twitter"></i>
+                                    <%#= icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong') %>
+                                    <%= icon('twitter-square fa-3x') %>
                                 </a>
                             </li>
                             <li>
                                 <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Pinterest" href="https://www.pinterest.com/ntouchmusicapp/">
-                                    <i class="fa fa-pinterest"></i>
+                                    <%= icon('pinterest-square fa-3x') %>
                                 </a>
                             </li>
                             <li>
                                 <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Youtube" href="https://www.youtube.com/channel/UCURuRdMfuURj4-9qSwTTIbg">
-                                    <i class="fa fa-youtube"></i>
+                                    <%= icon('youtube-square fa-3x') %>
                                 </a>
                             </li>
                         </ul>

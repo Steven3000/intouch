@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'twitter-bootswatch-rails', '~> 3.3'
+gem 'font-awesome-sass', '~> 4.3.0'
 
-gem 'twitter-bootswatch-rails-fontawesome', '~> 4.3'
+gem 'twitter-bootswatch-rails', '~> 3.3'
 
 gem 'twitter-bootswatch-rails-helpers'
 
@@ -11,8 +11,6 @@ gem 'therubyracer'
 gem 'less-rails'
 
 gem 'less-rails-bootstrap'
-
-gem 'font-awesome-sass'
 
 gem 'kaminari'
 
@@ -54,6 +52,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+
+gem 'jquery-turbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
