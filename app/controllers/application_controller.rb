@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
   layout 'feed'
   layout 'Unify'
 
+  def after_sign_in_path_for(resource)
+    songs_path
+  end
+
 end
