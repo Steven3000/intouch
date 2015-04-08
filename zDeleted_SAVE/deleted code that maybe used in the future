@@ -193,4 +193,7 @@ application.js
 //= require turbolinks
 //= require jquery.turbolinks
 --------------------------------------------------------------------------
+unify.css
 
+*= require unify/bootswatch
+--------------------------------------------------------------------------
