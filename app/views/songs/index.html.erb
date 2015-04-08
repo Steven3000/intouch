@@ -1,11 +1,11 @@
 <div class="wrapper-feed">
 
-  <div class="btn btn-primary">
+  <div style="padding:20px; background-color:lightgrey;">
   <%= link_to "Subscribe to More Artists", subscriptions_path %>
   </div>
 
   <h3 class="txtt-center">
-    Here are the latest songs released by your favorite artists.
+    <%= current_user.email %>'s MAIN FEED
   </h3>
 
   <ul class="feedxxx">
