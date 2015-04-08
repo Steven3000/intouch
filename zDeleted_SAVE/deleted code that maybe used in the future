@@ -196,4 +196,5 @@ application.js
 unify.css
 
 *= require unify/bootswatch
+*= require unify/loader
 --------------------------------------------------------------------------
