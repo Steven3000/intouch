@@ -8,22 +8,23 @@
       <div class="item"><img src="/assets/artists/michael-jackson.jpg" alt="artist"></div>
     </div>
 
-    </br>
-    <h1 style="text-align:center; padding:5px; background-color:red;">Welcome to NTouchMusic.com</h1>
-    <h4 style="text-align:center; padding:4px; background-color:lightgrey;">We are a notification service dedicated to informing you when one of your favorite artists' releases a new song.</h4>
+    <h4 style="text-align:center; padding:4px; background-color:red;">We are a notification service dedicated to informing you when one of your favorite artists' releases a new song.</h4>
 
-    <h2 style="text-align:center; padding:5px; background-color:yellow;">It's Simple! Let us know your favorite artists. (1st 3 are FREE!)</h2>
+    <h1 style="text-align:center; padding:5px; background-color:white;">Welcome to NTouchMusic.com</h1>
 
-    <h4 style="text-align:center; padding:4px; background-color:lightgrey;">Recieve a text and/or email when any of your favorite artists' releases a new song.
-    </h4>
+    <h3 style="text-align:center; padding:5px; background-color:red;">Simply let us know your favorite artists. (1st 3 are FREE!) <br/>Just wait to recieve a text and/or email when any of your favorite artists' releases a new song.</h3>
+
     </br>
+
+    <% unless current_user.present? %>
      <p style="text-align:center" >
-      <a class="btn btn-info" style="padding:30px;" href="/breakdown">Show Me More!</a>
+      <a class="btn-homepage" style="padding:30px;" href="/breakdown">Show Me More</a>
     </p>
     </br>
-      <p style="text-align:center" >
-      <a class="btn btn-success" style="padding:50px;" href="/users/sign_up">Sign-up!</a>
+      <p style="text-align:center"  >
+      <a class="btn-homepage" style="padding:50px;" href="/users/sign_up">Sign-up!</a>
     </p>
+     <% end %>
   </div>
 
 <script>
