@@ -26,6 +26,10 @@ gem 'owlcarousel-rails'
 
 gem 'nokogiri'
 
+# heroku addon for tracking errors
+gem 'rollbar', '~> 1.2.7'
+
+
 group :production do
   gem 'pg'
   gem 'rails_12factor'
