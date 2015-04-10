@@ -11,6 +11,8 @@ Rails.application.config.assets.precompile += %w( feed_layout.css )
 
 Rails.application.config.assets.precompile += %w( unify/index.js )
 
+Rails.application.config.assets.precompile += %w( admin_layout.css )
+
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 
