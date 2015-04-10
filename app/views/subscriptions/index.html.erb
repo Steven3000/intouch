@@ -1,6 +1,8 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
+  <% if current_user.subscriptions.present? %>
   <h1 class="btn-homepage">My Subscriptions</h1>
+  <% end %>
   <%= render 'my_subs' %>
 </div>
 
