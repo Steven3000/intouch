@@ -10,9 +10,7 @@ class ApplicationController < ActionController::Base
   # for heroku addon rollbar
   # after_validation :report_validation_errors_to_rollbar
 
-  layout 'feed'
   layout 'Unify'
-  layout 'admin_layout'
 
   def after_sign_in_path_for(resource)
     songs_path
