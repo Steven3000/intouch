@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150410013534) do
+ActiveRecord::Schema.define(version: 20150410015634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150410013534) do
     t.string   "amazon"
     t.string   "spotify"
     t.text     "youtube"
-    t.integer  "release_date"
+    t.datetime "release_date"
   end
 
   add_index "albums", ["artist_id"], name: "index_albums_on_artist_id", using: :btree
@@ -61,7 +61,6 @@ ActiveRecord::Schema.define(version: 20150410013534) do
     t.string   "title"
     t.string   "features"
     t.string   "producer"
-    t.string   "release_date"
     t.string   "download_link"
     t.text     "embedded_code"
     t.text     "itunes"
@@ -75,6 +74,7 @@ ActiveRecord::Schema.define(version: 20150410013534) do
     t.integer  "track"
     t.integer  "album_id"
     t.string   "album_title"
+    t.datetime "release_date"
   end
 
   create_table "subscriptions", force: :cascade do |t|
