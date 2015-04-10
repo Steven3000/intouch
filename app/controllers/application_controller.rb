@@ -5,7 +5,10 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   before_action :authenticate_user!
-  after_validation :report_validation_errors_to_rollbar
+
+
+  # for heroku addon rollbar
+  # after_validation :report_validation_errors_to_rollbar
 
   layout 'feed'
   layout 'Unify'
