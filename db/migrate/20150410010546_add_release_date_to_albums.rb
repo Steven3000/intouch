@@ -1,5 +1,5 @@
 class AddReleaseDateToAlbums < ActiveRecord::Migration
   def change
-    add_column :albums, :release_date, 'date USING CAST(column_name AS date)'
+    add_column :albums, :release_date, :intger
   end
 end
