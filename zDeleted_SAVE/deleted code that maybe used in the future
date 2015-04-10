@@ -198,3 +198,6 @@ application.js
  *= require unify/bootswatch
  *= require unify/loader
 --------------------------------------------------------------------------
+
+gem file
+source 'https://rubygems.org'
