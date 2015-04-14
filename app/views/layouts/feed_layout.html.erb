@@ -42,7 +42,7 @@
 
             <!-- End Logo -->
 
-            <!-- Topbar -->
+                        <!-- Topbar -->
             <ul class="loginbar pull-right">
                     <li class="btn btn-lg headnav_mp">
                          <%= link_to_if (request.path != "/home.html"),
@@ -55,9 +55,14 @@
                          subscriptions_path %>
                     </li>
                     <li class="btn btn-lg headnav_mp">
-                        <%= link_to_if (request.path != "/feed.html"),
-                           "My feed",
+                        <%= link_to_if (request.path != songs_path),
+                           "Songs",
                            "/songs" %>
+                    </li>
+                    <li class="btn btn-lg headnav_mp">
+                        <%= link_to_if (request.path != albums_path),
+                           "Albums",
+                           "/albums" %>
                     </li>
                     <% if user_signed_in? %>
                         <li class="btn btn-lg headnav_mp"><%= link_to current_user.email, edit_user_registration_path %></li>
@@ -66,36 +71,10 @@
                         <li class="btn btn-success btn-lg headnav_mp"><%= link_to "Sign Up", new_user_registration_path %></li>
                         <li class="btn btn-lg headnav_mp"><%= link_to "Sign In", new_user_session_path %></li>
                     <% end %>
-                    <li class="btn btn-lg headnav_mp">
-                        <%= link_to_if (request.path != "/admin_dashboard.html"),
-                         "admin",
-                         "/admin_dashboard.html" %>
-                    </li>
 
-                    </li>
                 </ul>
             <!-- End Topbar -->
 
-                    <div>
-                        <ul class="list-inline dark-social space-bottom-0" style="text-align:center;">
-                            <li>
-                                <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Twitter" href="http://www.twitter.com/ntouchmusicapp">
-                                    <%#= icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong') %>
-                                    <%= icon('twitter-square fa-3x') %>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Pinterest" href="https://www.pinterest.com/ntouchmusicapp/">
-                                    <%= icon('pinterest-square fa-3x') %>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Youtube" href="https://www.youtube.com/channel/UCURuRdMfuURj4-9qSwTTIbg">
-                                    <%= icon('youtube-square fa-3x') %>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
 
 
     <%= yield %>
@@ -104,7 +83,7 @@
     </br>
     </br>
 
-     <!--=== Footer v6 ===-->
+ <!--=== Footer v6 ===-->
     <div id="footer-v6" class="footer-v6">
 
         <div class="copyright">
@@ -118,12 +97,43 @@
                             <li><a class="silver btn btn-primary" style="color:white;" href="#">Legal</a></li>
                             <li><a class="silver btn btn-primary" style="color:white;" href="mailto:contact.ntouchmusic@gmail.com">Got a Question or feedback? EMAIL US</a></li>
                             <li><a class="silver btn btn-primary" style="color:white;" href="http://www.mptracks.com">Mulatto Patriot - MPtracks.com</a></li>
+                              <li class="silver btn btn-warning pull-right">
+                        <%= link_to_if (request.path != "/admin_dashboard.html"),
+                         "admin_only",
+                         "/admin_dashboard.html" %>
+                        </li>
                         </ul>
+                    </div>
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+
+                    <ul class="list-inline dark-social space-bottom-0" style="text-align:center;">
+                        <li>
+                            <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Twitter" href="http://www.twitter.com/ntouchmusicapp">
+                                <%#= icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong') %>
+                                <%= icon('twitter-square fa-3x') %>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Pinterest" href="https://www.pinterest.com/ntouchmusicapp/">
+                                <%= icon('pinterest-square fa-3x') %>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Youtube" href="https://www.youtube.com/channel/UCURuRdMfuURj4-9qSwTTIbg">
+                                <%= icon('youtube-square fa-3x') %>
+                            </a>
+                        </li>
+                    </ul>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+
     <!--=== End Footer v6 ===-->
     </div><!--/wrapper-->
 </div>

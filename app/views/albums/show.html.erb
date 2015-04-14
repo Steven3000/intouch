@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="wrapper">
+        <div style="float:left">
+          <div class="song-page-title">
+            <h2><%= @album.name %>
+            </h2>
+            <h4>
+                by
+            <a href="/artists/<%= @album.artist.id %>">
+            <strong><%= @album.artist.name %></strong>
+            </a>
+          </div>
+
+          <% if @album.release_date.present? %>
+            (<%= time_ago_in_words(@album.release_date) %>)
+            </br>
+            </br>
+          <% end %>
+
+            </h4>
+        </div>
+
+        <div style="float:right">
+            <%= image_tag "#{@album.artwork_url}" %>
+        </div>
+    </div>
+
+
+
+    <% if @album .embedded_code.present? %>
+    <div class="song-player">
+      <%= @album.embedded_code.html_safe %>
+    <% else %>
+    <br/>
+    <% end %>
+    </div>
+</div>
+    </br>
+
+
+    <div class="container">
+    <hr/>
+        <ul class="song-additional-link">
+            <% if @album.download_link.present? %>
+              <td>
+                <a href="<%= @album.download_link %>" target="_blank" class="btn btn-success">Stream/Download</a>
+              </td>
+             <% end %>
+
+            <% if @album.itunes.present? %>
+              <td>
+                <a href="<%= @album.itunes %>" target="_blank" class="btn btn-success">iTunes</a>
+              </td>
+            <% end %>
+
+            <% if @album.google.present? %>
+              <td>
+                <a href="<%= @album.google %>" target="_blank" class="btn btn-success">Google Play</a>
+              </td>
+            <% end %>
+
+            <% if @album.amazon.present? %>
+              <td>
+                <a href="<%= @album.amazon %>" target="_blank" class="btn btn-success">Amazon</a>
+              </td>
+            <% end %>
+
+            <% if @album.spotify.present? %>
+              <td>
+                <a href="<%= @album.spotify %>" target="_blank" class="btn btn-success">Spotify</a>
+              </td>
+            <% end %>
+          </ul>
+            <hr/>
+
+           <% if @album.youtube.present? %>
+              <div class="video-player" style="float:right">
+                <%= @album.youtube.html_safe %>
+            <% end %>
+              </div>
+        </div>
+</div>
