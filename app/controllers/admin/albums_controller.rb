@@ -13,7 +13,7 @@ class Admin::AlbumsController < Admin::BaseController
 
     if @album.save
       @artist = @album.artist
-      @album = @artist.album
+      # @album = @artist.album
     end
   end
 
