@@ -38,7 +38,7 @@ class Admin::SongsController < Admin::BaseController
       redirect_to "/admin/songs", :notice => "Song created successfully."
 
     else
-      render '/admin/new'
+      render '/admin/songs/new'
     end
   end
 
