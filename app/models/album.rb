@@ -4,7 +4,7 @@ class Album < ActiveRecord::Base
   has_one :announcement
 
   def artwork_url
-    "album/#{self.artist.name.parameterize}-#{alubm.name.parameterize}.jpg"
+    "albums/#{self.artist.name.parameterize}-#{self.album.name.parameterize}.jpg"
   end
 
 end

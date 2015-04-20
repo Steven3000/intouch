@@ -1,6 +1,8 @@
-@import "owl.carousel";
-@import "owl.theme";
-
+@import "owl/custom";
+@import "owl/owl.carousel";
+@import "owl/owl.theme";
+@import "owl/owl.transitions";
+@import "owl/responsive";
 
 @import "unify/app.css";
 @import "unify/header-default";
@@ -18,3 +20,8 @@
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+
+
+
+

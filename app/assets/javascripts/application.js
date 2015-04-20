@@ -15,8 +15,6 @@
 //= require unify/loader
 //= require unify/bootswatch
 //= require jquery.min.js
-//= require owl.carousel.min.js
-//= require owl.carousel
 
 //= require unify/back-to-top
 //= require unify/index
@@ -28,3 +26,9 @@
 //= require unify/smoothScroll
 //= require unify/plugins/bootstrap/js/bootstrap.min.js
 
+//= require owl/owl.carousel.min
+//= require owl/owl.carousel
+//= require owl/applications
+//= require owl/bootstrap-tab
+//= require owl/bootstrap-transition
+//= require owl/bootstrap-collapse
