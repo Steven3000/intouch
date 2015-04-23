@@ -11,7 +11,7 @@ Artist.create!([
   {id: 2, name: "Kendrick Lamar", record_label: "TDE"},
   {id: 3, name: "Action Bronson", record_label: "Vice Records"},
   {id: 4, name: "Kanye West", record_label: "Def Jam"},
-  {id: 5, name: "Chace the Rapper", record_label: "Independent"},
+  {id: 5, name: "Chance the Rapper", record_label: "Independent"},
   {id: 6, name: "D\'Angelo", record_label: "EMI, Virgin, J, RCA"},
   {id: 7, name: "Frank Ocean", record_label: "Odd Future Records, Def Jam, Island"},
   {id: 8, name: "Lauryn Hill", record_label: "Columbia Ruffhouse"},
