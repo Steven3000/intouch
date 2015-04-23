@@ -6,7 +6,7 @@ class Artist < ActiveRecord::Base
   has_many :announcements, :through => :songs
 
 
-  has_many :albums
+  has_many :albums, dependent: :destroy
 
   # has_many :albums, :through => :songs
 
