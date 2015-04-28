@@ -33,6 +33,7 @@ Rails.application.routes.draw do
 
   get("/home", :controller => 'page', :action => 'home')
   get("/breakdown", :controller => 'page', :action => 'breakdown')
+  get("/audiomack", :controller => 'page', :action => 'audiomack')
 
   #ADMIN_other
   get("/admin_dashboard", :controller => 'admin', :action => 'admin_dashboard')

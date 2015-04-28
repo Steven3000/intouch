@@ -32,3 +32,5 @@
 //= require owl/bootstrap-tab
 //= require owl/bootstrap-transition
 //= require owl/bootstrap-collapse
+
+//= require audiomack

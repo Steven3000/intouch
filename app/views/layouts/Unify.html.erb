@@ -56,6 +56,10 @@
                     </li>
                     <li class="btn btn-lg headnav_mp">
                     <%= link_to_if (request.path != subscriptions_path),
+                         "Audiomack",
+                         "/audiomack" %>
+                    </li>                    <li class="btn btn-lg headnav_mp">
+                    <%= link_to_if (request.path != subscriptions_path),
                          "My Subscriptions",
                          subscriptions_path %>
                     </li>

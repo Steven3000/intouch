@@ -6,6 +6,10 @@
     <%= csrf_meta_tags %>
     <meta name="author" content="Steven Callen aka Mulatto Patriot">
 
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+
 
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -13,22 +17,23 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
 
-
-    <%= stylesheet_link_tag "admin_layout", media: "all" %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag "audiomack_layout", :media => "all" %>
+    <%= javascript_include_tag 'audiomack', 'data-turbolinks-track' => true %>
 
     <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
+
+
 
 </head>
 
 <body class="header-fixed">
     <style type="text/css">
         body {
-            background-color: rgb(255, 218, 185);
+ background: url('/assets/background.jpg');
         }
     </style>
 
-<div class="wrapper">
+    <div class="wrapper">
     <!--=== Header ===-->
     <div class="header-v6 header-dark-transparent header-sticky">
         <div class="container">
@@ -80,12 +85,33 @@
                 </ul>
             <!-- End Topbar -->
 
+                <div>
+
+
+
+
+            <!-- Toggle get grouped for better mobile display -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="fa fa-bars"></span>
+            </button>
+            <!-- End Toggle -->
+        </div><!--/end container-->
+
+                </ul>
+            </div><!--/end container-->
+        </div><!--/navbar-collapse-->
+    <!--=== End Header ===-->
+
+
 
     <%= yield %>
 
     </br>
+    </br>
+    </br>
 
- <!--=== Footer v6 ===-->
+    <!--=== Footer v6 ===-->
     <div id="footer-v6" class="footer-v6">
 
         <div class="copyright">
@@ -137,13 +163,10 @@
     </div>
 
     <!--=== End Footer v6 ===-->
-
-        </div>
-
     </div><!--/wrapper-->
 </div>
-
 </body>
+
 
 
 
