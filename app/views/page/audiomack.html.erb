@@ -2,9 +2,11 @@
   <iframe id="twttrHubFrameSecure" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrameSecure" src="https://platform.twitter.com/widgets/hub.f15fe2cd70788a40560e69fa17341d5e.html" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe>
   <iframe id="twttrHubFrame" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" name="twttrHubFrame" src="http://platform.twitter.com/widgets/hub.f15fe2cd70788a40560e69fa17341d5e.html" style="position: absolute; top: -9999em; width: 10px; height: 10px;"></iframe>
   <div id="fb-root" class=" fb_reset">
-  <div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div>
-  <iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://static.ak.facebook.com/connect/xd_arbiter/KvoNGODIqPG.js?version=41#channel=f3e8ebdf14&amp;origin=http%3A%2F%2Fwww.audiomack.com" style="border: none;"></iframe>
-  <iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter/KvoNGODIqPG.js?version=41#channel=f3e8ebdf14&amp;origin=http%3A%2F%2Fwww.audiomack.com" style="border: none;"></iframe></div></div>
+    <div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div>
+      <iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://static.ak.facebook.com/connect/xd_arbiter/KvoNGODIqPG.js?version=41#channel=f3e8ebdf14&amp;origin=http%3A%2F%2Fwww.audiomack.com" style="border: none;"></iframe>
+      <iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter/KvoNGODIqPG.js?version=41#channel=f3e8ebdf14&amp;origin=http%3A%2F%2Fwww.audiomack.com" style="border: none;"></iframe>
+    </div>
+  </div>
   <div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
   <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -14,85 +16,74 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-    <div id="site-wrap">
-
-
-      <div id="cmn_wrap">
-
-        <div id="main">
-
-
+  <div id="site-wrap">
+  <div id="cmn_wrap">
+  <div id="main">
   <div id="album">
+  <div class="container">
+  <div class="player-wrapper">
+  <div class="no-margin-left no-margin-right">
+  <div class="player">
+        <script type="text/javascript">
+        var m = 136560;
 
-    <div class="container">
+        $(document).ready(function() {
+          trackEvent('pv', m, audiomack.music_token);
 
-
-        <div class="player-wrapper">
-          <div class="no-margin-left no-margin-right">
-            <div class="player">
-              <script type="text/javascript">
-              var m = 136560;
-
-              $(document).ready(function() {
-                trackEvent('pv', m, audiomack.music_token);
-
-                if($.browser.chrome) {
-                  $(".download-album, .download-song").attr('target', '_blank');
-                }
-              });
-              </script>
+          if($.browser.chrome) {
+            $(".download-album, .download-song").attr('target', '_blank');
+          }
+        });
+        </script>
 
 
 
   <div id="wrap" class=" ">
     <div class="pborder">
       <div class="pwrap">
-              <div class="player-left">
-
+        <div class="player-left">
           <div class="black-overlay"></div>
-                              <span class="prev-track glyphicon glyphicon-fast-backward"></span>
+
+            <span class="prev-track glyphicon glyphicon-fast-backward"></span>
+
             <span id="play-button" class="playlist">
 
               <i class="icon glyphicon glyphicon-play"></i>
 
               <span class="loading-icon song-loader">
-
                 <span class="circle circle-1"></span>
-
                 <span class="circle circle-2"></span>
-
                 <span class="circle circle-3"></span>
-
               </span>
 
             </span>
             <span class="next-track glyphicon glyphicon-fast-forward"></span>
-                          </div>
+        </div>
 
         <div class="player-right">
           <div class="player-header">
-                      <div class="player-title ">
-                                            <span class="artist"><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" sl-processed="1">Mulatto Patriot &amp; Primeridian's Simeon Viltz</a></span>
-                  <span class="song-title"><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1">Ray Elementary</a></span><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1">
-                                      </a></div><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1">
-                        </a><div class="player-icons"><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1">
+            <div class="player-title ">
+              <span class="artist">
+                <a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" sl- processed="1">Mulatto Patriot &amp; Primeridian's Simeon Viltz</a>
+              </span>
+              <span class="song-title"><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1">Ray Elementary</a>
+              </span><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1"></a></div>
+              <a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1"></a>
+              <div class="player-icons"><a href="http://www.audiomack.com/album/mulatto-patriot/ray-elementary" target="_blank" id="song-title-link" sl-processed="1"></a>
 
-
-                  </a><a class="scloud-icon ext-icon player-icon" style="display: none !important;" target="_blank" href="" data-original-title="" title="" sl-processed="1"><i class="fa fa-soundcloud"></i></a>
-
-
-
-              <a data-toggle="tooltip" data-placement="left" class="player-icon share-twitter" target="_blank" title="" href="https://twitter.com/share?url=http://www.audiomack.com/album/mulatto-patriot/ray-elementary&amp;text=Mulatto Patriot &amp; Primeridian's Simeon Viltz - Ray Elementary via @mulattopatriot" data-original-title="Share on Twitter" sl-processed="1">
+              <!-- <a class="scloud-icon ext-icon player-icon" style="display: none !important;" target="_blank" href="" data-original-title="" title="" sl-processed="1"><i class="fa fa-soundcloud"></i></a>
+ -->
+              <!-- <a data-toggle="tooltip" data-placement="left" class="player-icon share-twitter" target="_blank" title="" href="https://twitter.com/share?url=http://www.audiomack.com/album/mulatto-patriot/ray-elementary&amp;text=Mulatto Patriot &amp; Primeridian's Simeon Viltz - Ray Elementary via @mulattopatriot" data-original-title="Share on Twitter" sl-processed="1">
                 <span class="fa fa-twitter"></span>
               </a>
 
               <a data-toggle="tooltip" data-placement="left" class="player-icon share-facebook" target="_blank" title="" href="https://facebook.com/sharer/sharer.php?u=http://www.audiomack.com/album/mulatto-patriot/ray-elementary" data-original-title="Share on Facebook" sl-processed="1">
                 <span class="fa fa-facebook"></span>
-              </a>
+              </a> -->
 
+              <!-- <a id="download-song" data-toggle="tooltip" data-placement="left" class="player-icon download-song" title="" href="http://music.audiomack.com/albums/mulatto-patriot/ray-elementary/mulatto-patriot-ray-elementary.zip?Expires=1430155107&amp;Signature=jeLDybsD7ghLtoiMnPB-FVokxn596DmpDtHhKLIlRO1qU6eMsXq~Bobbp03o769hwWHi3dXeRJUKSX9oyOmHfowS4c0G5t71Jvzk4Q98ZHQc8q0hXxk1lmJAz0C0xPBiTH9mb9JQI6HSTzOGmO5XQrIiV7XL3CD0HXugrd4~Vto_&amp;Key-Pair-Id=APKAIKAIRXBA2H7FXITA" data-url="/album/mulatto-patriot/ray-elementary" data-original-title="Download" target="_blank" sl-processed="1"> -->
 
-                                                            <a id="download-song" data-toggle="tooltip" data-placement="left" class="player-icon download-song" title="" href="http://music.audiomack.com/albums/mulatto-patriot/ray-elementary/mulatto-patriot-ray-elementary.zip?Expires=1430155107&amp;Signature=jeLDybsD7ghLtoiMnPB-FVokxn596DmpDtHhKLIlRO1qU6eMsXq~Bobbp03o769hwWHi3dXeRJUKSX9oyOmHfowS4c0G5t71Jvzk4Q98ZHQc8q0hXxk1lmJAz0C0xPBiTH9mb9JQI6HSTzOGmO5XQrIiV7XL3CD0HXugrd4~Vto_&amp;Key-Pair-Id=APKAIKAIRXBA2H7FXITA" data-url="/album/mulatto-patriot/ray-elementary" data-original-title="Download" target="_blank" sl-processed="1">
-                    <span class="glyphicon glyphicon-save"></span>
+                  <span class="glyphicon glyphicon-save"></span>
                   </a>
                   <script>
                   $('#download-song').on('click', function(event) {
@@ -108,10 +99,10 @@
                                         }
                   });
                   </script>
-                                                                    <a data-placement="left" class="player-embed player-icon" title="" href="#embed" id="itsembed" data-toggle="modal" onclick="ga('send', 'event', { eventCategory: 'Embed', eventAction: $(this).attr('href').split('?')[0], eventLabel: window.location.href});" data-original-title="Embed" sl-processed="1">
+                   <!-- <a data-placement="left" class="player-embed player-icon" title="" href="#embed" id="itsembed" data-toggle="modal" onclick="ga('send', 'event', { eventCategory: 'Embed', eventAction: $(this).attr('href').split('?')[0], eventLabel: window.location.href});" data-original-title="Embed" sl-processed="1"> -->
                 <span class="glyphicons embed_close"></span>
               </a>
-                                                      <a data-toggle="tooltip" data-placement="left" data-music_id="136560" data-action="favorite" title="" class="launch_login_modal player-icon" data-original-title="Favorite">
+                    <a data-toggle="tooltip" data-placement="left" data-music_id="136560" data-action="favorite" title="" class="launch_login_modal player-icon" data-original-title="Favorite">
                   <span class="glyphicon glyphicon-star"></span>
                 </a>
 
@@ -120,11 +111,11 @@
 
           <div class="wform-wrap">
 
-          <div class="player-song-stats">
+          <!-- <div class="player-song-stats">
             <span class="song-plays glyphicon glyphicon-play"></span><span class="song-plays-stat">3.82K</span><span class="divider"></span>
             <span class="song-favorites glyphicon glyphicon-star"></span><span class="song-favorites-stat">0</span><span class="divider"></span>
-          </div>
-          <a class="via-audiomack via-am-logo" target="_blank" href="http://www.audiomack.com" sl-processed="1">Audiomack</a>
+          </div> -->
+
           <div class="player-jwplayer">
             <div class="elapsed">00:00</div>
 
@@ -133,7 +124,7 @@
 
             <div class="slider">
               <span class="progress"></span>
-                          <div class="waveform" data-color="ffa200" data-duration="192" data-waveform="[27,30,23,31,39,44,41,44,48,47,39,43,44,48,41,44,55,48,44,48,47,46,51,49,64,46,63,49,61,52,62,52,61,50,56,46,56,50,55,52,61,44,58,56,56,51,60,56,57,47,43,47,47,46,44,47,47,56,52,57,53,58,52,58,47,62,54,59,55,57,50,60,65,54,51,51,51,61,50,59,48,62,55,59,46,56,43,60,45,61,55,58,49,51,47,57,50,53,42,43,41,39,38,40,41,44,59,48,44,45,46,48,45,44,46,46,45,45,50,47,51,45,44,44,38,42,45,44,42,40,45,40,46,42,45,37,44,43,54,47,49,52,51,55,51,48,62,48,48,53,47,52,52,61,60,44,56,48,56,50,56,48,49,40,39,38,35,39,39,46,43,55,63,61,56,54,58,59,52,55,42,47,36,37,27,35,27,36,7,0,0,0]" style="width: 565px; height: 30px;"><span style="left:0px;width:2px;height:8.7px;"></span><span style="left:3px;width:2px;height:6.8999999999999995px;"></span><span style="left:6px;width:2px;height:9.299999999999999px;"></span><span style="left:9px;width:2px;height:11.7px;"></span><span style="left:12px;width:2px;height:13.2px;"></span><span style="left:15px;width:2px;height:12.299999999999999px;"></span><span style="left:18px;width:2px;height:13.2px;"></span><span style="left:21px;width:2px;height:14.399999999999999px;"></span><span style="left:24px;width:2px;height:14.1px;"></span><span style="left:27px;width:2px;height:11.7px;"></span><span style="left:30px;width:2px;height:12.9px;"></span><span style="left:33px;width:2px;height:13.2px;"></span><span style="left:36px;width:2px;height:14.399999999999999px;"></span><span style="left:39px;width:2px;height:12.299999999999999px;"></span><span style="left:42px;width:2px;height:13.2px;"></span><span style="left:45px;width:2px;height:16.5px;"></span><span style="left:48px;width:2px;height:14.399999999999999px;"></span><span style="left:51px;width:2px;height:13.2px;"></span><span style="left:54px;width:2px;height:14.399999999999999px;"></span><span style="left:57px;width:2px;height:14.1px;"></span><span style="left:60px;width:2px;height:13.799999999999999px;"></span><span style="left:63px;width:2px;height:15.299999999999999px;"></span><span style="left:66px;width:2px;height:14.7px;"></span><span style="left:69px;width:2px;height:19.2px;"></span><span style="left:72px;width:2px;height:13.799999999999999px;"></span><span style="left:75px;width:2px;height:18.9px;"></span><span style="left:78px;width:2px;height:14.7px;"></span><span style="left:81px;width:2px;height:18.3px;"></span><span style="left:84px;width:2px;height:15.6px;"></span><span style="left:87px;width:2px;height:18.599999999999998px;"></span><span style="left:90px;width:2px;height:15.6px;"></span><span style="left:93px;width:2px;height:18.3px;"></span><span style="left:96px;width:2px;height:15px;"></span><span style="left:99px;width:2px;height:16.8px;"></span><span style="left:102px;width:2px;height:13.799999999999999px;"></span><span style="left:105px;width:2px;height:16.8px;"></span><span style="left:108px;width:2px;height:15px;"></span><span style="left:111px;width:2px;height:16.5px;"></span><span style="left:114px;width:2px;height:15.6px;"></span><span style="left:117px;width:2px;height:18.3px;"></span><span style="left:120px;width:2px;height:13.2px;"></span><span style="left:123px;width:2px;height:17.4px;"></span><span style="left:126px;width:2px;height:16.8px;"></span><span style="left:129px;width:2px;height:16.8px;"></span><span style="left:132px;width:2px;height:15.299999999999999px;"></span><span style="left:135px;width:2px;height:18px;"></span><span style="left:138px;width:2px;height:16.8px;"></span><span style="left:141px;width:2px;height:17.099999999999998px;"></span><span style="left:144px;width:2px;height:14.1px;"></span><span style="left:147px;width:2px;height:12.9px;"></span><span style="left:150px;width:2px;height:14.1px;"></span><span style="left:153px;width:2px;height:14.1px;"></span><span style="left:156px;width:2px;height:13.799999999999999px;"></span><span style="left:159px;width:2px;height:13.2px;"></span><span style="left:162px;width:2px;height:14.1px;"></span><span style="left:165px;width:2px;height:14.1px;"></span><span style="left:168px;width:2px;height:16.8px;"></span><span style="left:171px;width:2px;height:15.6px;"></span><span style="left:174px;width:2px;height:17.099999999999998px;"></span><span style="left:177px;width:2px;height:15.899999999999999px;"></span><span style="left:180px;width:2px;height:17.4px;"></span><span style="left:183px;width:2px;height:15.6px;"></span><span style="left:186px;width:2px;height:17.4px;"></span><span style="left:189px;width:2px;height:16.5px;"></span><span style="left:192px;width:2px;height:16.2px;"></span><span style="left:195px;width:2px;height:17.7px;"></span><span style="left:198px;width:2px;height:16.5px;"></span><span style="left:201px;width:2px;height:17.099999999999998px;"></span><span style="left:204px;width:2px;height:15px;"></span><span style="left:207px;width:2px;height:18px;"></span><span style="left:210px;width:2px;height:19.5px;"></span><span style="left:213px;width:2px;height:16.2px;"></span><span style="left:216px;width:2px;height:15.299999999999999px;"></span><span style="left:219px;width:2px;height:15.299999999999999px;"></span><span style="left:222px;width:2px;height:15.299999999999999px;"></span><span style="left:225px;width:2px;height:18.3px;"></span><span style="left:228px;width:2px;height:15px;"></span><span style="left:231px;width:2px;height:17.7px;"></span><span style="left:234px;width:2px;height:14.399999999999999px;"></span><span style="left:237px;width:2px;height:18.599999999999998px;"></span><span style="left:240px;width:2px;height:16.5px;"></span><span style="left:243px;width:2px;height:17.7px;"></span><span style="left:246px;width:2px;height:13.799999999999999px;"></span><span style="left:249px;width:2px;height:16.8px;"></span><span style="left:252px;width:2px;height:12.9px;"></span><span style="left:255px;width:2px;height:18px;"></span><span style="left:258px;width:2px;height:13.5px;"></span><span style="left:261px;width:2px;height:18.3px;"></span><span style="left:264px;width:2px;height:16.5px;"></span><span style="left:267px;width:2px;height:17.4px;"></span><span style="left:270px;width:2px;height:14.7px;"></span><span style="left:273px;width:2px;height:15.299999999999999px;"></span><span style="left:276px;width:2px;height:14.1px;"></span><span style="left:279px;width:2px;height:17.099999999999998px;"></span><span style="left:282px;width:2px;height:15px;"></span><span style="left:285px;width:2px;height:15.899999999999999px;"></span><span style="left:288px;width:2px;height:12.6px;"></span><span style="left:291px;width:2px;height:12.9px;"></span><span style="left:294px;width:2px;height:12.299999999999999px;"></span><span style="left:297px;width:2px;height:11.7px;"></span><span style="left:300px;width:2px;height:11.4px;"></span><span style="left:303px;width:2px;height:12px;"></span><span style="left:306px;width:2px;height:12.299999999999999px;"></span><span style="left:309px;width:2px;height:13.2px;"></span><span style="left:312px;width:2px;height:17.7px;"></span><span style="left:315px;width:2px;height:14.399999999999999px;"></span><span style="left:318px;width:2px;height:13.2px;"></span><span style="left:321px;width:2px;height:13.5px;"></span><span style="left:324px;width:2px;height:13.799999999999999px;"></span><span style="left:327px;width:2px;height:14.399999999999999px;"></span><span style="left:330px;width:2px;height:13.5px;"></span><span style="left:333px;width:2px;height:13.2px;"></span><span style="left:336px;width:2px;height:13.799999999999999px;"></span><span style="left:339px;width:2px;height:13.799999999999999px;"></span><span style="left:342px;width:2px;height:13.5px;"></span><span style="left:345px;width:2px;height:13.5px;"></span><span style="left:348px;width:2px;height:15px;"></span><span style="left:351px;width:2px;height:14.1px;"></span><span style="left:354px;width:2px;height:15.299999999999999px;"></span><span style="left:357px;width:2px;height:13.5px;"></span><span style="left:360px;width:2px;height:13.2px;"></span><span style="left:363px;width:2px;height:13.2px;"></span><span style="left:366px;width:2px;height:11.4px;"></span><span style="left:369px;width:2px;height:12.6px;"></span><span style="left:372px;width:2px;height:13.5px;"></span><span style="left:375px;width:2px;height:13.2px;"></span><span style="left:378px;width:2px;height:12.299999999999999px;"></span><span style="left:381px;width:2px;height:13.5px;"></span><span style="left:384px;width:2px;height:12px;"></span><span style="left:387px;width:2px;height:13.799999999999999px;"></span><span style="left:390px;width:2px;height:12.6px;"></span><span style="left:393px;width:2px;height:13.5px;"></span><span style="left:396px;width:2px;height:11.1px;"></span><span style="left:399px;width:2px;height:13.2px;"></span><span style="left:402px;width:2px;height:12.9px;"></span><span style="left:405px;width:2px;height:16.2px;"></span><span style="left:408px;width:2px;height:14.1px;"></span><span style="left:411px;width:2px;height:14.7px;"></span><span style="left:414px;width:2px;height:15.6px;"></span><span style="left:417px;width:2px;height:15.299999999999999px;"></span><span style="left:420px;width:2px;height:16.5px;"></span><span style="left:423px;width:2px;height:15.299999999999999px;"></span><span style="left:426px;width:2px;height:14.399999999999999px;"></span><span style="left:429px;width:2px;height:18.599999999999998px;"></span><span style="left:432px;width:2px;height:14.399999999999999px;"></span><span style="left:435px;width:2px;height:14.399999999999999px;"></span><span style="left:438px;width:2px;height:15.899999999999999px;"></span><span style="left:441px;width:2px;height:14.1px;"></span><span style="left:444px;width:2px;height:15.6px;"></span><span style="left:447px;width:2px;height:15.6px;"></span><span style="left:450px;width:2px;height:18.3px;"></span><span style="left:453px;width:2px;height:18px;"></span><span style="left:456px;width:2px;height:13.2px;"></span><span style="left:459px;width:2px;height:16.8px;"></span><span style="left:462px;width:2px;height:14.399999999999999px;"></span><span style="left:465px;width:2px;height:16.8px;"></span><span style="left:468px;width:2px;height:15px;"></span><span style="left:471px;width:2px;height:16.8px;"></span><span style="left:474px;width:2px;height:14.399999999999999px;"></span><span style="left:477px;width:2px;height:14.7px;"></span><span style="left:480px;width:2px;height:12px;"></span><span style="left:483px;width:2px;height:11.7px;"></span><span style="left:486px;width:2px;height:11.4px;"></span><span style="left:489px;width:2px;height:10.5px;"></span><span style="left:492px;width:2px;height:11.7px;"></span><span style="left:495px;width:2px;height:11.7px;"></span><span style="left:498px;width:2px;height:13.799999999999999px;"></span><span style="left:501px;width:2px;height:12.9px;"></span><span style="left:504px;width:2px;height:16.5px;"></span><span style="left:507px;width:2px;height:18.9px;"></span><span style="left:510px;width:2px;height:18.3px;"></span><span style="left:513px;width:2px;height:16.8px;"></span><span style="left:516px;width:2px;height:16.2px;"></span><span style="left:519px;width:2px;height:17.4px;"></span><span style="left:522px;width:2px;height:17.7px;"></span><span style="left:525px;width:2px;height:15.6px;"></span><span style="left:528px;width:2px;height:16.5px;"></span><span style="left:531px;width:2px;height:12.6px;"></span><span style="left:534px;width:2px;height:14.1px;"></span><span style="left:537px;width:2px;height:10.799999999999999px;"></span><span style="left:540px;width:2px;height:11.1px;"></span><span style="left:543px;width:2px;height:8.1px;"></span><span style="left:546px;width:2px;height:10.5px;"></span><span style="left:549px;width:2px;height:8.1px;"></span><span style="left:552px;width:2px;height:10.799999999999999px;"></span><span style="left:555px;width:2px;height:2.1px;"></span><span style="left:558px;width:2px;height:0.3px;"></span><span style="left:561px;width:2px;height:0.3px;"></span><span style="left:564px;width:2px;height:0.3px;"></span></div>
+                <div class="waveform" data-color="ffa200" data-duration="192" data-waveform="[27,30,23,31,39,44,41,44,48,47,39,43,44,48,41,44,55,48,44,48,47,46,51,49,64,46,63,49,61,52,62,52,61,50,56,46,56,50,55,52,61,44,58,56,56,51,60,56,57,47,43,47,47,46,44,47,47,56,52,57,53,58,52,58,47,62,54,59,55,57,50,60,65,54,51,51,51,61,50,59,48,62,55,59,46,56,43,60,45,61,55,58,49,51,47,57,50,53,42,43,41,39,38,40,41,44,59,48,44,45,46,48,45,44,46,46,45,45,50,47,51,45,44,44,38,42,45,44,42,40,45,40,46,42,45,37,44,43,54,47,49,52,51,55,51,48,62,48,48,53,47,52,52,61,60,44,56,48,56,50,56,48,49,40,39,38,35,39,39,46,43,55,63,61,56,54,58,59,52,55,42,47,36,37,27,35,27,36,7,0,0,0]" style="width: 565px; height: 30px;"><span style="left:0px;width:2px;height:8.7px;"></span><span style="left:3px;width:2px;height:6.8999999999999995px;"></span><span style="left:6px;width:2px;height:9.299999999999999px;"></span><span style="left:9px;width:2px;height:11.7px;"></span><span style="left:12px;width:2px;height:13.2px;"></span><span style="left:15px;width:2px;height:12.299999999999999px;"></span><span style="left:18px;width:2px;height:13.2px;"></span><span style="left:21px;width:2px;height:14.399999999999999px;"></span><span style="left:24px;width:2px;height:14.1px;"></span><span style="left:27px;width:2px;height:11.7px;"></span><span style="left:30px;width:2px;height:12.9px;"></span><span style="left:33px;width:2px;height:13.2px;"></span><span style="left:36px;width:2px;height:14.399999999999999px;"></span><span style="left:39px;width:2px;height:12.299999999999999px;"></span><span style="left:42px;width:2px;height:13.2px;"></span><span style="left:45px;width:2px;height:16.5px;"></span><span style="left:48px;width:2px;height:14.399999999999999px;"></span><span style="left:51px;width:2px;height:13.2px;"></span><span style="left:54px;width:2px;height:14.399999999999999px;"></span><span style="left:57px;width:2px;height:14.1px;"></span><span style="left:60px;width:2px;height:13.799999999999999px;"></span><span style="left:63px;width:2px;height:15.299999999999999px;"></span><span style="left:66px;width:2px;height:14.7px;"></span><span style="left:69px;width:2px;height:19.2px;"></span><span style="left:72px;width:2px;height:13.799999999999999px;"></span><span style="left:75px;width:2px;height:18.9px;"></span><span style="left:78px;width:2px;height:14.7px;"></span><span style="left:81px;width:2px;height:18.3px;"></span><span style="left:84px;width:2px;height:15.6px;"></span><span style="left:87px;width:2px;height:18.599999999999998px;"></span><span style="left:90px;width:2px;height:15.6px;"></span><span style="left:93px;width:2px;height:18.3px;"></span><span style="left:96px;width:2px;height:15px;"></span><span style="left:99px;width:2px;height:16.8px;"></span><span style="left:102px;width:2px;height:13.799999999999999px;"></span><span style="left:105px;width:2px;height:16.8px;"></span><span style="left:108px;width:2px;height:15px;"></span><span style="left:111px;width:2px;height:16.5px;"></span><span style="left:114px;width:2px;height:15.6px;"></span><span style="left:117px;width:2px;height:18.3px;"></span><span style="left:120px;width:2px;height:13.2px;"></span><span style="left:123px;width:2px;height:17.4px;"></span><span style="left:126px;width:2px;height:16.8px;"></span><span style="left:129px;width:2px;height:16.8px;"></span><span style="left:132px;width:2px;height:15.299999999999999px;"></span><span style="left:135px;width:2px;height:18px;"></span><span style="left:138px;width:2px;height:16.8px;"></span><span style="left:141px;width:2px;height:17.099999999999998px;"></span><span style="left:144px;width:2px;height:14.1px;"></span><span style="left:147px;width:2px;height:12.9px;"></span><span style="left:150px;width:2px;height:14.1px;"></span><span style="left:153px;width:2px;height:14.1px;"></span><span style="left:156px;width:2px;height:13.799999999999999px;"></span><span style="left:159px;width:2px;height:13.2px;"></span><span style="left:162px;width:2px;height:14.1px;"></span><span style="left:165px;width:2px;height:14.1px;"></span><span style="left:168px;width:2px;height:16.8px;"></span><span style="left:171px;width:2px;height:15.6px;"></span><span style="left:174px;width:2px;height:17.099999999999998px;"></span><span style="left:177px;width:2px;height:15.899999999999999px;"></span><span style="left:180px;width:2px;height:17.4px;"></span><span style="left:183px;width:2px;height:15.6px;"></span><span style="left:186px;width:2px;height:17.4px;"></span><span style="left:189px;width:2px;height:16.5px;"></span><span style="left:192px;width:2px;height:16.2px;"></span><span style="left:195px;width:2px;height:17.7px;"></span><span style="left:198px;width:2px;height:16.5px;"></span><span style="left:201px;width:2px;height:17.099999999999998px;"></span><span style="left:204px;width:2px;height:15px;"></span><span style="left:207px;width:2px;height:18px;"></span><span style="left:210px;width:2px;height:19.5px;"></span><span style="left:213px;width:2px;height:16.2px;"></span><span style="left:216px;width:2px;height:15.299999999999999px;"></span><span style="left:219px;width:2px;height:15.299999999999999px;"></span><span style="left:222px;width:2px;height:15.299999999999999px;"></span><span style="left:225px;width:2px;height:18.3px;"></span><span style="left:228px;width:2px;height:15px;"></span><span style="left:231px;width:2px;height:17.7px;"></span><span style="left:234px;width:2px;height:14.399999999999999px;"></span><span style="left:237px;width:2px;height:18.599999999999998px;"></span><span style="left:240px;width:2px;height:16.5px;"></span><span style="left:243px;width:2px;height:17.7px;"></span><span style="left:246px;width:2px;height:13.799999999999999px;"></span><span style="left:249px;width:2px;height:16.8px;"></span><span style="left:252px;width:2px;height:12.9px;"></span><span style="left:255px;width:2px;height:18px;"></span><span style="left:258px;width:2px;height:13.5px;"></span><span style="left:261px;width:2px;height:18.3px;"></span><span style="left:264px;width:2px;height:16.5px;"></span><span style="left:267px;width:2px;height:17.4px;"></span><span style="left:270px;width:2px;height:14.7px;"></span><span style="left:273px;width:2px;height:15.299999999999999px;"></span><span style="left:276px;width:2px;height:14.1px;"></span><span style="left:279px;width:2px;height:17.099999999999998px;"></span><span style="left:282px;width:2px;height:15px;"></span><span style="left:285px;width:2px;height:15.899999999999999px;"></span><span style="left:288px;width:2px;height:12.6px;"></span><span style="left:291px;width:2px;height:12.9px;"></span><span style="left:294px;width:2px;height:12.299999999999999px;"></span><span style="left:297px;width:2px;height:11.7px;"></span><span style="left:300px;width:2px;height:11.4px;"></span><span style="left:303px;width:2px;height:12px;"></span><span style="left:306px;width:2px;height:12.299999999999999px;"></span><span style="left:309px;width:2px;height:13.2px;"></span><span style="left:312px;width:2px;height:17.7px;"></span><span style="left:315px;width:2px;height:14.399999999999999px;"></span><span style="left:318px;width:2px;height:13.2px;"></span><span style="left:321px;width:2px;height:13.5px;"></span><span style="left:324px;width:2px;height:13.799999999999999px;"></span><span style="left:327px;width:2px;height:14.399999999999999px;"></span><span style="left:330px;width:2px;height:13.5px;"></span><span style="left:333px;width:2px;height:13.2px;"></span><span style="left:336px;width:2px;height:13.799999999999999px;"></span><span style="left:339px;width:2px;height:13.799999999999999px;"></span><span style="left:342px;width:2px;height:13.5px;"></span><span style="left:345px;width:2px;height:13.5px;"></span><span style="left:348px;width:2px;height:15px;"></span><span style="left:351px;width:2px;height:14.1px;"></span><span style="left:354px;width:2px;height:15.299999999999999px;"></span><span style="left:357px;width:2px;height:13.5px;"></span><span style="left:360px;width:2px;height:13.2px;"></span><span style="left:363px;width:2px;height:13.2px;"></span><span style="left:366px;width:2px;height:11.4px;"></span><span style="left:369px;width:2px;height:12.6px;"></span><span style="left:372px;width:2px;height:13.5px;"></span><span style="left:375px;width:2px;height:13.2px;"></span><span style="left:378px;width:2px;height:12.299999999999999px;"></span><span style="left:381px;width:2px;height:13.5px;"></span><span style="left:384px;width:2px;height:12px;"></span><span style="left:387px;width:2px;height:13.799999999999999px;"></span><span style="left:390px;width:2px;height:12.6px;"></span><span style="left:393px;width:2px;height:13.5px;"></span><span style="left:396px;width:2px;height:11.1px;"></span><span style="left:399px;width:2px;height:13.2px;"></span><span style="left:402px;width:2px;height:12.9px;"></span><span style="left:405px;width:2px;height:16.2px;"></span><span style="left:408px;width:2px;height:14.1px;"></span><span style="left:411px;width:2px;height:14.7px;"></span><span style="left:414px;width:2px;height:15.6px;"></span><span style="left:417px;width:2px;height:15.299999999999999px;"></span><span style="left:420px;width:2px;height:16.5px;"></span><span style="left:423px;width:2px;height:15.299999999999999px;"></span><span style="left:426px;width:2px;height:14.399999999999999px;"></span><span style="left:429px;width:2px;height:18.599999999999998px;"></span><span style="left:432px;width:2px;height:14.399999999999999px;"></span><span style="left:435px;width:2px;height:14.399999999999999px;"></span><span style="left:438px;width:2px;height:15.899999999999999px;"></span><span style="left:441px;width:2px;height:14.1px;"></span><span style="left:444px;width:2px;height:15.6px;"></span><span style="left:447px;width:2px;height:15.6px;"></span><span style="left:450px;width:2px;height:18.3px;"></span><span style="left:453px;width:2px;height:18px;"></span><span style="left:456px;width:2px;height:13.2px;"></span><span style="left:459px;width:2px;height:16.8px;"></span><span style="left:462px;width:2px;height:14.399999999999999px;"></span><span style="left:465px;width:2px;height:16.8px;"></span><span style="left:468px;width:2px;height:15px;"></span><span style="left:471px;width:2px;height:16.8px;"></span><span style="left:474px;width:2px;height:14.399999999999999px;"></span><span style="left:477px;width:2px;height:14.7px;"></span><span style="left:480px;width:2px;height:12px;"></span><span style="left:483px;width:2px;height:11.7px;"></span><span style="left:486px;width:2px;height:11.4px;"></span><span style="left:489px;width:2px;height:10.5px;"></span><span style="left:492px;width:2px;height:11.7px;"></span><span style="left:495px;width:2px;height:11.7px;"></span><span style="left:498px;width:2px;height:13.799999999999999px;"></span><span style="left:501px;width:2px;height:12.9px;"></span><span style="left:504px;width:2px;height:16.5px;"></span><span style="left:507px;width:2px;height:18.9px;"></span><span style="left:510px;width:2px;height:18.3px;"></span><span style="left:513px;width:2px;height:16.8px;"></span><span style="left:516px;width:2px;height:16.2px;"></span><span style="left:519px;width:2px;height:17.4px;"></span><span style="left:522px;width:2px;height:17.7px;"></span><span style="left:525px;width:2px;height:15.6px;"></span><span style="left:528px;width:2px;height:16.5px;"></span><span style="left:531px;width:2px;height:12.6px;"></span><span style="left:534px;width:2px;height:14.1px;"></span><span style="left:537px;width:2px;height:10.799999999999999px;"></span><span style="left:540px;width:2px;height:11.1px;"></span><span style="left:543px;width:2px;height:8.1px;"></span><span style="left:546px;width:2px;height:10.5px;"></span><span style="left:549px;width:2px;height:8.1px;"></span><span style="left:552px;width:2px;height:10.799999999999999px;"></span><span style="left:555px;width:2px;height:2.1px;"></span><span style="left:558px;width:2px;height:0.3px;"></span><span style="left:561px;width:2px;height:0.3px;"></span><span style="left:564px;width:2px;height:0.3px;"></span></div>
 
               <div class="white-border"></div>
             </div><!--/.slider-->
@@ -159,6 +150,7 @@
                 <a href="#" data-url="http://www.audiomack.com/api/music/url/album/mulatto-patriot/ray-elementary/0" sl-processed="1">Drum Line Feat. Sincerely Yours </a>
               </div>
 
+
             </div><!--/.song-->
             <div class="song-actions">
                 <div class="favorite-song">
@@ -172,7 +164,7 @@
                   </a>
                 </div><!--/.playlist-song-->
                                                   <div class="download-song" target="_blank">
-                      <a target="_blank" href="http://music.audiomack.com/albums/mulatto-patriot/ray-elementary/drum-line-feat.-sincerely-yours.mp3?Expires=1430155107&amp;Signature=gT9XENOW4FEt7rkUOjaCo91pqSeVBy2lRw4vpOiaKiB1iDLHqY0gXSa-WY6-g4MsNHIwl8nLz7~rGisOVLz-77rorhkL9VhmIk473VXWG2KkmBxDJfIxrownuwsjNI2IyxbzMkUqzCzhzga0XKwc-zhkyizfxnhGDznRh97NJWo_&amp;Key-Pair-Id=APKAIKAIRXBA2H7FXITA" sl-processed="1">
+                    <a target="_blank" href="http://music.audiomack.com/albums/mulatto-patriot/ray-elementary/drum-line-feat.-sincerely-yours.mp3?Expires=1430155107&amp;Signature=gT9XENOW4FEt7rkUOjaCo91pqSeVBy2lRw4vpOiaKiB1iDLHqY0gXSa-WY6-g4MsNHIwl8nLz7~rGisOVLz-77rorhkL9VhmIk473VXWG2KkmBxDJfIxrownuwsjNI2IyxbzMkUqzCzhzga0XKwc-zhkyizfxnhGDznRh97NJWo_&amp;Key-Pair-Id=APKAIKAIRXBA2H7FXITA" sl-processed="1">
                         <i class="glyphicon glyphicon-download"></i>
                       </a>
                     </div>
