@@ -114,13 +114,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 sm-margon-bottom-10">
-                        <ul class="list-inline terms-menu">
-                            <li class="silver btn btn-primary">Copyright © 2015 - All Rights Reserved</li>
+                        <ul class="list-inline terms-menu" style="text-align:center">
                             <li><a class="silver btn btn-primary" style="color:white;" href="#">About Us</a></li>
-                            <li><a class="silver btn btn-primary" style="color:white;" href="#">Legal</a></li>
                             <li><a class="silver btn btn-primary" style="color:white;" href="mailto:contact.ntouchmusic@gmail.com">Got a Question or feedback? EMAIL US</a></li>
                             <li><a class="silver btn btn-primary" style="color:white;" href="http://www.mptracks.com">Mulatto Patriot - MPtracks.com</a></li>
-                              <li class="silver btn btn-warning pull-right">
+                              <li class="silver btn btn-danger">
                         <%= link_to_if (request.path != "/admin_dashboard.html"),
                          "admin_only",
                          "/admin_dashboard.html" %>
@@ -150,6 +148,8 @@
                             </a>
                         </li>
                     </ul>
+                    </br>
+                    <p style="text-align:center">©  2015 Mulatto Patriot Productions®. All rights reserved.</p>
                     </div>
                 </div>
             </div>
