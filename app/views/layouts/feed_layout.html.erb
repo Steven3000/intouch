@@ -54,11 +54,7 @@
                          "My Subscriptions",
                          subscriptions_path %>
                     </li>
-                    <li class="btn btn-lg headnav_mp">
-                    <%= link_to_if (request.path != subscriptions_path),
-                         "AM",
-                         "/audiomack" %>
-                    </li>
+
                     <li class="btn btn-lg headnav_mp">
                         <%= link_to_if (request.path != songs_path),
                            "Songs",
@@ -80,7 +76,8 @@
                 </ul>
             <!-- End Topbar -->
 
-
+    </br>
+    </br>
 
     <%= yield %>
 
