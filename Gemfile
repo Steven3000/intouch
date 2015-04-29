@@ -1,5 +1,7 @@
 ruby '2.2.0'
 
+gem 'aws-sdk'
+
 gem 'font-awesome-sass', '~> 4.3.0'
 
 gem 'twitter-bootswatch-rails', '~> 3.3'
