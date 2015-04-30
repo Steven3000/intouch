@@ -11,7 +11,7 @@ class Artist < ActiveRecord::Base
   # has_many :albums, :through => :songs
 
   def picture_url
-    "artists/#{name.parameterize}.jpg"
+    "http://s3.amazonaws.com/ntouchimages/images/artists/#{name.parameterize}.jpg"
   end
 end
 

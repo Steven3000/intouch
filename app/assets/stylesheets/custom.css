@@ -1,8 +1,5 @@
 /* Add here all your css styles (customizations) */
 
-a:visited {
-color: #2C3EBE;
-}
 
 .headnav_mp {
   font-family: 'Roboto Condensed', sans-serif;
@@ -12,3 +9,116 @@ color: #2C3EBE;
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.button1 {
+   border-top: 1px solid #264659;
+   background: #294759;
+   background: -webkit-gradient(linear, left top, left bottom, from(#438dbf), to(#294759));
+   background: -webkit-linear-gradient(top, #438dbf, #294759);
+   background: -moz-linear-gradient(top, #438dbf, #294759);
+   background: -ms-linear-gradient(top, #438dbf, #294759);
+   background: -o-linear-gradient(top, #438dbf, #294759);
+   padding: 20px 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #f7f7f7;
+   font-size: 36px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center
+   }
+
+.button2 {
+   border-top: 1px solid #264659;
+   background: #294759;
+   background: -webkit-gradient(linear, left top, left bottom, from(#438dbf), to(#294759));
+   background: -webkit-linear-gradient(top, #438dbf, #294759);
+   background: -moz-linear-gradient(top, #438dbf, #294759);
+   background: -ms-linear-gradient(top, #438dbf, #294759);
+   background: -o-linear-gradient(top, #438dbf, #294759);
+   padding: 20px 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #f7f7f7;
+   font-size: 21px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center
+   }
+
+.button3 {
+   border-top: 1px solid #264659;
+   background: #294759;
+   background: -webkit-gradient(linear, left top, left bottom, from(#438dbf), to(#294759));
+   background: -webkit-linear-gradient(top, #438dbf, #294759);
+   background: -moz-linear-gradient(top, #438dbf, #294759);
+   background: -ms-linear-gradient(top, #438dbf, #294759);
+   background: -o-linear-gradient(top, #438dbf, #294759);
+   padding: 20px 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #f7f7f7;
+   font-size: 21px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center
+   }
+   .button3 {
+   border-top: 1px solid #006e30;
+   background: #156914;
+   background: -webkit-gradient(linear, left top, left bottom, from(#207d39), to(#156914));
+   background: -webkit-linear-gradient(top, #207d39, #156914);
+   background: -moz-linear-gradient(top, #207d39, #156914);
+   background: -ms-linear-gradient(top, #207d39, #156914);
+   background: -o-linear-gradient(top, #207d39, #156914);
+   padding: 20px 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 36px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center
+   }
+.button3:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button3:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+.button:hover {
+   border-top-color: #61b2e8;
+   background: #61b2e8;
+   color: #080308;
+   }
+.button:active {
+   border-top-color: #1d4d69;
+   background: #1d4d69;
+   }

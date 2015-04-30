@@ -31,9 +31,11 @@ Rails.application.routes.draw do
   #--public artist feed----------------------------
   get("/artists/:id", :controller => 'artists', :action => 'show')
 
+  #--page controller----------------------------
   get("/home", :controller => 'page', :action => 'home')
   get("/breakdown", :controller => 'page', :action => 'breakdown')
   get("/audiomack", :controller => 'page', :action => 'audiomack')
+  get("/fheader", :controller => 'page', :action => 'fheader')
 
   #ADMIN_other
   get("/admin_dashboard", :controller => 'admin', :action => 'admin_dashboard')

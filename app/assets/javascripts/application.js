@@ -33,7 +33,7 @@
 //= require owl/bootstrap-transition
 //= require owl/bootstrap-collapse
 
-//= require audiomack
+
 
 //= require bootstrap/affix
 //= require bootstrap/alert

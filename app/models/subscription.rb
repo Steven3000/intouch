@@ -6,7 +6,7 @@ class Subscription < ActiveRecord::Base
   validates :user, :presence => true
 
   def picture_url
-    "@artists/#{name.parameterize}.jpg"
+    "@http://s3.amazonaws.com/ntouchimages/images/artists/#{name.parameterize}.jpg"
   end
 
 end

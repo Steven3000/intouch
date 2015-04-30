@@ -1,13 +1,13 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
   <% if current_user.subscriptions.present? %>
-  <h1 class="btn-homepage">My Subscriptions</h1>
+  <h1 class="button1">My Subscriptions</h1>
   <% end %>
   <%= render 'my_subs' %>
 </div>
 
 <div class="container">
-  <h1 class="btn-homepage">Select More Artists to Follow</h1>
+  <h1 class="button1">Select More Artists to Follow</h1>
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag subscriptions_path, method: "get" do %>

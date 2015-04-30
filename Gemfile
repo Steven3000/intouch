@@ -30,6 +30,7 @@ gem 'nokogiri'
 
 gem 'glyphicons-rails'
 
+
 # heroku addon for tracking errors
 gem 'rollbar', '~> 1.2.7'
 

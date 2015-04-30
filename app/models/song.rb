@@ -5,7 +5,7 @@ class Song < ActiveRecord::Base
   has_one :announcement
 
   def artwork_url
-    "artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
+    "http://s3.amazonaws.com/ntouchimages/images/artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
   end
 
 

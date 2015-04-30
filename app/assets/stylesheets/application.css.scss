@@ -1,3 +1,6 @@
+@import "header";
+
+
 @import "owl/custom";
 @import "owl/owl.carousel";
 @import "owl/owl.theme";
@@ -14,12 +17,12 @@
 @import "unify/plugins/line-icons/line-icons";
 @import "unify/plugins/flexslider";
 
-@import "home";
-@import "feed";
-@import "custom";
-
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+@import "home";
+@import "feed";
+
 
 
 @font-face {
@@ -31,4 +34,4 @@
       url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
-
+@import "custom";

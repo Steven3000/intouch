@@ -1,4 +1,6 @@
   <div class="container">
+  <h1 class="button1">Welcome to the NTouchMusicApp.</h1>
+
     <div id="owl-demo" class="owl-carousel">
       <div class="item"><img src="/assets/artists/beatles.jpg" alt="artist"></div>
       <div class="item"><img src="/assets/artists/madonna.jpg" alt="artist"></div>
@@ -8,23 +10,24 @@
       <div class="item"><img src="/assets/artists/michael-jackson.jpg" alt="artist"></div>
     </div>
 
-    <h4 style="text-align:center; padding:4px; background-color:rgb(106,139,140);">We are a notification service dedicated to informing you when one of your favorite artists' releases a new song.</h4>
+    <h2 class="button2">We are a notification service dedicated to informing you when your favorite artists' releases a new song.<br/> Simply let us know your favorite artists.<br/> (1st 4 are FREE!) <br/>Then just wait to recieve a text and/or email when any of your favorite artists' releases a new song.</h2>
 
-    <h1 style="text-align:center; padding:5px; background-color:rgb(208,209,195);">Welcome to NTouchMusic.com</h1>
-
-    <h3 style="text-align:center; padding:5px; background-color:rgb(106,139,140);">Simply let us know your favorite artists. (1st 3 are FREE!) <br/>Just wait to recieve a text and/or email when any of your favorite artists' releases a new song.</h3>
+<!--     <h3 class="button">
+    </h3> -->
 
     </br>
 
     <% unless current_user.present? %>
-     <p style="text-align:center" >
-      <a class="btn-homepage" style="padding:30px;" href="/breakdown">Show Me More</a>
-    </p>
+    <div style="margin:15px">
+<!--      <p style="text-align:center" >
+      <a class="button button:hover" style="padding:30px;" href="/breakdown">Show Me More</a>
+    </p> -->
     </br>
       <p style="text-align:center"  >
-      <a class="btn-homepage" style="padding:50px;" href="/users/sign_up">Sign-up!</a>
+      <a class="button3" style="padding:50px;" href="/users/sign_up">Sign-up, NOW!</a>
     </p>
      <% end %>
+     </div>
   </div>
 
 <script>
