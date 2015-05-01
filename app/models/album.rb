@@ -5,7 +5,7 @@ class Album < ActiveRecord::Base
 
 
   def album_artwork_url
-    "http://s3.amazonaws.com/ntouchimages/images/albums/#{self.artist.name.parameterize}-#{self.name.parameterize}.jpg"
+    "albums/#{self.artist.name.parameterize}-#{self.name.parameterize}.jpg"
   end
 
 end
