@@ -25,39 +25,44 @@
         </div>
     </div>
 
-    <!-- <div>
+
+    <div>
       <ul class="feedxxx">
-          <%# @songs.order(release_date: :desc).each do |song| %>
+          <% @album.songs.order(release_date: :desc).each do |song| %>
             <li>
-              <a href="/songs/<%#= album.song.id %>">
+              <a href="/songs/<%= song %>">
                 <p class="artist-feed">
-                  <%#= song.artist.name %>
-                  <%# if song.release_date.present? %>
-                    <span><%#= time_ago_in_words(song.release_date) %></span>
-                  <%# end %>
+                  <%= @album.artist.name %>
+                  <% if song.release_date.present? %>
+                    <span><%= time_ago_in_words(song.release_date) %></span>
+                  <% end %>
                 </p>
                 <table>
                   <td style="padding-right:25px">
-                    <%#= song.title %>
+                    <%= song.title %>
                   <td style="padding-right:25px">
-                    <%# if song.features.present? %>
+                    <% if song.features.present? %>
                       Feat.
-                    <%#= song.features %>
+                    <%= song.features %>
                   </td>
                   </td>
-                  <td style="padding-right:25px">
-                      <%# if song.album_title.present? %>
-                      Album: <%#= song.album_title %>
-                    <%# end %>
-                    <%# end %>
+
+                    <% end %>
                   </td>
                 </table>
               </a>
             </li>
-          <%# end %>
+          <% end %>
         </ul>
     </div>
- -->
+
+
+
+
+
+
+
+
 
 
     <% if @album .embedded_code.present? %>
@@ -67,7 +72,7 @@
     <br/>
     <% end %>
     </div>
-</div>
+  </div>
     </br>
 
 
@@ -112,4 +117,6 @@
             <% end %>
               </div>
         </div>
+
+
 </div>
