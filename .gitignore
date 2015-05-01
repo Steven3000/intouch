@@ -18,5 +18,3 @@
 
 # Ignore admin base controller
 /app/controllers/admin/base_controller.rb
-
-github-gem/
