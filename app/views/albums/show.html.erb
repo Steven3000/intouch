@@ -1,111 +1,94 @@
-<div class="container">
-  <div class="container">
-       <div style="float:left">
-      <%= image_tag "#{@album.album_artwork_url}" %>
-    </div>
-
-     <div style="float:right">
-        <a href="/artists/<%= @album.artist.id %>">
-        <p class="button10"><%= @album.artist.name %></p>
-        </a>
-        <p class="button10"><%= @album.name %>
-        </p>
-        <% if @album.release_date.present? %>
-        <p class="button10">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
-
-        <div class="song-additional-link">
-          <% if @album.download_link.present? %>
-            <td>
-              <a href="<%= @album.download_link %>" target="_blank" class="button10">Stream/Download</a>
-            </td>
-           <% end %>
-
-          <% if @album.itunes.present? %>
-            <td>
-              <a href="<%= @album.itunes %>" target="_blank" class="button10">iTunes</a>
-            </td>
-          <% end %>
-
-          <% if @album.google.present? %>
-            <td>
-              <a href="<%= @album.google %>" target="_blank" class="button10">Google Play</a>
-            </td>
-          <% end %>
-
-          <% if @album.amazon.present? %>
-            <td>
-              <a href="<%= @album.amazon %>" target="_blank" class="button10">Amazon</a>
-            </td>
-          <% end %>
-
-          <% if @album.spotify.present? %>
-            <td>
-              <a href="<%= @album.spotify %>" target="_blank" class="button10">Spotify</a>
-            </td>
-          <% end %>
-        </div>
-
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <% end %>
-      </div>
-
+<div class="container-album-show">
+  <div style="float:left">
+    <%= image_tag "#{@album.album_artwork_url}" %>
   </div>
+  <div style="float:right">
+    <a href="/artists/<%= @album.artist.id %>">
+    <p class="button10"><%= @album.artist.name %></p>
+    </a>
+    <p class="button10"><%= @album.name %>
+    </p>
+    <% if @album.release_date.present? %>
+    <p class="button10">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
+    <div style="margin-top:15px;" class="song-additional-link">
+      <% if @album.download_link.present? %>
+        <td>
+          <a href="<%= @album.download_link %>" target="_blank" class="button10">Stream/Download</a>
+        </td>
+       <% end %>
 
-  <div>
-    <div>
-      <% @album.songs.order(release_date: :desc).each do |song| %>
-
-        <a href="/songs/<%= song %>">
-          <!-- <p class="artist-feed"> -->
-             <%#= song.artist.name %>
-            <%# if song.release_date.present? %>
-              <!-- <span><%#= time_ago_in_words(song.release_date) %></span> -->
-            <!-- <%# end %> -->
-          <!--   </p> -->
-          <table>
-            <td class="button10">
-              <%= song.title %>
-
-            <% if song.features.present? %>
-              (ft. <%= song.features %>)
-            </td>
-            <% end %>
-          </table>
-        </a>
-
-        <% end %>
-    </div>
-  </div>
-
-
-
-      <% if @album .embedded_code.present? %>
-      <div class="song-player">
-        <%= @album.embedded_code.html_safe %>
-      <% else %>
-      <br/>
+      <% if @album.itunes.present? %>
+        <td>
+          <a href="<%= @album.itunes %>" target="_blank" class="button10">iTunes</a>
+        </td>
       <% end %>
-      </div>
 
-      </br>
+      <% if @album.google.present? %>
+        <td>
+          <a href="<%= @album.google %>" target="_blank" class="button10">Google Play</a>
+        </td>
+      <% end %>
+
+      <% if @album.amazon.present? %>
+        <td>
+          <a href="<%= @album.amazon %>" target="_blank" class="button10">Amazon</a>
+        </td>
+      <% end %>
+
+      <% if @album.spotify.present? %>
+        <td>
+          <a href="<%= @album.spotify %>" target="_blank" class="button10">Spotify</a>
+        </td>
+      <% end %>
+    </div>
+  </div>
 
 
-      <div class="container">
+        <% end %>
+</div>
 
+</br>
+</br>
 
+<div class="container">
+    <% @album.songs.order(release_date: :desc).each do |song| %>
+      <a href="/songs/<%= song %>">
+        <!-- <p class="artist-feed"> -->
+           <%#= song.artist.name %>
+          <%# if song.release_date.present? %>
+            <!-- <span><%#= time_ago_in_words(song.release_date) %></span> -->
+          <!-- <%# end %> -->
+        <!--   </p> -->
+      <table>
+        <td class="button10">
+          <%= song.title %>
 
+        <% if song.features.present? %>
+          (ft. <%= song.features %>)
+        </td>
+        <% end %>
+      </table>
+      </a>
+      <% end %>
+</div>
 
-             <% if @album.youtube.present? %>
-                <div class="video-player" style="float:right">
-                  <%= @album.youtube.html_safe %>
-              <% end %>
-                </div>
-          </div>
+</br>
+</br>
+
+<div class="container">
+  <% if @album .embedded_code.present? %>
+  <div class="song-player">
+    <%= @album.embedded_code.html_safe %>
+  <% else %>
+  <% end %>
   </div>
 </div>
+</br>
+</br>
+<div class="container">
+ <% if @album.youtube.present? %>
+    <div class="video-player" style="float:right">
+      <%= @album.youtube.html_safe %>
+  <% end %>
+    </div>
+  </div>

@@ -29,11 +29,11 @@
 <body class="header-fixed">
     <style type="text/css">
         body {
- background: url('http://s3.amazonaws.com/ntouchimages/images/background.jpg');
+ background: url('/assets/background.jpg');
         }
     </style>
 
-    <div class="wrapper">
+   <div class="wrapper">
     <!--=== Header ===-->
     <div class="header-v6 header-dark-transparent header-sticky">
         <div class="container">
@@ -47,7 +47,7 @@
 
             <!-- End Logo -->
 
-            <!-- Topbar -->
+                        <!-- Topbar -->
             <ul class="loginbar pull-right">
                     <li class="btn btn-lg headnav_mp">
                          <%= link_to_if (request.path != "/home.html"),
@@ -59,6 +59,7 @@
                          "My Subscriptions",
                          subscriptions_path %>
                     </li>
+
                     <li class="btn btn-lg headnav_mp">
                         <%= link_to_if (request.path != songs_path),
                            "Songs",
@@ -78,26 +79,8 @@
                     <% end %>
 
                 </ul>
-            <!-- End Topbar -->
-
-                <div>
-
-
-
-
-            <!-- Toggle get grouped for better mobile display -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="fa fa-bars"></span>
-            </button>
-            <!-- End Toggle -->
-        </div><!--/end container-->
-
-                </ul>
-            </div><!--/end container-->
-        </div><!--/navbar-collapse-->
-    <!--=== End Header ===-->
-
+            </div>
+             </div>
     </br>
     </br>
 

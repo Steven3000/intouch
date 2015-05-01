@@ -42,7 +42,7 @@
 
             <!-- End Logo -->
 
-            <!-- Topbar -->
+                        <!-- Topbar -->
             <ul class="loginbar pull-right">
                     <li class="btn btn-lg headnav_mp">
                          <%= link_to_if (request.path != "/home.html"),
@@ -54,6 +54,7 @@
                          "My Subscriptions",
                          subscriptions_path %>
                     </li>
+
                     <li class="btn btn-lg headnav_mp">
                         <%= link_to_if (request.path != songs_path),
                            "Songs",
@@ -73,7 +74,8 @@
                     <% end %>
 
                 </ul>
-            <!-- End Topbar -->
+            </div>
+             </div>
     </br>
     </br>
 
