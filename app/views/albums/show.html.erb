@@ -6,10 +6,10 @@
     <a href="/artists/<%= @album.artist.id %>">
     <p class="button10"><%= @album.artist.name %></p>
     </a>
-    <p class="button10"><%= @album.name %>
+    <p class="button10b"><%= @album.name %>
     </p>
     <% if @album.release_date.present? %>
-    <p class="button10">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
+    <p class="button10b">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
     <div style="margin-top:15px;" class="song-additional-link">
       <% if @album.download_link.present? %>
         <td>
