@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150410015634) do
+ActiveRecord::Schema.define(version: 20150503010448) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20150410015634) do
     t.string   "record_label"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "album_id"
   end
 
   create_table "follows", force: :cascade do |t|

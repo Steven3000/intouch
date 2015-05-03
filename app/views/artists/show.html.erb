@@ -1,11 +1,21 @@
 <div class="container">
+  <div>
+  <p class="button10b">
+    <%= @artist.name %>
+    <% if @artist.album_id.present?  %>
+    Projects: <%= @artist.album_id %>
+    <% end %>
+    </p>
 
-    <div>
-        <%= image_tag "#{@artist.picture_url}" %>
-    </br>
 
-    </div>
-        <div>
+    <%= image_tag "#{@artist.picture_url}" %>
+    <%= image_tag "#{@artist.picture_url2}" %>
+
+  </div>
+
+</div>
+
+  <div class="container">
       <ul class="feedxxx">
           <% @artist.songs.order(release_date: :desc).each do |song| %>
             <li>
@@ -37,9 +47,4 @@
           <% end %>
         </ul>
     </div>
-
-</div>
-
-
-
 

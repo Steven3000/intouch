@@ -13,5 +13,8 @@ class Artist < ActiveRecord::Base
   def picture_url
     "artists/#{name.parameterize}.jpg"
   end
+  def picture_url2
+    "artists2/#{name.parameterize}.jpg"
+  end
 end
 

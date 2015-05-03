@@ -19,8 +19,11 @@
     <% if @song.release_date.present? %>
     <p class="button10b">Released <%= time_ago_in_words(@song.release_date)  %> ago. </p>
      <% end %>
-    <% if @song.album_title.present? || @song.album.present? %>
+    <% if @song.album_title.present? %>
     <p class="button10b">Album: <%= @song.album_title %></p>
+    <% else %>
+    <% @song.album.present? %>
+    <p class="button10b">Album: <%= @song.album.id %></p>
     <% end %>
     <div style="margin-top:15px;" class="song-additional-link">
 
