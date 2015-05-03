@@ -1,41 +1,50 @@
-<div class="wrapper-feed">
-  <h2 class="btn-homepage">
+<div class="container">
+  <p class="button10b">
+  <%= current_user.email %>'s Main Feed (A list of songs by your favorites').
+  </p>
+  <p class="button10">
   <%= link_to "Subscribe to New Artists", subscriptions_path %>
-  </h2>
-
-  <h3 class="txtt-center">
-    <%= current_user.email %>'s Song FEED
-  </h3>
-
-  <ul class="feedxxx">
+  </p>
+  <div class="row">
+    <div class="col-xs-12">
     <% @songs.each do |song| %>
-      <li>
-        <a href="/songs/<%= song.id %>">
-          <p class="artist-feed">
-            <%= song.artist.name %>
-            <% if song.release_date.present? %>
-              <span><%= time_ago_in_words(song.release_date) %></span>
-            <% end %>
-          </p>
-          <table>
-            <td style="padding-right:25px">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 isotope-item">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <%= image_tag "#{song.artwork_url}", :class => "img-responsive" %>
+            <dl>
+              <br>
+              <dd class="button12b">
+              <%= song.artist.name %>
+              </dd>
+              <dd class="button12b">
               <%= song.title %>
-            <td style="padding-right:25px">
+              </dd>
               <% if song.features.present? %>
-                Feat.
-              <%= song.features %>
-            </td>
-            </td>
-            <td style="padding-right:25px">
-                <% if song.album_title.present? %>
-                Album: <%= song.album_title %>
+              <dd class="button12b">
+              Featuring: <%= song.features %></dd>
               <% end %>
+              <% if song.producer.present? %>
+              <dd class="button12b">
+              Producer: <%= song.producer %></dd>
               <% end %>
-            </td>
-          </table>
-        </a>
-      </li>
-    <% end %>
-  </ul>
+              <% if song.release_date.present? %>
+              <dd class="button12b">
+              Released <%= time_ago_in_words(song.release_date) %> ago.</dd>
+              <% end %>
+              <% if song.album_title.present? %>
+              <dd class="button12">
+              Project: <%= song.album_title %></dd>
+              <% end %>
+              <p class="button12"><a href="/song.id">Click to View Song</a></p>
+          </dl>
+
+
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
 
