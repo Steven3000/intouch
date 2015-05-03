@@ -7,6 +7,7 @@ class SongsController < ApplicationController
 
   def show
     @song = Song.find(params[:id])
+    render layout: "feed_layout"
   end
 
 end

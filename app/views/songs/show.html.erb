@@ -1,97 +1,79 @@
 <div class="container">
-    <div class="wrapper">
-        <div style="float:left">
-          <div class="song-page-title">
-            <h2><%= @song.title %>
-            </h2>
-            <h4>
-                by
-            <a href="/artists/<%= @song.artist.id %>">
-            <strong><%= @song.artist.name %></strong>
-            </a>
-          </div>
+  <div style="float:left">
+    <%= image_tag "#{@song.artwork_url}" %>
+  </div>
+  <div style="float:right">
+    <a href="/artists/<%= @song.artist.id %>">
+    <p class="button10"><%= @song.artist.name %></p>
+    </a>
 
-          <% if @song.release_date.present? %>
-            (<%= time_ago_in_words(@song.release_date) %>)
-            </br>
-            </br>
-          <% end %>
+    <p class="button10b"><%= @song.title %>
+    <% if @song.features.present? %>
+          (ft. <%= @song.features %>)
 
-          <% if @song.producer.present? %>
-            Producer: <%= @song.producer %>
-            </br>
-            </br>
-          <% end %>
-
-          <% if @song.features.present? %>
-            Features: <%= @song.features %>
-            </br>
-            </br>
-          <% end %>
-
-          <% if @song.album_title.present? %>
-            Album: <%= @song.album_title %>
-          <% end %>
-            </h4>
-        </div>
-
-        <div style="float:right">
-            <%= image_tag "#{@song.artwork_url}" %>
-        </div>
-    </div>
-
-
-
-    <% if @song.embedded_code.present? %>
-    <div class="song-player">
-      <%= @song.embedded_code.html_safe %>
-    <% else %>
-    <br/>
+    </p>
+      <% end %>
+    <% if @song.producer.present? %>
+    <p class="button10b">Producer: <%= @song.producer %></p>
+     <% end %>
+    <% if @song.release_date.present? %>
+    <p class="button10b">Released <%= time_ago_in_words(@song.release_date)  %> ago. </p>
+     <% end %>
+    <% if @song.album_title.present? || @song.album.present? %>
+    <p class="button10b">Album: <%= @song.album_title %></p>
     <% end %>
+    <div style="margin-top:15px;" class="song-additional-link">
+
+      <% if @song.download_link.present? %>
+        <td>
+          <a href="<%= @song.download_link %>" target="_blank" class="button10">Stream/Download</a>
+        </td>
+       <% end %>
+
+      <% if @song.itunes.present? %>
+        <td>
+          <a href="<%= @song.itunes %>" target="_blank" class="button10">iTunes</a>
+        </td>
+      <% end %>
+
+      <% if @song.google.present? %>
+        <td>
+          <a href="<%= @song.google %>" target="_blank" class="button10">Google Play</a>
+        </td>
+      <% end %>
+
+      <% if @song.amazon.present? %>
+        <td>
+          <a href="<%= @song.amazon %>" target="_blank" class="button10">Amazon</a>
+        </td>
+      <% end %>
+
+      <% if @song.spotify.present? %>
+        <td>
+          <a href="<%= @song.spotify %>" target="_blank" class="button10">Spotify</a>
+        </td>
+      <% end %>
     </div>
+  </div>
 </div>
-    </br>
 
+</br>
+</br>
 
-    <div class="container">
-    <hr/>
-        <ul class="song-additional-link">
-            <% if @song.download_link.present? %>
-              <td>
-                <a href="<%= @song.download_link %>" target="_blank" class="btn btn-success">Stream/Download</a>
-              </td>
-             <% end %>
-
-            <% if @song.itunes.present? %>
-              <td>
-                <a href="<%= @song.itunes %>" target="_blank" class="btn btn-success">iTunes</a>
-              </td>
-            <% end %>
-
-            <% if @song.google.present? %>
-              <td>
-                <a href="<%= @song.google %>" target="_blank" class="btn btn-success">Google Play</a>
-              </td>
-            <% end %>
-
-            <% if @song.amazon.present? %>
-              <td>
-                <a href="<%= @song.amazon %>" target="_blank" class="btn btn-success">Amazon</a>
-              </td>
-            <% end %>
-
-            <% if @song.spotify.present? %>
-              <td>
-                <a href="<%= @song.spotify %>" target="_blank" class="btn btn-success">Spotify</a>
-              </td>
-            <% end %>
-          </ul>
-            <hr/>
-
-           <% if @song.youtube.present? %>
-              <div class="video-player" style="float:right">
-                <%= @song.youtube.html_safe %>
-            <% end %>
-              </div>
-        </div>
+<div class="container">
+  <% if @song.embedded_code.present? %>
+  <div class="song-player">
+    <%= @song.embedded_code.html_safe %>
+  <% else %>
+  <% end %>
+  </div>
 </div>
+</br>
+</br>
+<div class="container">
+ <% if @song.youtube.present? %>
+    <div class="video-player">
+      <%= @song.youtube.html_safe %>
+  <% end %>
+    </div>
+  </div>
