@@ -1,50 +1,59 @@
 <div class="container">
   <div>
-  <p class="button10b">
-    <%= @artist.name %>
-    <% if @artist.album_id.present?  %>
-    Projects: <%= @artist.album_id %>
-    <% end %>
+    <p class="button10b">
+      <%= @artist.name %>
+      <% if @artist.album_id.present?  %>
+      Projects: <%= @artist.album_id %>
+      <% end %>
+
     </p>
-
-
-    <%= image_tag "#{@artist.picture_url}" %>
-    <%= image_tag "#{@artist.picture_url2}" %>
-
+    <div style="float:left"> <%= image_tag "#{@artist.picture_url}" %></div>
+    <div style="float:right"><%= image_tag "#{@artist.picture_url2}" %></div>
   </div>
+</div>
+<hr/>
 
+<div class="row">
+  <div class="container">
+    <% @artist.songs.each do |song| %>
+        <div class="col-xs-12 col-lg-2 isotope-item">
+          <div class="panel panel-default">
+            <div class="panel-body" style="height:475px">
+              <%= image_tag "#{song.artwork_url}", :class => "img-responsive" %>
+              <dl>
+                <br>
+                <dd class="button12b">
+                <%= song.title %>
+                </dd>
+                <% if song.features.present? %>
+                <dd class="button12b">
+                Featuring: <%= song.features %></dd>
+                <% end %>
+                <% if song.producer.present? %>
+                <dd class="button12b">
+                Producer: <%= song.producer %></dd>
+                <% end %>
+                <% if song.album_title.present? %>
+                <dd class="button12b">
+                Project: <%= song.album_title %></dd>
+                <% end %>
+                <% if song.track.present? %>
+                <dd class="button12b">
+                Track #<%= song.track %></dd>
+                <% end %>
+                <% if song.release_date.present? %>
+                <dd class="button12b">
+                Released <%= time_ago_in_words(song.release_date) %> ago.</dd>
+                <% end %>
+                <dd class='button12'><a href="/songs/<%= song.id %>">Click here to Listen</a></dd>
+
+              </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
 </div>
 
-  <div class="container">
-      <ul class="feedxxx">
-          <% @artist.songs.order(release_date: :desc).each do |song| %>
-            <li>
-              <a href="/songs/<%= song.id %>">
-                <p class="artist-feed">
-                  <%= song.artist.name %>
-                  <% if song.release_date.present? %>
-                    <span><%= time_ago_in_words(song.release_date) %></span>
-                  <% end %>
-                </p>
-                <table>
-                  <td style="padding-right:25px">
-                    <%= song.title %>
-                  <td style="padding-right:25px">
-                    <% if song.features.present? %>
-                      Feat.
-                    <%= song.features %>
-                  </td>
-                  </td>
-                  <td style="padding-right:25px">
-                      <% if song.album_title.present? %>
-                      Album: <%= song.album_title %>
-                    <% end %>
-                    <% end %>
-                  </td>
-                </table>
-              </a>
-            </li>
-          <% end %>
-        </ul>
-    </div>
 

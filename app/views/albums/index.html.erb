@@ -1,26 +1,37 @@
-<div class="wrapper-feed">
-
-  <h2 class="button button:active button:hover">
+<div class="container">
+  <p class="button10b">
+  <%= current_user.email %>'s Main Feed (A list of songs by your favorites').
+  </p>
+  <p class="button10">
   <%= link_to "Subscribe to New Artists", subscriptions_path %>
-  </h2>
-
-  <h3 class="txtt-center">
-    <%= current_user.email %>'s Album FEED
-  </h3>
-
-  <ul class="feedxxx">
+  </p>
+  <div class="row">
+    <div class="col-xs-12">
     <% @albums.each do |album| %>
-      <li>
-        <a href="/albums/<%= album.id %>">
-          <p class="artist-feed">
-            <%= album.artist.name %>
-            <% if album.release_date.present? %>
-              <span><%= time_ago_in_words(album.release_date) %></span>
-            <% end %>
-          </p>
-        </a>
-      </li>
-    <% end %>
-  </ul>
+      <div class="col-xs-12 col-lg-3 isotope-item">
+        <div class="panel panel-default">
+          <div class="panel-body" style="height:420px">
+            <%= image_tag "#{album.album_artwork_url}", :class => "img-responsive" %>
+            <dl>
+              <br>
+              <dd class="button12b">
+              <%= album.artist.name %>
+              </dd>
+              <dd class="button12b">
+              <%= album.name %>
+              </dd>
+             <% if album.release_date.present? %>
+              <dd class="button12b">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
+              <% end %>
+              <dd class='button12'><a href="/albums/<%= album.id %>">Click here to Listen</a></dd>
+          </dl>
+
+
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
 

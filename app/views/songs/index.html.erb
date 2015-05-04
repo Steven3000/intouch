@@ -1,4 +1,4 @@
-<div class="container">
+<div class="wrapper ">
   <p class="button10b">
   <%= current_user.email %>'s Main Feed (A list of songs by your favorites').
   </p>
@@ -37,13 +37,10 @@
               <% end %>
               <dd class='button12'><a href="/songs/<%= song.id %>">Click here to Listen</a></dd>
           </dl>
-
-
           </div>
         </div>
       </div>
-      <% end %>
     </div>
   </div>
 </div>
-
+<% end %>
