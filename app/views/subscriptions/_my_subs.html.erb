@@ -8,7 +8,7 @@
         <%= image_tag "#{subscription.artist.picture_url}", :class => "img-responsive" %>
         <dl>
           <br>
-          <dd><%= subscription.artist.name %></dd>
+          <dd class="button12b"><%= subscription.artist.name %></dd>
           <dd><%= link_to "Click here for Artist Feed", artist_path(subscription.artist.id), :class => "btn btn-primary" %></dd>
           <dd><%= link_to 'Unsubscribe', subscription_path(subscription), :method => :delete, :class => "btn btn-danger" %></dd>
         </dl>
