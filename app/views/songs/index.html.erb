@@ -20,6 +20,9 @@
               <dd class="button12b">
               <%= song.title %>
               </dd>
+              <% if song.album_title.present? %>
+              <dd class='button12'><a href="/albums/<%= song.album_id %>">Project: <%= song.album_title %></a></dd>
+              <% end %>
               <% if song.features.present? %>
               <dd class="button12b">
               Featuring: <%= song.features %></dd>
@@ -32,11 +35,7 @@
               <dd class="button12b">
               Released <%= time_ago_in_words(song.release_date) %> ago.</dd>
               <% end %>
-              <% if song.album_title.present? %>
-              <dd class="button12">
-              Project: <%= song.album_title %></dd>
-              <% end %>
-              <p class="button12"><a href="/song.id">Click to View Song</a></p>
+              <dd class='button12'><a href="/songs/<%= song.id %>">Click here to Listen</a></dd>
           </dl>
 
 

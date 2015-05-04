@@ -21,9 +21,6 @@
      <% end %>
     <% if @song.album_title.present? %>
     <p class="button10b">Album: <%= @song.album_title %></p>
-    <% else %>
-    <% @song.album.present? %>
-    <p class="button10b">Album: <%= @song.album.id %></p>
     <% end %>
     <div style="margin-top:15px;" class="song-additional-link">
 
