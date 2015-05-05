@@ -14,9 +14,9 @@
             <%= image_tag "#{album.album_artwork_url}", :class => "img-responsive" %>
             <dl>
               <br>
-              <dd class="button12b">
-              <%= album.artist.name %>
-              </dd>
+              <dd class="button12">
+              <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>
+
               <dd class="button12b">
               <%= album.name %>
               </dd>
