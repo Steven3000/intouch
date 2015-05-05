@@ -7,11 +7,15 @@
       <% end %>
 
     </p>
-    <div style="float:left"> <%= image_tag "#{@artist.picture_url}" %></div>
-    <div style="float:right"><%= image_tag "#{@artist.picture_url2}" %></div>
+    <tr id="owl-demo" class="owl-carousel">
+      <td colspan="2"><%= image_tag "#{@artist.picture_url}" %></td>
+      <td colspan="2"><%= image_tag "#{@artist.picture_url2}" %></td>
+      <td colspan="2"><%= image_tag "#{@artist.picture_url3}" %></td>
+    </tr>
+
+    </div>
   </div>
 </div>
-<hr/>
 
 <div class="row">
   <div class="container">

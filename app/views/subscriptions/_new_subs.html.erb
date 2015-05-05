@@ -13,6 +13,8 @@
       <%= form_for Subscription.new :user => current_user, :artist => artist do |f| %>
             <%= f.hidden_field :artist_id %>
 
+               <dd><%= link_to "Click here for Artist Feed", artist_path(artist.id), :class => "btn btn-primary" %></dd>
+
             <%= f.submit :class => "btn btn-success" %>
 
           <% end %>
