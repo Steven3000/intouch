@@ -1,9 +1,9 @@
-User.destroy_all
-User.create!([
-  {id: 1, email: "a@a.com", password: "12121212"},
-  {id: 2, email: "b@b.com", password: "12121212"},
-  {id: 3, email: "c@c.com", password: "12121212"}
-])
+# User.destroy_all
+# User.create!([
+#   {id: 1, email: "a@a.com", password: "12121212"},
+#   {id: 2, email: "b@b.com", password: "12121212"},
+#   {id: 3, email: "c@c.com", password: "12121212"}
+# ])
 
 Artist.destroy_all
 Artist.create!([
@@ -16,14 +16,16 @@ Artist.create!([
   {id: 7, name: "Frank Ocean", record_label: "Odd Future Records, Def Jam, Island"},
   {id: 8, name: "Lauryn Hill", record_label: "Columbia Ruffhouse"},
   {id: 9, name: "Daft Punk", record_label: "Soma, Virgin, Walt Disney, Columbia"},
-  {id: 10, name: "Andre 3000", record_label: "Epic"}
+  {id: 10, name: "Andre 3000", record_label: "Epic"},
+  {id: 11, name: "Vic Mensa", record_label: "Roc Nation"}
 ])
 
 Album.destroy_all
 Album.create!([
   {id: 1, artist_id: 2, name: "To Pimp A Butterfly", release_date: "{2015/3/16}", download_link: "", embedded_code: '', itunes: "https://itunes.apple.com/us/album/to-pimp-a-butterfly/id974187289", google: "https://play.google.com/store/music/album/Kendrick_Lamar_To_Pimp_A_Butterfly?id=Bxno4dwxtvymibbibjafrmsk5fi&hl=en", amazon: "http://www.amazon.com/To-Pimp-Butterfly-Kendrick-Lamar/dp/B00UDDM7K0", spotify: "https://play.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP", youtube: '' },
   {id: 2, artist_id: 3, name: "Mr Wonderful", release_date: "{2015/3/23}", download_link: "", embedded_code: '', itunes: "https://itunes.apple.com/us/album/mr.-wonderful/id965629356", google: "https://play.google.com/store/music/album/Action_Bronson_Mr_Wonderful?id=Bxihcl7ae23bfw5sm5mypnikrme&hl=en", amazon: "http://www.amazon.com/Mr-Wonderful-Explicit-Action-Bronson/dp/B00TA6L6O4", spotify: "https://play.spotify.com/album/6jZzqlKfTvx4nON67dyCXd", youtube: '' },
-  {id: 3, artist_id: 1, name: "Ray Elementary", release_date: "{2014/1/23}", download_link: "http://www.audiomack.com/album/mulatto-patriot/ray-elementary", embedded_code: '<iframe src="http://www.audiomack.com/embed4-album/mulatto-patriot/ray-elementary" scrolling="no" width="100%" height="350" scrollbars="no" frameborder="0"></iframe>', itunes: "", google: "", amazon: "", spotify: "", youtube: '' }
+  {id: 3, artist_id: 1, name: "Ray Elementary", release_date: "{2014/1/23}", download_link: "http://www.audiomack.com/album/mulatto-patriot/ray-elementary", embedded_code: '<iframe src="http://www.audiomack.com/embed4-album/mulatto-patriot/ray-elementary" scrolling="no" width="100%" height="350" scrollbars="no" frameborder="0"></iframe>', itunes: "", google: "", amazon: "", spotify: "", youtube: '' },
+  {id: 4, artist_id: 6, name: "Black Messiah", release_date: "{2014/12/15}", download_link: "", embedded_code: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6", youtube: '' }
 ])
 
 Song.destroy_all
@@ -91,7 +93,44 @@ Song.create!([
     {id: 58, title: "Lifestyles", artist_id: 1, features: "", producer: "Mulatto Patriot", album_id: 3, track: "", album_title: "Ray Elementary", release_date: "{2014/1/23}", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "http://www.audiomack.com/album/mulatto-patriot/ray-elementary", embedded_code: ''  },
     {id: 59, title: "Something Special", artist_id: 1, features: "", producer: "Mulatto Patriot", album_id: 3, track: "", album_title: "Ray Elementary", release_date: "{2014/1/23}", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "http://www.audiomack.com/album/mulatto-patriot/ray-elementary", embedded_code: ''  }
 
-#{id: 60, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+    {id: 60, title: "U Mad", artist_id: 11, features: "Kanye West", producer: "Kanye West", album_id: , track: "", album_title: "", release_date: "{2015/4/20}", youtube: '', itunes: "https://itunes.apple.com/us/album/u-mad-feat.-kanye-west-single/id987725958", amazon: "http://www.amazon.com/Mad-feat-Kanye-West-Explicit/dp/B00WFNG43M", google: "https://play.google.com/store/music/artist/Vic_Mensa?id=Aqtlm7ha7rv7lmv7gdgkkjqdlqm&hl=en", spotify: "https://play.spotify.com/album/0ssmI1Nu1oYmi13w6GaiDJ",  download_link: "", embedded_code: ''  },
+
+    {id: 61, title: "Ain\'t That Easy", artist_id: 6, features: "", producer: "", album_id: 4, track: "1", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 62, title: "1000 Deaths", artist_id: 6, features: "", producer: "", album_id: 4, track: "2", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 63, title: "The Charade", artist_id: 6, features: "", producer: "", album_id: 4, track: "3", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 64, title: "Sugah Daddy", artist_id: 6, features: "", producer: "", album_id: 4, track: "4", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 65, title: "Really Love", artist_id: 6, features: "", producer: "", album_id: 4, track: "5", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 66, title: "Back To the Future \(Part I\)", artist_id: 6, features: "", producer: "", album_id: 4, track: "6", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 67, title: "Till It\'s Done \(Tutu\)", artist_id: 6, features: "", producer: "", album_id: 4, track: "7", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 68, title: "Prayer", artist_id: 6, features: "", producer: "", album_id: 4, track: "8", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 69, title: "Betray My Heart", artist_id: 6, features: "", producer: "", album_id: 4, track: "9", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 70, title: "The Door", artist_id: 6, features: "", producer: "", album_id: 4, track: "10", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 71, title: "Back To the Future \(Part II\)", artist_id: 6, features: "", producer: "", album_id: 4, track: "11", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
+    {id: 72, title: "Another Life", artist_id: 6, features: "", producer: "", album_id: 4, track: "12", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  }
+
+
+
+
+
+
+# {id: 73, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+# {id: 74, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+# {id: 75, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+# {id: 76, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+# {id: 77, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+# {id: 78, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+# {id: 79, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 80, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 81, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 82, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 84, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 85, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 86, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 87, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 88, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+#{id: 89, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
+
+#{id: 90, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
 
 ])
 
