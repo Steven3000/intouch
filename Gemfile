@@ -1,3 +1,4 @@
+source 'http://rubygems.org'
 ruby '2.2.0'
 
 gem 'font-awesome-sass', '~> 4.3.0'
@@ -96,4 +97,3 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 end
-
