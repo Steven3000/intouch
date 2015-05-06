@@ -16,4 +16,9 @@ class ApplicationController < ActionController::Base
     songs_path
   end
 
+  MiniMagick.configure do |config|
+  config.cli = :graphicsmagick
+  config.timeout = 5
+  end
+
 end

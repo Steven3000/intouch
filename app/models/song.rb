@@ -8,7 +8,6 @@ class Song < ActiveRecord::Base
     "artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
   end
 
-
 end
 
 

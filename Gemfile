@@ -22,16 +22,21 @@ gem 'devise'
 
 gem 'starter_generators', :git => 'https://github.com/rbetina/starter_generators', :branch => 'kiei925'
 
-gem 'mini_magick'
-
 gem 'owlcarousel-rails'
 
 gem 'nokogiri'
 
 gem 'glyphicons-rails'
 
-gem "mini_magick"
+# for aws cloud storage
+gem 'fog'
 
+gem "fog-aws"
+
+# photo resizing
+gem "mini_magick"
+# file upload solution
+gem 'carrierwave'
 
 # heroku addon for tracking errors
 gem 'rollbar', '~> 1.2.7'
