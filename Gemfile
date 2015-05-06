@@ -1,7 +1,5 @@
 ruby '2.2.0'
 
-gem 'aws-sdk'
-
 gem 'font-awesome-sass', '~> 4.3.0'
 
 gem 'twitter-bootswatch-rails', '~> 3.3'
@@ -28,6 +26,8 @@ gem 'nokogiri'
 
 gem 'glyphicons-rails'
 
+gem 'aws-sdk'
+
 # for aws cloud storage
 gem 'fog'
 
@@ -36,7 +36,7 @@ gem "fog-aws"
 # photo resizing
 gem "mini_magick"
 # file upload solution
-gem 'carrierwave'
+gem 'paperclip'
 
 # heroku addon for tracking errors
 gem 'rollbar', '~> 1.2.7'
