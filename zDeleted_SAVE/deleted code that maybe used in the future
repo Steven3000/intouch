@@ -218,3 +218,8 @@ ARTIST SHOW
     </tr>
 
     --------------------------------------------------------------------------
+
+admin artist new
+  <div class="actions">
+    <%= f.submit 'Make a friend' %>
+    <%= link_to 'Nevermind', admin_artist_path(:id), class: 'button' %>

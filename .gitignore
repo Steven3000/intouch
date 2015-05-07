@@ -18,3 +18,6 @@
 
 # Ignore admin base controller
 /app/controllers/admin/base_controller.rb
+
+# Ignore environment variable yml file
+config/environment_variables.yml

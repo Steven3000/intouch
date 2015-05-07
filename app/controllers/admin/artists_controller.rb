@@ -5,7 +5,6 @@ class Admin::ArtistsController < Admin::BaseController
    # @artists = Artist.search(params[:search])
   end
 
-
   def show
     @artist = Artist.find(params[:id])
   end
@@ -16,6 +15,8 @@ class Admin::ArtistsController < Admin::BaseController
 
   def create
     @artist = Artist.new(artists_params)
+
+
 
     # @artist = Artist.new
     # @artist.name = params[:name]
@@ -66,7 +67,7 @@ class Admin::ArtistsController < Admin::BaseController
     end
 
     def artists_params
-      params.require(:artist).permit(:name, :website, :record_label)
+      params.require(:artist).permit(:name, :website, :avatar, :record_label)
     end
 
 end

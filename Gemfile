@@ -27,7 +27,7 @@ gem 'nokogiri'
 
 gem 'glyphicons-rails'
 
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
 # for aws cloud storage
 gem 'fog'
