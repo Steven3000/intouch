@@ -108,11 +108,6 @@ Song.create!([
     {id: 71, title: "Back To the Future \(Part II\)", artist_id: 6, features: "", producer: "", album_id: 4, track: "11", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  },
     {id: 72, title: "Another Life", artist_id: 6, features: "", producer: "", album_id: 4, track: "12", album_title: "Black Messiah", release_date: "{2014/12/15}", youtube: '', itunes: "https://itunes.apple.com/us/album/black-messiah/id950764300", amazon: "http://www.amazon.com/Black-Messiah-DAngelo-And-Vanguard/dp/B00QR7ZN16", google: "https://play.google.com/store/music/album/D_Angelo_and_The_Vanguard_Black_Messiah?id=Bmmuzjnkwwiokejwawcl4dg5foi&hl=en", spotify: "https://play.spotify.com/album/5Hfbag0SsHxafx1SySFSX6",  download_link: "", embedded_code: ''  }
 
-
-
-
-
-
 # {id: 73, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
 # {id: 74, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },
 # {id: 75, title: "", artist_id: , features: "", producer: "", album_id: , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  },

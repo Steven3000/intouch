@@ -10,14 +10,22 @@ class Artist < ActiveRecord::Base
 
   # has_many :albums, :through => :songs
 
-  def picture_url
-    "artists/#{name.parameterize}.jpg"
-  end
-  def picture_url2
-    "artists2/#{name.parameterize}.jpg"
-  end
-  def picture_url3
-    "artists3/#{name.parameterize}.jpg"
-  end
+
+  has_attached_file :avatar, :styles => { :medium => "500x500>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png"
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+
+  # def picture_url
+  #   "artists/#{name.parameterize}.jpg"
+  # end
+  # def picture_url2
+  #   "artists2/#{name.parameterize}.jpg"
+  # end
+  # def picture_url3
+  #   "artists3/#{name.parameterize}.jpg"
+  # end
+
+
+
+
 end
 

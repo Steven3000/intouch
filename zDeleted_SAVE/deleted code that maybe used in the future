@@ -210,3 +210,11 @@ Devise Registrations Edit
     <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
     --------------------------------------------------------------------------
+ARTIST SHOW
+    <tr id="owl-demo" class="owl-carousel">
+      <td colspan="2"><%= image_tag "#{@artist.picture_url}" %></td>
+      <td colspan="2"><%= image_tag "#{@artist.picture_url2}" %></td>
+      <td colspan="2"><%= image_tag "#{@artist.picture_url3}" %></td>
+    </tr>
+
+    --------------------------------------------------------------------------
