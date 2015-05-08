@@ -1,0 +1,39 @@
+1st:
+
+Migrate Album and Song tables to include a boolean column announced. This column should be false by default:
+
+rails g migration add_announced_to_songs announced:boolean
+
+(Then you have to open the migration file and add the a default: false)
+
+---
+
+2nd:
+
+Make sure to add paperclip to Album:
+
+rails g paperclip Album cover
+
+And then add the following lines to the Album model:
+
+  has_attached_file :cover,
+    :styles => { :medium => "500x500>", :thumb => "100x100>" },
+    :default_url => "/images/:style/missing.jpg"
+
+---
+
+3rd:
+
+Remember to include the announce action and link to admin of Album (show page) as well.
+
+---
+
+4th
+
+drop announcement table
+delete views/announcements
+delete announcement model
+
+---
+
+HINT: http://guides.rubyonrails.org/active_job_basics.html

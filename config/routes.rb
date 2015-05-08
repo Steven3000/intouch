@@ -8,7 +8,11 @@ Rails.application.routes.draw do
 
   namespace :admin do
 
-    resources :songs
+    resources :songs do
+      member do
+        post 'announcement'
+      end
+    end
     resources :artists
     resources :albums
   end

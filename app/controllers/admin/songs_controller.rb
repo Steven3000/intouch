@@ -2,6 +2,7 @@ class Admin::SongsController < Admin::BaseController
 
   before_action :set_albums, only: [:new, :create, :edit, :update]
 
+
   def index
     @songs = Song.order(created_at: :desc).page(params[:page]).per(15)
   end
@@ -18,7 +19,6 @@ class Admin::SongsController < Admin::BaseController
     @song = Song.new(songs_params)
 
     if @song.save
-      notify_subscribers(@song)
       redirect_to "/admin/songs", :notice => "Song created successfully."
     else
       render '/admin/songs/new'
@@ -48,17 +48,18 @@ class Admin::SongsController < Admin::BaseController
     redirect_to "/admin/songs", :notice => "Song deleted."
   end
 
-  private
+  def announcement
+    @song = Song.find(params[:id])
 
-    def notify_subscribers(song)
-      puts 'test'
-      subscriptions = Subscription.where(artist_id: song.artist.id)
-      subscriptions.each do |sub|
-        AnnouncementMailer.announce_song(sub.user, song).deliver
-        puts 'test'
-      end
+    @song.artist.subscriptions.each do |subb|
+      AnnouncementMailer.announce_song(subb.user, @song).deliver_now
     end
 
+    flash[:notice] = "Announcement has been sent"
+    redirect_to admin_songs_path
+  end
+
+  private
     def set_song
       @song = Song.find(params[:id])
     end
