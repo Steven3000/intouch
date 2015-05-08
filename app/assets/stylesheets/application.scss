@@ -36,3 +36,7 @@
 
 @import "album_show";
 @import "custom";
+
+.panel-body {
+  img { max-width: 100%; }
+}

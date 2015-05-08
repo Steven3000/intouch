@@ -8,6 +8,23 @@ class Song < ActiveRecord::Base
     "artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
   end
 
+  def itunes
+    if self.album.present? && self.album.itunes.present?
+      self.album.itunes
+    else
+      read_attribute(:itunes)
+    end
+  end
+
+  def itunes
+    if self.album.present? && self.album.amazon.present?
+      self.album.itunes
+    else
+      read_attribute(:itunes)
+    end
+  end
+
+
 end
 
 
