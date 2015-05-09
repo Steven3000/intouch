@@ -47,14 +47,6 @@ class Song < ActiveRecord::Base
     end
   end
 
-  def album_title
-    if self.album.present? && self.album.album_title.present?
-      self.album.album_title
-    else
-      read_attribute(:album_title)
-    end
-  end
-
   def release_date
     if self.album.present? && self.album.release_date.present?
       self.album.release_date
@@ -63,8 +55,16 @@ class Song < ActiveRecord::Base
     end
   end
 
-  def artowrk_file_name
-    if self.album.present? && self.album.release_date.present?
+  def album_title
+    if self.album.present? && self.album.name.present?
+      self.album.name
+    else
+      read_attribute(:album_title)
+    end
+  end
+
+  def artwork_file_name
+    if self.album.present? && self.album.cover_file_name.present?
       self.album.release_date
     else
       read_attribute(:release_date)

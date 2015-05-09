@@ -6,6 +6,6 @@ class AddAttachmentArtworkToSongs < ActiveRecord::Migration
   end
 
   def self.down
-    remove_attachment :songs, :artwork
+    remove_attachment :songs, :artowrk
   end
 end
