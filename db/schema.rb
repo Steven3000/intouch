@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150509164809) do
+ActiveRecord::Schema.define(version: 20150509165145) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,6 +58,10 @@ ActiveRecord::Schema.define(version: 20150509164809) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "pic_file_name"
+    t.string   "pic_content_type"
+    t.integer  "pic_file_size"
+    t.datetime "pic_updated_at"
   end
 
   create_table "follows", force: :cascade do |t|
@@ -85,7 +89,11 @@ ActiveRecord::Schema.define(version: 20150509164809) do
     t.integer  "album_id"
     t.string   "album_title"
     t.datetime "release_date"
-    t.boolean  "announced",     default: false
+    t.boolean  "announced",            default: false
+    t.string   "artowrk_file_name"
+    t.string   "artowrk_content_type"
+    t.integer  "artowrk_file_size"
+    t.datetime "artowrk_updated_at"
   end
 
   create_table "subscriptions", force: :cascade do |t|

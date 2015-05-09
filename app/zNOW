@@ -12,7 +12,6 @@ rails g migration add_announced_to_songs announced:boolean
 
 Make sure to add paperclip to Album:
 
-rails g paperclip Album cover
 
 And then add the following lines to the Album model:
 
