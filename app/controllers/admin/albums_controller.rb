@@ -1,29 +1,22 @@
 class Admin::AlbumsController < Admin::BaseController
 
+
+
   def index
     @albums = Album.order(created_at: :desc).page(params[:page]).per(15)
   end
 
   def show
+    @album = Album.find(params[:id])
   end
 
   def new
     @album = Album.new
   end
 
-  def edit
-    @album = Album.find(params[:id])
-  end
-
   def create
-    #@album  = Album.new(params[:name])
     @album  = Album.new(album_params)
 
-  #   if @album.save
-  #     @artist = @album.artist
-  #     @album = @artist.album
-  #   end
-  # end
   respond_to do |format|
       if @album.save
         format.html { redirect_to admin_albums_url, notice: 'Album was successfully created.' }
@@ -33,6 +26,10 @@ class Admin::AlbumsController < Admin::BaseController
         format.json { render json: @album.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def edit
+    @album = Album.find(params[:id])
   end
 
   def update
@@ -53,6 +50,17 @@ class Admin::AlbumsController < Admin::BaseController
       format.html { redirect_to admin_albums_url, notice: 'album was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def announcement
+    @album = album.find(params[:id])
+
+    @album.artist.subscriptions.each do |suba|
+      AnnouncementMailer.announce_album(suba.user, @album).deliver_now
+    end
+
+    flash[:notice] = "Announcement has been sent"
+    redirect_to admin_albums_path
   end
 
 

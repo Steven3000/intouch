@@ -16,14 +16,6 @@ class Admin::ArtistsController < Admin::BaseController
   def create
     @artist = Artist.new(artists_params)
 
-
-
-    # @artist = Artist.new
-    # @artist.name = params[:name]
-    # @artist.picture = params[:picture]
-    # @artist.website = params[:website]
-    # @artist.record_label = params[:record_label]
-
     if @artist.save
       redirect_to "/admin/artists", :notice => "Artist created successfully."
     else
@@ -38,13 +30,6 @@ class Admin::ArtistsController < Admin::BaseController
   def update
     @artist = Artist.find(params[:id])
     @artist.update(artists_params)
-
-
-    # @artist = Artist.find(params[:id])
-    # @artist.name = params[:name]
-    # @artist.picture = params[:picture]
-    # @artist.website = params[:website]
-    # @artist.record_label = params[:record_label]
 
     if @artist.save
       redirect_to "/admin/artists", :notice => "Artist updated successfully."
