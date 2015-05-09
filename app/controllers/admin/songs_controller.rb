@@ -2,7 +2,6 @@ class Admin::SongsController < Admin::BaseController
 
   before_action :set_albums, only: [:new, :create, :edit, :update]
 
-
   def index
     @songs = Song.order(created_at: :desc).page(params[:page]).per(15)
   end
