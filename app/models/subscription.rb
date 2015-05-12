@@ -5,8 +5,14 @@ class Subscription < ActiveRecord::Base
 
   validates :user, :presence => true
 
-  def picture_url
-    "@http://s3.amazonaws.com/ntouchimages/images/artists/#{name.parameterize}.jpg"
-  end
+  has_attached_file :avatar,
+    :styles => { :medium => "600x600>", :thumb => "100x100>" },
+    :default_url => "/images/:style/missing.jpg"
+
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+
+   def picture_url
+     "artists/#{name.parameterize}.jpg"
+   end
 
 end
