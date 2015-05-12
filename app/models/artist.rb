@@ -16,17 +16,10 @@ class Artist < ActiveRecord::Base
 
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
+   def picture_url
+     "artists/#{name.parameterize}.jpg"
+   end
 
-
-  # def picture_url
-  #   "artists/#{name.parameterize}.jpg"
-  # end
-  # def picture_url2
-  #   "artists2/#{name.parameterize}.jpg"
-  # end
-  # def picture_url3
-  #   "artists3/#{name.parameterize}.jpg"
-  # end
 
 
 end
