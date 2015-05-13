@@ -1,9 +1,9 @@
-# User.destroy_all
-# User.create!([
-#   {id: 1, email: "a@a.com", password: "12121212"},
-#   {id: 2, email: "b@b.com", password: "12121212"},
-#   {id: 3, email: "c@c.com", password: "12121212"}
-# ])
+User.destroy_all
+User.create!([
+  {id: 1, email: "a@a.com", password: "12121212", username: "a"},
+  {id: 2, email: "b@b.com", password: "12121212", username: "b"},
+  {id: 3, email: "c@c.com", password: "12121212", username: "c"}
+])
 
 Artist.destroy_all
 Artist.create!([
