@@ -15,7 +15,6 @@
   <%= b.label :release_date, class: "control-label"  %>
   <%= b.text_field :release_date, placeholder: "Release Date", class: "form-control input-lg"  %>
 
-
   <%= b.label :download_link, class: "control-label"  %>
   <%= b.text_field :download_link, placeholder: "Download_link", class: "form-control input-lg"  %>
 
@@ -34,9 +33,11 @@
   <%= b.label :spotify, class: "control-label"  %>
   <%= b.text_field :spotify, placeholder: "spotify", class: "form-control input-lg"  %>
 
-  <%= b.label :youtube, class: "control-label"  %>
-  <%= b.text_field :youtube, placeholder: "Youtube", class: "form-control input-lg"  %>
 
+  <%= b.label :avatar, class: "control-label" %>
+  <%= b.file_field :avatar %>
+
+  <br/>
 
   <%= b.submit class: "btn btn-default"  %>
   <% end %>

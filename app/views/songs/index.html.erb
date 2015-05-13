@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="container">
   <p class="button10b">
   <%= current_user.email %>'s Main Feed (A list of songs by your favorites').
   </p>
@@ -8,7 +8,7 @@
   <div class="row">
     <div class="col-xs-12">
     <% @songs.each do |song| %>
-      <div class="col-xs-12 col-lg-2 isotope-item">
+      <div class="col-xs-12 col-lg-3 isotope-item">
         <div class="panel panel-default">
           <div class="panel-body" style="height:480px">
             <%= image_tag "#{song.artwork_url}", :class => "img-responsive" %>
@@ -39,7 +39,8 @@
           </div>
         </div>
       </div>
+      <% end %>
     </div>
   </div>
 </div>
-<% end %>
+

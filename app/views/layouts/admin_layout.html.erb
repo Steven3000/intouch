@@ -31,23 +31,19 @@
       <ul class="loginbar">
         <li class="btn btn-lg headnav_mp">
             <%= link_to_if (request.path != "/home.html"),
-                      "NtouchMusic.com",
-                      root_path %>
+                      "NtouchMusic.com", root_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
         <%= link_to_if (request.path != subscriptions_path),
-             "Artists",
-             subscriptions_path %>
+             "Artists", subscriptions_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
             <%= link_to_if (request.path != songs_path),
-               "Songs",
-               "/songs" %>
+               "Songs", "/songs" %>
         </li>
         <li class="btn btn-lg headnav_mp">
             <%= link_to_if (request.path != albums_path),
-               "Albums",
-               "/albums" %>
+               "Albums", "/albums" %>
         </li>
         <% if user_signed_in? %>
         <li class="btn btn-lg headnav_mp"><%= link_to "Profile", edit_user_registration_path %></li>

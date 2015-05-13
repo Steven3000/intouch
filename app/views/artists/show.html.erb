@@ -5,19 +5,10 @@
       <% if @artist.album_id.present?  %>
       Projects: <%= @artist.album_id %>
       <% end %>
-
     </p>
-
-
-
       <%= image_tag @artist.avatar.url(:medium) %>
-
-
-
-    </div>
   </div>
-</div>
-
+    <br/>
 <div class="row">
   <div class="container">
     <% @artist.songs.each do |song| %>

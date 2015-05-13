@@ -21,7 +21,6 @@
         <th>Google</th>
         <th>Amazon</th>
         <th>Spotify</th>
-        <th>Youtube</th>
         <th>View</th>
         <th>Edit</th>
         <th>Trash</th>
@@ -41,6 +40,7 @@
             <%= link_to 'Destroy', admin_album_path(album.id), method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
           <td><%= album.artist_id %></td>
+          <td><%= album.artist.name %></td>
           <td><%= album.name %></td>
           <td><%= album.release_date %></td>
           <td>
@@ -87,14 +87,6 @@
             <% album.spotify %>
             <% if album.spotify.present? %>
                YES
-            <% else %>
-                NO
-            <% end %>
-          </td>
-          <td>
-            <% album.youtube %>
-            <% if album.youtube.present? %>
-              YES
             <% else %>
                 NO
             <% end %>

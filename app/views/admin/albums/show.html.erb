@@ -11,51 +11,43 @@
     <br>
     <br>
 
-
     <dt>Title</dt>
     <dd><%= @album.name %></dd>
 
     <% if @album.release_date.present? %>
         <dt>Release date</dt>
-        <dd><%= @song.release_date %></dd>
+        <dd><%= @album.release_date %></dd>
     <% end %>
 
-    <% if @song.download_link.present? %>
+    <% if @album.download_link.present? %>
         <dt>Download link</dt>
-        <dd><%= @song.download_link %></dd>
+        <dd><%= @album.download_link %></dd>
     <% end %>
 
-    <% if @song.embedded_code.present? %>
+    <% if @album.embedded_code.present? %>
         <dt>Embedded code</dt>
-        <dd><%= @song.embedded_code.html_safe %></dd>
+        <dd><%= @album.embedded_code.html_safe %></dd>
     <% end %>
 
-    <% if @song.itunes.present? %>
+    <% if @album.itunes.present? %>
         <dt>Itunes</dt>
-        <dd><%= @song.itunes %></dd>
+        <dd><%= @album.itunes %></dd>
     <% end %>
 
-    <% if @song.google.present? %>
+    <% if @album.google.present? %>
         <dt>Google</dt>
-        <dd><%= @song.google %></dd>
+        <dd><%= @album.google %></dd>
     <% end %>
 
-    <% if @song.amazon.present? %>
+    <% if @album.amazon.present? %>
         <dt>Amazon</dt>
-        <dd><%= @song.amazon %></dd>
+        <dd><%= @album.amazon %></dd>
     <% end %>
 
-    <% if @song.spotify.present? %>
+    <% if @album.spotify.present? %>
         <dt>Spotify</dt>
-        <dd><%= @song.spotify %></dd>
+        <dd><%= @album.spotify %></dd>
     <% end %>
-
-    <% if @song.youtube.present? %>
-        <dt>Youtube</dt>
-        <dd><%= @song.youtube.html_safe %></dd>
-
-    <%= link_to "Send Announcement", album_announcements_path(:method => :post, id: album.id) %>
-    <% end %>
+    <%= link_to "Send Announcement", announcement_admin_album_path(@album), :method => :post %>
   </dl>
-
 </div>

@@ -8,7 +8,14 @@
     <%= s.label :artist_id, class: "control-label"  %>
     <%= s.collection_select(:artist_id, Artist.all, :id, :name) %>
 
-    <br>
+    <br/>
+
+      <p>
+  <%= s.label :album_id, class: "control-label"  %>
+  <%= s.collection_select :album_id, @albums, :id, :name, include_blank: true %>
+  </p>
+
+    <br/>
 
     <%= s.label :title, "Song Title", class: "control-label"  %>
     <%= s.text_field :title, placeholder: "Title", class: "form-control input-lg"  %>
