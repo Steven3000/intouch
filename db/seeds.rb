@@ -1,3 +1,5 @@
+Subscription.destroy_all
+
 # User.destroy_all
 # User.create!([
 #   {id: 1, email: "a@a.com", password: "12121212", username: "a"},
