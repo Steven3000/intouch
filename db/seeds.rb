@@ -1,4 +1,4 @@
-Subscription.destroy_all
+# Subscription.destroy_all
 
 # User.destroy_all
 # User.create!([
