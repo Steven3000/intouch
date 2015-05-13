@@ -76,6 +76,9 @@
         <dt>Youtube</dt>
         <dd><%= @song.youtube.html_safe %></dd>
     <% end %>
-    <%= link_to "Send Announcement", announcement_admin_song_path(@song), :method => :post %>
+    <br/>
+
+   <dd><%= link_to "Send Announcement", announcement_admin_song_path(@song), :method => :post %></dd>
+
   </dl>
 </div>
