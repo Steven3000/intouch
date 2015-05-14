@@ -4,4 +4,6 @@
  *= require unify/loader
  *= require_self
 
+//= require unify/jquery
+//= require unify/jquery_ujs
 */

@@ -10,9 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require unify/jquery
-//= require unify/jquery_ujs
-//= require unify/unify/loader
+
 //= require unify/bootswatch
 //= require unify/jquery.min.js
 //= require unify/index
@@ -45,4 +43,4 @@
 //= require bootstrap/popover
 //= require bootstrap/scrollspy
 //= require bootstrap/tab
-//= require bootstrap/transition
+
