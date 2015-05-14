@@ -56,27 +56,27 @@
       <ul class="loginbar">
         <li class="btn btn-lg headnav_mp">
           <%= link_to_if (request.path != admin_artists_path),
-               "AArtists", admin_artists_path %>
+               "@Artists", admin_artists_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
           <%= link_to_if (request.path != admin_albums_path),
-            "AAlbums", admin_albums_path %>
+            "@Albums", admin_albums_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
           <%= link_to_if (request.path != admin_songs_path),
-             "SSongs", admin_songs_path %>
+             "@Songs", admin_songs_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
           <%= link_to_if (request.path != new_admin_artist_path),
-            "Add-Artists", new_admin_artist_path %>
+            "Add-Artist", new_admin_artist_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
           <%= link_to_if (request.path != new_admin_album_path),
-            "Add-Albums", new_admin_album_path %>
+            "Add-Album", new_admin_album_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
           <%= link_to_if (request.path != new_admin_song_path),
-            "Add-Songs", new_admin_song_path %>
+            "Add-Song", new_admin_song_path %>
         </li>
       </ul>
             <!-- End Topbar -->

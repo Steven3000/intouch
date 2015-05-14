@@ -3,7 +3,7 @@ class Admin::AlbumsController < Admin::BaseController
 
 
   def index
-    @albums = Album.order(created_at: :desc).page(params[:page]).per(15)
+    @albums = Album.order(created_at: :desc).page(params[:page]).per(20)
   end
 
   def show

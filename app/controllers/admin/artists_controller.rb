@@ -1,7 +1,7 @@
 class Admin::ArtistsController < Admin::BaseController
 
   def index
-    @artists = Artist.order(created_at: :desc).page(params[:page]).per(15)
+    @artists = Artist.order(created_at: :desc).page(params[:page]).per(20)
    # @artists = Artist.search(params[:search])
   end
 
