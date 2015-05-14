@@ -14,7 +14,12 @@ Rails.application.routes.draw do
       end
     end
     resources :artists
-    resources :albums
+
+    resources :albums do
+      member do
+        post 'announcement'
+      end
+    end
   end
 
     resources :artists do

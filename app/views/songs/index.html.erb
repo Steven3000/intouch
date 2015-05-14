@@ -10,8 +10,8 @@
     <% @songs.each do |song| %>
       <div class="col-xs-12 col-lg-3 isotope-item">
         <div class="panel panel-default">
-          <div class="panel-body" style="height:480px">
-            <%= image_tag "#{song.artwork_url}", :class => "img-responsive" %>
+          <div class="panel-body" style="height:425px; overflow:auto;">
+            <%= image_tag "#{song.artwork.url(:thumb)}", :class => "img-responsive" %>
             <dl>
               <br>
               <dd class="button12">

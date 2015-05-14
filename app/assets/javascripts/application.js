@@ -13,6 +13,7 @@
 
 //= require unify/bootswatch
 //= require unify/jquery.min.js
+//= require jquery_ujs
 //= require unify/index
 //= require unify/bootstrap
 //= require unify/bootstrap.min.js

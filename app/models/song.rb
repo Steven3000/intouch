@@ -10,9 +10,9 @@ class Song < ActiveRecord::Base
 
   validates_attachment_content_type :artwork, :content_type => /\Aimage\/.*\Z/
 
-  def artwork_url
-    "artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
-  end
+  # def artwork_url
+  #   "artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
+  # end
 
   # put data in album populates single songs of album
   def itunes
