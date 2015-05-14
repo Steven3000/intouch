@@ -1,0 +1,3 @@
+static #{@song.artwork_url}
+
+uploaded thru paperclip #{@song.artwork.url}
