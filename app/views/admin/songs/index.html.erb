@@ -1,10 +1,10 @@
 <div class="wrapper" style="margin-left:100px">
-  <div class="page-header">
+
     <h1>Songs</h1>
-  </div>
+    <br/>
 
   <p><a href="/admin/songs/new" class="btn btn-default" >Add a New Song</a></p>
-
+  <br/>
   <table class="table table-hover">
     <thead>
       <tr>
@@ -37,22 +37,12 @@
         <tr>
            <td>
            <%= link_to 'Show', admin_song_path(song.id) %>
-         <!--    <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
-              <i class="fa fa-search-plus"></i>
-            </a> -->
           </td>
           <td>
           <%= link_to 'Edit', edit_admin_song_path(song.id) %>
-
-        <!--     <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
-              <i class="fa fa-edit"></i>
-            </a> -->
           </td>
           <td>
             <%= link_to 'Destroy', admin_song_path(song.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-           <!--  <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
-              <i class="fa fa-trash-o"></i> -->
-          <!--   </a> -->
           </td>
           <td><%= song.artist_id %></td>
           <td><%= song.artist.name %></td>
@@ -61,7 +51,7 @@
           <td><%= song.producer %></td>
           <td><%= song.album_title %></td>
           <td><%= song.track %></td>
-          <td><%= song.release_date %></td>
+          <td><%= song.release_date.to_formatted_s(:db) %></td>
           <td>
             <% song.download_link %>
             <% if song.download_link.present? %>
@@ -120,22 +110,12 @@
           </td>
            <td>
            <%= link_to 'Show', admin_song_path(song.id) %>
-         <!--    <a href="/admin/songs/<%= song.id %>" class="btn btn-primary">
-              <i class="fa fa-search-plus"></i>
-            </a> -->
           </td>
           <td>
           <%= link_to 'Edit', edit_admin_song_path(song.id) %>
-
-        <!--     <a href="/admin/songs/<%= song.id %>/edit" class="btn btn-warning">
-              <i class="fa fa-edit"></i>
-            </a> -->
           </td>
           <td>
             <%= link_to 'Destroy', admin_song_path(song.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-           <!--  <a href="/admin/delete_song/<%= song.id %>" class="btn btn-danger">
-              <i class="fa fa-trash-o"></i> -->
-          <!--   </a> -->
           </td>
         </tr>
       <% end %>

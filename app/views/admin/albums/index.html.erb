@@ -1,9 +1,10 @@
 <div class="container">
-  <div class="page-header">
-    <h1>Albums</h1>
-  </div>
+
+  <h1>Albums</h1>
+  <br/>
 
   <p><a href="/admin/albums/new" class="btn btn-default">Add a New Album</a></p>
+  <br/>
 
   <table class="table table-hover">
     <thead>
@@ -21,9 +22,6 @@
         <th>Google</th>
         <th>Amazon</th>
         <th>Spotify</th>
-        <th>View</th>
-        <th>Edit</th>
-        <th>Trash</th>
       </tr>
     </thead>
 
@@ -42,7 +40,7 @@
           <td><%= album.artist_id %></td>
           <td><%= album.artist.name %></td>
           <td><%= album.name %></td>
-          <td><%= album.release_date %></td>
+          <td><%= album.release_date.to_formatted_s(:db) %></td>
           <td>
             <% album.download_link %>
             <% if album.download_link.present? %>
@@ -90,15 +88,6 @@
             <% else %>
                 NO
             <% end %>
-          </td>
-           <td>
-           <%= link_to 'Show', admin_album_path(album.id) %>
-          </td>
-          <td>
-          <%= link_to 'Edit', edit_admin_album_path(album.id) %>
-          </td>
-          <td>
-            <%= link_to 'Destroy', admin_album_path(album.id), method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
         </tr>
       <% end %>

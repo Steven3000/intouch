@@ -16,7 +16,7 @@
 
     <% if @album.release_date.present? %>
         <dt>Release date</dt>
-        <dd><%= @album.release_date %></dd>
+        <dd><%= @album.release_date.to_formatted_s(:db) %></dd>
     <% end %>
 
     <% if @album.download_link.present? %>
@@ -48,6 +48,6 @@
         <dt>Spotify</dt>
         <dd><%= @album.spotify %></dd>
     <% end %>
-    <%= link_to "Send Announcement", announcement_admin_album_path(@album), :method => :post %>
+    <dd><%= link_to "Send Announcement", announcement_admin_album_path(@album), :method => :post %></dd>
   </dl>
 </div>

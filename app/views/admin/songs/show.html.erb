@@ -39,7 +39,7 @@
 
     <% if @song.release_date.present? %>
         <dt>Release date</dt>
-        <dd><%= @song.release_date %></dd>
+        <dd><%= @song.release_date.to_formatted_s(:db) %></dd>
     <% end %>
 
     <% if @song.download_link.present? %>
