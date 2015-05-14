@@ -1,7 +1,7 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
   <% if current_user.subscriptions.present? %>
-  <h1 class="button10b">My Subscriptions</h1>
+  <h1 class="button10b"><%= current_user.username.capitalize %>'s Subscriptions</h1>
   <% end %>
   <%= render 'my_subs' %>
 </div>

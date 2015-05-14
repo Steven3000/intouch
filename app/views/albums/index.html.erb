@@ -1,7 +1,6 @@
 <div class="container">
   <p class="button10b">
-  <%= current_user.email %>'s Main Feed (A list of songs by your favorites').
-  </p>
+  <%= current_user.username.capitalize %>'s list of New ALBUMs
   <p class="button10">
   <%= link_to "Subscribe to New Artists", subscriptions_path %>
   </p>
@@ -23,7 +22,7 @@
              <% if album.release_date.present? %>
               <dd class="button12b">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
               <% end %>
-              <dd class='button12'><a href="/albums/<%= album.id %>">Click here to Listen</a></dd>
+              <dd class='button13'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
           </dl>
           </div>
         </div>
