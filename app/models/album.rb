@@ -4,7 +4,7 @@ class Album < ActiveRecord::Base
   has_one :announcement
 
   has_attached_file :cover,
-  :styles => { :medium => "600x600>", :thumb => "75x75>" },
+  :styles => { :medium => "550x550>", :thumb => "200x200>" },
   :default_url => "/images/:style/missing.jpg"
 
   validates_attachment_content_type :cover, :content_type => /\Aimage\/.*\Z/
