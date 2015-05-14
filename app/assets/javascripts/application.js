@@ -10,15 +10,14 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require unify/loader
+//= require unify/jquery
+//= require unify/jquery_ujs
+//= require unify/unify/loader
 //= require unify/bootswatch
-//= require jquery.min.js
-
-//= require unify/back-to-top
+//= require unify/jquery.min.js
 //= require unify/index
 //= require unify/bootstrap
+//= require unify/bootstrap.min.js
 //= require unify/comment
 //= require unify/custom
 //= require unify/form-sliders
@@ -26,13 +25,13 @@
 //= require unify/smoothScroll
 //= require unify/plugins/bootstrap/js/bootstrap.min.js
 
-//= require owl/owl.carousel.min
 //= require owl/owl.carousel
+//= require owl/owl.carousel.min
 //= require owl/applications
 //= require owl/bootstrap-tab
 //= require owl/bootstrap-transition
 //= require owl/bootstrap-collapse
-
+//= require owl/owl-recent-works
 
 
 //= require bootstrap/affix
