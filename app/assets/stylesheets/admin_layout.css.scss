@@ -6,13 +6,10 @@
 @import "unify/footer-default";
 @import "unify/footer-v7";
 
-@import "unify/app";
-
-@import "unify/plugins/bootstrap/css/bootstrap.min";
-@import "unify/plugins/animate";
-@import "unify/plugins/line-icons/line-icons";
-@import "unify/plugins/flexslider";
+@import "unify/bootstrap.min";
+@import "unify/animate";
+@import "unify/line-icons";
+@import "unify/flexslider";
 
 
-@import "feed";
 @import "custom";

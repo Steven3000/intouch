@@ -21,7 +21,7 @@
 //= require unify/form-sliders
 //= require unify/unify
 //= require unify/smoothScroll
-//= require unify/plugins/bootstrap/js/bootstrap.min.js
+//= require unify/bootstrap.min.js
 
 //= require owl/owl.carousel
 //= require owl/owl.carousel.min
