@@ -11,13 +11,26 @@
     <dt>Record label</dt>
     <dd><%= @artist.record_label %></dd>
 
-    <br>
+    <div id="owl-demo" class="owl-carousel">
+      <div class="item-artist"><%= image_tag @artist.avatar.url(:medium) %></div>
+      <div class="item-artist"><%= image_tag @artist.pic.url(:medium) %></div>
+    </div>
     <dd>
-    <%= image_tag @artist.avatar.url(:medium) %>
+
     </dd>
     <br/>
     <dd>
-    <%= image_tag @artist.pic.url(:medium) %>
+
     </dd>
   </dl>
 </div>
+
+<script>
+$(document).ready(function() {
+
+  $("#owl-demo").owlCarousel({
+      items : 2,
+  });
+});
+
+</script>

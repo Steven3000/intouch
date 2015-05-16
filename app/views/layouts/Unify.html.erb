@@ -61,9 +61,9 @@
 
     <%= yield %>
 
-    </br>
-    </br>
-    </br>
+    <br/>
+    <br/>
+    <br/>
     <br/>
 
  <!--=== Footer v6 ===-->
@@ -77,6 +77,7 @@
               <li><a class="silver btn btn-primary" style="color:white;" href="mailto:contact.ntouchmusic@gmail.com">Got a Question or feedback? EMAIL US</a></li>
               <li><a class="silver btn btn-primary" style="color:white;" target="_blank" href="http://www.mptracks.com">Mulatto Patriot - MPtracks.com</a></li>
               <li class="silver btn btn-danger">
+
               <%= link_to_if (request.path != "/admin_dashboard.html"),
               "admin_only",
               "/admin_dashboard.html" %>

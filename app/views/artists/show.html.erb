@@ -6,7 +6,10 @@
       Projects: <%= @artist.album_id %>
       <% end %>
     </p>
-      <%= image_tag @artist.avatar.url(:medium) %>
+    <div id="owl-demo" class="owl-carousel">
+      <div class="item-artist"><%= image_tag @artist.avatar.url(:medium) %>
+      <%= image_tag @artist.pic.url(:medium) %></div>
+    </div>
   </div>
     <br/>
 <div class="row">
@@ -64,3 +67,12 @@
   </div>
 </div>
 
+<script>
+$(document).ready(function() {
+
+  $("#owl-demo").owlCarousel({
+      items : 2,
+  });
+});
+
+</script>

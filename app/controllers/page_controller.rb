@@ -10,10 +10,6 @@ class PageController < ApplicationController
 
   end
 
-  def audiomack
-    render layout: "audiomack_layout"
-  end
-
   def fheader
 
   end
