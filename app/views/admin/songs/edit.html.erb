@@ -1,6 +1,7 @@
 <div class="container">
   <div class="page-header">
     <h1>Edit Song #<%= @song.id %></h1>
+    <dd><%= image_tag "#{@song.artwork.url}" %></dd>
   </div>
 
   <%= form_for(@song, url: admin_song_path) do |s| %>

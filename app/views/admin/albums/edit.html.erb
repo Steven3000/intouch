@@ -1,6 +1,7 @@
 <div class="container">
   <div class="page-header">
     <h1>Edit Album #<%= @album.id %></h1>
+    <%= image_tag @album.cover.url(:medium) %>
   </div>
 
   <%= form_for(@album, url: admin_albums_path) do |b| %>

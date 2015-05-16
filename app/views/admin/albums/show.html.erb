@@ -1,12 +1,12 @@
 <div class="container">
 
   <div class="page-header">
-    <!-- <h1>Album #<%#= @album.id %> "<%#= @album.name %>"</h1> -->
+    <h1>Album #<%= @album.id %> "<%= @album.name %>"</h1>
   </div>
 
   <dl class="dl-horizontal">
       <dt>Artwork</dt>
-     <dd><%#= image_tag "#{@album.album_artwork_url}" %></dd>
+     <dd><%= image_tag @album.cover.url(:medium) %></dd>
 
     <br>
     <br>
