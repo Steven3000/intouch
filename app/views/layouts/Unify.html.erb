@@ -30,8 +30,8 @@
   <div class="wrapper">
     <!--=== Header ===-->
     <!--    <div class="header-v6 header-dark-transparent header-sticky"> -->
-    <div class="container">
-      <ul class="loginbar">
+    <div class="container" style="text-align:center;">
+      <ul style="padding:0;">
         <li class="btn btn-lg headnav_mp">
             <%= link_to_if (request.path != "/home.html"),
                       "NtouchMusic.com", root_path %>
@@ -58,8 +58,6 @@
       </ul>
     </div>
             <!-- End Topbar -->
-
-    </br>
 
     <%= yield %>
 
