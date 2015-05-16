@@ -4,42 +4,40 @@
 
   <%= form_for(@album, url: admin_albums_path) do |b| %>
 
-  <%= b.label :artist_id, class: "control-label"  %>
+  <h3><%= b.label :artist_id, class: "control-label"  %></h3>
   <%= b.collection_select(:artist_id, Artist.all, :id, :name) %>
 
   <br>
 
-  <%= b.label :name, class: "control-label"  %>
+  <h3><%= b.label :name, class: "control-label"  %></h3>
   <%= b.text_field :name, placeholder: "Album Name", class: "form-control input-lg"  %>
 
-  <%= b.label :release_date, class: "control-label"  %>
-  <%= b.text_field :release_date, placeholder: "Release Date", class: "form-control input-lg"  %>
-
-  <%= b.label :download_link, class: "control-label"  %>
+  <h3><%= b.label :download_link, class: "control-label"  %></h3>
   <%= b.text_field :download_link, placeholder: "Download_link", class: "form-control input-lg"  %>
 
-  <%= b.label :embedded_code, class: "control-label"  %>
+  <h3><%= b.label :embedded_code, class: "control-label"  %></h3>
   <%= b.text_field :embedded_code, placeholder: "Embedded_code", class: "form-control input-lg"  %>
 
-  <%= b.label :itunes, class: "control-label"  %>
+  <h3><%= b.label :itunes, class: "control-label"  %></h3>
   <%= b.text_field :itunes, placeholder: "itunes", class: "form-control input-lg"  %>
 
-  <%= b.label :google, class: "control-label"  %>
+  <h3><%= b.label :google, class: "control-label"  %></h3>
   <%= b.text_field :google, placeholder: "google", class: "form-control input-lg"  %>
 
-  <%= b.label :amazon, class: "control-label"  %>
+  <h3><%= b.label :amazon, class: "control-label"  %></h3>
   <%= b.text_field :amazon, placeholder: "amazon", class: "form-control input-lg"  %>
 
-  <%= b.label :spotify, class: "control-label"  %>
+  <h3><%= b.label :spotify, class: "control-label"  %></h3>
   <%= b.text_field :spotify, placeholder: "spotify", class: "form-control input-lg"  %>
 
+  <h3><%= b.label :avatar, class: "control-label" %>
+  <%= b.file_field :avatar, class: "control-label btn-default input-lg" %>
 
-  <%= b.label :avatar, class: "control-label" %>
-  <%= b.file_field :avatar %>
+  <h3><%= b.label :release_date, class: "control-label"  %></h3>
+  <%= b.date_field :release_date, placeholder: "Release Date", class: "control-label btn-default input-lg"  %>
 
-  <br/>
-
-  <%= b.submit class: "btn btn-default"  %>
+  <h3><%= b.label :submit, class: "control-label" %></h3>
+  <%= b.submit class: "control-label btn-default input-lg"  %>
   <% end %>
 
 </div>

@@ -4,17 +4,20 @@
 
   <%= form_for(@artist, url: admin_artists_path, multipart: true) do |a| %>
 
-  <%= a.label :name, class: "control-label"  %>
+  <h3><%= a.label :name, class: "control-label" %></h3>
   <%= a.text_field :name, placeholder: "Name", class: "form-control input-lg"  %>
 
-  <%= a.label :record_label, class: "control-label"  %>
+  <h3><%= a.label :record_label, class: "control-label" %></h3>
   <%= a.text_field :record_label, placeholder: "record_label", class: "form-control input-lg"  %>
 
-  <%= a.label :avatar, class: "control-label" %>
-  <%= a.file_field :avatar %>
+  <h3><%= a.label :avatar, class: "control-label" %></h3>
+  <%= a.file_field :avatar, class: "control-label btn-default input-lg" %>
+
+  <h3><%= a.label :pic, class: "control-label" %></h3>
+  <%= a.file_field :pic, class: "control-label btn-default input-lg" %>
 
   <br/>
-
-  <%= a.submit class: "btn btn-default"  %>
+<h3><%= a.label :submit, class: "control-label" %></h3>
+  <%= a.submit class: "control-label btn-default input-lg"  %>
   <% end %>
 </div>
