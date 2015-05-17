@@ -19,8 +19,9 @@ a {
 }
 
 #owl-demo .item-artist img{
-  display: block;
-  width: 50%;
+ display: block;
+  width: 100%;
+  height: 500px;
 }
 
 
