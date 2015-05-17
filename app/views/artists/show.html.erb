@@ -2,13 +2,16 @@
   <p class="button10b">
     <%= @artist.name %>
   </p>
-  <aside style="float:left;"><%= image_tag @artist.avatar.url(:medium) %></aside>
-  <aside style="float:right;"><%= image_tag @artist.pic.url(:medium) %></aside>
+  <div style="margin-bottom:500px;">
+    <div style="float:left;"><%= image_tag @artist.avatar.url(:medium) %></div>
+    <div style="float:right;"><%= image_tag @artist.pic.url(:medium) %></div>
+  </div>
+  <br/>
   <div class="row">
     <div class="col-xs-12 col-lg-2 isotope-item">
       <% @artist.songs.each do |song| %>
       <div class="panel panel-default">
-        <div class="panel-body" style="height:425px">
+        <div class="panel-body" style="height:425px overflow:auto;">
           <dl>
             <br>
             <dd class="button12b">
@@ -54,3 +57,4 @@
     <% end %>
   </div>
 </div>
+
