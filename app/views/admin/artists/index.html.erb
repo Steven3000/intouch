@@ -11,6 +11,8 @@
     <thead>
       <tr>
         <th>Name</th>
+        <th>Avatar</th>
+        <th>Pic</th>
         <th>Record label</th>
         <th>View</th>
         <th>Edit</th>
@@ -22,6 +24,8 @@
       <% @artists.each do |artist| %>
         <tr>
           <td><%= artist.name %></td>
+          <td><%= image_tag artist.avatar.url(:medium), :style => "width:75px;" %></td>
+          <td><%= image_tag artist.pic.url(:medium), :style => "width:75px;" %></td>
           <td><%= artist.record_label %></td>
           <td>
           <%= link_to 'Show', admin_artist_path(artist.id) %>

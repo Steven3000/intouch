@@ -13,7 +13,9 @@
         <th>Trash</th>
         <th>Artist ID</th>
         <th>Artist Name</th>
+        <th>Song ID</th>
         <th>Title</th>
+        <th>Artwork</th>
         <th>Features</th>
         <th>Producer</th>
         <th>Album</th>
@@ -46,7 +48,9 @@
           </td>
           <td><%= song.artist_id %></td>
           <td><%= song.artist.name %></td>
+          <td><%= song.id %></td>
           <td><%= song.title %></td>
+          <td><%= image_tag song.artwork.url(:medium), :style => "width:75px;" %></td>
           <td><%= song.features %></td>
           <td><%= song.producer %></td>
           <td><%= song.album_title %></td>
