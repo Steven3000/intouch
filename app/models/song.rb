@@ -65,7 +65,7 @@ class Song < ActiveRecord::Base
 
   def artwork_file_name
     if self.album.present? && self.album.cover_file_name.present?
-      self.album.cover_file_name
+      self.album.cover
     else
       read_attribute(:artwork_file_name)
     end
