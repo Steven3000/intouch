@@ -31,6 +31,7 @@ class Admin::AlbumsController < Admin::BaseController
   end
 
   def update
+    @album = Album.find(params[:id])
     respond_to do |format|
       if @album.update(album_params)
         format.html { redirect_to @album, notice: 'Album was successfully updated.' }
