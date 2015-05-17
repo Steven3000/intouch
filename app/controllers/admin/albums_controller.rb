@@ -31,7 +31,7 @@ class Admin::AlbumsController < Admin::BaseController
   end
 
   def update
-    @album = Album.find(params[:id])
+if @subscription.update(subscription_params)
 
     respond_to do |format|
       if @album.update(album_params)

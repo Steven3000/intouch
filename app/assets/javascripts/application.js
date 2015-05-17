@@ -11,19 +11,20 @@
 // about supported directives.
 //
 
+//= require unify/unify
 //= require unify/bootswatch
+//= require unify/bootstrap.min.js
 //= require unify/jquery.min.js
-//= require unify/jquery
+//= require unify/jquery.js
 //= require jquery_ujs
 //= require unify/index
 //= require unify/bootstrap
 //= require unify/bootstrap.min.js
 //= require unify/comment
-//= require unify/custom
+//= require unify/app
 //= require unify/form-sliders
-//= require unify/unify
 //= require unify/smoothScroll
-//= require unify/bootstrap.min.js
+//= require unify/custom
 
 //= require owl/owl.carousel
 //= require owl/owl.carousel.min
