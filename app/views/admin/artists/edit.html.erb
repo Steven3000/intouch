@@ -1,9 +1,8 @@
 <div class="container">
     <h1>Edit Artist #<%= @artist.id %> <%= (@artist.name) %></h1>
-    <div id="owl-demo" class="owl-carousel">
-      <aside class="item-artist"><%= image_tag @artist.avatar.url(:medium) %></aside>
-      <aside class="item-artist"><%= image_tag @artist.pic.url(:medium) %></aside>
-    </div>
+    <aside class="item-artist"><%= image_tag @artist.avatar.url(:medium) %></aside>
+    <aside class="item-artist"><%= image_tag @artist.pic.url(:medium) %></aside>
+
 
 
   <%= form_for(@artist, url: admin_artist_path) do |a| %>
@@ -25,12 +24,3 @@
  <% end %>
 </div>
 
-<script>
-$(document).ready(function() {
-
-  $("#owl-demo").owlCarousel({
-      items : 2,
-  });
-});
-
-</script>

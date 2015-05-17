@@ -5,7 +5,7 @@ class Song < ActiveRecord::Base
   has_one :announcement
 
   has_attached_file :artwork,
-    :styles => { :medium => "600x600>", :thumb => "250x250>" },
+    :styles => { :medium => "600x600>" },
     :default_url => "/images/:style/missing.jpg"
 
   validates_attachment_content_type :artwork, :content_type => /\Aimage\/.*\Z/

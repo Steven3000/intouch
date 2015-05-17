@@ -32,7 +32,7 @@ class Admin::ArtistsController < Admin::BaseController
     @artist.update(artists_params)
 
     if @artist.save
-      redirect_to "/admin/artists", :notice => "Artist updated successfully."
+      redirect_to "/admin/show", :notice => "Artist updated successfully."
     else
       render '/admin/edit'
     end
@@ -41,7 +41,7 @@ class Admin::ArtistsController < Admin::BaseController
   def destroy
         @artist = Artist.find(params[:id])
        @artist.destroy
-
+show
     redirect_to "/admin/artists", :notice => "Artist deleted."
   end
 

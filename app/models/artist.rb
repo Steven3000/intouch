@@ -11,7 +11,7 @@ class Artist < ActiveRecord::Base
   # has_many :albums, :through => :songs
 
   has_attached_file :avatar,
-    :styles => { :medium => "550x550>", :thumb => "250x250>" },
+    :styles => { :medium => "550x550>" },
     :default_url => "/images/:style/missing.jpg"
 
   has_attached_file :pic,
