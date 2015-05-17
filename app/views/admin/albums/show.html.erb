@@ -5,49 +5,49 @@
   </div>
 
   <dl class="dl-horizontal">
-      <dt>Artwork</dt>
+      <dt style="font-size:25px;">Artwork</dt>
      <dd><%= image_tag @album.cover.url(:medium) %></dd>
 
     <br>
     <br>
 
-    <dt>Title</dt>
-    <dd><%= @album.name %></dd>
+    <dt style="font-size:20px;">Title</dt>
+    <dd style="font-size:20px;"><%= @album.name %></dd>
 
     <% if @album.release_date.present? %>
-        <dt>Release date</dt>
-        <dd><%= @album.release_date.to_formatted_s(:db) %></dd>
+        <dt style="font-size:20px;">Release date</dt>
+        <dd style="font-size:20px;"><%= @album.release_date.to_formatted_s(:db) %></dd>
     <% end %>
 
     <% if @album.download_link.present? %>
-        <dt>Download link</dt>
-        <dd><%= @album.download_link %></dd>
+        <dt style="font-size:20px;">Download link</dt>
+        <dd style="font-size:20px;"><%= @album.download_link %></dd>
     <% end %>
 
     <% if @album.embedded_code.present? %>
-        <dt>Embedded code</dt>
-        <dd><%= @album.embedded_code.html_safe %></dd>
+        <dt style="font-size:20px;">Embedded code</dt>
+        <dd style="font-size:20px;"><%= @album.embedded_code.html_safe %></dd>
     <% end %>
 
     <% if @album.itunes.present? %>
-        <dt>Itunes</dt>
-        <dd><%= @album.itunes %></dd>
+        <dt style="font-size:20px;">Itunes</dt>
+        <dd style="font-size:20px;"><%= @album.itunes %></dd>
     <% end %>
 
     <% if @album.google.present? %>
-        <dt>Google</dt>
-        <dd><%= @album.google %></dd>
+        <dt style="font-size:20px;">Google</dt>
+        <dd style="font-size:20px;"><%= @album.google %></dd>
     <% end %>
 
     <% if @album.amazon.present? %>
-        <dt>Amazon</dt>
-        <dd><%= @album.amazon %></dd>
+        <dt style="font-size:20px;">Amazon</dt>
+        <dd style="font-size:20px;"><%= @album.amazon %></dd>
     <% end %>
 
     <% if @album.spotify.present? %>
-        <dt>Spotify</dt>
-        <dd><%= @album.spotify %></dd>
+        <dt style="font-size:20px;">Spotify</dt>
+        <dd style="font-size:20px;"><%= @album.spotify %></dd>
     <% end %>
-    <dd><%= link_to "Send Announcement", announcement_admin_album_path(@album), :method => :post %></dd>
+    <dd style="font-size:25px;"><%= link_to "Send Announcement", announcement_admin_album_path(@album), :method => :post %></dd>
   </dl>
 </div>

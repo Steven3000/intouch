@@ -5,80 +5,80 @@
   </div>
 
   <dl class="dl-horizontal">
-      <dt>Artwork</dt>
+      <dt style="font-size:25px;">Artwork</dt>
      <dd><%= image_tag "#{@song.artwork.url}", :class => "img-responsive" %></dd>
 
     <br>
     <br>
 
-    <dt>Artist</dt>
-    <dd><%= @song.artist.name %></dd>
+    <dt style="font-size:20px;">Artist</dt>
+    <dd style="font-size:20px;"><%= @song.artist.name %></dd>
 
-    <dt>Title</dt>
-    <dd><%= @song.title %></dd>
+    <dt style="font-size:20px;">Title</dt>
+    <dd style="font-size:20px;"><%= @song.title %></dd>
 
     <% if @song.features.present? %>
-        <dt>Features</dt>
-        <dd><%= @song.features %></dd>
+        <dt style="font-size:20px;">Features</dt>
+        <dd style="font-size:20px;"><%= @song.features %></dd>
     <% end %>
 
     <% if @song.producer.present? %>
-        <dt>Producer</dt>
-        <dd><%= @song.producer %></dd>
+        <dt style="font-size:20px;">Producer</dt>
+        <dd style="font-size:20px;"><%= @song.producer %></dd>
     <% end %>
 
     <% if @song.album_title.present? %>
-        <dt>Album</dt>
-        <dd><%= @song.album_title %></dd>
+        <dt style="font-size:20px;">Album</dt>
+        <dd style="font-size:20px;"><%= @song.album_title %></dd>
     <% end %>
 
     <% if @song.track.present? %>
-        <dt>Album</dt>
-        <dd><%= @song.track %></dd>
+        <dt style="font-size:20px;">Album</dt>
+        <dd style="font-size:20px;"><%= @song.track %></dd>
     <% end %>
 
     <% if @song.release_date.present? %>
-        <dt>Release date</dt>
-        <dd><%= @song.release_date.to_formatted_s(:db) %></dd>
+        <dt style="font-size:20px;">Release date</dt>
+        <dd style="font-size:20px;"><%= @song.release_date.to_formatted_s(:db) %></dd>
     <% end %>
 
     <% if @song.download_link.present? %>
-        <dt>Download link</dt>
-        <dd><%= @song.download_link %></dd>
+        <dt style="font-size:20px;">Download link</dt>
+        <dd style="font-size:20px;"><%= @song.download_link %></dd>
     <% end %>
 
     <% if @song.embedded_code.present? %>
-        <dt>Embedded code</dt>
-        <dd><%= @song.embedded_code.html_safe %></dd>
+        <dt style="font-size:20px;">Embedded code</dt>
+        <dd style="font-size:20px;"><%= @song.embedded_code.html_safe %></dd>
     <% end %>
 
     <% if @song.itunes.present? %>
-        <dt>Itunes</dt>
-        <dd><%= @song.itunes %></dd>
+        <dt style="font-size:20px;">Itunes</dt>
+        <dd style="font-size:20px;"><%= @song.itunes %></dd>
     <% end %>
 
     <% if @song.google.present? %>
-        <dt>Google</dt>
-        <dd><%= @song.google %></dd>
+        <dt style="font-size:20px;">Google</dt>
+        <dd style="font-size:20px;"><%= @song.google %></dd>
     <% end %>
 
     <% if @song.amazon.present? %>
-        <dt>Amazon</dt>
-        <dd><%= @song.amazon %></dd>
+        <dt style="font-size:20px;">Amazon</dt>
+        <dd style="font-size:20px;"><%= @song.amazon %></dd>
     <% end %>
 
     <% if @song.spotify.present? %>
-        <dt>Spotify</dt>
-        <dd><%= @song.spotify %></dd>
+        <dt style="font-size:20px;">Spotify</dt>
+        <dd style="font-size:20px;"><%= @song.spotify %></dd>
     <% end %>
 
     <% if @song.youtube.present? %>
-        <dt>Youtube</dt>
-        <dd><%= @song.youtube.html_safe %></dd>
+        <dt style="font-size:20px;">Youtube</dt>
+        <dd style="font-size:20px;"><%= @song.youtube.html_safe %></dd>
     <% end %>
     <br/>
 
-   <dd><%= link_to "Send Announcement", announcement_admin_song_path(@song), :method => :post %></dd>
+   <dd style="font-size:25px;"><%= link_to "Send Announcement", announcement_admin_song_path(@song), :method => :post %></dd>
 
   </dl>
 </div>
