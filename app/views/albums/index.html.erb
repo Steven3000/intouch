@@ -1,6 +1,7 @@
 <div class="container">
   <p class="button10b">
   <%= current_user.username.capitalize %>'s list of New ALBUMs
+  </p>
   <p class="button10">
   <%= link_to "Subscribe to New Artists", subscriptions_path %>
   </p>
@@ -9,10 +10,9 @@
     <% @albums.each do |album| %>
       <div class="col-xs-12 col-lg-3 isotope-item">
         <div class="panel panel-default">
-          <div class="panel-body" style="height:420px">
+          <div class="panel-body" style="height:420px overflow:auto;">
             <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
             <dl>
-              <br>
               <dd class="button12">
               <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>
 

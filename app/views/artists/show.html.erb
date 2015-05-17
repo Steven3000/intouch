@@ -2,59 +2,59 @@
   <p class="button10b">
     <%= @artist.name %>
   </p>
-  <div style="margin-bottom:500px;">
     <div style="float:left;"><%= image_tag @artist.avatar.url(:medium) %></div>
     <div style="float:right;"><%= image_tag @artist.pic.url(:medium) %></div>
-  </div>
-  <br/>
+  </br>
   <div class="row">
-    <div class="col-xs-12 col-lg-2 isotope-item">
+    <div class="col-xs-12">
       <% @artist.songs.each do |song| %>
-      <div class="panel panel-default">
-        <div class="panel-body" style="height:425px overflow:auto;">
-          <dl>
-            <br>
-            <dd class="button12b">
-              <%= song.title %>
-            </dd>
-
-            <% if song.features.present? %>
+      <div class="col-xs-12 col-lg-3 isotope-item">
+        <div class="panel panel-default">
+          <div class="panel-body" style="height:425px; overflow:auto;">
+          <%= image_tag "#{song.artwork.url(:thumb)}", :class => "img-responsive" %>
+            <dl>
               <dd class="button12b">
-                Featuring: <%= song.features %>
+                <%= song.title %>
               </dd>
-            <% end %>
 
-            <% if song.producer.present? %>
-              <dd class="button12b">
-                Producer: <%= song.producer %>
-              </dd>
-            <% end %>
+              <% if song.features.present? %>
+                <dd class="button12b">
+                  Featuring: <%= song.features %>
+                </dd>
+              <% end %>
 
-            <% if song.album_title.present? %>
-              <dd class="button12b">
-                Project: <%= song.album_title %>
-              </dd>
-            <% end %>
+              <% if song.producer.present? %>
+                <dd class="button12b">
+                  Producer: <%= song.producer %>
+                </dd>
+              <% end %>
 
-            <% if song.track.present? %>
-              <dd class="button12b">
-                Track #<%= song.track %>
-              </dd>
-            <% end %>
+              <% if song.album_title.present? %>
+                <dd class="button12b">
+                  Project: <%= song.album_title %>
+                </dd>
+              <% end %>
 
-            <% if song.release_date.present? %>
-              <dd class="button12b">
-                Released <%= time_ago_in_words(song.release_date) %> ago.
+              <% if song.track.present? %>
+                <dd class="button12b">
+                  Track #<%= song.track %>
+                </dd>
+              <% end %>
+
+              <% if song.release_date.present? %>
+                <dd class="button12b">
+                  Released <%= time_ago_in_words(song.release_date) %> ago.
+                </dd>
+              <% end %>
+              <dd class='button13'>
+                <a href="/songs/<%= song.id %>">Click here to Listen</a>
               </dd>
-            <% end %>
-            <dd class='button12'>
-              <a href="/songs/<%= song.id %>">Click here to Listen</a>
-            </dd>
-          </dl>
+            </dl>
+          </div>
         </div>
       </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
 </div>
 
