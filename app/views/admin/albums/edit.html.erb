@@ -4,7 +4,7 @@
     <%= image_tag @album.cover.url(:medium) %>
   </div>
 
-  <%= form_for(@album, url: admin_albums_path) do |b| %>
+  <%= form_for(@album, url: admin_album_path) do |b| %>
 
   <h3><%= b.label :artist_id, class: "control-label"  %></h3>
   <%= b.collection_select(:artist_id, Artist.all, :id, :name) %>
