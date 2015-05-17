@@ -31,8 +31,6 @@ class Admin::AlbumsController < Admin::BaseController
   end
 
   def update
-if @subscription.update(subscription_params)
-
     respond_to do |format|
       if @album.update(album_params)
         format.html { redirect_to @album, notice: 'Album was successfully updated.' }
