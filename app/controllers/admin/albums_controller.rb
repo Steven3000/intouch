@@ -18,7 +18,7 @@ class Admin::AlbumsController < Admin::BaseController
   respond_to do |format|
       if @album.save
         format.html { redirect_to admin_albums_url, notice: 'Album was successfully created.' }
-        format.json { render :index, status: :created, location: @album }
+        format.json { render :show, status: :created, location: @album }
       else
         format.html { render :new }
         format.json { render json: @album.errors, status: :unprocessable_entity }
