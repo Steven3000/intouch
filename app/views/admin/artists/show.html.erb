@@ -4,20 +4,12 @@
     <h1>Artist #<%= @artist.id %> <%= (@artist.name) %></h1>
   </div>
 
-    <p style="font-size:40px;">Record label: <%= @artist.record_label %></p>
+  <p style="font-size:40px;">Record label: <%= @artist.record_label %></p>
 
-    <div id="owl-demo" class="owl-carousel">
-      <div class="item-artist"><%= image_tag @artist.avatar.url(:medium) %></div>
-      <div class="item-artist"><%= image_tag @artist.pic.url(:medium) %></div>
-    </div>
+  <div>
+    <div style="float:left;"><%= image_tag @artist.avatar.url(:medium) %></div>
+    <div style="float:right;"><%= image_tag @artist.pic.url(:medium) %></div>
+  </div>
 </div>
 
-<script>
-$(document).ready(function() {
 
-  $("#owl-demo").owlCarousel({
-      items : 2,
-  });
-});
-
-</script>

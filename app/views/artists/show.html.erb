@@ -6,10 +6,10 @@
       Projects: <%= @artist.album_id %>
       <% end %>
     </p>
-    <div id="owl-demo" class="owl-carousel">
-      <div class="item-artist" style="position:relative;"><%= image_tag @artist.avatar.url(:medium) %></div>
-      <div class="item-artist" style="position:relative;" ><%= image_tag @artist.pic.url(:medium) %></div>
-    </div>
+    <div>
+      <div style="float:left;"><%= image_tag @artist.avatar.url(:medium) %></div>
+      <div style="float:right;"><%= image_tag @artist.pic.url(:medium) %></div>
+  </div>
   </div>
     <br/>
 <div class="row">
