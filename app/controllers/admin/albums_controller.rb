@@ -34,7 +34,7 @@ class Admin::AlbumsController < Admin::BaseController
     respond_to do |format|
       if @album.update(album_params)
         format.html { redirect_to @album, notice: 'Album was successfully updated.' }
-        format.json { render :show, status: :ok, location: @album }
+        format.json { render :index, status: :ok, location: @album }
       else
         format.html { render :edit }
         format.json { render json: @album.errors, status: :unprocessable_entity }
@@ -67,7 +67,7 @@ class Admin::AlbumsController < Admin::BaseController
   end
 
   def album_params
-    params.require(:album).permit(:name, :artist_id, :release_date, :download_link, :embedded_code, :itunes, :google, :amazon, :spotify, :youtube)
+    params.require(:album).permit(:name, :cover, :artist_id, :release_date, :download_link, :embedded_code, :itunes, :google, :amazon, :spotify, :youtube)
   end
 
 end
