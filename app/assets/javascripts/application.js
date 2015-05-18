@@ -21,7 +21,7 @@
 //= require unify/bootstrap
 //= require unify/bootstrap.min.js
 //= require unify/comment
-//= require unify/app
+
 //= require unify/form-sliders
 //= require unify/smoothScroll
 //= require unify/custom
