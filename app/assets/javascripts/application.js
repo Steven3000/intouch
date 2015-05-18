@@ -20,6 +20,7 @@
 //= require unify/index
 //= require unify/bootstrap
 //= require unify/bootstrap.min.js
+//= require unify/app
 //= require unify/comment
 //= require unify/form-sliders
 //= require unify/smoothScroll
