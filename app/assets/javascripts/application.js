@@ -15,7 +15,7 @@
 //= require unify/bootswatch
 //= require unify/bootstrap.min.js
 //= require unify/jquery.min.js
-//= require jQuery
+//= require unify/jquery
 //= require jquery_ujs
 //= require unify/index
 //= require unify/bootstrap
