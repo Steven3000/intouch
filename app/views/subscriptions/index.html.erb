@@ -10,12 +10,12 @@
   <h1 class="button10b">Select More Artists to Follow</h1>
   <a class="button10c" href="mailto:contact.ntouchmusic@gmail.com">Your FAVORITE ARTIST not listed? Click here to let us know, ( contact.ntouchmusic@gmail.com ) then give us about a week.</a></p>
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-8" style="margin-left:15px; width:779px;">
       <%= form_tag subscriptions_path, method: "get" do %>
         <%= search_field_tag "search",
               params[:search],
               placeholder: "Search Artist",
-              class: "form-control" %>
+              class: "form-control input-lg" %>
       <% end %>
     </div>
   </div>

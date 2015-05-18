@@ -1,10 +1,18 @@
 <div class="wrapper" style="margin-left:100px">
-
-    <h1>Songs</h1>
-    <br/>
-
+  <h1>Songs</h1>
+  <br/>
   <p><a href="/admin/songs/new" class="btn btn-default" >Add a New Song</a></p>
   <br/>
+
+  <div class="col-xs-8", style="padding:0;">
+      <%= form_tag admin_songs_path, method: "get" do %>
+        <%= search_field_tag "search",
+              params[:search],
+              placeholder: "Search Songs",
+              class: "form-control input-lg" %>
+      <% end %>
+  </div>
+
   <table class="table table-hover">
     <thead>
       <tr>
@@ -37,7 +45,7 @@
     <tbody>
       <% @songs.each do |song| %>
         <tr>
-           <td>
+          <td>
            <%= link_to 'Show', admin_song_path(song.id) %>
           </td>
           <td>
@@ -125,5 +133,5 @@
       <% end %>
     </tbody>
   </table>
-  <%= paginate(@songs) %>
 </div>
+

@@ -7,3 +7,5 @@ uploaded thru paperclip #{@song.artwork.url}
             <% else %>
             <%= image_tag "#{song.artwork.url(:medium)}", :class => "img-responsive" %>
             <% end %>
+
+  <%= paginate(@songs) %>
