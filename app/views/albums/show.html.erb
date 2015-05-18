@@ -1,6 +1,6 @@
 <div class="container">
   <div style="float:left">
-    <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
+    <%= image_tag "#{@album.cover.url}", :class => "img-responsive" %>
   </div>
   <div style="float:right">
     <a href="/artists/<%= @album.artist.id %>">
