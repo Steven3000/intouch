@@ -1,3 +1,9 @@
 static #{@song.artwork_url}
 
 uploaded thru paperclip #{@song.artwork.url}
+
+      <% if @album.cover_file_name.present? %>
+            <%= image_tag "#{@album.cover.url(:medium)}", :class => "img-responsive" %>
+            <% else %>
+            <%= image_tag "#{song.artwork.url(:medium)}", :class => "img-responsive" %>
+            <% end %>

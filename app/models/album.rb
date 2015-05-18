@@ -9,7 +9,7 @@ class Album < ActiveRecord::Base
 
   validates_attachment_content_type :cover, :content_type => /\Aimage\/.*\Z/
 
-  def album_artwork_url
+  def album_cover_url
     "albums/#{self.artist.name.parameterize}-#{self.name.parameterize}.jpg"
   end
 
