@@ -4,6 +4,7 @@ class Admin::SongsController < Admin::BaseController
 
   def index
     @songs = Song.order(created_at: :desc).page(params[:page]).per(30)
+    @songs = @songs.pluck(:title)
 
     if params[:search].present?
     @songs = Song.where("title, ilike ?", "%#{params[:search]}%")
@@ -66,6 +67,7 @@ class Admin::SongsController < Admin::BaseController
     def set_song
       @song = Song.find(params[:id])
     end
+
 
     def set_albums
       @albums = Album.all
