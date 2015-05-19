@@ -4,7 +4,7 @@ class UserRegistrationsController < Devise::RegistrationsController
 protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password) }
+    devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :zip_code, :age) }
   end
 
 end
