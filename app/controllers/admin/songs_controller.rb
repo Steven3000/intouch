@@ -4,6 +4,10 @@ class Admin::SongsController < Admin::BaseController
 
   def index
     @songs = Song.order(created_at: :desc).page(params[:page]).per(30)
+
+    if params[:search].present?
+      @songs = @songs.where("title ilike ?", "%#{params[:search]}%")
+    end
   end
 
   def show
@@ -53,6 +57,9 @@ class Admin::SongsController < Admin::BaseController
     @song.artist.subscriptions.each do |subb|
       AnnouncementMailer.announce_song(subb.user, @song).deliver_now
     end
+
+    @song.announced = true
+    @song.save
 
     flash[:notice] = "Announcement has been sent"
     redirect_to admin_songs_path

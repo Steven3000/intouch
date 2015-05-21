@@ -4,12 +4,11 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <div class="container">
-      <div>
-      <%= image_tag "#{@song.artwork.url}" %>
-      </div>
-
+    <table style="width:80%;">
       <h2><%= @user.username %>, <%= @song.artist.name %> recently released <%= @song.title %></h2>
+      <br/>
+
+      <%= image_tag @song.artwork.url(:medium), style: "width: 500px;" %>
 
       <% if @song.features.present? %>
         Features: <%= @song.features %>
@@ -62,7 +61,7 @@
         <p>Much Love</p>
         <p>Mulatto Patriot</p>
         <p>NTouchMusic.com</p>
-      </div>
+      </table>
   </body>
 </html>
 

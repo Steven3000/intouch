@@ -78,7 +78,15 @@
     <% end %>
     <br/>
 
-   <dd style="font-size:25px;"><%= link_to "Send Announcement", announcement_admin_song_path(@song), :method => :post %></dd>
+
+   <dd style="font-size:25px;">
+     <% if @song.announced? %>
+        <%= link_to "Already Announced", "#" %>
+     <% else %>
+        <%= link_to "Send Announcement", announcement_admin_song_path(@song),
+            :method => :post, disable_with: "Wait ..." %>
+     <% end %>
+    </dd>
 
   </dl>
 </div>

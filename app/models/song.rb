@@ -14,6 +14,14 @@ class Song < ActiveRecord::Base
     "artwork/#{self.artist.name.parameterize}-#{title.parameterize}.jpg"
   end
 
+  def song_artwork
+    if album.cover.present?
+      album.cover
+    else
+      self.artwork
+    end
+  end
+
   # put data in album populates single songs of album
   def itunes
     if self.album.present? && self.album.itunes.present?

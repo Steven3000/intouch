@@ -4,7 +4,7 @@ class AnnouncementMailer < ApplicationMailer
     @song = song
     @user = user
 
-    mail(to: @user.email, subject: "<%= @song.artist.name %> recently released '<%= @song.title %>' ")
+    mail(to: @user.email, subject: "#{@song.artist.name}" recently released "<%= @song.title %>")
   end
 
   def announce_album(user, ablbum)
