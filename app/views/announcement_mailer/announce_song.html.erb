@@ -10,7 +10,7 @@
     <br/>
     <%= image_tag @song.artwork.url(:medium), style: "width: 500px;" %>
     <br/>
-    <table style="width:80%;">
+    <table>
       <% if @song.features.present? %>
         <td style="width:200px; padding:10px;">Features: <%= @song.features %></td>
       <% end %>
@@ -26,31 +26,31 @@
         </td>
         <% end %>
       </table>
-      <table style="width:80%;">
+      <table>
         <% if @song.itunes.present? %>
+        <td style="width:85px; padding:10px;">
+          <a href="<%= @song.itunes %>" target="_blank" class="btn btn-primary">iTunes</a>
+        </td>
+        <% end %>
+        <% if @song.google.present? %>
           <td style="width:85px; padding:10px;">
-              <a href="<%= @song.itunes %>" target="_blank" class="btn btn-primary">iTunes</a>
-            </td>
-          <% end %>
-          <% if @song.google.present? %>
-            <td style="width:85px; padding:10px;">
-              <a href="<%= @song.google %>" target="_blank" class="btn btn-primary">Google Play</a>
-            </td>
-          <% end %>
-          <% if @song.amazon.present? %>
-            <td style="width:85px; padding:10px;">
-              <a href="<%= @song.amazon %>" target="_blank" class="btn btn-primary">Amazon</a>
-            </td>
-          <% end %>
-          <% if @song.spotify.present? %>
-            <td style="width:85px; padding:10px;">
-              <a href="<%= @song.spotify %>" target="_blank" class="btn btn-primary">Spotify</a>
-            </td>
-          <% end %>
-          <br/>
-        </table>
-          <p><%= link_to "Login to NTouchMusic", "http://www.ntouchmusic.herokuapp.com" %></p>
-          <p>Much Love, Mulatto Patriot - NTouchMusic.com</p>
+            <a href="<%= @song.google %>" target="_blank" class="btn btn-primary">Google Play</a>
+          </td>
+        <% end %>
+        <% if @song.amazon.present? %>
+          <td style="width:85px; padding:10px;">
+            <a href="<%= @song.amazon %>" target="_blank" class="btn btn-primary">Amazon</a>
+          </td>
+        <% end %>
+        <% if @song.spotify.present? %>
+          <td style="width:85px; padding:10px;">
+            <a href="<%= @song.spotify %>" target="_blank" class="btn btn-primary">Spotify</a>
+          </td>
+        <% end %>
+        <br/>
+      </table>
+      <p><%= link_to "Login to NTouchMusic", "http://www.ntouchmusic.herokuapp.com" %></p>
+      <p>Much Love, Mulatto Patriot - NTouchMusic.com</p>
   </body>
 </html>
 
