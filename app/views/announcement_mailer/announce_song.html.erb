@@ -4,6 +4,8 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
+    <p><%= link_to "Login to NTouchMusic", "http://www.ntouchmusic.herokuapp.com" %></p>
+    <br/>
     <h2><%= @user.username %>, <%= @song.artist.name %> recently released <%= @song.title %></h2>
     <br/>
     <%= image_tag @song.artwork.url(:medium), style: "width: 500px;" %>
@@ -17,9 +19,6 @@
       <% end %>
       <% if @song.producer.present? %>
        <td style="width:200px; padding:10px;">Producer: <%= @song.producer %></td>
-      <% end %>
-      <% if @song.producer.present? %>
-        <td style="width:200px; padding:10px;">Release Date: <%= @song.release_date %></td>
       <% end %>
         <% if @song.download_link.present? %>
         <td style="width:200px; padding:10px;">
@@ -50,14 +49,8 @@
           <% end %>
           <br/>
         </table>
-
-          <p>To login click ---> <%= link_to "NTouchMusic", "http://www.ntouchmusic.com" %></p>
-          <br/>
-          <p>Much Love</p>
-          <br/>
-          <p>Mulatto Patriot</p>
-          <br/>
-          <p>NTouchMusic.com</p>
+          <p><%= link_to "Login to NTouchMusic", "http://www.ntouchmusic.herokuapp.com" %></p>
+          <p>Much Love, Mulatto Patriot - NTouchMusic.com</p>
   </body>
 </html>
 
