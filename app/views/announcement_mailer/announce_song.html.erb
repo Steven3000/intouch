@@ -4,36 +4,34 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <p style="font-size:24px;"><%= link_to "Login to NTouchMusic", "http://www.ntouchmusic.herokuapp.com" %></p>
     <h2 style="font-size:36px;"><%= @user.username %>, New Music by <%= @song.artist.name %> "<%= @song.title %>"</h2>
-    <br/>
+    <p style="font-size:24px;"><%= link_to "Login to NTouchMusic", "http://www.ntouchmusic.herokuapp.com" %></p>
     <%= image_tag @song.artwork.url(:medium), style: "width: 500px;" %>
     <br/>
       <% if @song.features.present? %>
-        <p style="width:450px; padding:5px; font-size:24px;">Features: <%= @song.features %></p>
+        <p style="width:450px; padding:5px; font-size:24px;">Featuring: <%= @song.features %></p>
       <% end %>
       <% if @song.album_title.present? %>
-        <p style="width:450px; padding:5px; font-size:24px;">Album: <%= @song.album_title %></p>
+        <p style="width:450px; padding:5px; font-size:24px;">Album Name: <%= @song.album_title %></p>
       <% end %>
       <% if @song.producer.present? %>
        <p style="width:450px; padding:5px; font-size:24px;">Producer: <%= @song.producer %></p>
       <% end %>
-      <p style="width:450px; padding:5px; font-size:24px;">Preview @ one of these fine retailers</p>
-
+      <p style="width:450px; padding:5px; font-size:24px; margin-bottom:1px;">Preview @ one of these fine retailers</p>
       <table>
         <% if @song.itunes.present? %>
         <td style="width:75px; padding:10px;">
           <a href="<%= @song.itunes %>" target="_blank" style="font-size:24px;">iTunes</a>
         </td>
         <% end %>
-        <% if @song.google.present? %>
-          <td style="width:75px; padding:10px;">
-            <a href="<%= @song.google %>" target="_blank" style="font-size:24px;">Google Play</a>
-          </td>
-        <% end %>
         <% if @song.amazon.present? %>
           <td style="width:75px; padding:10px;">
             <a href="<%= @song.amazon %>" target="_blank" style="font-size:24px;">Amazon</a>
+          </td>
+        <% end %>
+        <% if @song.google.present? %>
+          <td style="width:100px; padding:10px;">
+            <a href="<%= @song.google %>" target="_blank" style="font-size:24px;">Google Play</a>
           </td>
         <% end %>
         <% if @song.spotify.present? %>
@@ -49,8 +47,8 @@
         </td>
       </table>
       <% end %>
+      <p style="font-size:24px;">Much Love,<br/>Sincerly Steven aka Mulatto Patriot aka windy city @ 33.33rpm<br/>aka The Man behind NTouchMusic PEACE</p>
       <p style="font-size:24px;"><%= link_to "Login to NTouchMusic", "http://www.ntouchmusic.herokuapp.com" %></p>
-      <p style="font-size:24px;">Much Love,<br/>Sincerly Steven aka Mulatto Patriot aka windy city @ 33.33rpm aka The Man behind NTouchMusic PEACE</p>
   </body>
 </html>
 
