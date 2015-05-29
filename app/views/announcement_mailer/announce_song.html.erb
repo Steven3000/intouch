@@ -5,7 +5,7 @@
   </head>
   <body>
     <h2 style="font-size:36px; margin-top:20px; margin-bottom:20px;"><%= @user.username %>, New Music by <%= @song.artist.name %> "<%= @song.title %>"</h2>
-    <p style="font-size:20px;"><%= link_to "Your click onto NTouchMusic.com is appricated, Thank You", "http://ntouchmusic.herokuapp.com" %></p>
+    <p style="font-size:20px;"><%= link_to "Your click over NTouchMusic.com is appricated, Thank You", "http://ntouchmusic.herokuapp.com" %></p>
     <%= image_tag @song.artwork.url(:medium), style: "width: 500px;" %>
     <br/>
       <% if @song.features.present? %>
