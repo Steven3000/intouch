@@ -52,7 +52,7 @@ class Admin::AlbumsController < Admin::BaseController
   end
 
   def announcement
-    @album = album.find(params[:id])
+    @album = Album.find(params[:id])
 
     @album.artist.subscriptions.each do |suba|
       AnnouncementMailer.announce_album(suba.user, @album).deliver_now
