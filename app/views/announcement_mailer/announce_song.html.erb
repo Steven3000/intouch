@@ -20,12 +20,12 @@
       <% if @song.itunes.present? %>
       <p style="width:450px; padding:5px; font-size:22px; margin-bottom:1px;">Preview @ one of these fine retailers</p>
       <table>
-        <td style="width:75px; padding:10px;">
+        <td style="width:100px; padding:10px;">
           <a href="<%= @song.itunes %>" target="_blank" style="font-size:23px;">iTunes</a>
         </td>
         <% end %>
         <% if @song.amazon.present? %>
-          <td style="width:75px; padding:10px;">
+          <td style="width:100px; padding:10px;">
             <a href="<%= @song.amazon %>" target="_blank" style="font-size:23px;">Amazon</a>
           </td>
         <% end %>
@@ -35,7 +35,7 @@
           </td>
         <% end %>
         <% if @song.spotify.present? %>
-          <td style="width:75px; padding:10px;">
+          <td style="width:100px; padding:10px;">
             <a href="<%= @song.spotify %>" target="_blank" style="font-size:23px;">Spotify</a>
           </td>
         <% end %>

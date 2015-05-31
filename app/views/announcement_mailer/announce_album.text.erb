@@ -1,25 +1,10 @@
 <%= @user.username %>, New Music by <%= @album.artist.name %> "<%= @album.name %>"
 
-<% if @album.itunes.present? %>
-Preview @ one of these fine retailers
-<%= link_to 'itunes', '@album.itunes' %>
-<% end %>
-<% if @album.amazon.present? %>
-<%= link_to 'Amazon', '@album.itunes' %>
-<% end %>
-<% if @album.google.present? %>
-<%= link_to 'Google Play', '@album.google' %>
-<% end %>
-<% if @album.spotify.present? %>
-<%= link_to 'spotify', '@album.spotify' %>
-<% end %>
-<% if @album.download_link.present? %>
-<%= link_to 'Stream/Download', '@album.download_link' %>
-<% end %>
+Check it out by signing into http://ntouchmusic.herokuapp.com
 
 Much Love, Sincerely Steven aka Mulatto Patriot
 aka windy city @ 33.33rpm
 aka The Man behind NTouchMusic
 PEACE
 
-<%= link_to "Grab a drink then click the link - NTouchMusic.com", "http://ntouchmusic.herokuapp.com" %>
+
