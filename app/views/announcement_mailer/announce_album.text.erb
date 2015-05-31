@@ -2,19 +2,19 @@
 
 <% if @album.itunes.present? %>
 Preview @ one of these fine retailers
-<%= link_to 'itunes', @album.itunes %>
+<%= link_to 'itunes', '@album.itunes' %>
 <% end %>
 <% if @album.amazon.present? %>
-<%= link_to 'Amazon', @album.itunes %>
+<%= link_to 'Amazon', '@album.itunes' %>
 <% end %>
 <% if @album.google.present? %>
-<%= link_to 'Google Play', @album.google %>
+<%= link_to 'Google Play', '@album.google' %>
 <% end %>
 <% if @album.spotify.present? %>
-<%= link_to 'spotify', @album.spotify %>
+<%= link_to 'spotify', '@album.spotify' %>
 <% end %>
 <% if @album.download_link.present? %>
-<%= link_to 'Stream/Download', @album.download_link %>
+<%= link_to 'Stream/Download', '@album.download_link' %>
 <% end %>
 
 Much Love, Sincerely Steven aka Mulatto Patriot
