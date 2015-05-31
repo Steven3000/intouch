@@ -46,7 +46,7 @@
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
-   text-align: center
+   text-align: center;
    }
 
 .button2 {
@@ -70,7 +70,7 @@
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
-   text-align: center
+   text-align: center;
    }
 
 .button3 {
@@ -94,7 +94,7 @@
    font-family: Georgia, serif;
    text-decoration: none;
    vertical-align: middle;
-   text-align: center
+   text-align: center;
    }
 .button3:hover {
    border-top-color: #28597a;
@@ -115,8 +115,15 @@
    background: #1d4d69;
    }
 
+
 #owl-demo .item-home img{
   display: block;
   width: 100%;
   height: 220px;
 }
+
+.home-page-words {
+  font-size: 28px;
+  margin-bottom: 28px;
+}
+
