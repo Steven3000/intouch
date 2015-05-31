@@ -1,4 +1,4 @@
-class Admin::profilesController < Admin::BaseController
+class Admin::ProfilesController < Admin::BaseController
 
   def index
     @profiles = Profile.order(created_at: :desc).page(params[:page]).per(20)
