@@ -1,9 +1,34 @@
-Welcome to example.com, <%= @user.email %>
-===============================================
+<%= @user.username %>, New Music by <%= @song.artist.name %> "<%= @song.title %>"
 
-You have successfully signed up to example.com,
+<% if @song.features.present? %>
+Featuring: <%= @song.features %>
+<% end %>
+<% if @song.album_title.present? %>
+Album Name: <%= @song.album_title %>
+<% end %>
+<% if @song.producer.present? %>
+Producer: <%= @song.producer %>
+<% end %>
+<% if @song.itunes.present? %>
+Preview @ one of these fine retailers
+<%= link_to 'itunes', @song.itunes %>
+<% end %>
+<% if @song.amazon.present? %>
+<%= link_to 'Amazon', @song.itunes %>
+<% end %>
+<% if @song.google.present? %>
+<%= link_to 'Google Play', @song.google %>
+<% end %>
+<% if @song.spotify.present? %>
+<%= link_to 'spotify', @song.spotify %>
+<% end %>
+<% if @song.download_link.present? %>
+<%= link_to 'Stream/Download', @song.download_link %>
+<% end %>
 
+Much Love, Sincerely Steven aka Mulatto Patriot
+aka windy city @ 33.33rpm
+aka The Man behind NTouchMusic
+PEACE
 
-To login to the site, just follow this link: <%= @url %>.
-
-Thanks for joining and have a great day!
+<%= link_to "Grab a drink then click the link - NTouchMusic.com", "http://ntouchmusic.herokuapp.com" %>
