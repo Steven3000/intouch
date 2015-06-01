@@ -1,0 +1,44 @@
+<div class="container">
+
+  <h1>Users</h1>
+  <br/>
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>User Name</th>
+        <th>email</th>
+        <th>Avatar</th>
+        <th>sign in count</th>
+        <th>age</th>
+        <th>zip_code</th>
+        <th>current_sign_in_at</th>
+        <th>last_sign_in_at</th>
+        <th>created_at</th>
+        <th>updated_at</th>
+        <th>admin</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.id %></td>
+          <td><%= user.username %></td>
+          <td><%= user.email %></td>
+          <td><%= image_tag user.avatar.url(:medium), :style => "width:75px;" %></td>
+          <td><%= user.sign_in_count %></td>
+          <td><%= user.age %></td>
+          <td><%= user.zip_code %></td>
+          <td><%= user.current_sign_in_at %></td>
+          <td><%= user.last_sign_in_at %></td>
+          <td><%= user.created_at %></td>
+          <td><%= user.updated_at %></td>
+          <td><%= user.admin %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= paginate(@users) %>
+</div>

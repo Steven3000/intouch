@@ -3,16 +3,20 @@ Rails.application.routes.draw do
   root 'page#home'
   devise_for :users, controllers: { registrations: "user_registrations" }
 
+
   resources :announcements
   resources :subscriptions
 
   namespace :admin do
+
+    resources :users
 
     resources :songs do
       member do
         post 'announcement'
       end
     end
+
     resources :artists
 
     resources :albums do
@@ -20,11 +24,11 @@ Rails.application.routes.draw do
         post 'announcement'
       end
     end
-  end
 
     resources :artists do
       resources :subscriptions
     end
+  end
 
   # Songs Public
   get('/songs', { :controller => 'songs', :action => 'index' })

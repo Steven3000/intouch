@@ -54,6 +54,10 @@
         <% end %>
       </ul>
       <ul style="padding:0;">
+       <li class="btn btn-lg headnav_mp">
+          <%= link_to_if (request.path != admin_users_path),
+               "@Users", admin_users_path %>
+        </li>
         <li class="btn btn-lg headnav_mp">
           <%= link_to_if (request.path != admin_artists_path),
                "@Artists", admin_artists_path %>
