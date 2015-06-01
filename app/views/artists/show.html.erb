@@ -15,6 +15,9 @@
           <div class="panel-body" style="height:425px; overflow:auto;">
           <%= image_tag "#{song.artwork.url(:medium)}", :class => "img-responsive" %>
             <dl>
+              <dd class='button13'>
+                <a href="/songs/<%= song.id %>">Click here to Listen</a>
+              </dd>
               <dd class="button12b">
                 <%= song.title %>
               </dd>
@@ -48,9 +51,6 @@
                   Released <%= time_ago_in_words(song.release_date) %> ago.
                 </dd>
               <% end %>
-              <dd class='button13'>
-                <a href="/songs/<%= song.id %>">Click here to Listen</a>
-              </dd>
             </dl>
           </div>
         </div>

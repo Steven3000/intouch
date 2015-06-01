@@ -13,6 +13,7 @@
           <div class="panel-body" style="height:420px overflow:auto;">
             <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
             <dl>
+              <dd class='button13'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
               <dd class="button12">
               <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>
 
@@ -22,7 +23,6 @@
              <% if album.release_date.present? %>
               <dd class="button12b">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
               <% end %>
-              <dd class='button13'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
           </dl>
           </div>
         </div>
