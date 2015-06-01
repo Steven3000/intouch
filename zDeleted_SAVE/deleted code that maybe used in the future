@@ -258,3 +258,11 @@ admin artist new
 
 --------------------------------------------------------------------------
 
+    <% if user.announced? %>
+         <td><%= link_to "Already Announced", "#" %></td>
+          <% else %>
+          <td><%= link_to "Send Announcement", announcement_admin_user_path(user),
+            :method => :post, disable_with: "Wait ..." %></td>
+          <% end %>
+--------------------------------------------------------------------------
+

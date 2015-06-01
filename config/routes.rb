@@ -9,7 +9,11 @@ Rails.application.routes.draw do
 
   namespace :admin do
 
-    resources :users
+    resources :users do
+      member do
+        post 'announcement'
+      end
+    end
 
     resources :songs do
       member do
@@ -28,6 +32,7 @@ Rails.application.routes.draw do
     resources :artists do
       resources :subscriptions
     end
+
   end
 
   # Songs Public
@@ -47,7 +52,6 @@ Rails.application.routes.draw do
   #--page controller----------------------------
   get("/home", :controller => 'page', :action => 'home')
   get("/breakdown", :controller => 'page', :action => 'breakdown')
-  get("/audiomack", :controller => 'page', :action => 'audiomack')
   get("/fheader", :controller => 'page', :action => 'fheader')
 
   #ADMIN_other

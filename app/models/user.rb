@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   has_many :announcements, :through => :albums
   has_many :albums, :through => :artists
   has_one :profile
+  has_one :announcement
 
   has_attached_file :avatar,
     :styles => { :medium => "500x500>" },
