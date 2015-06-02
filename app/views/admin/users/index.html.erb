@@ -18,6 +18,7 @@
         <th>created_at</th>
         <th>updated_at</th>
         <th>admin</th>
+        <th>subscriptions</th>
   <!--       <th>welcome</th> -->
       </tr>
     </thead>
@@ -37,6 +38,10 @@
           <td><%= user.created_at %></td>
           <td><%= user.updated_at %></td>
           <td><%= user.admin %></td>
+          <td><%= user.subscriptions.count %></td>
+          <% user.subscriptions.each do |subscription| %>
+            <td><%= subscription.artist.name %></td>
+          <% end %>
 
         </tr>
       <% end %>
