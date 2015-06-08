@@ -17,11 +17,11 @@
               <dd class="button12">
               <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>
 
-              <dd class="button12b">
+              <dd class="button12">
               <%= album.name %>
               </dd>
              <% if album.release_date.present? %>
-              <dd class="button12b">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
+              <dd class="button12">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
               <% end %>
           </dl>
           </div>

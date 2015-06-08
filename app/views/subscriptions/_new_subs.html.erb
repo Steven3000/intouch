@@ -7,7 +7,7 @@
 
           <br>
 
-          <dd class="button12b"><%= artist.name %><br/><span style="font-size:8px"><%= link_to "(Click here for more...)", artist_path(artist.id) %></span></dd>
+          <dd class="button12b"><%= artist.name %><br/><span style="font-size:8px"><%= link_to "(Click here for more info)", artist_path(artist.id) %></span></dd>
 
       <%= form_for Subscription.new :user => current_user, :artist => artist do |f| %>
             <%= f.hidden_field :artist_id %>

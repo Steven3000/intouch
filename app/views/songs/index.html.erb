@@ -16,22 +16,22 @@
               <dd class='button13'><a href="/songs/<%= song.id %>">Click Here to Listen</a></dd>
               <dd class="button12">
               <a href="/artists/<%= song.artist_id %>"><%= song.artist.name %></a></dd>
-              <dd class="button12b">
+              <dd class="button12">
               <%= song.title %>
               </dd>
               <% if song.album_title.present? %>
               <dd class='button12'><a href="/albums/<%= song.album_id %>">Project: <%= song.album_title %></a></dd>
               <% end %>
               <% if song.features.present? %>
-              <dd class="button12b">
+              <dd class="button12">
               Featuring: <%= song.features %></dd>
               <% end %>
               <% if song.producer.present? %>
-              <dd class="button12b">
+              <dd class="button12">
               Producer: <%= song.producer %></dd>
               <% end %>
               <% if song.release_date.present? %>
-              <dd class="button12b">
+              <dd class="button12">
               Released <%= time_ago_in_words(song.release_date) %> ago.</dd>
               <% end %>
             </dl>
