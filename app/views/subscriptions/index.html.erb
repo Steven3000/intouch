@@ -1,5 +1,7 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
+  <% if notice.present? %>
+  <p id="notice" class="button10b"><%= notice %></p>
+  <% end %>
   <% if current_user.subscriptions.present? %>
   <h1 class="button10b"><%= current_user.username.capitalize %>'s Subscriptions</h1>
   <% end %>
@@ -8,9 +10,9 @@
 
 <div class="container">
   <h1 class="button10b">Select More Artists to Follow</h1>
-  <a class="button10c" href="mailto:contact.ntouchmusic@gmail.com">Your FAVORITE ARTIST not listed? Click here to let us know, ( contact.ntouchmusic@gmail.com ) then give us about a week.</a></p>
+<!--   <a class="button10c" href="mailto:contact.ntouchmusic@gmail.com">Your FAVORITE ARTIST not listed? Click here to let us know, ( contact.ntouchmusic@gmail.com ) then give us about a week.</a> -->
   <div class="row">
-    <div class="col-xs-8" style="margin-left:15px; width:779px;">
+    <div class="col-xs-8">
       <%= form_tag subscriptions_path, method: "get" do %>
         <%= search_field_tag "search",
               params[:search],

@@ -1,20 +1,18 @@
   <% @available_artists.each do |artist| %>
 <div class="col-xs-12 col-lg-3 isotope-item">
     <div class="panel panel-default">
-      <div class="panel-body" style="height:425px; overflow:auto;">
+      <div class="panel-body box-subs">
       <%= image_tag artist.avatar.url(:medium) %>
         <dl>
 
           <br>
 
-          <dd class="button12b"><%= artist.name %></dd>
+          <dd class="button12b"><%= artist.name %><br/><span style="font-size:8px"><%= link_to "(Click here for more...)", artist_path(artist.id) %></span></dd>
 
       <%= form_for Subscription.new :user => current_user, :artist => artist do |f| %>
             <%= f.hidden_field :artist_id %>
 
-               <dd><%= link_to "Click here for Artist Feed", artist_path(artist.id), :class => "btn btn-primary" %></dd>
-
-            <%= f.submit :class => "btn btn-success" %>
+            <%= f.submit :class => "btn btn-success", :style => "width:100%;" %>
 
           <% end %>
 
