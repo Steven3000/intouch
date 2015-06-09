@@ -8,9 +8,9 @@
   <div class="row">
     <div class="col-xs-12">
     <% @albums.each do |album| %>
-      <div class="col-xs-12 col-lg-3 isotope-item">
+      <div class="col-xs-12 col-lg-3 isotope-item box-albums">
         <div class="panel panel-default">
-          <div class="panel-body box-albums">
+          <div class="panel-body">
             <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
             <dl>
               <dd class='button13'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
