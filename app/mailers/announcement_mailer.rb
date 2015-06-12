@@ -14,9 +14,4 @@ class AnnouncementMailer < ApplicationMailer
     mail(to: @user.email, subject: "TEST #{@album.artist.name} - NEW MUSIC! - #{@album.name}")
   end
 
-  # def welcome_user(user)
-  #   @user = user
-
-  #   mail(to: @user.email, subject: "#{@user.username} Thank You for Joining Ntouch")
-  # end
 end
