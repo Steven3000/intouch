@@ -43,26 +43,17 @@ $(document).ready(function() {
 -----------------------
 
 
-class SoundcloudCheckerJob < ActiveJob::Base
-  queue_as :default
 
-  def perform()
-    client = SoundCloud.new(:client_id => "9d4135629ce835779f3b5e3b677c38b1")
-    Artist.has_soundcloud_username.each do |artist|
+<script>
+$(document).ready(function() {
 
-      #end point of api
-      tracks = client.get("/users/#{artist.soundcloud_username}/tracks?created_at[from]=#{Time.current.ago(2.days).to_s(:db)}")
+  $("#owl-demo").owlCarousel({
 
+      items : 6,
 
-      tracks.each do |track|
-        puts track.permalink_url
-        song = artist.songs.find_or_initialize_by(soundcloud_track_id: track.id)
-        song.title = track.title
-        song.save
-      end
-    end
-  end
-end
+  });
 
+});
 
+</script>
 
