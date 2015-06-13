@@ -52,7 +52,7 @@ class Admin::ArtistsController < Admin::BaseController
     end
 
     def artists_params
-      params.require(:artist).permit(:name, :website, :avatar, :pic, :record_label)
+      params.require(:artist).permit(:name, :website, :avatar, :soundcloud_username, :pic, :record_label)
     end
 
 end
