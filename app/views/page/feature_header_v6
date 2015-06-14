@@ -4,7 +4,7 @@
 
 <div class="wrapper">
     <!--=== Header v6 ===-->
-    <div class="header-v6 header-dark-transparent header-sticky">
+    <div class="header-v6 header-border-bottom header-sticky">
         <!-- Navbar -->
         <div class="navbar mega-menu" role="navigation">
             <div class="container">
@@ -503,9 +503,9 @@
                                             <li><a href="feature_header_v4.html">Header v4</a></li>
                                             <li><a href="feature_header_v5.html">Header v5</a></li>
                                             <li><a href="feature_header_v6_transparent.html">Header v6 Transparent</a></li>
-                                            <li class="active"><a href="feature_header_v6_semi_dark_transparent.html">Header v6 Dark Transparent</a></li>
+                                            <li><a href="feature_header_v6_semi_dark_transparent.html">Header v6 Dark Transparent</a></li>
                                             <li><a href="feature_header_v6_semi_white_transparent.html">Header v6 White Transparent</a></li>
-                                            <li><a href="feature_header_v6_border_bottom.html">Header v6 Border Bottom</a></li>
+                                            <li class="active"><a href="feature_header_v6_border_bottom.html">Header v6 Border Bottom</a></li>
                                             <li><a href="feature_header_v6_classic_dark.html">Header v6 Classic Dark</a></li>
                                             <li><a href="feature_header_v6_classic_white.html">Header v6 Classic White</a></li>
                                             <li><a href="feature_header_v6_dark_dropdown.html">Header v6 Dark Dropdown</a></li>
