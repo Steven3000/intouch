@@ -31,6 +31,7 @@ class Admin::ArtistsController < Admin::BaseController
     @artist = Artist.find(params[:id])
     @artist.update(artists_params)
 
+
     if @artist.save
       redirect_to "/admin/artists", :notice => "Artist updated successfully."
     else
@@ -40,8 +41,8 @@ class Admin::ArtistsController < Admin::BaseController
 
   def destroy
         @artist = Artist.find(params[:id])
-       @artist.destroy
-
+        @artist.destroy
+        @subsciption.artist.destroy
     redirect_to "/admin/artists", :notice => "Artist deleted."
   end
 
@@ -52,7 +53,12 @@ class Admin::ArtistsController < Admin::BaseController
     end
 
     def artists_params
-      params.require(:artist).permit(:name, :website, :avatar, :soundcloud_username, :pic, :record_label)
+      params.require(:artist).permit(:name,
+        :website,
+        :avatar,
+        :soundcloud_username,
+        :pic,
+        :record_label)
     end
 
 end

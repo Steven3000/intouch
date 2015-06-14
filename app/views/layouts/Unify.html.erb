@@ -22,7 +22,7 @@
 <body>
   <style type="text/css">
     body {
-    background-image: url("https://s3-us-west-2.amazonaws.com/ntouchimages/admin/chicago.jpg");
+    background-image: url("https://s3-us-west-2.amazonaws.com/ntouchimages/admin/chicago1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     }
@@ -35,7 +35,7 @@
       <ul style="padding:0;">
         <li class="btn btn-lg headnav_mp">
             <%= link_to_if (request.path != "/home.html"),
-                      "NtouchMusic.com", root_path %>
+                      "IndyChicago.com", root_path %>
         </li>
         <li class="btn btn-lg headnav_mp">
         <%= link_to_if (request.path != subscriptions_path),
@@ -75,27 +75,29 @@
 <!--           <div class="col-md-12 sm-margon-bottom-10">
             <ul class="list-inline terms-menu" style="text-align:center">
               <li><a class="silver btn btn-primary" style="color:white;" href="#">About Us</a></li>
-              <li><a class="silver btn btn-primary" style="color:white;" href="mailto:mp@ntouchmusic.com">Got a Question or feedback? EMAIL US</a></li>
+              <li><a class="silver btn btn-primary" style="color:white;" href="mailto:steven@indychicago.com">Got a Question or feedback? EMAIL US</a></li>
               <li><a class="silver btn btn-primary" style="color:white;" target="_blank" href="http://www.mptracks.com">Mulatto Patriot - MPtracks.com</a></li>
             </ul>
           </div> -->
-          </br>
 
 
           <ul class="list-inline dark-social space-bottom-0" style="text-align:center;">
             <li>
-              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Twitter" href="#">
-              <%#= icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong') %>
-              <%= icon('twitter-square fa-3x') %></a>
+              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Email" href="mailto:steven@indychicago.com">
+              <%= icon('envelope fa-4x') %></a>
             </li>
             <li>
-              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Pinterest" href="#">
-              <%= icon('pinterest-square fa-3x') %></a>
+              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Twitter" href="twitter.com/indychicago">
+              <%= icon('twitter-square fa-4x') %></a>
+            </li>
+            <!-- <li>
+              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Pinterest" href="pinterest.com/indychicago">
+              <%#= icon('pinterest-square fa-4x') %></a>
             </li>
               <li>
-                <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Youtube" href="#">
-                                <%= icon('youtube-square fa-3x') %></a>
-              </li>
+                <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Youtube" href="">
+                                <%#= icon('youtube-square fa-4x') %></a>
+              </li> -->
             </ul>
             </br>
               <p class="button10cc">©  2015 Mulatto Patriot Productions® All rights reserved.</p>

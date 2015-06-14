@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "contact.ntouchmusic@gmail.com"
+  default from: "steven@indychicago.com"
   layout 'mailer'
 end

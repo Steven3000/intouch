@@ -68,7 +68,17 @@ class Admin::AlbumsController < Admin::BaseController
   end
 
   def album_params
-    params.require(:album).permit(:name, :cover, :artist_id, :release_date, :download_link, :embedded_code, :itunes, :google, :amazon, :spotify, :youtube)
+    params.require(:album).permit(:name,
+      :cover,
+      :artist_id,
+      :release_date,
+      :download_link,
+      :embedded_code,
+      :itunes,
+      :google,
+      :amazon,
+      :spotify,
+      :youtube)
   end
 
 end

@@ -15,6 +15,7 @@
         <th>Pic</th>
         <th>Record label</th>
         <th>Soundcloud</th>
+        <th>Subs</th>
         <th>View</th>
         <th>Edit</th>
         <th>Trash</th>
@@ -29,6 +30,7 @@
           <td><%= image_tag artist.pic.url(:medium), :style => "width:75px;" %></td>
           <td><%= artist.record_label %></td>
           <td><%= artist.soundcloud_username %></td>
+          <td><%= artist.subscriptions.count %></td>
 
           <td>
           <%= link_to 'Show', admin_artist_path(artist.id) %>
