@@ -1,0 +1,469 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "IndyChicago" %></title>
+  <%= csrf_meta_tags %>
+  <meta name="author" content="Steven Callen aka Mulatto Patriot">
+
+  <!-- Google fonts -->
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
+</head>
+
+<body class="header-fixed">
+  <style type="text/css">
+    body {
+    background-image: url("https://s3-us-west-2.amazonaws.com/ntouchimages/admin/chicago1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  </style>
+
+  <div class="wrapper">
+   <!--=== Header v6 ===-->
+    <div class="header-v6 header-border-bottom header-sticky">
+        <!-- Navbar -->
+        <div class="navbar mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <!-- Navbar Brand -->
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <!-- <img class="default-logo" src="#" alt="Logo">
+                            <img class="shrink-logo" src="#" alt="Logo"> -->
+                        </a>
+                    </div>
+                    <!-- ENd Navbar Brand -->
+
+                    <!-- Header Inner Right -->
+                    <div class="header-inner-right">
+                        <!-- <ul class="menu-icons-list">
+                            <li class="menu-icons shopping-cart">
+                                <i class="menu-icons-style radius-x fa fa-shopping-cart"></i>
+                                <span class="badge">0</span>
+                                <div class="shopping-cart-open">
+                                    <span class="shc-title">No products in the Cart</span>
+                                    <button type="button" class="btn-u"><i class="fa fa-shopping-cart"></i> Cart</button>
+                                    <span class="shc-total">Total: <strong>$0.00</strong></span>
+                                </div>
+                            </li>
+                            <li class="menu-icons">
+                                <i class="menu-icons-style search search-close search-btn fa fa-search"></i>
+                                <div class="search-open">
+                                    <input type="text" class="animated fadeIn form-control" placeholder="Start searching ...">
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+
+                <!-- Header Inner Right -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav">
+                            <!-- Home -->
+                            <li class="header-nav-main">
+                                <%= link_to_if (request.path != "/home.html"),
+                                    "HOME", root_path %>
+                            </li>
+                            <li class="header-nav-main">
+                            <%= link_to_if (request.path != subscriptions_path),
+                                 "Follow Artists", subscriptions_path %>
+                            </li>
+                            <li class="header-nav-main">
+                                <%= link_to_if (request.path != songs_path),
+                                   "Listen to Songs", "/songs" %>
+                            </li>
+                            <li class="header-nav-main">
+                                <%= link_to_if (request.path != albums_path),
+                                   "Listen to Albums", "/albums" %>
+                            </li>
+
+
+                            <!-- Pages -->
+                 <!--            <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu"> -->
+                                    <!-- About Pages -->
+                        <!--             <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">About Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="page_about2.html">About Us </a></li>
+                                            <li><a href="page_about3.html">About Us 1</a></li>
+                                            <li><a href="page_about1.html">About Us 2</a></li>
+                                            <li><a href="page_about.html">About Us 3</a></li>
+                                            <li><a href="page_about_me.html">About Me </a></li>
+                                            <li><a href="page_about_me1.html">About Me 1</a></li>
+                                            <li><a href="page_about_me2.html">About Me 2</a></li>
+                                            <li><a href="page_about_our_team.html">About Our Team</a></li>
+                                            <li><a href="page_about_our_team1.html">About Our Team 1</a></li>
+                                            <li><a href="page_about_our_team2.html">About Our Team 2</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- End About Pages -->
+
+
+
+                                    <!-- Profile Pages -->
+                   <!--                  <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Profile Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="page_profile.html">Profile Main Page</a></li>
+                                            <li><a href="page_profile_me.html">Profile Overview</a></li>
+                                            <li><a href="page_profile_users.html">Profile Users</a></li>
+                                            <li><a href="page_profile_projects.html">Profile Projects</a></li>
+                                            <li><a href="page_profile_comments.html">Profile Comments</a></li>
+                                            <li><a href="page_profile_history.html">Profile History</a></li>
+                                            <li><a href="page_profile_settings.html">Profile Settings</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- End Profile Pages -->
+
+
+
+                                    <!-- Pricing Tables -->
+<!--                                     <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Pricing Tables</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="page_pricing_colorful.html">Colorful Pricing Tables</a></li>
+                                            <li><a href="page_pricing_flat.html">Flat Pricing Tables</a></li>
+                                            <li><a href="page_pricing_light.html">Light Pricing Tables</a></li>
+                                            <li><a href="page_pricing_mega.html">Mega Pricing Tables</a></li>
+                                            <li><a href="page_pricing.html">Default Pricing Tables</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- End Pricing Tables -->
+
+                                    <!-- FAQs Pages -->
+                         <!--            <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">FAQs Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="page_faq1.html">FAQs Page</a></li>
+                                            <li><a href="page_faq.html">FAQs Basic</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- End FAQs Pages -->
+
+                                    <!-- Search Results -->
+                         <!--            <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Search Results</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="page_search_inner_full_width.html">Search Results Full Width</a></li>
+                                            <li><a href="page_search_inner_left_sidebar.html">Search Result Left Sidebar</a></li>
+                                            <li><a href="page_search_table.html">Search Result Tables</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- End Search Results -->
+
+
+                                    <!-- Invoice Page -->
+<!--                                     <li><a href="page_invoice.html">Invoice Page</a></li>
+ -->                                    <!-- End Invoice Page -->
+
+                                    <!-- Clients Page -->
+<!--                                     <li><a href="page_clients.html">Clients Page</a></li>
+ -->                                    <!-- End Clients Page -->
+
+                                    <!-- Column Pages -->
+<!--                                     <li><a href="page_3_columns.html">Three Columns Page</a></li>
+ -->                                    <!-- End Column Pages -->
+
+                                    <!-- Privacy Policy -->
+<!--                                     <li><a href="page_privacy.html">Privacy Policy</a></li>
+ -->                                    <!-- End Privacy Policy -->
+
+                                    <!-- Terms of Service -->
+<!--                                     <li><a href="page_terms.html">Terms of Service</a></li>
+ -->                                    <!-- End Terms of Service -->
+
+                                    <!-- Sub Level Menu -->
+<!--                                     <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Sub Level 1</a>
+                                        <ul class="dropdown-menu no-bottom-space">
+                                            <li><a href="index.hmtl">Sub Level 2</a></li>
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:void(0);">Sub Level 2</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="index.hmtl">Sub Level 3</a></li>
+                                                    <li><a href="index.hmtl">Sub Level 3</a></li>
+                                                    <li><a href="index.hmtl">Sub Level 3</a></li>
+                                                    <li><a href="index.hmtl">Sub Level 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="index.hmtl">Sub Level 2</a></li>
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:void(0);">Sub Level 2</a>
+                                                <ul class="dropdown-menu no-bottom-space">
+                                                    <li><a href="index.hmtl">Sub Level 3</a></li>
+                                                    <li><a href="index.hmtl">Sub Level 3</a></li>
+                                                    <li><a href="index.hmtl">Sub Level 3</a></li>
+                                                </ul>
+                                            </li> -->
+
+                                    <!-- </li> -->
+                                    <!-- End Sub Level Menu -->
+                            <!--     </ul>
+                            </li>
+ -->                            <!-- End Pages -->
+
+                            <!-- Blog -->
+                            <!-- <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Blog
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Blog Large Image</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog_large_right_sidebar1.html">Right Sidebar</a></li>
+                                            <li><a href="blog_large_left_sidebar1.html">Left Sidebar</a></li>
+                                            <li><a href="blog_large_full_width1.html">Full Width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Blog Medium Image</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog_medium_right_sidebar1.html">Right Sidebar</a></li>
+                                            <li><a href="blog_medium_left_sidebar1.html">Left Sidebar</a></li>
+                                            <li><a href="blog_medium_full_width1.html">Full Width</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Blog Item Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog_large_right_sidebar_item1.html">Right Sidebar Item</a></li>
+                                            <li><a href="blog_large_left_sidebar_item1.html">Left Sidebar Item</a></li>
+                                            <li><a href="blog_large_full_width_item1.html">Full Width Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:void(0);">Blog Simple Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="blog_large_right_sidebar.html">Right Sidebar Large</a></li>
+                                            <li><a href="blog_medium_right_sidebar.html">Right Sidebar Medium</a></li>
+                                            <li><a href="blog_large_full_width.html">Full Width</a></li>
+                                            <li><a href="blog_large_right_sidebar_item.html">Right Sidebar Item</a></li>
+                                            <li><a href="blog_large_full_width_item.html">Full Width Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="blog_masonry_3col.html">Masonry Grid Blog</a></li>
+                                    <li><a href="blog_timeline.html">Blog Timeline</a></li>
+                                </ul>
+                            </li> -->
+                            <!-- End Blog -->
+
+                            <!-- Shortcodes -->
+                            <!-- <li class="dropdown mega-menu-fullwidth">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Shortcodes
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="mega-menu-content disable-icons">
+                                            <div class="container">
+                                                <div class="row equal-height">
+                                                    <div class="col-md-3 equal-height-in">
+                                                        <ul class="list-unstyled equal-height-list">
+                                                            <li><h3>Typography &amp; Components</h3></li>
+ -->
+                                                            <!-- Typography -->
+                                                      <!--       <li><a href="shortcode_typo_general.html"><i class="fa fa-sort-alpha-asc"></i> General Typography</a></li>
+                                                            <li><a href="shortcode_typo_headings.html"><i class="fa fa-magic"></i> Headings Options</a></li>
+                                                            <li><a href="shortcode_typo_dividers.html"><i class="fa fa-ellipsis-h"></i> Dividers</a></li>
+                                                            <li><a href="shortcode_typo_blockquote.html"><i class="fa fa-quote-left"></i> Blockquote Blocks</a></li>
+                                                            <li><a href="shortcode_typo_boxshadows.html"><i class="fa fa-asterisk"></i> Box Shadows</a></li>
+                                                            <li><a href="shortcode_typo_testimonials.html"><i class="fa fa-comments"></i> Testimonials</a></li>
+                                                            <li><a href="shortcode_typo_tagline_boxes.html"><i class="fa fa-tasks"></i> Tagline Boxes</a></li>
+                                                            <li><a href="shortcode_typo_grid.html"><i class="fa fa-align-justify"></i> Grid Layouts</a></li> -->
+                                                            <!-- End Typography -->
+
+                                                            <!-- Components -->
+                                           <!--                  <li><a href="shortcode_compo_messages.html"><i class="fa fa-comment"></i> Alerts &amp; Messages</a></li>
+                                                            <li><a href="shortcode_compo_labels.html"><i class="fa fa-tags"></i> Labels &amp; Badges</a></li>
+                                                            <li><a href="shortcode_compo_media.html"><i class="fa fa-volume-down"></i> Audio/Videos &amp; Images</a></li>
+                                                            <li><a href="shortcode_compo_pagination.html"><i class="fa fa-arrows-h"></i> Paginations</a></li> -->
+                                                            <!-- End Components -->
+                                        <!--                 </ul>
+                                                    </div>
+                                                    <div class="col-md-3 equal-height-in">
+                                                        <ul class="list-unstyled equal-height-list">
+                                                            <li><h3>Buttons &amp; Icons</h3></li> -->
+
+                                                            <!-- Buttons -->
+                                                  <!--           <li><a href="shortcode_btn_general.html"><i class="fa fa-flask"></i> General Buttons</a></li>
+                                                            <li><a href="shortcode_btn_brands.html"><i class="fa fa-html5"></i> Brand &amp; Social Buttons</a></li>
+                                                            <li><a href="shortcode_btn_effects.html"><i class="fa fa-bolt"></i> Loading &amp; Hover Effects</a></li> -->
+                                                            <!-- End Buttons -->
+
+                                                            <!-- Icons -->
+                                              <!--               <li><a href="shortcode_icon_general.html"><i class="fa fa-chevron-circle-right"></i> General Icons</a></li>
+                                                            <li><a href="shortcode_icon_fa.html"><i class="fa fa-chevron-circle-right"></i> Font Awesome Icons</a></li>
+                                                            <li><a href="shortcode_icon_line.html"><i class="fa fa-chevron-circle-right"></i> Line Icons</a></li>
+                                                            <li><a href="shortcode_icon_glyph.html"><i class="fa fa-chevron-circle-right"></i> Glyphicons Icons (Bootstrap)</a></li>
+                                                            <li><a href="shortcode_icon_glyph_pro.html"><i class="fa fa-chevron-circle-right"></i> Glyphicons Icons Pro</a></li> -->
+                                                            <!-- End Icons -->
+                                                <!--         </ul>
+                                                    </div>
+                                                    <div class="col-md-3 equal-height-in">
+                                                        <ul class="list-unstyled equal-height-list">
+                                                            <li><h3>Common elements</h3></li> -->
+
+                                                            <!-- Content Boxes -->
+                                                           <!--  <li><a href="shortcode_box_general.html"><i class="fa fa-cog"></i> General Content Boxes</a></li>
+                                                            <li><a href="shortcode_box_colored.html"><i class="fa fa-align-center"></i> Colored Boxes</a></li>
+                                                            <li><a href="shortcode_thumbnails.html"><i class="fa fa-image"></i> Thumbnails</a></li>
+                                                            <li><a href="shortcode_accordion_and_tabs.html"><i class="fa fa-list-ol"></i> Accordion &amp; Tabs</a></li>
+                                                            <li><a href="shortcode_timeline1.html"><i class="fa fa-dot-circle-o"></i> Timeline Option 1</a></li>
+                                                            <li><a href="shortcode_timeline2.html"><i class="fa fa-dot-circle-o"></i> Timeline Option 2</a></li>
+                                                            <li><a href="shortcode_table_general.html"><i class="fa fa-table"></i> Tables</a></li>
+                                                            <li><a href="shortcode_compo_progress_bars.html"><i class="fa fa-align-left"></i> Progress Bars</a></li>
+                                                            <li><a href="shortcode_compo_panels.html"><i class="fa fa-columns"></i> Panels</a></li> -->
+                                                            <!-- End Common Elements -->
+                                              <!--           </ul>
+                                                    </div>
+                                                    <div class="col-md-3 equal-height-in">
+                                                        <ul class="list-unstyled equal-height-list">
+                                                            <li><h3>Forms &amp; Infographics</h3></li> -->
+
+                                                            <!-- Forms -->
+                    <!--                                         <li><a href="shortcode_form_general.html"><i class="fa fa-bars"></i> Common Bootstrap Forms</a></li>
+                                                            <li><a href="shortcode_form_general1.html"><i class="fa fa-bars"></i> General Unify Forms</a></li>
+                                                            <li><a href="shortcode_form_advanced.html"><i class="fa fa-bars"></i> Advanced Forms</a></li>
+                                                            <li><a href="shortcode_form_layouts.html"><i class="fa fa-bars"></i> Form Layouts</a></li>
+                                                            <li><a href="shortcode_form_layouts_advanced.html"><i class="fa fa-bars"></i> Advanced Layout Forms</a></li>
+                                                            <li><a href="shortcode_form_states.html"><i class="fa fa-bars"></i> Form States</a></li>
+                                                            <li><a href="shortcode_form_sliders.html"><i class="fa fa-bars"></i> Form Sliders</a></li>
+                                                            <li><a href="shortcode_form_modals.html"><i class="fa fa-bars"></i> Modals</a></li> -->
+                                                            <!-- End Forms -->
+
+                                                            <!-- Infographics -->
+                          <!--                                   <li><a href="shortcode_carousels.html"><i class="fa fa-sliders"></i> Carousel Examples</a></li>
+                                                            <li><a href="shortcode_compo_charts.html"><i class="fa fa-pie-chart"></i> Charts &amp; Countdowns</a></li>
+                                                            <li><a href="shortcode_maps_google.html"><i class="fa fa-map-marker"></i> Google Maps</a></li>
+                                                            <li><a href="shortcode_maps_vector.html"><i class="fa fa-align-center"></i> Vector Maps</a></li> -->
+                                                            <!-- End Infographics -->
+                               <!--                          </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- End Shortcodes -->
+
+                            <!-- Misc Pages -->
+                         <!--    <li class="dropdown">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                    Misc
+                                </a>
+                                <ul class="dropdown-menu pull-right">
+                                    <li><a href="page_misc_blank.html">Blank page</a></li>
+                                    <li><a href="page_misc_boxed.html">Boxed Page</a></li>
+                                    <li><a href="page_misc_boxed_img.html">Boxed Image Page</a></li>
+                                    <li><a href="page_misc_boxed_fixed_header.html">Boxed Fixed Menu</a></li>
+                                    <li><a href="page_misc_fixed_header.html">Fixed Menu</a></li>
+                                    <li><a href="page_misc_dark.html">Dark Page</a></li>
+                                    <li><a href="page_misc_dark_boxed.html">Dark Boxed Page</a></li>
+                                    <li><a href="page_misc_dark_other_color.html">Dark Page with Theme Color</a></li>
+                                    <li><a href="page_misc_sticky_footer.html">Sticky Footer Example</a></li>
+                                </ul>
+                            </li> -->
+                            <!-- End Misc Pages -->
+                            <% if user_signed_in? %>
+                            <li class="header-nav-main"><%= link_to "My Profile", edit_user_registration_path %></li>
+                            <li class="header-nav-main"><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
+                            <% else %>
+                            <li class="header-nav-main"><%= link_to "Sign Up", new_user_registration_path %></li>
+                            <li class="header-nav-main"><%= link_to "Sign In", new_user_session_path %></li>
+                            <% end %>
+                        </ul>
+                    </div>
+                </div><!--/navbar-collapse-->
+            </div>
+        </div>
+        <!-- End Navbar -->
+    </div>
+    <!--=== End Header v6 ===-->
+
+ <br/>
+ <br/>
+  <br/>
+   <br/>
+    <br/>
+     <br/>
+     <br/>
+
+    <%= yield %>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+ <!--=== Footer v6 ===-->
+  <div id="footer-v6" class="footer-v6">
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+<!--           <div class="col-md-12 sm-margon-bottom-10">
+            <ul class="list-inline terms-menu" style="text-align:center">
+              <li><a class="silver btn btn-primary" style="color:white;" href="#">About Us</a></li>
+              <li><a class="silver btn btn-primary" style="color:white;" href="mailto:steven@indychicago.com">Got a Question or feedback? EMAIL US</a></li>
+              <li><a class="silver btn btn-primary" style="color:white;" target="_blank" href="http://www.mptracks.com">Mulatto Patriot - MPtracks.com</a></li>
+            </ul>
+          </div> -->
+
+
+          <ul class="list-inline dark-social space-bottom-0" style="text-align:center;">
+            <li>
+              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Email" href="mailto:steven@indychicago.com">
+              <%= icon('envelope fa-4x') %></a>
+            </li>
+            <li>
+              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Twitter" href="http://twitter.com/indychicago">
+              <%= icon('twitter-square fa-4x') %></a>
+            </li>
+            <li>
+              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Tumblr" href="http://indychicago.tumblr.com/">
+              <%= icon('tumblr fa-4x') %></a>
+            </li>
+            <!-- <li>
+              <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Pinterest" href="pinterest.com/indychicago">
+              <%#= icon('pinterest-square fa-4x') %></a>
+            </li>
+              <li>
+                <a data-placement="top" target="blank" data-toggle="tooltip" class="tooltips" data-original-title="Youtube" href="">
+                                <%#= icon('youtube-square fa-4x') %></a>
+              </li> -->
+            </ul>
+            </br>
+              <p class="button-footer">©  2015 Mulatto Patriot Productions® All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
