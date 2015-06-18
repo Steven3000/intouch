@@ -17,84 +17,79 @@
 
   <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
 
-</head>
-
-<body>
   <style type="text/css">
     body {background-color: rgb(144, 153, 255);}
   </style>
 
+</head>
 
-  <div class="wrapper">
+<body>
 
-      <!-- Navbar Brand -->
-<!--  <div class="navbar-brand">
-        <a href="index.html">
-          <img class="default-logo" src="#" alt="Logo">
-          <img class="shrink-logo" src="#" alt="Logo">
-        </a>
-      </div> -->
-      <!-- ENd Navbar Brand -->
+<div class="wrapper">
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container" style="width:100%;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <%= link_to_if (request.path != "/home.html"),
+                    "HOME", root_path %>
+              </li>
+              <li class="active">
+              <%= link_to_if (request.path != subscriptions_path),
+                   "Follow Artists", subscriptions_path %>
+              </li>
+              <li class="active">
+                  <%= link_to_if (request.path != songs_path),
+                     "Listen to Songs", "/songs" %>
+              </li>
+              <li class="active">
+                  <%= link_to_if (request.path != albums_path),
+                     "Listen to Albums", "/albums" %>
+              </li>
+              <% if user_signed_in? %>
+              <li class="active"><%= link_to "My Profile", edit_user_registration_path %></li>
+              <li class="active"><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
+              <% else %>
+              <li class="active"><%= link_to "Sign Up", new_user_registration_path %></li>
+              <li class="active"><%= link_to "Sign In", new_user_session_path %></li>
+              <% end %>
+              <li class="active"><%= link_to "@Users", admin_users_path %>
+              </li>
+              <li class="active"><%= link_to "@Artists", admin_artists_path %>
+              </li>
+              <li class="active"><%= link_to "@Albums", admin_albums_path %>
+              </li>
+              <li class="active"><%= link_to "@Songs", admin_songs_path %>
+              </li>
+              <li class="active"><%= link_to "Add-Artist", new_admin_artist_path %>
+              </li>
+              <li class="active"><%= link_to "Add-Album", new_admin_album_path %>
+              </li>
+              <li class="active"><%= link_to "Add-Song", new_admin_song_path %>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
 
-<!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="container" style="padding:0;margin-left:250px;margin-right:250px;" >
-      <div class="menu-container"  role="navigation">
-        <ul class="nav navbar-nav">
-          <li class="header-nav-main-mp">
-              <%= link_to_if (request.path != "/home.html"),
-                  "HOME", root_path %>
-          </li>
-          <li class="header-nav-main-mp">
-          <%= link_to_if (request.path != subscriptions_path),
-               "Follow Artists", subscriptions_path %>
-          </li>
-          <li class="header-nav-main-mp">
-              <%= link_to_if (request.path != songs_path),
-                 "Listen to Songs", "/songs" %>
-          </li>
-          <li class="header-nav-main-mp">
-              <%= link_to_if (request.path != albums_path),
-                 "Listen to Albums", "/albums" %>
-          </li>
 
-          <% if user_signed_in? %>
-          <li class="header-nav-main-mp"><%= link_to "My Profile", edit_user_registration_path %></li>
-          <li class="header-nav-main-mp"><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
-          <% else %>
-          <li class="header-nav-main-mp"><%= link_to "Sign Up", new_user_registration_path %></li>
-          <li class="header-nav-main-mp"><%= link_to "Sign In", new_user_session_path %></li>
-          <% end %>
-          <br/>
-          <li class="header-nav-main-mp"><%= link_to_if (request.path != admin_users_path),
-                   "Users", admin_users_path %>
-            </li>
-            <li class="header-nav-main-mp"><%= link_to_if (request.path != admin_artists_path),
-                "@Artists", admin_artists_path %>
-            </li>
-            <li class="header-nav-main-mp"><%= link_to_if (request.path != admin_albums_path),
-                "@Albums", admin_albums_path %>
-            </li>
-            <li class="header-nav-main-mp"><%= link_to_if (request.path != admin_songs_path),
-                 "@Songs", admin_songs_path %>
-            </li>
-            <li class="header-nav-main-mp"><%= link_to_if (request.path != new_admin_artist_path),
-                "Add-Artist", new_admin_artist_path %>
-            </li>
-            <li class="header-nav-main-mp"><%= link_to_if (request.path != new_admin_album_path),
-                "Add-Album", new_admin_album_path %>
-            </li>
-            <li class="header-nav-main-mp"><%= link_to_if (request.path != new_admin_song_path),
-                "Add-Song", new_admin_song_path %>
-        </ul>
-      </div>
-    </div>
-    <!--=== End Header v6 ===-->
-
+     <br/>
+     <br/>
+     <br/>
      <br/>
      <br/>
 
 
     <%= yield %>
+
 
     </br>
     </br>

@@ -1,3 +1,5 @@
+
+
 .button-home-header {
    border-top: 1px solid #bab8ff;
    background: #fe5070;
@@ -6,7 +8,6 @@
    background: -moz-linear-gradient(top, #3b61a3, #fe5070);
    background: -ms-linear-gradient(top, #3b61a3, #fe5070);
    background: -o-linear-gradient(top, #3b61a3, #fe5070);
-   padding: 5px 10px;
    -webkit-border-radius: 8px;
    -moz-border-radius: 8px;
    border-radius: 8px;
@@ -15,16 +16,23 @@
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: #a1fcff;
-   font-size: 64px;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   font-size: 48px;
    text-decoration: none;
    vertical-align: middle;
    text-align: center;
-   padding: 12px;
+   padding: 36px;
    color: white;
-   width: 75%;
-  margin: auto;
+  margin: 0;
+
    }
+
+/*@media (max-width: 800px) {
+  .button-home-header {
+    font-size: 24px;
+  }
+}*/
+
 
 .button-home-words {
    border-top: 1px solid #bab8ff;
@@ -81,8 +89,7 @@
    }
 .button-signup:hover {
    border-top-color: #ffffff;
-   background: #ffffff;
-   color: #ffffff;
+   background: #313131;
    }
 .button-signup:active {
    border-top-color: #000000;
