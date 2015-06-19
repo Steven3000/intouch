@@ -6,7 +6,6 @@
   <%= link_to "Subscribe to New Artists", subscriptions_path %>
   </p>
   <div class="row">
-    <div class="col-xs-12">
     <% @songs.each do |song| %>
       <div class="col-xs-12 col-lg-3 isotope-item box-songs">
         <div class="panel panel-default">
@@ -37,9 +36,10 @@
             </dl>
           </div>
         </div>
+
+
       </div>
-      <% end %>
-    </div>
+    <% end %>
   </div>
 </div>
 

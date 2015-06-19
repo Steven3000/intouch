@@ -1,6 +1,6 @@
 
 
-.button-home-header {
+.jumbotron  {
    border-top: 1px solid #bab8ff;
    background: #fe5070;
    background: -webkit-gradient(linear, left top, left bottom, from(#3b61a3), to(#fe5070));
@@ -17,13 +17,13 @@
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: #a1fcff;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   font-size: 48px;
+
    text-decoration: none;
    vertical-align: middle;
    text-align: center;
-   padding: 36px;
+   padding: 1em;
    color: white;
-  margin: 0;
+   margin: 0;
 
    }
 

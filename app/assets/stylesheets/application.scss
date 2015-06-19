@@ -1,6 +1,4 @@
-@import "unify/bootstrap.min";
-@import "unify/bootstrap-theme";
-@import "unify/bootstrap-theme.min";
+@import "unify/bootstrap ";
 
 @import "header";
 @import "unify/header-default";
@@ -12,11 +10,6 @@
 @import "unify/brand-buttons";
 @import "unify/brand-buttons-inversed";
 
-@import "owl/custom";
-@import "owl/owl.carousel";
-@import "owl/owl.theme";
-@import "owl/owl.transitions";
-@import "owl/responsive";
 
 
 @import "unify/animate";
@@ -36,13 +29,13 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-@import "home";
+
 @import "feed";
 
 @import "album_show";
 @import "custom";
 @import "box";
-
+@import "home";
 .panel-body {
   img { max-width: 100%; }
 }
