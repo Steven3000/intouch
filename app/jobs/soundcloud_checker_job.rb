@@ -7,7 +7,7 @@ class SoundcloudCheckerJob < ActiveJob::Base
     Artist.where.not(soundcloud_username: nil).each do |artist|
 
       #end point of api
-      tracks = client.get("/users/#{artist.soundcloud_username}/tracks?created_at[from]=#{Time.current.ago(500.days).to_s(:db)}")
+      tracks = client.get("/users/#{artist.soundcloud_username}/tracks?created_at[from]=#{Time.current.ago(2.days).to_s(:db)}")
 
 
       tracks.each do |track|
