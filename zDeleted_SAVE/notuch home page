@@ -57,3 +57,14 @@ $(document).ready(function() {
 
 </script>
 
+-----------------------
+
+              <li class="active">
+                  <%= link_to_if (request.path != songs_path),
+                     "Listen to Songs", "/songs" %>
+              </li>
+
+
+
+              -----------------------
+
