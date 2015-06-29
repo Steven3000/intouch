@@ -7,4 +7,8 @@ protected
     devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:username, :email, :password, :zip_code, :age) }
   end
 
+  def after_sign_up_path_for(resource)
+    '/subscriptions'
+  end
+
 end

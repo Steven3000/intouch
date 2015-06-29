@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root 'page#home'
   devise_for :users, controllers: { registrations: "user_registrations" }
 
-
   resources :announcements
   resources :subscriptions
   resources :artists
