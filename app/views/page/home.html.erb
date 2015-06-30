@@ -15,10 +15,11 @@
     </div>
 
     <br/>
-
+    <% if current_user.present? %>
+    <% else %>
     <div class="button-signup-2">
         <%= link_to "Sign-up, NOW!", new_user_registration_path, :class => "btn button-signup-2" %>
-      </p>
+        <% end %>
     </div>
   </div>
 
