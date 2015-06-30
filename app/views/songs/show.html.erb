@@ -4,53 +4,53 @@
   </div>
   <div style="float:right">
     <a href="/artists/<%= @song.artist.id %>">
-    <p class="button10"><%= @song.artist.name %></p>
+    <p class="button-main-feed"><%= @song.artist.name %></p>
     </a>
 
-    <p class="button10b"><%= @song.title %>
+    <p class="button-main-feedb"><%= @song.title %>
     <% if @song.features.present? %>
           (ft. <%= @song.features %>)
 
     </p>
       <% end %>
     <% if @song.producer.present? %>
-    <p class="button10b">Producer: <%= @song.producer %></p>
+    <p class="button-main-feedb">Producer: <%= @song.producer %></p>
      <% end %>
     <% if @song.release_date.present? %>
-    <p class="button10b">Released <%= time_ago_in_words(@song.release_date)  %> ago. </p>
+    <p class="button-main-feedb">Released <%= time_ago_in_words(@song.release_date)  %> ago. </p>
      <% end %>
     <% if @song.album_title.present? %>
-    <p class="button10b">Album: <%= @song.album_title %></p>
+    <p class="button-main-feedb">Album: <%= @song.album_title %></p>
     <% end %>
     <div style="margin-top:15px;" class="song-additional-link">
 
       <% if @song.download_link.present? %>
         <td>
-          <a href="<%= @song.download_link %>" target="_blank" class="button10">Stream/Download</a>
+          <a href="<%= @song.download_link %>" target="_blank" class="button-main-feed">Stream/Download</a>
         </td>
        <% end %>
 
       <% if @song.itunes.present? %>
         <td>
-          <a href="<%= @song.itunes %>" target="_blank" class="button10">iTunes</a>
+          <a href="<%= @song.itunes %>" target="_blank" class="button-main-feed">iTunes</a>
         </td>
       <% end %>
 
       <% if @song.google.present? %>
         <td>
-          <a href="<%= @song.google %>" target="_blank" class="button10">Google Play</a>
+          <a href="<%= @song.google %>" target="_blank" class="button-main-feed">Google Play</a>
         </td>
       <% end %>
 
       <% if @song.amazon.present? %>
         <td>
-          <a href="<%= @song.amazon %>" target="_blank" class="button10">Amazon</a>
+          <a href="<%= @song.amazon %>" target="_blank" class="button-main-feed">Amazon</a>
         </td>
       <% end %>
 
       <% if @song.spotify.present? %>
         <td>
-          <a href="<%= @song.spotify %>" target="_blank" class="button10">Spotify</a>
+          <a href="<%= @song.spotify %>" target="_blank" class="button-main-feed">Spotify</a>
         </td>
       <% end %>
     </div>

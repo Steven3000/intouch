@@ -4,40 +4,40 @@
   </div>
   <div style="float:right">
     <a href="/artists/<%= @album.artist.id %>">
-    <p class="button10"><%= @album.artist.name %></p>
+    <p class="button-main-feed"><%= @album.artist.name %></p>
     </a>
-    <p class="button10b"><%= @album.name %>
+    <p class="button-main-feedb"><%= @album.name %>
     </p>
     <% if @album.release_date.present? %>
-    <p class="button10b">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
+    <p class="button-main-feedb">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
     <div style="margin-top:15px;" class="song-additional-link">
       <% if @album.download_link.present? %>
         <td>
-          <a href="<%= @album.download_link %>" target="_blank" class="button10">Stream/Download</a>
+          <a href="<%= @album.download_link %>" target="_blank" class="button-main-feed">Stream/Download</a>
         </td>
        <% end %>
 
       <% if @album.itunes.present? %>
         <td>
-          <a href="<%= @album.itunes %>" target="_blank" class="button10">iTunes</a>
+          <a href="<%= @album.itunes %>" target="_blank" class="button-main-feed">iTunes</a>
         </td>
       <% end %>
 
       <% if @album.google.present? %>
         <td>
-          <a href="<%= @album.google %>" target="_blank" class="button10">Google Play</a>
+          <a href="<%= @album.google %>" target="_blank" class="button-main-feed">Google Play</a>
         </td>
       <% end %>
 
       <% if @album.amazon.present? %>
         <td>
-          <a href="<%= @album.amazon %>" target="_blank" class="button10">Amazon</a>
+          <a href="<%= @album.amazon %>" target="_blank" class="button-main-feed">Amazon</a>
         </td>
       <% end %>
 
       <% if @album.spotify.present? %>
         <td>
-          <a href="<%= @album.spotify %>" target="_blank" class="button10">Spotify</a>
+          <a href="<%= @album.spotify %>" target="_blank" class="button-main-feed">Spotify</a>
         </td>
       <% end %>
     </div>
@@ -59,7 +59,7 @@
           <!-- <%# end %> -->
         <!--   </p> -->
       <table>
-        <td class="button10">
+        <td class="button-main-feed">
           <%= song.title %>
 
         <% if song.features.present? %>

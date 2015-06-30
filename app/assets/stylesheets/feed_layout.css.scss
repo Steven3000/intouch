@@ -5,7 +5,6 @@
 @import "unify/header-v2";
 @import "unify/footer-default";
 @import "unify/footer-v7";
-@import "layout-v6-header";
 
 @import "unify/bootstrap.min";
 @import "unify/animate";
@@ -20,3 +19,5 @@
 @import "album_show";
 @import "custom";
 
+a:hover {color:darkgrey;}
+a:focus {color:darkgrey;}

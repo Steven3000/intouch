@@ -1,4 +1,4 @@
-.button10 {
+.button-main-feed {
    border-top: 1px solid #949494;
    background: #212121;
    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#212121));
@@ -20,17 +20,17 @@
    text-decoration: none;
    vertical-align: middle;
    }
-.button10:hover {
+.button-main-feed:hover {
    border-top-color: #ffffff;
    background: #ffffff;
    color: #000000;
    }
-.button10:active {
+.button-main-feed:active {
    border-top-color: #000000;
    background: #000000;
    }
 
-.button10b {
+.button-main-feedb {
    border-top: 1px solid #949494;
    background: #212121;
    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#212121));
@@ -105,7 +105,7 @@
    text-decoration: none;
    }
 
-.button10c {
+.button-main-feedc {
    border-top: 1px solid #949494;
    background: #212121;
    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#212121));
@@ -127,12 +127,12 @@
    text-decoration: none;
    vertical-align: middle;
    }
-.button10c:hover {
+.button-main-feedc:hover {
    border-top-color: #ffffff;
    background: #ffffff;
    color: #000000;
    }
-.button10c:active {
+.button-main-feedc:active {
    border-top-color: #000000;
    background: #000000;
    }
