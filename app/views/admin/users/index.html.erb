@@ -9,9 +9,9 @@
         <th>User ID</th>
         <th>User Name</th>
         <th>email</th>
-        <th>Avatar</th>
         <th>Delete</th>
-        <th>sign in count</th>
+        <th>Avatar</th>
+        <th>s.#</th>
         <th>age</th>
         <th>zip_code</th>
         <th>current_sign_in_date</th>
@@ -20,25 +20,25 @@
         <th>updated_edit_profile</th>
         <th>admin</th>
         <th>sub</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
-        <th>subs...subs</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
+        <th>subs....subss</th>
       </tr>
     </thead>
 
@@ -49,8 +49,8 @@
           <td><%= user.username %></td>
           <td><%= user.email %></td>
           <td><%= image_tag user.avatar.url(:medium), :style => "width:75px;" %></td>
-                      <td>
-            <%= link_to 'Destroy', user_registration_path(user.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+          <td>
+            <%= link_to 'Destroy', user_registration_path(user), method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
           <td><%= user.sign_in_count %></td>
           <td><%= user.age %></td>
