@@ -50,7 +50,7 @@
           <td><%= user.email %></td>
           <td><%= image_tag user.avatar.url(:medium), :style => "width:75px;" %></td>
           <td>
-            <%= link_to 'Destroy', admin_users_path(user.id), method: :deleteset, data: { confirm: 'Are you sure?' } %>
+            <%= link_to 'Destroy', user_registration_path(user.id), method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
 
 
