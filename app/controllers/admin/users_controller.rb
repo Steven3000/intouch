@@ -5,17 +5,13 @@ class Admin::UsersController < Admin::BaseController
    # @user = Profile.search(params[:search])
   end
 
-  # def announcement
-  #   @user = User.find(params[:id])
+  def destroy
+       @user = User.find(params[:id])
+       @user.destroy
 
-  #   @user = AnnouncementMailer.welcome_user.deliver_now
+    redirect_to "/admin/users", :notice => "User deleted."
+  end
 
-  #   @user.announced = true
-  #   @user.save
-
-  #   flash[:notice] = "Announcement has been sent"
-  #   redirect_to admin_users_path
-  # end
 
   private
 

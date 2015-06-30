@@ -18,7 +18,7 @@
   <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
 
   <style type="text/css">
-    body {background-color: rgb(144, 153, 255);}
+    body {background-color: lightgrey;}
   </style>
 
 </head>
@@ -58,13 +58,13 @@
               <li class="active"><%= link_to "Sign Up", new_user_registration_path %></li>
               <li class="active"><%= link_to "Sign In", new_user_session_path %></li>
               <% end %>
-              <li class="active"><%= link_to "@Users", admin_users_path %>
+              <li class="active"><%= link_to "Users", admin_users_path %>
               </li>
-              <li class="active"><%= link_to "@Artists", admin_artists_path %>
+              <li class="active"><%= link_to "Artists", admin_artists_path %>
               </li>
-              <li class="active"><%= link_to "@Albums", admin_albums_path %>
+              <li class="active"><%= link_to "Albums", admin_albums_path %>
               </li>
-              <li class="active"><%= link_to "@Songs", admin_songs_path %>
+              <li class="active"><%= link_to "Songs", admin_songs_path %>
               </li>
               <li class="active"><%= link_to "Add-Artist", new_admin_artist_path %>
               </li>
