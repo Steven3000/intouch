@@ -6,7 +6,8 @@ class User < ActiveRecord::Base
 
   validates :email, uniqueness: {case_sesitive: false}
   validates :username, uniqueness: {case_sesitive: false}
-
+  validates :zip_code, numericality: true
+  validates :age, numericality: true
 
   # has_one :feed a collection of songs through artists through subsriptions
   has_many :subscriptions

@@ -1,35 +1,40 @@
 <div class="container">
-  <h2 class="page-header">Edit <%= resource_name.to_s.humanize %></h2>
+  <h2 class="page-header" style="margin-bottom:0; font-size:5em;">Edit <%= resource_name.to_s.humanize %></h2>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, :class => "form-horizontal" }) do |f| %>
-    <%= devise_error_messages! %>
 
-    <div class="form-group">
-      <%= f.label :username, "User Name", :class => "col-sm-offset-1 col-sm-2 control-label" %>
-      <div class="col-sm-6">
+    <div class="error-msg-btn">
+      <%= devise_error_messages! %>
+    </div>
+
+
+    <div class="form-group user-proile-button">
+      <%= f.label :username, "User Name", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
+      <div class="col-sm-5">
       <%= f.text_field :username, :class => "form-control" %>
       <em>(Must be Unique)</em>
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :email, "Email", :class => "col-sm-offset-1 col-sm-2 control-label" %>
-      <div class="col-sm-6">
+    <div class="form-group user-proile-button">
+      <%= f.label :email, "Email", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
+      <div class="col-sm-5">
       <%= f.email_field :email, autofocus: true, :class => "form-control" %>
+      <em>(example@example.com)</em>
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :current_password, "Current Password", :class => "col-sm-offset-1 col-sm-2 control-label"  %>
-      <div class="col-sm-6">
+    <div class="form-group user-proile-button">
+      <%= f.label :current_password, "Current Password", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field"  %>
+      <div class="col-sm-5">
       <%= f.password_field :current_password, autocomplete: "off", :class => "form-control" %>
       <i>(we need your current password to confirm your changes)</i>
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :password, "New Password", :class => "col-sm-offset-1 col-sm-2 control-label" %>
-      <div class="col-sm-6">
+    <div class="form-group user-proile-button">
+      <%= f.label :password, "New Password", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
+      <div class="col-sm-5">
       <%= f.password_field :password, autocomplete: "off", :class => "form-control" %>
         <% if @validatable %>
           <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -38,38 +43,39 @@
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :password_confirmation, "New Password Confirmation", :class => "col-sm-offset-1 col-sm-2 control-label" %>
-      <div class="col-sm-6">
+    <div class="form-group user-proile-button">
+      <%= f.label :password_confirmation, "New Password Confirmation", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
+      <div class="col-sm-5">
       <%= f.password_field :password_confirmation, autocomplete: "off", :class => "form-control" %>
+      <em>(Just to be sure...)</em>
       </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :zip_code, "Zip Code", :class => "col-sm-offset-1 col-sm-2 control-label" %>
-      <div class="col-sm-2">
+    <div class="form-group user-proile-button">
+      <%= f.label :zip_code, "Zip Code", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
+      <div class="col-sm-5">
       <%= f.number_field :zip_code, :class => "form-control" %>
+      <em>(Let your favorite artists know where they should rock a show. <br/>Hint: More friends the better)</em>
       </div>
     </div>
 
-        <div class="form-group">
-      <%= f.label :age, "Age", :class => "col-sm-offset-1 col-sm-2 control-label" %>
-      <div class="col-sm-2">
+        <div class="form-group user-proile-button">
+      <%= f.label :age, "Age", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
+      <div class="col-sm-3">
       <%= f.number_field :age, :class => "form-control" %>
+      <em>(All ages are welcome, we just need to know if you are of legal age)</em>
       </div>
     </div>
 
 
 
     <div class="form-group">
-      <div class="col-sm-offset-4 col-sm-4">
-      <%= f.submit "Update", :class => "btn btn-success btn-block" %>
+      <div>
+      <%= f.submit "Update", :class => "btn btn-lg btn-success btn-block label-name-field" %>
       </div>
     </div>
 
     <% end %>
-
-    <hr>
 
 
     <%= link_to "Back", :back %>
