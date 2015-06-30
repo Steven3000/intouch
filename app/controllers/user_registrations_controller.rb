@@ -11,4 +11,12 @@ protected
     '/subscriptions'
   end
 
-end
+
+  def destroy
+       respond_to do |format|
+      format.html { redirect_to admin_users_url, notice: 'User was successfully destroyed.' }
+      format.json { head :no_content }
+  end
+   end
+    end
+
