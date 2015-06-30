@@ -52,8 +52,4 @@ Rails.application.routes.draw do
   get("/breakdown", :controller => 'page', :action => 'breakdown')
   get("/fheader", :controller => 'page', :action => 'fheader')
 
-  #ADMIN_other
-  get("/admin_dashboard", :controller => 'admin', :action => 'admin_dashboard')
-  get("/account_manager", :controller => 'admin', :action => 'account_manager')
-
 end
