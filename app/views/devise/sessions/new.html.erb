@@ -4,41 +4,41 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
 
     <div class="error-msg-btn">
-    <%= devise_error_messages! %>
+      <%= devise_error_messages! %>
     </div>
 
-  <div class="form-group user-proile-button">
+    <div class="form-group user-proile-button">
     <%= f.label :email, "Email", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
     <div class="col-sm-5">
     <%= f.email_field :email, autofocus: true, :class => "form-control" %>
     </div>
-  </div>
+    </div>
 
-  <div class="form-group user-proile-button">
+    <div class="form-group user-proile-button">
     <%= f.label :password, "Password", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
     <div class="col-sm-5">
     <%= f.password_field :password, autocomplete: "off", :class => "form-control" %>
     </div>
-  </div>
+    </div>
 
-  <% if devise_mapping.rememberable? -%>
+    <% if devise_mapping.rememberable? -%>
     <div class="form-group user-proile-button">
-      <%= f.label :remember_me, :class => "col-sm-offset-1 col-sm-2 control-label label-name-field-checkbox"  %>
-      <div class="col-sm-5">
-      <%= f.check_box :remember_me, :class => "paddingClass" %>
-      </div>
+    <%= f.label :remember_me, :class => "col-sm-offset-1 col-sm-2 control-label label-name-field-checkbox"  %>
+    <div class="col-sm-5">
+    <%= f.check_box :remember_me, :class => "paddingClass" %>
     </div>
-  <% end -%>
+    </div>
+    <% end -%>
 
-  <div class="form-group">
+
+    <div class="form-group">
     <div>
-    <%= f.submit "Log in", :class => "btn btn-lg btn-success btn-block label-name-field"  %>
+    <%= f.submit "Sign in", :class => "btn btn-lg btn-success btn-block label-name-field"  %>
     </div>
   </div>
+
+
+<p class="user-proile-button-below">Want an account?&nbsp; <%= render "devise/shared/links" %></p>
+
 <% end %>
-
-
-<p class="user-proile-button-below"> Want an account?&nbsp;<%= render "devise/shared/links" %> </p>
 </div>
-
-

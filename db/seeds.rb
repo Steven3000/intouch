@@ -1,9 +1,9 @@
 # Subscription.destroy_all
 
 # User.destroy_all
-# u1 = User.create!(email: "a@a.com", password: "12121212", username: "a")
-# u2 = User.create!(email: "b@b.com", password: "12121212", username: "b")
-# u3 = User.create!(email: "c@c.com", password: "12121212", username: "c")
+# u1 = User.create!(email: "a@a.com", password: "12121212", username: "a", zip_code: "60616", age:"30")
+# u2 = User.create!(email: "b@b.com", password: "12121212", username: "b", zip_code: "60640", age:"25")
+# u3 = User.create!(email: "c@c.com", password: "12121212", username: "c", zip_code: "60615", age:"18")
 
 # Artist.destroy_all
 # a1 = Artist.create!(name: "Mulatto Patriot", record_label: "Independent")
@@ -80,6 +80,6 @@
 # s = Song.create!(title: "Something Special", artist: a1, features: "", producer: "Mulatto Patriot", album: p1, track: "", album_title: "Ray Elementary", release_date: "{2014/1/23}", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "http://www.audiomack.com/album/mulatto-patriot/ray-elementary", embedded_code: '' )
 
 
-# s = Song.create!(title: "", artist: , features: "", producer: "", album , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  )
+# # s = Song.create!(title: "", artist: , features: "", producer: "", album , track: "", album_title: "", release_date: "", youtube: '', itunes: "", amazon: "", google: "", spotify: "",  download_link: "", embedded_code: ''  )
 
 
