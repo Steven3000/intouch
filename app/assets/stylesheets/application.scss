@@ -36,8 +36,6 @@
 @import "custom";
 @import "box";
 @import "home";
-.panel-body {
-  img { max-width: 100%; }
-}
-
+.panel-body {img { max-width: 100%; }  }
+a:hover {color:yellow;}
 
