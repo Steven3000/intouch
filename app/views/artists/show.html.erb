@@ -18,36 +18,36 @@
               <dd class='button13'>
                 <a href="/songs/<%= song.id %>">Click here to Listen</a>
               </dd>
-              <dd class="button12b">
+              <dd class="panel-button-big">
                 <%= song.title %>
               </dd>
 
               <% if song.features.present? %>
-                <dd class="button12b">
+                <dd class="panel-button-big">
                   Featuring: <%= song.features %>
                 </dd>
               <% end %>
 
               <% if song.producer.present? %>
-                <dd class="button12b">
+                <dd class="panel-button-big">
                   Producer: <%= song.producer %>
                 </dd>
               <% end %>
 
               <% if song.album_title.present? %>
-                <dd class="button12b">
+                <dd class="panel-button-big">
                   Project: <%= song.album_title %>
                 </dd>
               <% end %>
 
               <% if song.track.present? %>
-                <dd class="button12b">
+                <dd class="panel-button-big">
                   Track #<%= song.track %>
                 </dd>
               <% end %>
 
               <% if song.release_date.present? %>
-                <dd class="button12b">
+                <dd class="panel-button-big">
                   Released <%= time_ago_in_words(song.release_date) %> ago.
                 </dd>
               <% end %>
