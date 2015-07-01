@@ -4,12 +4,12 @@
   </div>
   <div style="float:right">
     <a href="/artists/<%= @album.artist.id %>">
-    <p class="button-main-feed"><%= @album.artist.name %></p>
+    <p class="button-bar-album-show"><%= @album.artist.name %></p>
     </a>
-    <p class="button-bar"><%= @album.name %>
+    <p class="button-bar-album-show"><%= @album.name %>
     </p>
     <% if @album.release_date.present? %>
-    <p class="button-bar">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
+    <p class="button-bar-album-show">Released <%= time_ago_in_words(@album.release_date)  %> ago. </p>
     <div style="margin-top:15px;" class="song-additional-link">
       <% if @album.download_link.present? %>
         <td>

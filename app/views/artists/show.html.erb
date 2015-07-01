@@ -3,8 +3,8 @@
     <%= @artist.name %>
   </p>
   <div>
-    <div style="float:left;"><%= image_tag @artist.avatar.url(:medium) %></div>
-    <div style="float:right;"><%= image_tag @artist.pic.url(:medium) %></div>
+    <div style="float:left;"><%= image_tag @artist.avatar.url(:medium), :class => "img-responsive" %></div>
+    <div style="float:right;"><%= image_tag @artist.pic.url(:medium), :class => "img-responsive" %></div>
   </div>
   <br/>
   <div class="row">
