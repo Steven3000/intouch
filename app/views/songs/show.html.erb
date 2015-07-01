@@ -7,20 +7,20 @@
     <p class="button-main-feed"><%= @song.artist.name %></p>
     </a>
 
-    <p class="button-main-feedb"><%= @song.title %>
+    <p class="button-bar"><%= @song.title %>
     <% if @song.features.present? %>
           (ft. <%= @song.features %>)
 
     </p>
       <% end %>
     <% if @song.producer.present? %>
-    <p class="button-main-feedb">Producer: <%= @song.producer %></p>
+    <p class="button-bar">Producer: <%= @song.producer %></p>
      <% end %>
     <% if @song.release_date.present? %>
-    <p class="button-main-feedb">Released <%= time_ago_in_words(@song.release_date)  %> ago. </p>
+    <p class="button-bar">Released <%= time_ago_in_words(@song.release_date)  %> ago. </p>
      <% end %>
     <% if @song.album_title.present? %>
-    <p class="button-main-feedb">Album: <%= @song.album_title %></p>
+    <p class="button-bar">Album: <%= @song.album_title %></p>
     <% end %>
     <div style="margin-top:15px;" class="song-additional-link">
 

@@ -1,9 +1,6 @@
 <div class="container">
-  <p class="button-main-feedb">
+  <p class="button-bar">
   <%= current_user.username.capitalize %>'s list of New ALBUMs
-  </p>
-  <p class="button-main-feed">
-  <%= link_to "Subscribe to New Artists", subscriptions_path %>
   </p>
   <div class="row">
     <div class="col-xs-12">
@@ -30,5 +27,6 @@
       <% end %>
     </div>
   </div>
+    <p class="button-bar"><%= link_to "Click here to Follow more Artists", subscriptions_path %></p>
 </div>
 

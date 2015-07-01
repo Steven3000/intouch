@@ -1,15 +1,15 @@
 <div class="container">
   <% if notice.present? %>
-  <p id="notice" class="button-main-feedb"><%= notice %></p>
+  <p id="notice" class="button-bar"><%= notice %></p>
   <% end %>
   <% if current_user.subscriptions.present? %>
-  <h1 class="button-main-feedb"><%= current_user.username.capitalize %>'s Subscriptions <em>(Click on images for Artist Profile)</em></h1>
+  <h1 class="button-bar"><%= current_user.username.capitalize %>'s Subscriptions <em>(Click on images for Artist Profile)</em></h1>
   <% end %>
   <%= render 'my_subs' %>
 </div>
 
 <div class="container">
-  <h1 class="button-main-feedb">Click on "Create Subscription" to follow any Artist</h1>
+  <h1 class="button-bar">Click on "Create Subscription" to follow any Artist</h1>
 <!--   <a class="button-main-feedc" href="mailto:contact.ntouchmusic@gmail.com">Your FAVORITE ARTIST not listed? Click here to let us know, ( contact.ntouchmusic@gmail.com ) then give us about a week.</a> -->
   <div class="row">
     <div class="col-xs-8">
