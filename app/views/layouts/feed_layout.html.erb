@@ -48,10 +48,7 @@
               <%= link_to "Follow Artists", subscriptions_path %>
               </li>
               <li class="active">
-                  <%= link_to "Listen to Songs", "/songs" %>
-              </li>
-              <li class="active">
-                  <%= link_to "Listen to Albums", "/albums" %>
+                  <%= link_to "Listen to Music", "/albums" %>
               </li>
                   <% if user_signed_in? %>
                   <li class="active"><%= link_to "My Profile", edit_user_registration_path %></li>
