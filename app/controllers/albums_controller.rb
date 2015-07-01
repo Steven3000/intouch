@@ -7,7 +7,7 @@ class AlbumsController < ApplicationController
   end
 
   def show
-    @album = Album.where(:id => params[:id])
+    @album = Album.find(params[:id])
     # @songs = current_user.song.order(release_date: :desc)
     render layout: "feed_layout"
   end
