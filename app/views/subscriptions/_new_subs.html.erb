@@ -9,9 +9,7 @@
 
 
 
-          <dd class="btn-lg button12b"> <a href="/artist_path(artist.id)"><%= artist.name %></a></dd>
-
-
+         <dd class="button12b"><%= artist.name %><br/></dd>
 
       <%= form_for Subscription.new :user => current_user, :artist => artist do |f| %>
             <%= f.hidden_field :artist_id %>

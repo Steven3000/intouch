@@ -6,8 +6,13 @@
       <%= image_tag subscription.artist.avatar.url(:medium) %>
         <dl>
           <br>
-          <dd class="btn-lg button12b"> <a href="artist_path(subscription.artist.id)"><%= subscription.artist.name %></a> </dd>
+          <dd class="btn-md button12b"><%= subscription.artist.name %></dd>
+
+
+
           <dd><%= link_to 'Unsubscribe', subscription_path(subscription), :method => :delete, :class => "btn btn-danger", :style => "width:100%;" %></dd>
+
+           <dd class="btn-md button12b"><%= link_to "Checkout Artist Profile", artist_path(subscription.artist.id) %></dd>
         </dl>
       </div>
     </div>
