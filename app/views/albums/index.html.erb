@@ -1,6 +1,6 @@
 <div class="container">
   <p class="button-bar">
-  <%= current_user.username.capitalize %>'s list of Chicago IdependentMusic
+  <%= current_user.username.capitalize %>'s list of Chicago Music
   </p>
   <div class="row">
     <div class="col-xs-12">
@@ -11,14 +11,15 @@
             <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
             <dl>
               <dd class='button13'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
-              <dd class="button12">
+
+              <dd class="btn-md panel-button-small">
               <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>
 
-              <dd class="button12">
+              <dd class="btn-md panel-button-small">
               <%= album.name %>
               </dd>
              <% if album.release_date.present? %>
-              <dd class="button12">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
+              <dd class="btn-md panel-button-small">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
               <% end %>
           </dl>
           </div>

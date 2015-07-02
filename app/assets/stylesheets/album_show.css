@@ -77,7 +77,7 @@
    vertical-align: middle;
    }
 
-.button12 {
+.panel-button-small {
    border-top: 1px solid #949494;
    background: #212121;
    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#212121));
@@ -98,15 +98,7 @@
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    }
-.button12:hover {
-   border-top-color: #ffffff;
-   background: #ffffff;
-   color: #000000;
-   }
-.button12:active {
-   border-top-color: #000000;
-   background: #000000;
-   }
+
 .panel-button-big {
    border-top: 1px solid #949494;
    background: #212121;
@@ -183,13 +175,5 @@
    text-decoration: none;
    vertical-align: middle;
    }
-.button:hover {
-   border-top-color: #28597a;
-   background: #28597a;
-   color: #ccc;
-   }
-.button:active {
-   border-top-color: #1b435e;
-   background: #1b435e;
-   }
+
 
