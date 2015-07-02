@@ -44,7 +44,7 @@
   <% end %>
 
   <% if @album .embedded_code.present? %>
-  <div class="song-player" style="width:80%; margin-top:400px;">
+  <div class="song-player">
     <%= @album.embedded_code.html_safe %>
     <% else %>
     <% end %>
