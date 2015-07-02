@@ -1,11 +1,9 @@
 <div class="container">
-  <div style=" display:inline-block; float:left;">
-    <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w" %>
-    <% if @album.back.url.present? %>
-    <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w" %>
-    <% end %>
-  </div>
-  <div style="float:right">
+
+    <%# if @album.back.present? %>
+    <%# else %>
+    <%# end %>
+  <div style=" float:left; display:inline-block;">
     <a href="/artists/<%= @album.artist.id %>">
     <p class="button-bar-album-show"><%= @album.artist.name %></p>
     </a>
@@ -39,6 +37,12 @@
         </td>
       <% end %>
     </div>
+  </div>
+    <div style="display:inline-block; float:right;">
+    <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+  </div>
+  <div style="display:inline-block; float:right;">
+    <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
   </div>
   <% end %>
 </div>
