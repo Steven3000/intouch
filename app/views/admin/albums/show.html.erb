@@ -4,6 +4,7 @@
     <h1>Album #<%= @album.id %> "<%= @album.name %>"</h1>
     <br/>
     <%= image_tag @album.cover.url(:medium) %>
+    <%= image_tag @album.back.url(:medium) %>
   </div>
 
   <dl class="dl-horizontal">

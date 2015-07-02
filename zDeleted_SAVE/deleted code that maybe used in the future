@@ -265,9 +265,12 @@ admin artist new
             :method => :post, disable_with: "Wait ..." %></td>
           <% end %>
 --------------------------------------------------------------------------
-
-subcription index
-style="height:425px; overflow:auto;"
-
---------------------------------------------------------------------------
-style="height:425px; overflow:auto;"
+search on subscriptions
+    <div class="col-xs-8">
+      <%= form_tag subscriptions_path, method: "get" do %>
+        <%= search_field_tag "search",
+              params[:search],
+              placeholder: "Search for the Artist that is inside our database",
+              class: "form-control input-lg" %>
+      <% end %>
+    </div>

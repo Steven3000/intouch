@@ -15,6 +15,7 @@
         <th>Artist ID</th>
         <th>Artist Name</th>
         <th>Cover</th>
+        <th>Back</th>
         <th>Album Title</th>
         <th>Release date</th>
         <th>Download link</th>
@@ -41,6 +42,7 @@
           <td><%= album.artist_id %></td>
           <td><%= album.artist.name %></td>
           <td><%= image_tag album.cover.url(:medium), :style => "width:75px;" %></td>
+          <td><%= image_tag album.back.url(:medium), :style => "width:75px;" %></td>
           <td><%= album.name %></td>
           <td><%= album.release_date.to_formatted_s(:db) %></td>
           <td>

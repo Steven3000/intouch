@@ -70,6 +70,7 @@ class Admin::AlbumsController < Admin::BaseController
   def album_params
     params.require(:album).permit(:name,
       :cover,
+      :back,
       :artist_id,
       :release_date,
       :download_link,
