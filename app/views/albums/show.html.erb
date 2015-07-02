@@ -1,8 +1,8 @@
 <div class="container">
   <div style=" float:left; display:inline-block;">
-    <a href="/artists/<%= @album.artist.id %>">
-    <p class="button-bar-album-show"><%= @album.artist.name %></p>
-    </a>
+  <div class="btn-lg button-bar-album-show" style="margin-bottom:10px;">
+    <a href="/artists/<%= @album.artist.id %>"><%= @album.artist.name %></a>
+  </div>
     <p class="button-bar-album-show"><%= @album.name %></p>
 
     <% if @album.release_date.present? %>
