@@ -10,7 +10,7 @@
           <div class="panel-body">
             <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
             <dl>
-              <dd class='button13'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
+              <dd class='button-click-listen'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
 
               <dd class="btn-md panel-button-small">
               <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>

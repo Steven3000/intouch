@@ -23,7 +23,7 @@
       url('/assets/glyphicons-halflings-regular.ttf') format('truetype'),
       url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
-
+.panel-body {img { max-width: 100%; }  }
 @import "font-awesome-sprockets";
 @import "font-awesome";
 

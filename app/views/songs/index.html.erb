@@ -12,7 +12,7 @@
           <div class="panel-body ">
             <%= image_tag "#{song.artwork.url(:medium)}", :class => "img-responsive" %>
             <dl>
-              <dd class='button13'><a href="/songs/<%= song.id %>">Click Here to Listen</a></dd>
+              <dd class='button-click-listen'><a href="/songs/<%= song.id %>">Click Here to Listen</a></dd>
               <dd class="panel-button-small">
               <a href="/artists/<%= song.artist_id %>"><%= song.artist.name %></a></dd>
               <dd class="panel-button-small">

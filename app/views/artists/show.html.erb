@@ -3,60 +3,35 @@
     <%= @artist.name %>
   </p>
   <div>
-    <div style="float:left;"><%= image_tag @artist.avatar.url(:medium), :class => "img-responsive" %></div>
-    <div style="float:right;"><%= image_tag @artist.pic.url(:medium), :class => "img-responsive" %></div>
+    <div style="display: inline-block;"><%= image_tag @artist.avatar.url, :class => "img-responsive pic-w" %></div>
+    <div style="display: inline-block;"><%= image_tag @artist.pic.url, :class => "img-responsive pic-w" %></div>
   </div>
   <br/>
   <div class="row">
     <div class="col-xs-12">
-      <% @artist.songs.each do |song| %>
-      <div class="col-xs-12 col-lg-3 isotope-item">
+    <% @artist.albums.each do |album| %>
+      <div class="col-xs-12 col-lg-3 isotope-item box-albums">
         <div class="panel panel-default">
-          <div class="panel-body" style="height:425px; overflow:auto;">
-          <%= image_tag "#{song.artwork.url(:medium)}", :class => "img-responsive" %>
+          <div class="panel-body">
+            <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
             <dl>
-              <dd class='button13'>
-                <a href="/songs/<%= song.id %>">Click here to Listen</a>
+              <dd class='button-click-listen'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
+
+              <dd class="btn-md panel-button-small">
+              <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>
+
+              <dd class="btn-md panel-button-small">
+              <%= album.name %>
               </dd>
-              <dd class="panel-button-big">
-                <%= song.title %>
-              </dd>
-
-              <% if song.features.present? %>
-                <dd class="panel-button-big">
-                  Featuring: <%= song.features %>
-                </dd>
+             <% if album.release_date.present? %>
+              <dd class="btn-md panel-button-small">Released <%= time_ago_in_words(album.release_date)  %> ago.</dd>
               <% end %>
-
-              <% if song.producer.present? %>
-                <dd class="panel-button-big">
-                  Producer: <%= song.producer %>
-                </dd>
-              <% end %>
-
-              <% if song.album_title.present? %>
-                <dd class="panel-button-big">
-                  Project: <%= song.album_title %>
-                </dd>
-              <% end %>
-
-              <% if song.track.present? %>
-                <dd class="panel-button-big">
-                  Track #<%= song.track %>
-                </dd>
-              <% end %>
-
-              <% if song.release_date.present? %>
-                <dd class="panel-button-big">
-                  Released <%= time_ago_in_words(song.release_date) %> ago.
-                </dd>
-              <% end %>
-            </dl>
+          </dl>
           </div>
         </div>
       </div>
       <% end %>
     </div>
   </div>
+    <p class="button-bar"><%= link_to "Click here to Follow more Artists", subscriptions_path %></p>
 </div>
-
