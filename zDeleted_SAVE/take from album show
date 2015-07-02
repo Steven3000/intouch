@@ -1,0 +1,27 @@
+<div class="container">
+    <% @album.songs.order(release_date: :desc).each do |song| %>
+      <a href="/songs/<%= song.id %>">
+
+        <!-- <p class="artist-feed"> -->
+           <%#= song.artist.name %>
+          <%# if song.release_date.present? %>
+            <!-- <span><%#= time_ago_in_words(song.release_date) %></span> -->
+          <!-- <%# end %> -->
+        <!--   </p> -->
+      <table>
+        <td class="button-main-feed">
+          <%= song.title %>
+
+        <% if song.features.present? %>
+          (ft. <%= song.features %>)
+        </td>
+
+        <% end %>
+      </table>
+
+      </a>
+      <% end %>
+</div>
+
+</br>
+</br>
