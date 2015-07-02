@@ -2,9 +2,14 @@
 
   <div class="page-header">
     <h1>Album #<%= @album.id %> "<%= @album.name %>"</h1>
-    <br/>
-    <%= image_tag @album.cover.url(:medium) %>
-    <%= image_tag @album.back.url(:medium) %>
+  </div>
+
+  <div style="display:inline-block;">
+    <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+  </div>
+
+  <div style="display:inline-block;">
+    <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
   </div>
 
   <dl class="dl-horizontal">
@@ -46,6 +51,28 @@
         <dt style="font-size:20px;">Spotify</dt>
         <dd style="font-size:20px;"><%= @album.spotify %></dd>
     <% end %>
+
+     <% if @album.youtube_v1.present? %>
+        <dt style="font-size:20px;">Embedded code</dt>
+        <dd style="font-size:20px;"><%= @album.youtube_v1.html_safe %></dd>
+    <% end %>
+
+     <% if @album.youtube_v2.present? %>
+        <dt style="font-size:20px;">Embedded code</dt>
+        <dd style="font-size:20px;"><%= @album.youtube_v2.html_safe %></dd>
+    <% end %>
+
+     <% if @album.youtube_v3.present? %>
+        <dt style="font-size:20px;">Embedded code</dt>
+        <dd style="font-size:20px;"><%= @album.youtube_v3.html_safe %></dd>
+    <% end %>
+
+     <% if @album.youtube_v4.present? %>
+        <dt style="font-size:20px;">Embedded code</dt>
+        <dd style="font-size:20px;"><%= @album.youtube_v4.html_safe %></dd>
+    <% end %>
+    <br/>
+    <br/>
     <dd style="font-size:25px;"><%= link_to "Send Announcement", announcement_admin_album_path(@album), :method => :post %></dd>
   </dl>
 </div>

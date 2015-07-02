@@ -17,13 +17,18 @@
         <th>Cover</th>
         <th>Back</th>
         <th>Album Title</th>
-        <th>Release date</th>
-        <th>Download link</th>
-        <th>Embedded code</th>
-        <th>Itunes</th>
-        <th>Google</th>
-        <th>Amazon</th>
-        <th>Spotify</th>
+        <th>R-date</th>
+        <th>DL link</th>
+        <th>Embed</th>
+        <th>Itune</th>
+        <th>Gogle</th>
+        <th>Amaz</th>
+        <th>Spot</th>
+        <th>v1</th>
+        <th>v2</th>
+        <th>v3</th>
+        <th>v4</th>
+
       </tr>
     </thead>
 
@@ -88,6 +93,38 @@
           <td>
             <% album.spotify %>
             <% if album.spotify.present? %>
+               YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.youtube_v1 %>
+            <% if album.youtube_v1.present? %>
+               YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.youtube_v2 %>
+            <% if album.youtube_v2.present? %>
+               YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.youtube_v3 %>
+            <% if album.youtube_v3.present? %>
+               YES
+            <% else %>
+                NO
+            <% end %>
+          </td>
+          <td>
+            <% album.youtube_v4 %>
+            <% if album.youtube_v4.present? %>
                YES
             <% else %>
                 NO

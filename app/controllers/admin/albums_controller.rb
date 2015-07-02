@@ -79,7 +79,11 @@ class Admin::AlbumsController < Admin::BaseController
       :google,
       :amazon,
       :spotify,
-      :youtube)
+      :youtube,
+      :youtube_v1,
+      :youtube_v2,
+      :youtube_v3,
+      :youtube_v4,)
   end
 
 end
