@@ -1,7 +1,7 @@
   <div class="container">
-    <div class="jumbotron">
-      <h1>IndyChicago.com</h1>
-    </div>
+
+      <h1 class="jumbotron">IndyChicago.com</h1>
+
     <br/>
     <div style="width: 75%; margin-right:auto; margin-left:auto">
 
@@ -17,8 +17,9 @@
     <br/>
     <% if current_user.present? %>
     <% else %>
-    <div class="button-signup">
-        <%= link_to "Sign-up, NOW!", new_user_registration_path, :class => "btn button-signup" %>
+
+    <h2 class="jumbotron"><%= link_to "Sign-up, NOW!", new_user_registration_path, :class => "btn button-signup" %></h2>
+
         <% end %>
     </div>
   </div>
