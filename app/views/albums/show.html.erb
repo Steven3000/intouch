@@ -1,36 +1,30 @@
 <div class="container">
   <div style=" float:left; display:inline-block;">
-  <div class="btn-lg button-bar-album-show" style="margin-bottom:10px;">
+    <div class="btn-lg button-bar-album-show" style="margin-bottom:10px;">
     <a href="/artists/<%= @album.artist.id %>"><%= @album.artist.name %></a>
-  </div>
+    </div>
     <p class="button-bar-album-show"><%= @album.name %></p>
 
     <% if @album.release_date.present? %>
     <p class="button-bar-album-show">Released <%= time_ago_in_words(@album.release_date)  %> ago.</p>
-
-    <div style="margin-top:15px;" class="song-additional-link">
+   <div style="float:left">
       <% if @album.itunes.present? %>
-      <td>
-        <a href="<%= @album.itunes %>" target="_blank" class="button-external-link">iTunes</a>
-      </td>
+      <a href="<%= @album.itunes %>" target="_blank" class="btn button-bar-album-show">iTunes</a>
       <% end %>
+
       <% if @album.google.present? %>
-      <td>
-        <a href="<%= @album.google %>" target="_blank" class="button-external-link">Google Play</a>
-      </td>
+      <a href="<%= @album.google %>" target="_blank" class="btn button-bar-album-show">Google Play</a>
       <% end %>
+
       <% if @album.amazon.present? %>
-      <td>
-        <a href="<%= @album.amazon %>" target="_blank" class="button-external-link">Amazon</a>
-      </td>
+      <a href="<%= @album.amazon %>" target="_blank" class="btn button-bar-album-show">Amazon</a>
       <% end %>
+
       <% if @album.spotify.present? %>
-      <td>
-        <a href="<%= @album.spotify %>" target="_blank" class="button-external-link">Spotify</a>
-      </td>
+      <a href="<%= @album.spotify %>" target="_blank" class="btn button-bar-album-show">Spotify</a>
       <% end %>
     </div>
-  </div>
+    </div>
   <div style="display:inline-block; float:right;">
     <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
   </div>
