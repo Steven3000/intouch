@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   layout 'Unify'
 
   def after_sign_in_path_for(resource)
-    songs_path
+    albums_path
   end
 
   MiniMagick.configure do |config|
