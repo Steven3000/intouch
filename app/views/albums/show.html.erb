@@ -76,12 +76,10 @@
         <%= @album.youtube_v1.html_safe %>
       </div>
     </div>
-  </section>
   <% else %>
   <% end %>
 
   <% if @album .embedded_code.present? %>
-  <section class="row">
     <div class="span6">
       <div class="flex-video widescreen">
         <%= @album.embedded_code.html_safe %>
@@ -89,7 +87,7 @@
     </div>
   </section>
   <% else %>
-  <% end %>
+<% end %>
 <% end  %>
 </div>
 
