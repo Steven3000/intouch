@@ -40,8 +40,8 @@
   <% if @album.youtube_v4.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen embed-responsive-item">
-        <%= @album.youtube_v4.html_safe %>
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v4.html_safe, :class => "embed-responsive-item" %>
       </div>
     </div>
   </section>
@@ -52,8 +52,8 @@
   <% if @album.youtube_v3.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen embed-responsive-item">
-        <%= @album.youtube_v3.html_safe %>
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v3.html_safe, :class => "embed-responsive-item" %>
       </div>
     </div>
   </section>
@@ -64,8 +64,8 @@
     <% if @album.youtube_v2.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen embed-responsive-item">
-        <%= @album.youtube_v2.html_safe %>
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v2.html_safe, :class => "embed-responsive-item"  %>
       </div>
     </div>
   </section>
@@ -76,8 +76,8 @@
     <% if @album.youtube_v1.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen embed-responsive-item">
-        <%= @album.youtube_v1.html_safe %>
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v1.html_safe, :class => "embed-responsive-item" %>
       </div>
     </div>
   </section>
@@ -88,8 +88,8 @@
   <% if @album .embedded_code.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen embed-responsive-item">
-        <%= @album.embedded_code.html_safe %>
+      <div class="flex-video widescreen">
+        <%= @album.embedded_code.html_safe, :class => "embed-responsive-item" %>
       </div>
     </div>
   </section>
