@@ -37,7 +37,7 @@
   </div>
   <% end %>
   <br/>
-
+  <div class="container">
     <% if @album .embedded_code.present? %>
     <section class="row">
       <div class="span6">
@@ -50,8 +50,7 @@
     </section>
     </br>
 
-  <div class="container">
-     <% if @album.youtube_v4.present? %>
+    <% if @album.youtube_v4.present? %>
     <section class="row">
       <div class="span6">
         <div class="flex-video widescreen">
@@ -61,9 +60,9 @@
         </div>
       </div>
     </section>
-    </br>
+    <br/>
 
-     <% if @album.youtube_v3.present? %>
+    <% if @album.youtube_v3.present? %>
     <section class="row">
       <div class="span6">
         <div class="flex-video widescreen">
@@ -73,9 +72,9 @@
         </div>
       </div>
     </section>
-    </br>
+    <br/>
 
-     <% if @album.youtube_v2.present? %>
+    <% if @album.youtube_v2.present? %>
     <section class="row">
       <div class="span6">
         <div class="flex-video widescreen">
@@ -85,7 +84,7 @@
         </div>
       </div>
     </section>
-    </br>
+    <br/>
 
       <% if @album.youtube_v1.present? %>
     <section class="row">
