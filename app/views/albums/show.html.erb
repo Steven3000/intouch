@@ -40,7 +40,7 @@
   <% if @album.youtube_v4.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen videowrapper">
+      <div class="flex-video widescreen video-container">
         <%= @album.youtube_v4.html_safe %>
       </div>
     </div>
@@ -52,7 +52,7 @@
   <% if @album.youtube_v3.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen videowrapper">
+      <div class="flex-video widescreen video-container">
         <%= @album.youtube_v3.html_safe %>
       </div>
     </div>
@@ -64,7 +64,7 @@
     <% if @album.youtube_v2.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen videowrapper">
+      <div class="flex-video widescreen video-container">
         <%= @album.youtube_v2.html_safe  %>
       </div>
     </div>
@@ -76,7 +76,7 @@
     <% if @album.youtube_v1.present? %>
   <section class="row">
     <div class="span6">
-      <div class="flex-video widescreen videowrapper">
+      <div class="flex-video widescreen video-container">
         <%= @album.youtube_v1.html_safe %>
       </div>
     </div>
