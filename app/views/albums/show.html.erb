@@ -1,98 +1,88 @@
-<div class="container">
-  <div style="float:left;">
-    <div class="btn-lg button-bar-album-show">
-      <a href="/artists/<%= @album.artist.id %>"><%= @album.artist.name %></a>
-    </div>
-    <p class="button-bar-album-show"><%= @album.name %></p>
-
-    <% if @album.release_date.present? %>
-    <p class="button-bar-album-show">Released <%= time_ago_in_words(@album.release_date)  %> ago.</p>
-
-    <% if @album.itunes.present? %>
-    <a href="<%= @album.itunes %>" target="_blank" class="btn button-bar-album-show">iTunes</a>
-    <% end %>
-
-    <% if @album.google.present? %>
-    <a href="<%= @album.google %>" target="_blank" class="btn button-bar-album-show">Google Play</a>
-    <% end %>
-
-    <% if @album.amazon.present? %>
-    <a href="<%= @album.amazon %>" target="_blank" class="btn button-bar-album-show">Amazon</a>
-    <% end %>
-
-    <% if @album.spotify.present? %>
-    <a href="<%= @album.spotify %>" target="_blank" class="btn button-bar-album-show">Spotify</a>
-    <% end %>
+<div style="float:left;">
+  <div class="btn-lg button-bar-album-show">
+    <a href="/artists/<%= @album.artist.id %>"><%= @album.artist.name %></a>
   </div>
-  <div style="float:right;">
-    <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+  <p class="button-bar-album-show"><%= @album.name %></p>
 
-    <% if @album.back.present? %>
+  <% if @album.release_date.present? %>
+  <p class="button-bar-album-show">Released <%= time_ago_in_words(@album.release_date)  %> ago.</p>
 
-    <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
-    <% else %>
-    <% end %>
-  </div>
+  <% if @album.itunes.present? %>
+  <a href="<%= @album.itunes %>" target="_blank" class="btn button-bar-album-show">iTunes</a>
+  <% end %>
+
+  <% if @album.google.present? %>
+  <a href="<%= @album.google %>" target="_blank" class="btn button-bar-album-show">Google Play</a>
+  <% end %>
+
+  <% if @album.amazon.present? %>
+  <a href="<%= @album.amazon %>" target="_blank" class="btn button-bar-album-show">Amazon</a>
+  <% end %>
+
+  <% if @album.spotify.present? %>
+  <a href="<%= @album.spotify %>" target="_blank" class="btn button-bar-album-show">Spotify</a>
+  <% end %>
+</div>
+<div style="float:right;">
+  <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+
+  <% if @album.back.present? %>
+
+  <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
+  <% else %>
+  <% end %>
 </div>
 
-<div class="container">
-  <% if @album .embedded_code.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.embedded_code.html_safe %>
-        <% else %>
-        <% end %>
-      </div>
+<% if @album.youtube_v4.present? %>
+<section class="row">
+  <div class="span6">
+    <div class="flex-video widescreen">
+      <%= @album.youtube_v4.html_safe %>
+      <% else %>
+      <% end %>
     </div>
-  </section>
-  </br>
+  </div>
+</section>
+<% if @album.youtube_v3.present? %>
+<section class="row">
+  <div class="span6">
+    <div class="flex-video widescreen">
+      <%= @album.youtube_v3.html_safe %>
+      <% else %>
+      <% end %>
+    </div>
+  </div>
+</section>
+<% if @album.youtube_v2.present? %>
+<section class="row">
+  <div class="span6">
+    <div class="flex-video widescreen">
+      <%= @album.youtube_v2.html_safe %>
+      <% else %>
+      <% end %>
+    </div>
+  </div>
+</section>
 
-  <% if @album.youtube_v4.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v4.html_safe %>
-        <% else %>
-        <% end %>
-      </div>
+<% if @album.youtube_v1.present? %>
+<section class="row">
+  <div class="span6">
+    <div class="flex-video widescreen">
+      <%= @album.youtube_v1.html_safe %>
+      <% else %>
+      <% end %>
     </div>
-  </section>
-  <br/>
-
-  <% if @album.youtube_v3.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v3.html_safe %>
-        <% else %>
-        <% end %>
-      </div>
-    </div>
-  </section>
-  <br/>
-
-  <% if @album.youtube_v2.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v2.html_safe %>
-        <% else %>
-        <% end %>
-      </div>
-    </div>
-  </section>
-  <br/>
-
-    <% if @album.youtube_v1.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v1.html_safe %>
-        <% else %>
-        <% end %>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 </div>
+<% if @album .embedded_code.present? %>
+<section class="row">
+  <div class="span6">
+    <div class="flex-video widescreen">
+      <%= @album.embedded_code.html_safe %>
+      <% else %>
+      <% end %>
+    </div>
+  </div>
+</section>
 <% end  %>
