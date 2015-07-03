@@ -25,20 +25,19 @@
       <a href="<%= @album.spotify %>" target="_blank" class="btn button-bar-album-show">Spotify</a>
       <% end %>
     </div>
-
+    <div style="float:right;">
+      <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+    </div>
     <% if @album.back.present? %>
     <div style="float:right;">
       <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
       <% else %>
       <% end %>
     </div>
-    <div style="float:right;">
-      <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
-    </div>
   </div>
   <% end %>
   <br/>
-  <div class="container">
+
     <% if @album .embedded_code.present? %>
     <section class="row">
       <div class="span6">
@@ -51,6 +50,7 @@
     </section>
     </br>
 
+  <div class="container">
      <% if @album.youtube_v4.present? %>
     <section class="row">
       <div class="span6">
