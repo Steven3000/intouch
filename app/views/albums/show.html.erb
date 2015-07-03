@@ -26,76 +26,77 @@
       <% end %>
     </div>
 
-    <div style="float:right;">
-      <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
-    </div>
     <% if @album.back.present? %>
     <div style="float:right;">
       <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
       <% else %>
       <% end %>
     </div>
+    <div style="float:right;">
+      <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+    </div>
   </div>
   <% end %>
   <br/>
-  <% if @album .embedded_code.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.embedded_code.html_safe %>
-        <% else %>
-        <% end %>
+  <div class="container">
+    <% if @album .embedded_code.present? %>
+    <section class="row">
+      <div class="span6">
+        <div class="flex-video widescreen">
+          <%= @album.embedded_code.html_safe %>
+          <% else %>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </section>
-  </br>
+    </section>
+    </br>
 
-   <% if @album.youtube_v4.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v4.html_safe %>
-        <% else %>
-        <% end %>
+     <% if @album.youtube_v4.present? %>
+    <section class="row">
+      <div class="span6">
+        <div class="flex-video widescreen">
+          <%= @album.youtube_v4.html_safe %>
+          <% else %>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </section>
-  </br>
+    </section>
+    </br>
 
-   <% if @album.youtube_v3.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v3.html_safe %>
-        <% else %>
-        <% end %>
+     <% if @album.youtube_v3.present? %>
+    <section class="row">
+      <div class="span6">
+        <div class="flex-video widescreen">
+          <%= @album.youtube_v3.html_safe %>
+          <% else %>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </section>
-  </br>
+    </section>
+    </br>
 
-   <% if @album.youtube_v2.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v2.html_safe %>
-        <% else %>
-        <% end %>
+     <% if @album.youtube_v2.present? %>
+    <section class="row">
+      <div class="span6">
+        <div class="flex-video widescreen">
+          <%= @album.youtube_v2.html_safe %>
+          <% else %>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </section>
-  </br>
+    </section>
+    </br>
 
-    <% if @album.youtube_v1.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v1.html_safe %>
-        <% else %>
-        <% end %>
+      <% if @album.youtube_v1.present? %>
+    <section class="row">
+      <div class="span6">
+        <div class="flex-video widescreen">
+          <%= @album.youtube_v1.html_safe %>
+          <% else %>
+          <% end %>
+        </div>
       </div>
-    </div>
-  </section>
-  </br>
+    </section>
+  </div>
 
 </div>
