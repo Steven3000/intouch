@@ -71,23 +71,25 @@
 
     <% if @album.youtube_v1.present? %>
   <section class="row">
-    <div class="span3">
+    <div class="span6">
       <div class="flex-video widescreen">
         <%= @album.youtube_v1.html_safe %>
       </div>
     </div>
+  </section>
   <% else %>
   <% end %>
 
   <% if @album .embedded_code.present? %>
-    <div class="span3">
+  <section class="row">
+    <div class="span6">
       <div class="flex-video widescreen">
         <%= @album.embedded_code.html_safe %>
       </div>
     </div>
   </section>
   <% else %>
-<% end %>
+  <% end %>
 <% end  %>
 </div>
 
