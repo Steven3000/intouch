@@ -38,12 +38,15 @@
   <% end %>
   <br/>
   <% if @album .embedded_code.present? %>
-  <div class="song-player" style="width:75%;">
-    <%= @album.embedded_code.html_safe %>
-    <% else %>
-    <% end %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.embedded_code.html_safe %>
+        <% else %>
+        <% end %>
+      </div>
   </div>
-
+</section>
   </br>
 
   <% if @album.youtube.present? %>
