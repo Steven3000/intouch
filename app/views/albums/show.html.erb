@@ -11,22 +11,22 @@
     <div style="margin-top:15px;" class="song-additional-link">
       <% if @album.itunes.present? %>
       <td>
-        <a href="<%= @album.itunes %>" target="_blank" class="button-main-feed">iTunes</a>
+        <a href="<%= @album.itunes %>" target="_blank" class="button-external-link">iTunes</a>
       </td>
       <% end %>
       <% if @album.google.present? %>
       <td>
-        <a href="<%= @album.google %>" target="_blank" class="button-main-feed">Google Play</a>
+        <a href="<%= @album.google %>" target="_blank" class="button-external-link">Google Play</a>
       </td>
       <% end %>
       <% if @album.amazon.present? %>
       <td>
-        <a href="<%= @album.amazon %>" target="_blank" class="button-main-feed">Amazon</a>
+        <a href="<%= @album.amazon %>" target="_blank" class="button-external-link">Amazon</a>
       </td>
       <% end %>
       <% if @album.spotify.present? %>
       <td>
-        <a href="<%= @album.spotify %>" target="_blank" class="button-main-feed">Spotify</a>
+        <a href="<%= @album.spotify %>" target="_blank" class="button-external-link">Spotify</a>
       </td>
       <% end %>
     </div>

@@ -1,9 +1,5 @@
 /* Add here all your css styles (customizations) */
 
-a {
-   color: #ffffff
-}
-
 .button-footer {
    border-top: 1px solid #949494;
    background: #212121;
@@ -27,4 +23,80 @@ a {
    vertical-align: middle;
    text-align: center;
    }
+
+@font-face {
+   font-family: 'Glyphicons Halflings';
+   src: url('/assets/glyphicons-halflings-regular.eot');
+   src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/glyphicons-halflings-regular.woff') format('woff'),
+      url('/assets/glyphicons-halflings-regular.ttf') format('truetype'),
+      url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.jumbotron  {
+   border-top: 1px solid #bab8ff;
+   background: #fe5070;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3b61a3), to(#fe5070));
+   background: -webkit-linear-gradient(top, #3b61a3, #fe5070);
+   background: -moz-linear-gradient(top, #3b61a3, #fe5070);
+   background: -ms-linear-gradient(top, #3b61a3, #fe5070);
+   background: -o-linear-gradient(top, #3b61a3, #fe5070);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #a1fcff;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   text-align: center;
+   padding: 1em;
+   color: white;
+   margin: 0;
+   }
+
+/*@media (max-width: 800px) {
+  .button-home-header {
+    font-size: 24px;
+  }
+}*/
+
+input[type=checkbox] {
+   /* All browsers except webkit*/
+   transform: scale(3);
+
+   /* Webkit browsers*/
+   -webkit-transform: scale(3);
+   }
+
+.paddingClass {
+   margin:30px;
+   padding:15px;
+    }
+
+/* MISC REUSABLE SELECTORS */
+.txtt-center { text-align: center; }
+
+/* Main wrapper to set the default size for the content */
+.main-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.pic-w {
+   width: 30em;
+   }
+.pic-w2 {
+   width: 27em;
+   }
+
+.panel-body {img { max-width: 100%; }  }
+
+a { color: #ffffff }
+a:hover {color:rgb(237, 255, 84);}
+a:focus {color:white;}
+
 

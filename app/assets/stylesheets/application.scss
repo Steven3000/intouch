@@ -1,40 +1,20 @@
 @import "unify/bootstrap";
-@import "header";
-@import "unify/header-default";
-@import "unify/header-v2";
-@import "unify/header-v6";
+@import "unify/bootstrap.min";
+@import "unify/bootstrap-theme";
+@import "unify/bootstrap-theme.min";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 @import "unify/footer-default";
 @import "unify/footer-v7";
 
 @import "unify/brand-buttons";
 @import "unify/brand-buttons-inversed";
-
-
-
 @import "unify/animate";
 @import "unify/line-icons";
 @import "unify/flexslider";
 
-@font-face {
-   font-family: 'Glyphicons Halflings';
-   src: url('/assets/glyphicons-halflings-regular.eot');
-   src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-      url('/assets/glyphicons-halflings-regular.woff') format('woff'),
-      url('/assets/glyphicons-halflings-regular.ttf') format('truetype'),
-      url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-.panel-body {img { max-width: 100%; }  }
-@import "font-awesome-sprockets";
-@import "font-awesome";
+@import "button";
 
-@import "profile";
-
-@import "feed";
-
-@import "album_show";
 @import "custom";
-@import "box";
-@import "home";
-.panel-body {img { max-width: 100%; }  }
-a:hover {color:rgb(237, 255, 84);}
-a:focus {color:white;}
+

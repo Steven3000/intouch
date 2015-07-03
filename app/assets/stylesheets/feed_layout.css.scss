@@ -1,32 +1,21 @@
+@import "unify/bootstrap";
+@import "unify/bootstrap.min";
+@import "unify/bootstrap-theme";
+@import "unify/bootstrap-theme.min";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-@import "unify/header-default";
-@import "unify/header-v2";
 @import "unify/footer-default";
 @import "unify/footer-v7";
 
-@import "unify/bootstrap.min";
+@import "unify/brand-buttons";
+@import "unify/brand-buttons-inversed";
 @import "unify/animate";
 @import "unify/line-icons";
 @import "unify/flexslider";
 
-@font-face {
-   font-family: 'Glyphicons Halflings';
-   src: url('/assets/glyphicons-halflings-regular.eot');
-   src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-      url('/assets/glyphicons-halflings-regular.woff') format('woff'),
-      url('/assets/glyphicons-halflings-regular.ttf') format('truetype'),
-      url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-
-@import "home";
-@import "feed";
 @import "box";
-@import "album_show";
+@import "button";
+
 @import "custom";
 
-.panel-body {img { max-width: 100%; }  }
-
-a:hover {color:rgb(237, 255, 84);}
-a:focus {color:white;}
