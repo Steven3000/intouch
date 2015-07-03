@@ -1,13 +1,14 @@
 <div class="container">
-  <div style=" float:left; display:inline-block;">
-    <div class="btn-lg button-bar-album-show">
-    <a href="/artists/<%= @album.artist.id %>"><%= @album.artist.name %></a>
-    </div>
-    <p class="button-bar-album-show"><%= @album.name %></p>
+  <div margin-bottom:50px;>
+    <div style="float:left;">
+      <div class="btn-lg button-bar-album-show">
+      <a href="/artists/<%= @album.artist.id %>"><%= @album.artist.name %></a>
+      </div>
+      <p class="button-bar-album-show"><%= @album.name %></p>
 
-    <% if @album.release_date.present? %>
-    <p class="button-bar-album-show">Released <%= time_ago_in_words(@album.release_date)  %> ago.</p>
-   <div style="float:left">
+      <% if @album.release_date.present? %>
+      <p class="button-bar-album-show">Released <%= time_ago_in_words(@album.release_date)  %> ago.</p>
+
       <% if @album.itunes.present? %>
       <a href="<%= @album.itunes %>" target="_blank" class="btn button-bar-album-show">iTunes</a>
       <% end %>
@@ -24,21 +25,20 @@
       <a href="<%= @album.spotify %>" target="_blank" class="btn button-bar-album-show">Spotify</a>
       <% end %>
     </div>
+
+    <div style="float:right;">
+      <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+
+      <% if @album.back.present? %>
+      <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
+      <% else %>
+      <% end %>
     </div>
-  <div style="display:inline-block; float:right;">
-    <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
   </div>
-
-  <% if @album.back.present? %>
-  <div style="display:inline-block; float:right;">
-    <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
-  </div>
-  <% else %>
   <% end %>
-  <% end %>
-
+  <br/>
   <% if @album .embedded_code.present? %>
-  <div class="song-player">
+  <div class="song-player" style="width:75%;">
     <%= @album.embedded_code.html_safe %>
     <% else %>
     <% end %>
