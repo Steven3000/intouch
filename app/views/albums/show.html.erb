@@ -1,5 +1,5 @@
 <div class="container">
-  <div margin-bottom:50px;>
+  <div>
     <div style="float:left;">
       <div class="btn-lg button-bar-album-show">
       <a href="/artists/<%= @album.artist.id %>"><%= @album.artist.name %></a>
@@ -45,14 +45,56 @@
         <% else %>
         <% end %>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
   </br>
 
-  <% if @album.youtube.present? %>
-  <div class="video-player">
-    <%= @album.youtube.html_safe %>
-  </div>
-  <% else %>
-  <% end %>
+  <% if @album.youtube_v1.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v1.html_safe %>
+        <% else %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  </br>
+
+ <% if @album.youtube_v2.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v2.html_safe %>
+        <% else %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  </br>
+
+   <% if @album.youtube_v3.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v3.html_safe %>
+        <% else %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  </br>
+
+   <% if @album.youtube_v4.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v4.html_safe %>
+        <% else %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  </br>
+
 </div>
