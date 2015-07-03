@@ -43,16 +43,16 @@
 
 input[type=checkbox] {
    /* All browsers except webkit*/
-   transform: scale(3);
+   transform: scale(2.5);
 
    /* Webkit browsers*/
-   -webkit-transform: scale(3);
+   -webkit-transform: scale(2.5);
+
+   margin-top: 15px;
+   margin-left: 9px;
    }
 
-.paddingClass {
-   margin:30px;
-   padding:15px;
-    }
+
 
 /* MISC REUSABLE SELECTORS */
 .txtt-center { text-align: center; }
