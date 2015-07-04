@@ -105,3 +105,8 @@ a:focus {color:white;}
 
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 
+.navv-font {
+  font-family: 'Arvo', serif, Lucida Grande, Helvetica, Arial, Sans-Serif;
+  font-weight: 400;
+}
+

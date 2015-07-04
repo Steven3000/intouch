@@ -4,13 +4,13 @@
     <div class="panel-body">
       <%= image_tag artist.avatar.url(:medium) %>
       <dl>
-        <dd class="panel-button-big">
+        <dd class="panel-button-big navv-font">
           <%= artist.name %>
         </dd>
         <dd>
           <%= form_for Subscription.new :user => current_user, :artist => artist do |f| %>
           <%= f.hidden_field :artist_id %>
-          <%= f.submit :class => "btn btn-success", :style => "width:100%;" %>
+          <%= f.submit :class => "btn btn-success navv-font", :style => "width:100%;" %>
           <% end %>
         </dd>
       </dl>

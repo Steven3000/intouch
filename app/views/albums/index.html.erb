@@ -1,5 +1,5 @@
 <div class="container">
-  <p class="button-bar">
+  <p class="button-bar navv-font">
   <%= current_user.username.capitalize %>'s list of Chicago Music
   </p>
   <div class="row">
@@ -10,7 +10,7 @@
           <div class="panel-body">
             <%= image_tag "#{album.cover.url}", :class => "img-responsive" %>
             <dl>
-              <dd class='button-click-listen'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
+              <dd class='button-click-listen navv-font'><a href="/albums/<%= album.id %>">Click Here to Listen</a></dd>
 
               <dd class="btn-md panel-button-small">
               <a href="/artists/<%= album.artist_id %>"><%= album.artist.name %></a></dd>
@@ -28,6 +28,6 @@
       <% end %>
     </div>
   </div>
-    <p class="button-bar"><%= link_to "Click here to Follow more Artists", subscriptions_path %></p>
+    <p class="button-bar navv-font"><%= link_to "Click here to Follow more Artists", subscriptions_path %></p>
 </div>
 
