@@ -188,6 +188,8 @@ GEM
     glyphicons-rails (0.1.2)
       sass (~> 3.3)
       sass-rails
+    google-webfonts-rails (0.0.4)
+      activesupport (> 3.2.0, < 5.0)
     hashie (2.1.2)
     hitimes (1.2.2)
     httmultiparty (0.3.16)
@@ -368,6 +370,7 @@ DEPENDENCIES
   fog-aws
   font-awesome-sass (~> 4.3.0)
   glyphicons-rails
+  google-webfonts-rails (~> 0.0.4)
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks

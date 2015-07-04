@@ -4,7 +4,7 @@
   </div>
   <div style="float:right">
     <a href="/artists/<%= @song.artist.id %>">
-    <p class="button-external-link"><%= @song.artist.name %></p>
+    <p class="btn button-bar-album-show navv-font"><%= @song.artist.name %></p>
     </a>
 
     <p class="button-bar"><%= @song.title %>
@@ -12,7 +12,8 @@
           (ft. <%= @song.features %>)
 
     </p>
-      <% end %>
+    <% end %>
+
     <% if @song.producer.present? %>
     <p class="button-bar">Producer: <%= @song.producer %></p>
      <% end %>
@@ -22,35 +23,35 @@
     <% if @song.album_title.present? %>
     <p class="button-bar">Album: <%= @song.album_title %></p>
     <% end %>
-    <div style="margin-top:15px;" class="song-additional-link">
 
+    <div style="margin-top:15px;" class="song-additional-link">
       <% if @song.download_link.present? %>
         <td>
-          <a href="<%= @song.download_link %>" target="_blank" class="button-external-link">Stream/Download</a>
+          <a href="<%= @song.download_link %>" target="_blank" class="btn button-bar-album-show navv-font">Stream/Download</a>
         </td>
        <% end %>
 
       <% if @song.itunes.present? %>
         <td>
-          <a href="<%= @song.itunes %>" target="_blank" class="button-external-link">iTunes</a>
+          <a href="<%= @song.itunes %>" target="_blank" class="btn button-bar-album-show navv-font">iTunes</a>
         </td>
       <% end %>
 
       <% if @song.google.present? %>
         <td>
-          <a href="<%= @song.google %>" target="_blank" class="button-external-link">Google Play</a>
+          <a href="<%= @song.google %>" target="_blank" class="btn button-bar-album-show navv-font">Google Play</a>
         </td>
       <% end %>
 
       <% if @song.amazon.present? %>
         <td>
-          <a href="<%= @song.amazon %>" target="_blank" class="button-external-link">Amazon</a>
+          <a href="<%= @song.amazon %>" target="_blank" class="btn button-bar-album-show navv-font">Amazon</a>
         </td>
       <% end %>
 
       <% if @song.spotify.present? %>
         <td>
-          <a href="<%= @song.spotify %>" target="_blank" class="button-external-link">Spotify</a>
+          <a href="<%= @song.spotify %>" target="_blank" class="btn button-bar-album-show navv-font">Spotify</a>
         </td>
       <% end %>
     </div>
@@ -64,16 +65,16 @@
   <% if @song.embedded_code.present? %>
   <div class="song-player">
     <%= @song.embedded_code.html_safe %>
-  <% else %>
-  <% end %>
+    <% else %>
+    <% end %>
   </div>
 </div>
 </br>
 </br>
 <div class="container">
  <% if @song.youtube.present? %>
-    <div class="video-player">
-      <%= @song.youtube.html_safe %>
-  <% end %>
-    </div>
+  <div class="video-player">
+    <%= @song.youtube.html_safe %>
+    <% end %>
   </div>
+s</div>

@@ -1,35 +1,3 @@
-.button-external-link {
-   border-top: 1px solid #949494;
-   background: #212121;
-   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#212121));
-   background: -webkit-linear-gradient(top, #000000, #212121);
-   background: -moz-linear-gradient(top, #000000, #212121);
-   background: -ms-linear-gradient(top, #000000, #212121);
-   background: -o-linear-gradient(top, #000000, #212121);
-   padding: 8.5px 13px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #ffffff;
-   font-size: 24px;
-   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   }
-.button-external-link:hover {
-   border-top-color: #ffffff;
-   background: #ffffff;
-   color: #000000;
-   }
-.button-external-link:active {
-   border-top-color: #000000;
-   background: #000000;
-   }
-
 .button-bar {
    border-top: 1px solid #949494;
    background: #212121;
@@ -52,31 +20,6 @@
    text-decoration: none;
    width: 75%;
    vertical-align: middle;
-   }
-
-.button-bar-devise-veiws {
-   border-top: 1px solid #949494;
-   background: #212121;
-   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#212121));
-   background: -webkit-linear-gradient(top, #000000, #212121);
-   background: -moz-linear-gradient(top, #000000, #212121);
-   background: -ms-linear-gradient(top, #000000, #212121);
-   background: -o-linear-gradient(top, #000000, #212121);
-   padding: 8.5px 13px;
-   -webkit-border-radius: 0px;
-   -moz-border-radius: 0px;
-   border-radius: 0px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #ffffff;
-   font-size: 4em;
-   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   width: 75%;
-   vertical-align: middle;
-   border: none;
    }
 
 .button-bar-album-show {
@@ -103,7 +46,7 @@
    margin-bottom: 10px;
    }
 
-.panel-button-big {
+.panel-button-subs {
    border-top: 1px solid #949494;
    background: #212121;
    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#212121));
@@ -170,73 +113,6 @@
    vertical-align: middle;
    }
 
-.button-home-words {
-   border-top: 1px solid #bab8ff;
-   background: #2b4710;
-   background: -webkit-gradient(linear, left top, left bottom, from(#63c1ff), to(#2b4710));
-   background: -webkit-linear-gradient(top, #63c1ff, #2b4710);
-   background: -moz-linear-gradient(top, #63c1ff, #2b4710);
-   background: -ms-linear-gradient(top, #63c1ff, #2b4710);
-   background: -o-linear-gradient(top, #63c1ff, #2b4710);
-   padding: 5px 10px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 1.5em;
-   font-family: 'Arvo', serif, Lucida Grande, Helvetica, Arial, Sans-Serif;
-   font-weight: 400;
-   text-decoration: none;
-   vertical-align: middle;
-   text-align: center;
-   width: 75%;
-   margin: auto;
-
-   }
-
-
-
-.button-signup {
-   background-color:2b4710;
-
-   padding: 17.5px 35px;
-   -webkit-border-radius: 19px;
-   -moz-border-radius: 19px;
-   border-radius: 19px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: white;
-   font-size: 1.75em;
-   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
-   vertical-align: middle;
-   padding: 32px;
-   text-align:center;
-   border-top: 0;
-   width: 75%;
-   margin: auto;
-   border-bottom: 0;
-      }
-.button-signup:hover {
-
-   background-color: #63c1ff;
-   background: -webkit-gradient(linear, left top, left bottom, from(#2b4710), to(#63c1ff));
-   background: -webkit-linear-gradient(top, #2b4710, #63c1ff);
-   background: -moz-linear-gradient(top, #2b4710, #63c1ff);
-   background: -ms-linear-gradient(top, #2b4710, #63c1ff);
-   background: -o-linear-gradient(top, #2b4710, #63c1ff);
-
-   color:white;
-   border-bottom: 0;
-   }
-
-
 .error-msg-btn {
    border-top: 1px solid #949494;
    background: #212121;
@@ -261,61 +137,6 @@
    margin-bottom: 16px;
 }
 
-.user-proile-button {
-   border-top: 1px solid #000000;
-   background: #000000;
-   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
-   background: -webkit-linear-gradient(top, #000000, #000000);
-   background: -moz-linear-gradient(top, #000000, #000000);
-   background: -ms-linear-gradient(top, #000000, #000000);
-   background: -o-linear-gradient(top, #000000, #000000);
-   padding: 12px 0px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #ffffff;
-   font-size: 14px;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-}
-
-.user-proile-button-below {
-   border-top: 1px solid #000000;
-   background: #000000;
-   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#000000));
-   background: -webkit-linear-gradient(top, #000000, #000000);
-   background: -moz-linear-gradient(top, #000000, #000000);
-   background: -ms-linear-gradient(top, #000000, #000000);
-   background: -o-linear-gradient(top, #000000, #000000);
-   padding: 12px 30px;
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
-   color: #ffffff;
-   font-size: 1em;
-   font-family: Georgia, serif;
-   text-decoration: none;
-   vertical-align: middle;
-   width: 50%;
-}
-
-.label-name-field {
-  font-size: 1.6em;
-}
-
-.label-name-field-checkbox {
-   font-size: 1.4em;
-   padding-top: 0px;
-}
 
 .button-footer {
    border-top: 1px solid #949494;

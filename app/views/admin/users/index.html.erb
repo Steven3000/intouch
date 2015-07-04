@@ -3,7 +3,7 @@
   <h1>Users</h1>
   <br/>
 
-  <table class="table table-bordered">
+  <table class="table table-bordered table-hover">
     <thead>
       <tr>
         <th>User ID</th>
@@ -52,10 +52,6 @@
           <td>
             <%= link_to 'Destroy', user_registration_path(user.id), method: :delete, data: { confirm: 'Are you sure?' } %>
           </td>
-
-
-
-
           <td><%= user.sign_in_count %></td>
           <td><%= user.age %></td>
           <td><%= user.zip_code %></td>

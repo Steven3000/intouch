@@ -30,6 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'soundcloud'
 gem 'sidekiq'
+gem 'google-webfonts-rails', '~> 0.0.4'
 
 group :production do
   gem 'pg'
