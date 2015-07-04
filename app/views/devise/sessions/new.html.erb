@@ -1,11 +1,14 @@
 <div class="container">
-  <h2 class="page-header" style="margin-bottom:0; font-size:5em;">Sign In</h2>
+  <h2 class="page-header button-bar-devise-veiws">Sign In</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-horizontal'}) do |f| %>
 
+  <% if devise_error_messages!.present? %>
     <div class="error-msg-btn">
       <%= devise_error_messages! %>
     </div>
+    <% else %>
+    <% end %>
 
     <div class="form-group user-proile-button">
     <%= f.label :email, "Email", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
