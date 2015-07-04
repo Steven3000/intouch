@@ -12,7 +12,8 @@
   <% if current_user.present? %>
   <% else %>
   <div style="text-align:center; margin-top:1em;">
-  <%= link_to "Sign-up to Discover Chicago's Best!", new_user_registration_path, :class => "btn button-signup" %>
+    <p>
+      <%= link_to "Sign-Up Now", new_user_registration_path, :class => "btn button-signup" %></p>
   </div>
   <% end %>
 </div>
