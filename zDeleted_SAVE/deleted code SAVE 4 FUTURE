@@ -1,15 +1,6 @@
 deleted code that may be used future
 --------------------------------------------------------------------------
 
-PUBLIC ARTIST SHOW
-  <ul class="add-top-margin">
-      <li>
-        <a href="<% @artist.website %>" target="_blank">
-         <%= @artist.website %>
-        </a>
-      </li>
-    </ul>
-
 --------------------------------------------------------------------------
 
 DEVISE REGRISTRATIONS EDIT
@@ -26,25 +17,6 @@ VEIWS ADMIN SONGS EDIT (FOR DROPDOWN)
 
 --------------------------------------------------------------------------
 
-    ADMIN ARTIST NEW   (ARTIST WEBSIE INPUT)
-      <div class="form-group">
-        <label for="website" class="control-label" for="inputLarge">Website</label>
-        <input type="text" id="website" name="website" placeholder="Website" class="form-control input-lg" value="<%= @artist.website %>">
-      </div>
-
---------------------------------------------------------------------------
-
-  <!-- Input for website -->
-  <div class="form-group">
-    <label for="website" class="col-sm-2 control-label">
-      Website
-    </label>
-    <div class="col-sm-10">
-      <input type="text" id="website" name="website" placeholder="Website" class="form-control" value="<%= @artist.website %>">
-    </div>
-  </div>
-
---------------------------------------------------------------------------
 
 VEWIS ADMIN SONG NEW
 
@@ -78,56 +50,6 @@ VEWIS ADMIN SONG NEW
       <label for="artist" class="control-label">Artist</label>
       <input type="text" id="artist" name="artist" placeholder="Artist" class="form-control input-lg" value="<%= @song.artist %>">
     </div>
-
---------------------------------------------------------------------------
-
-VEIWS SONG SHOW
-LINE 46
-
-<h4>Links to Stream and Buy "<%= @song.title %>"</h4>
-
---------------------------------------------------------------------------
-
-assets/stylesheets/application.scss
-
-@import url(http://fonts.googleapis.com/css?family=Hammersmith+One);
-@import "./unify/base.css";
-@import "./home.css";
-@import "./feed.css";
-@import "./song_show.css";
-@import "./following.css";
-@import "./artist-show.css";
-@import "./signup.css";
-@import "./admin_dashboard.css";
-@import "./account_manager.css";
-@import "./add_artist.css";
-@import "./add_song.css";
-@import "./add_song_artist.css";
-
---------------------------------------------------------------------------
-
-Public Artist Show
-
-  <h1>
-    <%= @artist.name %>  <span style="font-size:10px"> <%= @artist.record_label %></span>
-  </h1>
-
---------------------------------------------------------------------------
-subscription new
-
-          <div>
-          <%= image_tag "#{@artist.picture_url}" %>
-          </div>
-
-
-     <div class="panel-heading">
-          <h3 class="panel-title"><%= @artist.name %></h3>
-         </div>
-
---------------------------------------------------------------------------
-
-link to new subscription button
-    <%= link_to 'New Subscription', new_subscription_path, :class => "btn btn-primary" %>
 
 --------------------------------------------------------------------------
 
@@ -274,3 +196,38 @@ search on subscriptions
               class: "form-control input-lg" %>
       <% end %>
     </div>
+
+------------------------------------------------------------------------
+
+album show
+
+<div class="container">
+    <% @album.songs.order(release_date: :desc).each do |song| %>
+      <a href="/songs/<%= song.id %>">
+
+        <!-- <p class="artist-feed"> -->
+           <%#= song.artist.name %>
+          <%# if song.release_date.present? %>
+            <!-- <span><%#= time_ago_in_words(song.release_date) %></span> -->
+          <!-- <%# end %> -->
+        <!--   </p> -->
+      <table>
+        <td class="button-main-feed">
+          <%= song.title %>
+
+        <% if song.features.present? %>
+          (ft. <%= song.features %>)
+        </td>
+
+        <% end %>
+      </table>
+
+      </a>
+      <% end %>
+</div>
+
+</br>
+</br>
+
+
+------------------------------------------------
