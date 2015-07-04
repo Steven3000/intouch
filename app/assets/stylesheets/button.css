@@ -173,12 +173,12 @@
 
 .button-home-words {
    border-top: 1px solid #bab8ff;
-   background: #cc0000;
-   background: -webkit-gradient(linear, left top, left bottom, from(#1600ba), to(#cc0000));
-   background: -webkit-linear-gradient(top, #1600ba, #cc0000);
-   background: -moz-linear-gradient(top, #1600ba, #cc0000);
-   background: -ms-linear-gradient(top, #1600ba, #cc0000);
-   background: -o-linear-gradient(top, #1600ba, #cc0000);
+   background: #2b4710;
+   background: -webkit-gradient(linear, left top, left bottom, from(#63c1ff), to(#2b4710));
+   background: -webkit-linear-gradient(top, #63c1ff, #2b4710);
+   background: -moz-linear-gradient(top, #63c1ff, #2b4710);
+   background: -ms-linear-gradient(top, #63c1ff, #2b4710);
+   background: -o-linear-gradient(top, #63c1ff, #2b4710);
    padding: 5px 10px;
    -webkit-border-radius: 8px;
    -moz-border-radius: 8px;
@@ -201,12 +201,8 @@
 
 
 .button-signup {
-   background:#1600ba;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ff0303), to(#1600ba));
-   background: -webkit-linear-gradient(top, #ff0303, #1600ba);
-   background: -moz-linear-gradient(top, #ff0303, #1600ba);
-   background: -ms-linear-gradient(top, #ff0303, #1600ba);
-   background: -o-linear-gradient(top, #ff0303, #1600ba);
+   background-color:2b4710;
+
    padding: 17.5px 35px;
    -webkit-border-radius: 19px;
    -moz-border-radius: 19px;
@@ -229,12 +225,12 @@
       }
 .button-signup:hover {
 
-   background: #1600ba;
-   background: -webkit-gradient(linear, left top, left bottom, from(#1600ba), to(#ff0303));
-   background: -webkit-linear-gradient(top, #1600ba, #ff0303);
-   background: -moz-linear-gradient(top, #1600ba, #ff0303);
-   background: -ms-linear-gradient(top, #1600ba, #ff0303);
-   background: -o-linear-gradient(top, #1600ba, #ff0303);
+   background-color: #63c1ff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#2b4710), to(#63c1ff));
+   background: -webkit-linear-gradient(top, #2b4710, #63c1ff);
+   background: -moz-linear-gradient(top, #2b4710, #63c1ff);
+   background: -ms-linear-gradient(top, #2b4710, #63c1ff);
+   background: -o-linear-gradient(top, #2b4710, #63c1ff);
 
    color:white;
    border-bottom: 0;

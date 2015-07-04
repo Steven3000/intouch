@@ -10,13 +10,14 @@
 }
 
 .jumbotron  {
-    border-top: 1px solid #bab8ff;
-   background: #ff0f0f;
-   background: -webkit-gradient(linear, left top, left bottom, from(#ff0f0f), to(#1600ba));
-   background: -webkit-linear-gradient(top, #ff0f0f, #1600ba);
-   background: -moz-linear-gradient(top, #ff0f0f, #1600ba);
-   background: -ms-linear-gradient(top, #ff0f0f, #1600ba);
-   background: -o-linear-gradient(top, #ff0f0f, #1600ba);
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#63c1ff), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #63c1ff, #65a9d7);
+   background: -moz-linear-gradient(top, #63c1ff, #65a9d7);
+   background: -ms-linear-gradient(top, #63c1ff, #65a9d7);
+   background: -o-linear-gradient(top, #63c1ff, #65a9d7);
+   padding: 5px 10px;
    -webkit-border-radius: 8px;
    -moz-border-radius: 8px;
    border-radius: 8px;
@@ -31,7 +32,8 @@
    text-align: center;
    padding: 1em;
    color: white;
-   margin: 0;
+   width: 75%;
+   margin: 0 auto;
    border-top:0;
    }
 
