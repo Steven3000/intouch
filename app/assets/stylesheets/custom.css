@@ -26,8 +26,9 @@
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    font-size: 1.5em;
-   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-   text-decoration: none;
+  font-family: 'Arvo', serif, Lucida Grande, Helvetica, Arial, Sans-Serif;
+  font-weight: 400;
+  text-decoration: none;
    vertical-align: middle;
    text-align: center;
    padding: 1em;
@@ -102,4 +103,5 @@ a { color: #ffffff }
 a:hover {color:rgb(237, 255, 84);}
 a:focus {color:white;}
 
+@import url(http://fonts.googleapis.com/css?family=Arvo);
 
