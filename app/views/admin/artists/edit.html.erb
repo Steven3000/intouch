@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Edit Artist #<%= @artist.id %> <%= (@artist.name) %></h1>
+    <h1>Edit Artist #<%= @artist.id %> <%= (@artist.name) %> <%= link_to 'SHOW', admin_artist_path(@artist.id), :class => "btn btn-lg" %></h1>
     <aside class="item-artist"><%= image_tag @artist.avatar.url(:medium) %></aside>
     <aside class="item-artist"><%= image_tag @artist.pic.url(:medium) %></aside>
 

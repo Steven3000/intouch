@@ -1,7 +1,14 @@
 <div class="container">
   <div class="page-header">
-    <h1>Edit Album #<%= @album.id %></h1>
-    <%= image_tag @album.cover.url(:medium) %>
+    <h1>Edit Album #<%= @album.id %> <%= link_to 'SHOW', admin_album_path(@album.id), :class => "btn btn-lg" %></h1>
+    </div>
+
+    <div style="display:inline-block;">
+    <%= image_tag "#{@album.cover.url}", :class => "img-responsive pic-w2" %>
+  </div>
+
+  <div style="display:inline-block;">
+    <%= image_tag "#{@album.back.url}", :class => "img-responsive pic-w2" %>
   </div>
 
   <%= form_for(@album, url: admin_album_path) do |b| %>

@@ -10,37 +10,48 @@
   <table class="table table-bordered table-hover">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Avatar</th>
-        <th>Pic</th>
-        <th>Record label</th>
-        <th>Soundcloud</th>
-        <th>Subs</th>
         <th>View</th>
         <th>Edit</th>
         <th>Trash</th>
+        <th>Avatar</th>
+        <th>Pic</th>
+        <th>Name</th>
+        <th>Record label</th>
+        <th>Soundcloud</th>
+        <th>Subs</th>
+        <th>album Title</th>
+        <th>album Title</th>
+        <th>album Title</th>
+
       </tr>
     </thead>
 
     <tbody>
       <% @artists.each do |artist| %>
         <tr>
-          <td><%= artist.name %></td>
+          <td>
+            <%= link_to 'Show', admin_artist_path(artist.id) %>
+          </td>
+          <td>
+            <%= link_to 'Edit', edit_admin_artist_path(artist.id) %>
+          </td>
+          <td>
+          <%= link_to 'Destroy', admin_artist_path(artist.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+          </td>
           <td><%= image_tag artist.avatar.url(:medium), :style => "width:75px;" %></td>
           <td><%= image_tag artist.pic.url(:medium), :style => "width:75px;" %></td>
+          <td><%= artist.name %></td>
+
           <td><%= artist.record_label %></td>
           <td><%= artist.soundcloud_username %></td>
           <td><%= artist.subscriptions.count %></td>
 
-          <td>
-          <%= link_to 'Show', admin_artist_path(artist.id) %>
-          </td>
-          <td>
-          <%= link_to 'Edit', edit_admin_artist_path(artist.id) %>
-        </td>
-        <td>
-          <%= link_to 'Destroy', admin_artist_path(artist.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-        </td>
+
+          <% artist.albums.each do |album| %>
+            <td><%= album.name %></td>
+
+          <% end %>
+
         </tr>
       <% end %>
     </tbody>

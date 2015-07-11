@@ -1,7 +1,7 @@
   <div class="container">
 
   <div class="page-header">
-    <h1>Artist #<%= @artist.id %> <%= (@artist.name) %></h1>
+    <h1>Artist #<%= @artist.id %> <%= (@artist.name) %> <%= link_to 'EDIT', edit_admin_artist_path(@artist.id), :class => "btn btn-lg" %></h1>
   </div>
 
   <p style="font-size:40px;">Record label: <%= @artist.record_label %></p>
