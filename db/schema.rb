@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150702203702) do
+ActiveRecord::Schema.define(version: 20150712021720) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150702203702) do
     t.text     "youtube_v2"
     t.text     "youtube_v3"
     t.text     "youtube_v4"
+    t.text     "youtube_v8"
   end
 
   add_index "albums", ["artist_id"], name: "index_albums_on_artist_id", using: :btree
