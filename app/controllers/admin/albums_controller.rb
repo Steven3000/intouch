@@ -83,7 +83,11 @@ class Admin::AlbumsController < Admin::BaseController
       :youtube_v1,
       :youtube_v2,
       :youtube_v3,
-      :youtube_v4,)
+      :youtube_v4,
+      :youtube_v5,
+      :youtube_v6,
+      :youtube_v7,
+      :youtube_v8)
   end
 
 end
