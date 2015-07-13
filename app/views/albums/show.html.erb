@@ -37,6 +37,68 @@
 <br/>
 <div class="container">
 
+
+  <% if @album.youtube_v4.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v4.html_safe %>
+      </div>
+    </div>
+  </section>
+ <!--  <br/> -->
+  <% else %>
+  <% end %>
+
+
+  <% if @album.youtube_v8.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v8.html_safe %>
+      </div>
+    </div>
+  </section>
+ <!--  <br/> -->
+  <% else %>
+  <% end %>
+
+  <% if @album.youtube_v7.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v7.html_safe %>
+      </div>
+    </div>
+  </section>
+ <!--  <br/> -->
+  <% else %>
+  <% end %>
+
+  <% if @album.youtube_v6.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v6.html_safe %>
+      </div>
+    </div>
+  </section>
+ <!--  <br/> -->
+  <% else %>
+  <% end %>
+
+  <% if @album.youtube_v5.present? %>
+  <section class="row">
+    <div class="span6">
+      <div class="flex-video widescreen">
+        <%= @album.youtube_v5.html_safe %>
+      </div>
+    </div>
+  </section>
+ <!--  <br/> -->
+  <% else %>
+  <% end %>
+
   <% if @album.youtube_v4.present? %>
   <section class="row">
     <div class="span6">
