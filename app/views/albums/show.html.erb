@@ -35,19 +35,6 @@
 <div class="container">
 
 
-  <% if @album.youtube_v4.present? %>
-  <section class="row">
-    <div class="span6">
-      <div class="flex-video widescreen">
-        <%= @album.youtube_v4.html_safe %>
-      </div>
-    </div>
-  </section>
- <!--  <br/> -->
-  <% else %>
-  <% end %>
-
-
   <% if @album.youtube_v8.present? %>
   <section class="row">
     <div class="span6">
