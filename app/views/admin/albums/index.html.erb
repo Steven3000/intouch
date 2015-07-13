@@ -17,7 +17,6 @@
         <th>Cover</th>
         <th>Back</th>
         <th>Album Title</th>
-        <th>R-date</th>
         <th>DL link</th>
         <th>Embed</th>
         <th>Itune</th>
@@ -53,7 +52,6 @@
           <td><%= image_tag album.cover.url(:medium), :style => "width:75px;" %></td>
           <td><%= image_tag album.back.url(:medium), :style => "width:75px;" %></td>
           <td><%= album.name %></td>
-          <td><%= album.release_date.to_formatted_s(:db) %></td>
           <td>
             <% album.download_link %>
             <% if album.download_link.present? %>

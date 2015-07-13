@@ -5,9 +5,6 @@
     </div>
     <p class="button-bar-album-show navv-font"><%= @album.name %></p>
 
-    <% if @album.release_date.present? %>
-    <p class="button-bar-album-show navv-font">Released <%= time_ago_in_words(@album.release_date)  %> ago.</p>
-
     <% if @album.itunes.present? %>
     <a href="<%= @album.itunes %>" target="_blank" class="btn button-bar-album-show navv-font">iTunes</a>
     <% end %>

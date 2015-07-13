@@ -20,10 +20,7 @@
     <dt style="font-size:20px;">Title</dt>
     <dd style="font-size:20px;"><%= @album.name %></dd>
 
-    <% if @album.release_date.present? %>
-        <dt style="font-size:20px;">Release date</dt>
-        <dd style="font-size:20px;"><%= @album.release_date.to_formatted_s(:db) %></dd>
-    <% end %>
+
 
     <% if @album.download_link.present? %>
         <dt style="font-size:20px;">Download link</dt>
