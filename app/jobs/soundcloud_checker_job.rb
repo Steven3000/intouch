@@ -22,4 +22,5 @@ class SoundcloudCheckerJob < ActiveJob::Base
   end
 end
 
-# make sure to enable and scheldule in HEROKU
+
+ # make sure to enable and scheldule in HEROKU
