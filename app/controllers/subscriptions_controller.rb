@@ -12,6 +12,7 @@ class SubscriptionsController < ApplicationController
     if params[:search].present?
       @available_artists = @available_artists.where("name ilike ?", "%#{params[:search]}%")
     end
+
   end
 
   # GET /subscriptions/1
