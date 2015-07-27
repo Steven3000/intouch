@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :announcements
   resources :subscriptions
   resources :artists
+  resources :albums
 
   namespace :admin do
 
@@ -30,6 +31,7 @@ Rails.application.routes.draw do
     resources :artists do
       resources :subscriptions
     end
+
 
   end
 
