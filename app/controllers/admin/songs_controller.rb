@@ -3,7 +3,7 @@ class Admin::SongsController < Admin::BaseController
   before_action :set_albums, only: [:new, :create, :edit, :update]
 
   def index
-    @songs = Song.order(created_at: :desc).page(params[:page]).per(30)
+    @songs = Song.order(created_at: :desc).page(params[:page]).per(15)
 
     if params[:search].present?
       @songs = @songs.where("title ilike ?", "%#{params[:search]}%")
