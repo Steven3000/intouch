@@ -24,6 +24,7 @@
       <em>(example@example.com)</em>
       </div>
     </div>
+    <% if f.object.password_required? %>
     <div class="form-group user-proile-button">
       <%= f.label :password, "Password", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
       <div class="col-sm-5">
@@ -34,6 +35,7 @@
       </div>
     </div>
 
+
     <div class="form-group user-proile-button">
       <%= f.label :password_confirmation, "Password Confirmation", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
       <div class="col-sm-5">
@@ -41,7 +43,7 @@
       <em>(Just to be sure...)</em>
       </div>
     </div>
-
+    <% end %>
     <div class="form-group user-proile-button">
       <%= f.label :zip_code, "Zip Code", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
       <div class="col-sm-5">

@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
   root 'page#home'
-  devise_for :users, controllers: { registrations: "user_registrations" }
+
+
+
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"},
+                   controllers: {omniauth_callbacks: "omniauth_callbacks"}
+
+# devise_for :users, controllers: { registrations: "user_registrations" }
+
+
 
   resources :announcements
   resources :subscriptions
@@ -53,5 +61,9 @@ Rails.application.routes.draw do
   get("/home", :controller => 'page', :action => 'home')
   get("/breakdown", :controller => 'page', :action => 'breakdown')
   get("/fheader", :controller => 'page', :action => 'fheader')
+
+   match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+   match '/auth/failure', to: redirect('/'), via: [:get, :post]
+   match 'signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
 
 end
