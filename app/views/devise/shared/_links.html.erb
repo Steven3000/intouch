@@ -18,8 +18,9 @@
 <p class="btn-md user-proile-button-below">  <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %></p>
 <% end -%>
 
-<%- if devise_mapping.omniauthable? %>
-  <%- resource_class.omniauth_providers.each do |provider| %>
-  <p class="btn-md user-proile-button-below">  <%= link_to "Sign in with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider) %></p>
-  <% end -%>
+<!-- <%#- if devise_mapping.omniauthable? %>
+  <%#- resource_class.omniauth_providers.each do |provider| %>
+  <p class="btn-md user-proile-button-below">  <%#= link_to "Sign in with #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider) %></p>
+  <%# end -%> -->
+
 <% end -%>
