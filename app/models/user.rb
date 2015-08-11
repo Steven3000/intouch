@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable, :omniauthable,
-         :recoverable, :rememberable, :trackable, :validatable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable, :omniauthable, :omniauth_providers => [:facebook]
 
   validates :email, uniqueness: {case_sesitive: false}
   validates :username, uniqueness: {case_sesitive: false}
@@ -25,36 +25,50 @@ class User < ActiveRecord::Base
 
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
 
+
+
+
   def self.from_omniauth(auth)
     where(auth.slice(:provider, :uid)).first_or_create do |user|
       user.provider = auth.provider
       user.uid = auth.uid
       user.username = auth.info.nickname
+      user.image_url = auth.info.image + "type=large"
     end
   end
 
   def self.new_with_session(params, session)
-    if session["devise.user_attributes"]
-      new(session["devise.user_attributes"], without_protection: true) do |user|
-        user.attributes = params
-        user.valid?
+    super.tap do |user|
+      if data = session["devise.facebook_data"] && session["devise.facebook_data"]["extra"]["raw_info"]
+        user.email = data["email"] if user.email.blank?
       end
-    else
-      super
     end
   end
-
-  def password_required?
-    super && provider.blank?
-  end
-
-  def update_with_password(params, *options)
-    if encrypted_password.blank?
-      update_attributes(params, *options)
-    else
-      super
-    end
-  end
-
-
 end
+
+ # for twitter
+
+  # def self.new_with_session(params, session)
+  #   if session["devise.user_attributes"]
+  #     new(session["devise.user_attributes"], without_protection: true) do |user|
+  #       user.attributes = params
+  #       user.valid?
+  #     end
+  #   else
+  #     super
+  #   end
+  # end
+
+  # def password_required?
+  #   super && provider.blank?
+  # end
+
+  # def update_with_password(params, *options)
+  #   if encrypted_password.blank?
+  #     update_attributes(params, *options)
+  #   else
+  #     super
+  #   end
+  # end
+
+
