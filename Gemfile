@@ -32,7 +32,6 @@ gem 'soundcloud'
 gem 'sidekiq'
 gem 'google-webfonts-rails', '~> 0.0.4'
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
 
 group :production do
   gem 'pg'
