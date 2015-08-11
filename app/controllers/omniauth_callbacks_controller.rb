@@ -40,6 +40,11 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     end
   end
 
+private
+  def user_params
+      params.require(:user).permit(:user_id)
+    end
+
 protected
 
   def configure_permitted_parameters
@@ -50,10 +55,7 @@ protected
     '/subscriptions'
   end
 
-private
-  def user_params
-      params.require(:user).permit(:user_id)
-    end
+
 
 
 
