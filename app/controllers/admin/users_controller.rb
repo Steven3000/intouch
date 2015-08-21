@@ -1,7 +1,7 @@
 class Admin::UsersController < Admin::BaseController
 
   def index
-    @users = User.order(created_at: :desc).page(params[:page]).per(12)
+    @users = User.order(created_at: :desc).page(params[:page]).per(10)
    # @user = Profile.search(params[:search])
   end
 
