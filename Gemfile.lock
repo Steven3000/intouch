@@ -404,6 +404,7 @@ DEPENDENCIES
   letter_opener
   mini_magick
   nokogiri
+  omniauth
   omniauth-facebook
   omniauth-twitter
   owlcarousel-rails
