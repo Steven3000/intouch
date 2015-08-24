@@ -24,14 +24,14 @@
       <em>(example@example.com)</em>
       </div>
     </div>
-    <% if f.object.password_required? %>
+
     <div class="form-group user-proile-button">
       <%= f.label :password, "Password", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
       <div class="col-sm-5">
       <%= f.password_field :password, autocomplete: "off", :class => "form-control" %>
-          <%# if @validatable %>
+
           <em>(8 characters minimum)</em>
-          <%# end %>
+
       </div>
     </div>
 
@@ -43,7 +43,7 @@
       <em>(Just to be sure...)</em>
       </div>
     </div>
-    <% end %>
+
     <div class="form-group user-proile-button">
       <%= f.label :zip_code, "Zip Code", :class => "col-sm-offset-1 col-sm-2 control-label label-name-field" %>
       <div class="col-sm-5">
@@ -67,8 +67,8 @@
     </div>
 
   <% end %>
-
-
-    <p class="user-proile-button-below">Already have an account?</p>&nbsp;<%= render "devise/shared/links" %>
+`
+    <p class="user-proile-button-below">Already have an account?</p>&nbsp;<%= render "devise/shared/links" %></p>
 
 </div>
+
